@@ -6,9 +6,14 @@
   top: 0;
   left: 0;
   width: 100%;
+  box-shadow: none;
+  background-color: transparent;
+  @include transition(background-color, box-shadow);
 
   &--fixed {
-
+    background-color: rgba($c-white, 0.98);
+    box-shadow: 0 3px 4px 0 rgba($c-black, 0.025);
+    @include transition(background-color, box-shadow);
   }
 
   .c-grid {
@@ -22,11 +27,19 @@
     display: flex;
     align-items: center;
     min-height: 147px;
+    @include transition(min-height);
     @include respond(max-large) {
       min-height: 75px;
     }
     @include respond(max-small) {
       min-height: 50px;
+    }
+
+    .header--fixed & {
+      @include respond(extra-large) {
+        min-height: 100px;
+        @include transition(min-height);
+      }
     }
 
     &-left {

@@ -38,6 +38,22 @@ var initHamburger = function initHamburger() {
 };
 
 /**
+ * @name initHeaderFixed
+ * @description Fixing the site header in the scrolling page.
+ */
+var initHeaderFixed = function initHeaderFixed() {
+
+  var countScroll = $(window).scrollTop(),
+      headerElement = $('.header');
+
+  if (countScroll > 10) {
+    headerElement.addClass("header--fixed");
+  } else {
+    headerElement.removeClass("header--fixed");
+  }
+};
+
+/**
  * @name initPreventBehavior
  * @description
  */
@@ -52,15 +68,6 @@ var initPreventBehavior = function initPreventBehavior() {
       }
     });
   });
-};
-
-/**
- * @name initSvg4everybody()
- * @description SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
- */
-var initSvg4everybody = function initSvg4everybody() {
-
-  svg4everybody();
 };
 
 /**
@@ -85,9 +92,36 @@ var initWebFontLoader = function initWebFontLoader() {
 };
 
 /**
+ * @description Window on load.
+ */
+$(window).on("load", function (ev) {
+  initHeaderFixed();
+});
+
+/**
+ * @description Window on resize.
+ */
+$(window).on("resize", function (ev) {});
+
+/**
+ * @description Window on scroll.
+ */
+$(window).on("scroll", function (ev) {
+  initHeaderFixed();
+});
+
+/**
  * @description Document DOM ready.
  */
-(function () {
+$(document).ready(function (ev) {
+  /**
+   *
+   * @type {*|jQuery|HTMLElement}
+   * @private
+   */
+  var _document = $(document),
+      _window = $(window);
+
   /**
    * =============================================
    * CALLBACK
@@ -97,14 +131,13 @@ var initWebFontLoader = function initWebFontLoader() {
   /**
    * @description Init all method
    */
-  var initNative = function initNative() {
+  var initJquery = function initJquery() {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    initSvg4everybody();
     // lib
     initHamburger();
     // callback
   };
-  initNative();
-})();
+  initJquery();
+});

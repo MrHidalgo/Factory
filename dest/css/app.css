@@ -593,17 +593,37 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+/* line 13, src/scss/_components/_header.scss */
+.header--fixed {
+  background-color: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.025);
+          box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.025);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 14, src/scss/_components/_header.scss */
+  /* line 19, src/scss/_components/_header.scss */
   .header .c-grid {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 21, src/scss/_components/_header.scss */
+/* line 26, src/scss/_components/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,36 +632,49 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   min-height: 147px;
+  -webkit-transition: min-height 0.3s ease-in-out;
+  -o-transition: min-height 0.3s ease-in-out;
+  transition: min-height 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 21, src/scss/_components/_header.scss */
+  /* line 26, src/scss/_components/_header.scss */
   .header__wrapper {
     min-height: 75px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 21, src/scss/_components/_header.scss */
+  /* line 26, src/scss/_components/_header.scss */
   .header__wrapper {
     min-height: 50px;
   }
 }
 
-/* line 32, src/scss/_components/_header.scss */
+@media screen and (min-width: 1200px) {
+  /* line 38, src/scss/_components/_header.scss */
+  .header--fixed .header__wrapper {
+    min-height: 100px;
+    -webkit-transition: min-height 0.3s ease-in-out;
+    -o-transition: min-height 0.3s ease-in-out;
+    transition: min-height 0.3s ease-in-out;
+  }
+}
+
+/* line 45, src/scss/_components/_header.scss */
 .header__wrapper-left {
   padding-left: 38px;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 32, src/scss/_components/_header.scss */
+  /* line 45, src/scss/_components/_header.scss */
   .header__wrapper-left {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 32, src/scss/_components/_header.scss */
+  /* line 45, src/scss/_components/_header.scss */
   .header__wrapper-left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -656,13 +689,13 @@ picture {
   }
 }
 
-/* line 45, src/scss/_components/_header.scss */
+/* line 58, src/scss/_components/_header.scss */
 .header__wrapper-left .hamburger {
   display: none;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 45, src/scss/_components/_header.scss */
+  /* line 58, src/scss/_components/_header.scss */
   .header__wrapper-left .hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -670,7 +703,7 @@ picture {
   }
 }
 
-/* line 54, src/scss/_components/_header.scss */
+/* line 67, src/scss/_components/_header.scss */
 .header__wrapper-right {
   width: 100%;
   max-width: 100%;
@@ -686,7 +719,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 54, src/scss/_components/_header.scss */
+  /* line 67, src/scss/_components/_header.scss */
   .header__wrapper-right {
     display: none;
   }

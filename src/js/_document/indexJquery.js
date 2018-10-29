@@ -3,7 +3,16 @@
 /**
  * @description Document DOM ready.
  */
-(function() {
+$(document).ready((ev) => {
+  /**
+   *
+   * @type {*|jQuery|HTMLElement}
+   * @private
+   */
+  const _document = $(document),
+    _window = $(window);
+
+
   /**
    * =============================================
    * CALLBACK
@@ -15,14 +24,14 @@
   /**
    * @description Init all method
    */
-  const initNative = () => {
+  const initJquery = () => {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    initSvg4everybody();
     // lib
     initHamburger();
     // callback
   };
-  initNative();
-})();
+  initJquery();
+});
+
