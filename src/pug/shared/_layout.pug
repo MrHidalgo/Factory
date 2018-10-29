@@ -1,0 +1,26 @@
+include ../utilities/_mixin
+include ../utilities/_data
+
+doctype html
+html(lang="en")
+
+  head
+    include _head
+
+  body(data-file!= dataPageName)
+
+    block header
+      include ../components/_header
+
+
+    //- #barba-wrapper
+      .barba-container
+    block content
+
+
+    block footer
+      include ../components/_footer
+
+
+  block script
+    include _script

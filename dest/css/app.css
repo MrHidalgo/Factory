@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Medium.woff2") format("woff2"), url("../fonts/ProximaNova-Medium.woff") format("woff"), url("../fonts/ProximaNova-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* line 8, src/scss/_shared/_grid.scss */
+.c-grid, .c-grid-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 20, src/scss/_shared/_grid.scss */
+.c-grid {
+  max-width: 1464px;
+}
+
+/* line 27, src/scss/_shared/_grid.scss */
+.c-grid-fluid {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1464px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1464px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1464px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1464px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* line 35, src/scss/_shared/_grid.scss */
+  .c-grid {
+    max-width: 1464px;
+  }
+}
+
+/* line 1, src/scss/_shared/_main-reset.scss */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* line 7, src/scss/_shared/_main-reset.scss */
+html.is-hideScroll,
+body.is-hideScroll {
+  overflow: hidden;
+}
+
+/* line 13, src/scss/_shared/_main-reset.scss */
+html {
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 19, src/scss/_shared/_main-reset.scss */
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  line-height: 1.42857143;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "ProximaNova", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 33, src/scss/_shared/_main-reset.scss */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+/* line 38, src/scss/_shared/_main-reset.scss */
+body > .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* line 44, src/scss/_shared/_main-reset.scss */
+body > .body--start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 51, src/scss/_shared/_main-reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 54, src/scss/_shared/_main-reset.scss */
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 61, src/scss/_shared/_main-reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 71, src/scss/_shared/_main-reset.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 77, src/scss/_shared/_main-reset.scss */
+button[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* line 83, src/scss/_shared/_main-reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 89, src/scss/_shared/_main-reset.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 95, src/scss/_shared/_main-reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 100, src/scss/_shared/_main-reset.scss */
+p,
+h1, h2, h3, h4, h5, h6,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 108, src/scss/_shared/_main-reset.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 113, src/scss/_shared/_main-reset.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 119, src/scss/_shared/_main-reset.scss */
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 124, src/scss/_shared/_main-reset.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 131, src/scss/_shared/_main-reset.scss */
+input[type="text"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* line 135, src/scss/_shared/_main-reset.scss */
+picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 4, src/scss/_components/_info.scss */
+.info__wrapper {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+/* line 9, src/scss/_components/_info.scss */
+.info__box {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  max-width: calc((100% / 3) - 16px);
+  min-height: 286px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/* line 18, src/scss/_components/_info.scss */
+.info__box:first-of-type {
+  margin-left: 0;
+}
+
+/* line 21, src/scss/_components/_info.scss */
+.info__box:last-of-type {
+  margin-right: 0;
+}
+
+/* line 27, src/scss/_components/_info.scss */
+.info__box:hover .info__box-img img:last-of-type {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 35, src/scss/_components/_info.scss */
+.info__box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 40, src/scss/_components/_info.scss */
+.info__box-title {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 73px;
+}
+
+/* line 48, src/scss/_components/_info.scss */
+.info__box-title p,
+.info__box-title span {
+  color: #0a1723;
+  line-height: 1;
+  font-weight: bold;
+}
+
+/* line 55, src/scss/_components/_info.scss */
+.info__box-title p {
+  font-size: 43px;
+}
+
+/* line 59, src/scss/_components/_info.scss */
+.info__box-title span {
+  font-size: 30px;
+}
+
+/* line 64, src/scss/_components/_info.scss */
+.info__box-img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 72, src/scss/_components/_info.scss */
+.info__box-img img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+/* line 81, src/scss/_components/_info.scss */
+.info__box-img img:last-of-type {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=maps/app.css.map */
