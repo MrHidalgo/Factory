@@ -11,6 +11,10 @@ $paddingRight: $paddingLeft;
   margin-left: auto;
   padding-right: $paddingRight;
   padding-left: $paddingLeft;
+  @include respond(max-extra-small) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
