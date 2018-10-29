@@ -7,12 +7,12 @@
 ///
 /// VENDOR
 /// ===============
-//@import "_vendor/hamburger/_hamburgers";
+@import "_vendor/hamburger/_hamburgers";
 //@import "_vendor/selectric/_selectric";
 ///
 /// GENERATED
 /// ===============
-//@import "_generated/spritePNG";
+@import "_generated/spritePNG";
 //@import "_generated/spriteSVG";
 //@import "_generated/spriteFont";
 ///
@@ -26,14 +26,14 @@
 //@import "_shared/magnificPopup";
 //@import "_shared/swiper";
 //@import "_shared/objectFitImages";
-//@import "_shared/iconPNG";
+@import "_shared/iconPNG";
 //@import "_shared/iconSVG";
 //@import "_shared/iconFont";
 ///
 /// MACROS
 /// ===============
-//@import "_macros/logotype";
-//@import "_macros/nav";
+@import "_macros/logotype";
+@import "_macros/nav";
 //@import "_macros/title";
 //@import "_macros/btn";
 //@import "_macros/modal";

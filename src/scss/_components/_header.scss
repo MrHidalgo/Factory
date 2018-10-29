@@ -1,5 +1,67 @@
 // HEADER :: START
 
-.header {}
+.header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &--fixed {
+
+  }
+
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 147px;
+    @include respond(max-large) {
+      min-height: 75px;
+    }
+    @include respond(max-small) {
+      min-height: 50px;
+    }
+
+    &-left {
+      padding-left: 38px;
+      @include respond(max-extra-large) {
+        padding-left: 0;
+      }
+      @include respond(max-large) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+
+      .hamburger {
+        display: none;
+
+        @include respond(max-large) {
+          display: flex;
+        }
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include respond(max-medium) {
+        display: none;
+      }
+    }
+  }
+}
 
 // HEADER :: END

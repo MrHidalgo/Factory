@@ -3,7 +3,8 @@
 .icon-png {
   &:before {
     content: "";
-    display: block;
+    display: flex;
+    align-items: flex-start;
   }
 }
 

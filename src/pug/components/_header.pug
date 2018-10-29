@@ -3,5 +3,12 @@
 header#header.header
   .c-grid
     .header__wrapper
+      .header__wrapper-left
+        +logotype('header', '', 'img-logo', 'png')
+
+        +hamburger()
+
+      .header__wrapper-right(mobile-block-js)
+        +navIconPNG('header', dataObj.navHeader)
 
 // HEADER :: END

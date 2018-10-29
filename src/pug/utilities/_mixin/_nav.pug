@@ -6,7 +6,8 @@
 
     @example
       +nav('header', arr)
-      +navIcon('header', arr)
+      +navIconFont('header', arr)
+      +navIconPNG('header', arr)
 
 //- ========================
 mixin nav(classMod, arrData)
@@ -20,7 +21,7 @@ mixin nav(classMod, arrData)
             class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
           )!= arrData[idx].name
 
-mixin navIcon(classMod, arrData)
+mixin navIconFont(classMod, arrData)
   nav.nav(class!= "nav--" + classMod)
     ul.nav__list
       each val, idx in arrData
@@ -32,4 +33,18 @@ mixin navIcon(classMod, arrData)
           )
             .nav__link-icon
               i.icon-font(class!= "icon-" + arrData[idx].icon)
+            span.nav__link-text!= arrData[idx].name
+
+mixin navIconPNG(classMod, arrData)
+  nav.nav(class!= "nav--" + classMod)
+    ul.nav__list
+      each val, idx in arrData
+        li.nav__item(class!= "nav__item-" + idx + " nav__item-" + arrData[idx].icon)
+          a.nav__link(
+            href!= arrData[idx].href
+            title=""
+            class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
+          )
+            .nav__link-icon
+              i.icon-png(class!= arrData[idx].icon)
             span.nav__link-text!= arrData[idx].name

@@ -21,6 +21,7 @@
     initPreventBehavior();
     initSvg4everybody();
     // lib
+    initHamburger();
     // callback
   };
   initNative();
