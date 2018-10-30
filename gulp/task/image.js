@@ -39,8 +39,8 @@ gulp.task("copyImage", function() {
 gulp.task("tinyImage", function() {
   return gulp
     .src(configPath.src.image + '/*.{jpg,jpeg,png}')
-      .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(changedInPlace(configOption.changed))
+      .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(tinyPng("w2hECd9nCvKWfBj49LZrOPa6Ws7ws8uE"))
       .pipe(gulp.dest(configPath.dest.img));
 });
