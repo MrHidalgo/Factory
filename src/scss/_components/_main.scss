@@ -1,9 +1,17 @@
 // MAIN :: START
 
 .main {
+  overflow: hidden;
   position: relative;
-  min-height: 640px;
-  padding-top: 147px;
+  @include fluid(min-height, 320px, 1920px, 369px, 640px);
+  @include fluid(padding-top, 320px, 1920px, 50px, 147px);
+
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
 
   &__bg {
     z-index: 0;
@@ -16,6 +24,12 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
+    @include respond(max-wide-large) {
+      background-size: cover;
+    }
+    @include respond(max-extra-small) {
+      background-position: 0 0;
+    }
   }
 
   &__wrapper {
@@ -23,18 +37,42 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    padding-top: 105px;
+    @include fluid(padding-top, 320px, 1920px, 75px, 105px);
 
     &-left {
       width: 580px;
       padding-left: 67px;
+      @include respond(max-extra-large) {
+        padding-left: 0;
+      }
+      @include respond(max-large) {
+        width: 50%;
+      }
+      @include respond(max-small) {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 580px);
+      padding-left: 15px;
+      @include respond(max-large) {
+        max-width: 50%;
+      }
+      @include respond(max-small) {
+        z-index: 0;
+        position: absolute;
+        max-width: 100%;
+        bottom: 0;
+        right: 0;
+        transform: translateX(40%);
+      }
 
       img {
+        z-index: 0;
         position: relative;
         top: 15px;
         left: 6px;
@@ -50,18 +88,22 @@
   &__subtitle {
     white-space: nowrap;
     color: $c-white;
+    @include respond(max-large) {
+      white-space: normal;
+    }
   }
 
   &__title {
     line-height: 1.4;
-    font-size: 71px;
     font-weight: bold;
+    @include fluid(font-size, 320px, 1920px, 24px, 71px);
   }
 
   &__subtitle {
     padding-bottom: 38px;
-    font-size: 32px;
     font-weight: 600;
+    @include fluid(padding-bottom, 320px, 1920px, 20px, 38px);
+    @include fluid(font-size, 320px, 1920px, 16px, 32px);
   }
 }
 

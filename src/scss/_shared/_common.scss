@@ -17,19 +17,31 @@
   &__group {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
 
     &--select {
+      @include respond(max-extra-small) {
+        flex-wrap: wrap;
+      }
+
       .c-form__group-col {
         width: 160px;
         margin-left: 6px;
         margin-right: 6px;
+        @include respond(max-extra-small) {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 12px;
+        }
 
         &:first-of-type {
           margin-left: 0;
         }
         &:last-of-type {
           margin-right: 0;
+          @include respond(max-extra-small) {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -53,6 +65,9 @@
     min-height: 62px;
     border-radius: 5px;
     background-color: $c-white;
+    @include respond(max-extra-small) {
+      min-height: 36px;
+    }
 
     &:hover {
       .c-form__select-icon-wrap {
@@ -98,6 +113,10 @@
       border-bottom: 5px solid #e4eaef;
       color: #4d5964;
       font-size: 16px;
+      @include respond(max-extra-small) {
+        line-height: 36px;
+        font-size: 14px;
+      }
 
       &.is-choose {
         color: $c-black;

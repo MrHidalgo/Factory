@@ -4,7 +4,7 @@
   &__list {
     display: flex;
     align-items: center;
-    @include respond(max-medium) {
+    @include respond(max-large) {
       flex-direction: column;
     }
   }
@@ -17,9 +17,6 @@
       }
     }
     @include respond(max-large) {
-      margin-right: 15px;
-    }
-    @include respond(max-medium) {
       margin-right: 0;
     }
   }
@@ -32,12 +29,13 @@
     font-size: 14px;
     font-weight: 500;
     @include transition(color);
-    @include respond(max-medium) {
+    @include respond(max-large) {
       align-items: center;
       min-height: 50px;
       padding-bottom: 0;
     }
 
+    &.is-active,
     &:hover {
       color: #0a1723;
       @include transition(color);
@@ -55,7 +53,7 @@
       left: 50%;
       transform: translateX(-50%);
       @include transition(opacity);
-      @include respond(max-medium) {
+      @include respond(max-large) {
         display: none;
       }
     }
