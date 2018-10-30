@@ -1,0 +1,19 @@
+---
+title: HP Factory - 404
+
+contentClassName: not-found
+---
+extends shared/_layout
+
+block content
+  div.body.body--start(class!= contentClassName)
+
+    section#notFound.notFound
+      .notFound__bg
+      .c-grid
+        .notFound__wrapper
+          .notFound__img-wrap
+            img.notFound__img(src="./img/img-notfound.png" srcset="" alt="" title="")
+
+          h2.notFound__message!= "Niestety, nie ma takiej strony."
+

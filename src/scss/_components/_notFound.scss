@@ -1,0 +1,63 @@
+// NOT FOUND :: START
+
+.notFound {
+  overflow: hidden;
+  position: relative;
+  @include fluid(padding-top, 320px, 1920px, 50px, 147px);
+  @include fluid(padding-bottom, 320px, 1920px, 100px, 200px);
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/img-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    @include respond(max-wide-large) {
+      background-size: cover;
+    }
+    @include respond(max-extra-small) {
+      background-position: 0 0;
+    }
+  }
+
+  .c-grid {
+    z-index: 1;
+    position: relative;
+    @include respond(max-extra-small) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  &__wrapper {
+    @include fluid(padding-top, 320px, 1920px, 75px, 96px);
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-wrap {
+      padding-left: 35px;
+      padding-right: 35px;
+      @include fluid(padding-bottom, 320px, 1920px, 18px, 36px);
+    }
+  }
+
+  &__message {
+    text-align: center;
+    //font-size: 60px;
+    font-weight: bold;
+    @include fluid(font-size, 320px, 1920px, 18px, 60px);
+  }
+}
+
+// NOT FOUND :: END
