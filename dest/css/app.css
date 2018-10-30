@@ -1481,7 +1481,7 @@ picture {
   height: 100%;
   background-image: url("../img/img-bg.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center 50%;
   background-size: contain;
 }
 
