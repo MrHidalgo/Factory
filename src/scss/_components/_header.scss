@@ -72,8 +72,40 @@
       justify-content: flex-end;
       @include respond(max-medium) {
         display: none;
+
+        &.is-open {
+          display: block;
+          z-index: 100;
+          overflow-y: auto;
+          position: fixed;
+          top: 75px;
+          left: 0;
+          width: 100%;
+          height: calc(100vh - 75px);
+          padding-top: 50px;
+          padding-bottom: 50px;
+          background-color: $c-white;
+          animation-fill-mode: both;
+          animation-duration: 0.75s;
+          animation-name: c-fadeIn;
+        }
+      }
+      @include respond(max-small) {
+        &.is-open {
+          top: 50px;
+          height: calc(100vh - 50px);
+        }
       }
     }
+  }
+}
+
+@keyframes c-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

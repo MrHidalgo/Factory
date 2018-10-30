@@ -3,7 +3,7 @@ ProjectTitle: HP Factory
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 55
 - file: contacts.html
   titleName: Contacts
   ready: 1

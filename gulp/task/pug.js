@@ -30,7 +30,6 @@ const srcPath = [
 gulp.task('pug', function() {
   return gulp
     .src(srcPath)
-      .pipe(changedInPlace(configOption.changed))
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(frontMatter({
         property: 'data'
@@ -47,6 +46,7 @@ gulp.task('pug', function() {
         removeEmptyAttributes: true,
         removeComments: true
       })))
+      .pipe(changedInPlace(configOption.changed))
       .pipe(gulp.dest(configPath.dest.html))
 });
 

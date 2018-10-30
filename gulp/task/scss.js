@@ -34,11 +34,11 @@ const srcPath = {
 gulp.task('scss', function() {
   return gulp
     .src(srcPath[0])
-      .pipe(changedInPlace(configOption.changed))
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(sourcemaps.init())
       .pipe(scss(configOption.sassAPI).on('error', scss.logError))
       .pipe(prefixer(configOption.autoPrefixOptions))
+      .pipe(changedInPlace(configOption.changed))
       .pipe(sourcemaps.write('./maps', configOption.sourceMapStyle))
       .pipe(gulp.dest(configPath.dest.css))
 });

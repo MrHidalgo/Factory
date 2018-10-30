@@ -1,7 +1,68 @@
 // MAIN :: START
 
 .main {
+  position: relative;
+  min-height: 640px;
   padding-top: 147px;
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/img-bg-main.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+  }
+
+  &__wrapper {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 105px;
+
+    &-left {
+      width: 580px;
+      padding-left: 67px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 580px);
+
+      img {
+        position: relative;
+        top: 15px;
+        left: 6px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    white-space: nowrap;
+    color: $c-white;
+  }
+
+  &__title {
+    line-height: 1.4;
+    font-size: 71px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    padding-bottom: 38px;
+    font-size: 32px;
+    font-weight: 600;
+  }
 }
 
 // MAIN :: END

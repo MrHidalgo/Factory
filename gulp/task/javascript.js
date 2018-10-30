@@ -31,7 +31,6 @@ const srcPath = [
 gulp.task('js', function() {
   return gulp
     .src(srcPath)
-      .pipe(changedInPlace(configOption.changed))
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(order([
         "*",
@@ -41,6 +40,7 @@ gulp.task('js', function() {
       ]))
       .pipe(concat('app.js'))
       .pipe(babel(configOption.es6))
+      .pipe(changedInPlace(configOption.changed))
       .pipe(gulp.dest(configPath.dest.js))
 });
 

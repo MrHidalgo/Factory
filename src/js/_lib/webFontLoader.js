@@ -17,7 +17,8 @@ const initWebFontLoader = () => {
   const WebFontConfig = {
     custom: {
       families: [
-        'ProximaNova:n3,n4,n5,n6,n7,n8,n9'
+        'ProximaNova:n3,n4,n5,n6,n7,n8,n9',
+        'Neris:n3'
       ]
     }
   };

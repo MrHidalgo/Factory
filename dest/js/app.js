@@ -86,7 +86,7 @@ var initWebFontLoader = function initWebFontLoader() {
 
   var WebFontConfig = {
     custom: {
-      families: ['ProximaNova:n3,n4,n5,n6,n7,n8,n9']
+      families: ['ProximaNova:n3,n4,n5,n6,n7,n8,n9', 'Neris:n3']
     }
   };
 };
@@ -129,6 +129,41 @@ $(document).ready(function (ev) {
    */
 
   /**
+   *
+   * @param selector
+   */
+  var selectReset = function selectReset(selector) {
+    if (selector === undefined) {
+      var selector = 'select';
+    }
+
+    $(selector).each(function () {
+      var valOption = $(this).children('option:selected');
+
+      if (valOption.val() !== '0') {
+        $(this).prev('span').addClass("is-choose");
+      }
+
+      $(this).prev('span').html(valOption.text());
+    });
+  };
+  /**
+   *
+   * @param selector
+   */
+  var initSelect = function initSelect(selector) {
+    if (selector === undefined) {
+      var selector = 'select';
+    }
+
+    selectReset(selector);
+
+    $(selector).on('change', function () {
+      selectReset(this);
+    });
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -138,6 +173,7 @@ $(document).ready(function (ev) {
     // lib
     initHamburger();
     // callback
+    initSelect();
   };
   initJquery();
 });

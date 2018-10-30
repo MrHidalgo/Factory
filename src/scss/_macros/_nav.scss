@@ -4,6 +4,9 @@
   &__list {
     display: flex;
     align-items: center;
+    @include respond(max-medium) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -16,6 +19,9 @@
     @include respond(max-large) {
       margin-right: 15px;
     }
+    @include respond(max-medium) {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -26,6 +32,11 @@
     font-size: 14px;
     font-weight: 500;
     @include transition(color);
+    @include respond(max-medium) {
+      align-items: center;
+      min-height: 50px;
+      padding-bottom: 0;
+    }
 
     &:hover {
       color: #0a1723;
@@ -44,6 +55,9 @@
       left: 50%;
       transform: translateX(-50%);
       @include transition(opacity);
+      @include respond(max-medium) {
+        display: none;
+      }
     }
   }
 }
