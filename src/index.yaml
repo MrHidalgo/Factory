@@ -6,7 +6,7 @@ PageList:
   ready: 80
 - file: contacts.html
   titleName: Contacts
-  ready: 30
+  ready: 80
 - file: 404.html
   titleName: 404
   ready: 80
