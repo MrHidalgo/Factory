@@ -164,6 +164,29 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initMap = function initMap() {
+    var coordinates = {
+      lat: 52.1935326,
+      lng: 21.0083038
+    },
+        iconMarker = '../img/img-marker.png';
+
+    if ($("#map").length) {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: coordinates
+      });
+      var marker = new google.maps.Marker({
+        position: coordinates,
+        icon: iconMarker,
+        map: map
+      });
+    }
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -174,6 +197,7 @@ $(document).ready(function (ev) {
     initHamburger();
     // callback
     initSelect();
+    initMap();
   };
   initJquery();
 });

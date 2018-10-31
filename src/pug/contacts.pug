@@ -8,3 +8,68 @@ extends shared/_layout
 
 block content
   div.body.body--start(class!= contentClassName)
+
+    section#contact.contact
+      .contact__bg
+      .c-grid
+        .contact__wrapper
+          .contact__row.contact__row-0
+            h1.contact__title!= "Skontaktuj się z Nami"
+
+          .contact__row.contact__row-1
+            .contact__row-left
+              a.contact__col.contact__col-0(href="tel:+48221855911")
+                .contact__col-img
+                  img(src="./img/img-contacts-0.png" srcset="./img/img-contacts-0@2x.png 2x" alt="" title="")
+                .contact__col-text
+                  p!= "+48 22 1855 911"
+                  span!= "Dzwoń codziennie w godzinach 10:00-18:00!"
+
+              a.contact__col.contact__col-1(href="mailto:info@hpfactory.pl")
+                .contact__col-img
+                  img(src="./img/img-contacts-1.png" srcset="./img/img-contacts-1@2x.png 2x" alt="" title="")
+                .contact__col-text
+                  p!= "info@hpfactory.pl"
+                  span!= "Pisz codziennie o każdej porze!"
+
+            .contact__row-right
+              img(src="./img/img-phone.png" srcset="" alt="" title="")
+
+          .contact__row.contact__row-2
+            p.contact__subtitle!= "lub zostaw dla Nas wiadomość i kontakt!"
+
+          .contact__row.contact__row-3
+            .contact__row-left
+              div
+                form.c-form
+                  .c-form__group.c-form__group--input
+                    .c-form__group-col.c-form__group-col-0
+                      .c-form__field.c-form__field--input
+                        .c-form__input-wrapper
+                          input.c-form__input(type="text" name="" placeholder="Twoje imię*")
+
+                    .c-form__group-col.c-form__group-col-1
+                      .c-form__field.c-form__field--input
+                        .c-form__input-wrapper
+                          input.c-form__input(type="text" name="" placeholder="Twój telefon")
+
+                    .c-form__group-col.c-form__group-col-2
+                      .c-form__field.c-form__field--input
+                        .c-form__input-wrapper
+                          input.c-form__input(type="text" name="" placeholder="Twój e-mail*")
+
+                  .c-form__field.c-form__field--textarea
+                    .c-form__textarea-wrapper
+                      textarea.c-form__textarea(name="" placeholder="Wiadomość*")
+
+                  .c-form__field.c-form__field--btn
+                    button.c-form__btn(type="submit")!= "Wyślij"
+
+            .contact__row-right
+              div
+                .contact__map
+                  #map
+
+                .contact__map-info
+                  p!= "ul. Joliot-Curie 26/19, Warszawa"
+                  i.icon-png.label-contact

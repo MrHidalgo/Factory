@@ -1,20 +1,29 @@
 $sprite: (
   icon-nav-0: (
-    offset-x: -39px,
-    offset-y: 0px,
+    offset-x: 0px,
+    offset-y: -53px,
     width: 31px,
     height: 32px,
-    total-width: 70px,
-    total-height: 34px,
+    total-width: 87px,
+    total-height: 85px,
     image: '../img/sprite.png'
   ),
   icon-nav-1: (
-    offset-x: 0px,
+    offset-x: -53px,
     offset-y: 0px,
     width: 34px,
     height: 34px,
-    total-width: 70px,
-    total-height: 34px,
+    total-width: 87px,
+    total-height: 85px,
+    image: '../img/sprite.png'
+  ),
+  label-contact: (
+    offset-x: 0px,
+    offset-y: 0px,
+    width: 48px,
+    height: 48px,
+    total-width: 87px,
+    total-height: 85px,
     image: '../img/sprite.png'
   ),
 );
@@ -67,4 +76,7 @@ $sprite: (
 }
 .icon-nav-1:before {
   @include sprite(icon-nav-1);
+}
+.label-contact:before {
+  @include sprite(label-contact);
 }
