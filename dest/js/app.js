@@ -201,6 +201,19 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initSelectric = function initSelectric() {
+    var langBtn = $("[select-js]");
+
+    langBtn.selectric({
+      responsive: true,
+      inheritOriginalWidth: false,
+      disableOnMobile: false
+    });
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -213,6 +226,7 @@ $(document).ready(function (ev) {
     initSelect();
     initMap();
     initFocusFormElem();
+    initSelectric();
   };
   initJquery();
 });

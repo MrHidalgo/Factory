@@ -1,14 +1,14 @@
 $selectric-main-color:      #DDD !default;                                              // Color used in border
 $selectric-secondary-color: #BBB !default;                                              // Color used in button
-$selectric-text-color:      #444 !default;                                              // Color used in label
+$selectric-text-color:      #4d5964 !default;                                              // Color used in label
 $selectric-bg-color:        #F8F8F8 !default;                                           // Background color
 $selectric-btn-bg-color:    #F8f8f8 !default;                                           // Button background color
-$selectric-height:          40px !default;                                              // Outer height
+$selectric-height:          62px !default;                                              // Outer height
 $selectric-spacing:         10px !default;                                              // Label left padding
-$selectric-border-width:    1px !default;                                               // Outer border width
-$selectric-border-radius:   0px !default;                                               // Border radius
+$selectric-border-width:    0px !default;                                               // Outer border width
+$selectric-border-radius:   5px !default;                                               // Border radius
 $selectric-inner-height:    $selectric-height - ($selectric-border-width * 2) !default; // Inner height
-$selectric-font-size:       12px !default;                                              // Font size
+$selectric-font-size:       16px !default;                                              // Font size
 
 .selectric-wrapper {
   position: relative;
@@ -25,18 +25,63 @@ $selectric-font-size:       12px !default;                                      
   background: $selectric-bg-color;
   position: relative;
   overflow: hidden;
+  @include transition(border-radius);
+
+  &-wrapper {
+    &:hover {
+      .button {
+        background-color: #d6273c;
+        border-color: #ab182a;
+        @include transition(background-color, border-color);
+
+        &:after {
+          text-shadow: 0 1px 0 rgba(#ab182a, 1);
+          color: $c-white;
+          @include transition(text-shadow, color);
+        }
+      }
+    }
+  }
+
+  &-open {
+
+    .selectric {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      @include transition(border-radius);
+    }
+
+    .button {
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &-hover {
+    .button {
+      background-color: #d6273c;
+      border-color: #ab182a;
+
+      &:after {
+        text-shadow: 0 1px 0 rgba(#ab182a, 1);
+        color: $c-white;
+      }
+    }
+  }
 
   .label {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0 $selectric-inner-height 0 $selectric-spacing;
+    padding: 0 27px 0;
     font-size: $selectric-font-size;
     line-height: $selectric-inner-height;
     color: $selectric-text-color;
     height: $selectric-inner-height;
     user-select: none;
+    border-bottom: 5px solid #e4eaef;
   }
 
   .button {
@@ -44,28 +89,34 @@ $selectric-font-size:       12px !default;                                      
     position: absolute;
     right: 0;
     top: 0;
-    width: $selectric-inner-height;
+    width: 27px;
     height: $selectric-inner-height;
     line-height: $selectric-inner-height;
-    background-color: $selectric-btn-bg-color;
+    background-color: #e4eaef;
+    border-bottom: 5px solid #bbc8d3;
     color: $selectric-secondary-color;
     text-align: center;
     font: 0/0 a;
     *font: 20px/#{$selectric-inner-height} Lucida Sans Unicode, Arial Unicode MS, Arial;
+    @include transition(background-color, border-color);
 
     &:after {
-      content: " ";
+      content: "↓";
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       margin: auto;
-      width: 0;
-      height: 0;
-      border: 4px solid transparent;
-      border-top-color: $selectric-secondary-color;
-      border-bottom: none;
+      text-shadow: 0 1px 0 rgba($c-white, 1);
+      color: #4d5964;
+      font-style: normal;
+      font-size: 19px;
+      font-family: 'Neris', sans-serif;
+      @include transition(text-shadow, color);
     }
   }
 }
@@ -166,9 +217,10 @@ $selectric-font-size:       12px !default;                                      
   top: 100%;
   left: 0;
   background: $selectric-bg-color;
-  border: 1px solid darken($selectric-main-color, 10%);
+  border: none;
   z-index: -1;
-  box-shadow: 0 0 10px -6px;
+  //box-shadow: 0 0 10px -6px;
+
 
   .selectric-scroll {
     height: 100%;
@@ -190,24 +242,44 @@ $selectric-font-size:       12px !default;                                      
   }
 
   li {
-    display: block;
-    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    //padding: 5px 0;
     color: #666;
+    font-size: 14px;
     cursor: pointer;
+    padding: 5px 17px;
+    //border-bottom: 1px solid #e4eaef;
 
-    &.selected {
-      background: #E0E0E0;
-      color: #444;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 17px;
+      width: calc(100% - 34px);
+      height: 1px;
+      background-color: #e4eaef;
     }
 
-    &.highlighted {
-      background: #D0D0D0;
-      color: #444;
+    &:last-of-type {
+      border-bottom: 0;
     }
+
+    //&.selected {
+    //  background: #E0E0E0;
+    //  color: #444;
+    //}
+
+    //&.highlighted {
+    //  background: #D0D0D0;
+    //  color: #444;
+    //}
 
     &:hover {
-      background: #D5D5D5;
-      color: #444;
+      background: #e4eaef;
+      color: #4d5964;
     }
   }
 

@@ -94,6 +94,20 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
+  const initSelectric = () => {
+    const langBtn = $("[select-js]");
+
+    langBtn.selectric({
+      responsive: true,
+      inheritOriginalWidth: false,
+      disableOnMobile: false
+    });
+  };
+
+
 
   /**
    * @description Init all method
@@ -108,6 +122,7 @@ $(document).ready((ev) => {
     initSelect();
     initMap();
     initFocusFormElem();
+    initSelectric();
   };
   initJquery();
 });

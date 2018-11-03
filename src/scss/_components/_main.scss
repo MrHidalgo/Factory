@@ -1,7 +1,6 @@
 // MAIN :: START
 
 .main {
-  overflow: hidden;
   position: relative;
   @include fluid(min-height, 320px, 1920px, 431px, 640px);
   @include fluid(padding-top, 320px, 1920px, 50px, 147px);
@@ -13,7 +12,12 @@
     }
   }
 
+  select {
+    opacity: 0;
+  }
+
   &__bg {
+    overflow: hidden;
     z-index: 0;
     position: absolute;
     top: 50px;

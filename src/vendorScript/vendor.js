@@ -4,5 +4,6 @@
 *
 * - bower-webfontloader;
 * - jquery;
+* - jquery-selectric;
 *
 * */
