@@ -1314,13 +1314,13 @@ picture {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 @media screen and (min-width: 320px) {
   /* line 39, src/scss/_components/_main.scss */
   .main__wrapper {
-    padding-top: calc(70px + 35 * (100vw - 320px) / 1600);
+    padding-top: calc(50px + 55 * (100vw - 320px) / 1600);
   }
 }
 
@@ -1496,7 +1496,14 @@ picture {
   padding-bottom: 95px;
 }
 
-/* line 9, src/scss/_components/_info.scss */
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/_info.scss */
+  .info__wrapper {
+    padding-top: 0;
+  }
+}
+
+/* line 12, src/scss/_components/_info.scss */
 .info__box {
   cursor: pointer;
   position: relative;
@@ -1508,21 +1515,21 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 9, src/scss/_components/_info.scss */
+  /* line 12, src/scss/_components/_info.scss */
   .info__box {
     min-height: calc(201px + 85 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 9, src/scss/_components/_info.scss */
+  /* line 12, src/scss/_components/_info.scss */
   .info__box {
     min-height: 286px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 9, src/scss/_components/_info.scss */
+  /* line 12, src/scss/_components/_info.scss */
   .info__box {
     max-width: 456px;
     margin: 0 auto 30px;
@@ -1530,37 +1537,37 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 9, src/scss/_components/_info.scss */
+  /* line 12, src/scss/_components/_info.scss */
   .info__box {
     margin: 0 auto 21px;
   }
 }
 
-/* line 25, src/scss/_components/_info.scss */
+/* line 28, src/scss/_components/_info.scss */
 .info__box:first-of-type {
   margin-left: 0;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 25, src/scss/_components/_info.scss */
+  /* line 28, src/scss/_components/_info.scss */
   .info__box:first-of-type {
     margin-left: auto;
   }
 }
 
-/* line 31, src/scss/_components/_info.scss */
+/* line 34, src/scss/_components/_info.scss */
 .info__box:last-of-type {
   margin-right: 0;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 31, src/scss/_components/_info.scss */
+  /* line 34, src/scss/_components/_info.scss */
   .info__box:last-of-type {
     margin-right: auto;
   }
 }
 
-/* line 40, src/scss/_components/_info.scss */
+/* line 43, src/scss/_components/_info.scss */
 .info__box:hover .info__box-img img:last-of-type {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1568,7 +1575,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 48, src/scss/_components/_info.scss */
+/* line 51, src/scss/_components/_info.scss */
 .info__box-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1579,14 +1586,14 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 48, src/scss/_components/_info.scss */
+  /* line 51, src/scss/_components/_info.scss */
   .info__box-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 56, src/scss/_components/_info.scss */
+/* line 59, src/scss/_components/_info.scss */
 .info__box-title {
   z-index: 1;
   position: absolute;
@@ -1608,14 +1615,14 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 56, src/scss/_components/_info.scss */
+  /* line 59, src/scss/_components/_info.scss */
   .info__box-title {
     padding-left: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/_components/_info.scss */
+  /* line 59, src/scss/_components/_info.scss */
   .info__box-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1624,7 +1631,7 @@ picture {
   }
 }
 
-/* line 75, src/scss/_components/_info.scss */
+/* line 78, src/scss/_components/_info.scss */
 .info__box-title p,
 .info__box-title span {
   color: #0a1723;
@@ -1632,51 +1639,51 @@ picture {
   font-weight: bold;
 }
 
-/* line 82, src/scss/_components/_info.scss */
+/* line 85, src/scss/_components/_info.scss */
 .info__box-title p {
   font-size: 30px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 82, src/scss/_components/_info.scss */
+  /* line 85, src/scss/_components/_info.scss */
   .info__box-title p {
     font-size: calc(30px + 13 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 82, src/scss/_components/_info.scss */
+  /* line 85, src/scss/_components/_info.scss */
   .info__box-title p {
     font-size: 43px;
   }
 }
 
-/* line 86, src/scss/_components/_info.scss */
+/* line 89, src/scss/_components/_info.scss */
 .info__box-title span {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 86, src/scss/_components/_info.scss */
+  /* line 89, src/scss/_components/_info.scss */
   .info__box-title span {
     font-size: calc(18px + 12 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 86, src/scss/_components/_info.scss */
+  /* line 89, src/scss/_components/_info.scss */
   .info__box-title span {
     font-size: 30px;
   }
 }
 
-/* line 91, src/scss/_components/_info.scss */
+/* line 94, src/scss/_components/_info.scss */
 .info__box-img {
   z-index: 0;
   position: relative;
 }
 
-/* line 95, src/scss/_components/_info.scss */
+/* line 98, src/scss/_components/_info.scss */
 .info__box-img img {
   display: block;
   max-width: 100%;
@@ -1684,14 +1691,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 95, src/scss/_components/_info.scss */
+  /* line 98, src/scss/_components/_info.scss */
   .info__box-img img {
     right: 0;
     margin: 0 auto;
   }
 }
 
-/* line 104, src/scss/_components/_info.scss */
+/* line 107, src/scss/_components/_info.scss */
 .info__box-img img:last-of-type {
   opacity: 0;
   z-index: 0;
@@ -1743,32 +1750,44 @@ picture {
 .contact__bg {
   z-index: 0;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 431px;
   background-image: url("../img/img-bg.png");
   background-repeat: no-repeat;
-  background-position: center 75px;
-  background-size: contain;
+  background-position: bottom center;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (min-width: 320px) {
   /* line 9, src/scss/_components/_contacts.scss */
   .contact__bg {
-    background-position: center top;
-    background-size: cover;
+    height: calc(431px + 150 * (100vw - 320px) / 1600);
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 1920px) {
   /* line 9, src/scss/_components/_contacts.scss */
   .contact__bg {
-    background-position: 0 0;
+    height: 581px;
   }
 }
 
-/* line 29, src/scss/_components/_contacts.scss */
+/* line 20, src/scss/_components/_contacts.scss */
+.contact__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 32, src/scss/_components/_contacts.scss */
 .contact .c-grid {
   z-index: 1;
   position: relative;
@@ -1776,33 +1795,33 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 29, src/scss/_components/_contacts.scss */
+  /* line 32, src/scss/_components/_contacts.scss */
   .contact .c-grid {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
-/* line 39, src/scss/_components/_contacts.scss */
+/* line 42, src/scss/_components/_contacts.scss */
 .contact__wrapper {
   padding-top: 31px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 39, src/scss/_components/_contacts.scss */
+  /* line 42, src/scss/_components/_contacts.scss */
   .contact__wrapper {
     padding-top: calc(31px + 65 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 39, src/scss/_components/_contacts.scss */
+  /* line 42, src/scss/_components/_contacts.scss */
   .contact__wrapper {
     padding-top: 96px;
   }
 }
 
-/* line 43, src/scss/_components/_contacts.scss */
+/* line 46, src/scss/_components/_contacts.scss */
 .contact__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1812,7 +1831,7 @@ picture {
           align-items: center;
 }
 
-/* line 48, src/scss/_components/_contacts.scss */
+/* line 51, src/scss/_components/_contacts.scss */
 .contact__row-1 .contact__row-left {
   width: 70%;
   padding-left: 130px;
@@ -1820,46 +1839,61 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 48, src/scss/_components/_contacts.scss */
+  /* line 51, src/scss/_components/_contacts.scss */
   .contact__row-1 .contact__row-left {
     width: 60%;
     padding-left: 0;
   }
 }
 
-/* line 57, src/scss/_components/_contacts.scss */
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/_contacts.scss */
+  .contact__row-1 .contact__row-left {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* line 64, src/scss/_components/_contacts.scss */
 .contact__row-1 .contact__row-right {
   width: 30%;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 57, src/scss/_components/_contacts.scss */
+  /* line 64, src/scss/_components/_contacts.scss */
   .contact__row-1 .contact__row-right {
     width: 40%;
   }
 }
 
-/* line 63, src/scss/_components/_contacts.scss */
+@media screen and (max-width: 767px) {
+  /* line 64, src/scss/_components/_contacts.scss */
+  .contact__row-1 .contact__row-right {
+    display: none;
+  }
+}
+
+/* line 73, src/scss/_components/_contacts.scss */
 .contact__row-1 .contact__row-right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 71, src/scss/_components/_contacts.scss */
+/* line 81, src/scss/_components/_contacts.scss */
 .contact__row-3 {
   padding-bottom: 110px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 71, src/scss/_components/_contacts.scss */
+  /* line 81, src/scss/_components/_contacts.scss */
   .contact__row-3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 77, src/scss/_components/_contacts.scss */
+/* line 87, src/scss/_components/_contacts.scss */
 .contact__row-3 .contact__row-left,
 .contact__row-3 .contact__row-right {
   display: -webkit-box;
@@ -1871,20 +1905,20 @@ picture {
   width: 50%;
 }
 
-/* line 83, src/scss/_components/_contacts.scss */
+/* line 93, src/scss/_components/_contacts.scss */
 .contact__row-3 .contact__row-left > div,
 .contact__row-3 .contact__row-right > div {
   width: 100%;
   min-height: 463px;
 }
 
-/* line 88, src/scss/_components/_contacts.scss */
+/* line 98, src/scss/_components/_contacts.scss */
 .contact__row-3 .contact__row-left {
   padding-right: 42px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 88, src/scss/_components/_contacts.scss */
+  /* line 98, src/scss/_components/_contacts.scss */
   .contact__row-3 .contact__row-left {
     width: 60%;
     padding-right: 30px;
@@ -1892,7 +1926,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 88, src/scss/_components/_contacts.scss */
+  /* line 98, src/scss/_components/_contacts.scss */
   .contact__row-3 .contact__row-left {
     width: 100%;
     padding-right: 0;
@@ -1901,60 +1935,60 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 100, src/scss/_components/_contacts.scss */
+  /* line 110, src/scss/_components/_contacts.scss */
   .contact__row-3 .contact__row-right {
     width: 40%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 100, src/scss/_components/_contacts.scss */
+  /* line 110, src/scss/_components/_contacts.scss */
   .contact__row-3 .contact__row-right {
     width: 100%;
   }
 }
 
-/* line 112, src/scss/_components/_contacts.scss */
+/* line 122, src/scss/_components/_contacts.scss */
 .contact__title, .contact__subtitle {
   line-height: 1.4;
   font-weight: bold;
 }
 
-/* line 118, src/scss/_components/_contacts.scss */
+/* line 128, src/scss/_components/_contacts.scss */
 .contact__title {
   font-size: 24px;
   padding-bottom: 30px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 118, src/scss/_components/_contacts.scss */
+  /* line 128, src/scss/_components/_contacts.scss */
   .contact__title {
     font-size: calc(24px + 47 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 118, src/scss/_components/_contacts.scss */
+  /* line 128, src/scss/_components/_contacts.scss */
   .contact__title {
     font-size: 71px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 118, src/scss/_components/_contacts.scss */
+  /* line 128, src/scss/_components/_contacts.scss */
   .contact__title {
     padding-bottom: calc(30px + 33 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 118, src/scss/_components/_contacts.scss */
+  /* line 128, src/scss/_components/_contacts.scss */
   .contact__title {
     padding-bottom: 63px;
   }
 }
 
-/* line 123, src/scss/_components/_contacts.scss */
+/* line 133, src/scss/_components/_contacts.scss */
 .contact__subtitle {
   font-size: 14px;
   padding-top: 31px;
@@ -1962,48 +1996,48 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 123, src/scss/_components/_contacts.scss */
+  /* line 133, src/scss/_components/_contacts.scss */
   .contact__subtitle {
     font-size: calc(14px + 34 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 123, src/scss/_components/_contacts.scss */
+  /* line 133, src/scss/_components/_contacts.scss */
   .contact__subtitle {
     font-size: 48px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 123, src/scss/_components/_contacts.scss */
+  /* line 133, src/scss/_components/_contacts.scss */
   .contact__subtitle {
     padding-top: calc(31px + 69 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 123, src/scss/_components/_contacts.scss */
+  /* line 133, src/scss/_components/_contacts.scss */
   .contact__subtitle {
     padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 123, src/scss/_components/_contacts.scss */
+  /* line 133, src/scss/_components/_contacts.scss */
   .contact__subtitle {
     padding-bottom: calc(34px + 60 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 123, src/scss/_components/_contacts.scss */
+  /* line 133, src/scss/_components/_contacts.scss */
   .contact__subtitle {
     padding-bottom: 94px;
   }
 }
 
-/* line 129, src/scss/_components/_contacts.scss */
+/* line 139, src/scss/_components/_contacts.scss */
 .contact__col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2014,46 +2048,60 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 129, src/scss/_components/_contacts.scss */
+  /* line 139, src/scss/_components/_contacts.scss */
   .contact__col {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 136, src/scss/_components/_contacts.scss */
+/* line 146, src/scss/_components/_contacts.scss */
 .contact__col-0 {
   padding-bottom: 23px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 136, src/scss/_components/_contacts.scss */
+  /* line 146, src/scss/_components/_contacts.scss */
   .contact__col-0 {
     padding-bottom: calc(23px + 41 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 136, src/scss/_components/_contacts.scss */
+  /* line 146, src/scss/_components/_contacts.scss */
   .contact__col-0 {
     padding-bottom: 64px;
   }
 }
 
-/* line 140, src/scss/_components/_contacts.scss */
+/* line 150, src/scss/_components/_contacts.scss */
 .contact__col-img {
   width: 139px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 140, src/scss/_components/_contacts.scss */
+  /* line 150, src/scss/_components/_contacts.scss */
   .contact__col-img {
-    width: 100%;
+    width: 36px;
     padding-bottom: 12px;
   }
 }
 
-/* line 148, src/scss/_components/_contacts.scss */
+@media screen and (max-width: 575px) {
+  /* line 150, src/scss/_components/_contacts.scss */
+  .contact__col-img {
+    width: 36px;
+  }
+}
+
+/* line 160, src/scss/_components/_contacts.scss */
+.contact__col-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 167, src/scss/_components/_contacts.scss */
 .contact__col-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2064,13 +2112,20 @@ picture {
           flex-direction: column;
 }
 
-/* line 152, src/scss/_components/_contacts.scss */
+@media screen and (max-width: 767px) {
+  /* line 167, src/scss/_components/_contacts.scss */
+  .contact__col-text {
+    width: 100%;
+  }
+}
+
+/* line 174, src/scss/_components/_contacts.scss */
 .contact__col-text p,
 .contact__col-text span {
   line-height: 1;
 }
 
-/* line 157, src/scss/_components/_contacts.scss */
+/* line 179, src/scss/_components/_contacts.scss */
 .contact__col-text p {
   color: #0a1723;
   line-height: 1;
@@ -2080,34 +2135,34 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 157, src/scss/_components/_contacts.scss */
+  /* line 179, src/scss/_components/_contacts.scss */
   .contact__col-text p {
     font-size: calc(18px + 12 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 157, src/scss/_components/_contacts.scss */
+  /* line 179, src/scss/_components/_contacts.scss */
   .contact__col-text p {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 157, src/scss/_components/_contacts.scss */
+  /* line 179, src/scss/_components/_contacts.scss */
   .contact__col-text p {
     padding-bottom: calc(12px + 8 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 157, src/scss/_components/_contacts.scss */
+  /* line 179, src/scss/_components/_contacts.scss */
   .contact__col-text p {
     padding-bottom: 20px;
   }
 }
 
-/* line 165, src/scss/_components/_contacts.scss */
+/* line 187, src/scss/_components/_contacts.scss */
 .contact__col-text span {
   color: #d6273c;
   font-weight: 500;
@@ -2115,20 +2170,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 165, src/scss/_components/_contacts.scss */
+  /* line 187, src/scss/_components/_contacts.scss */
   .contact__col-text span {
     font-size: calc(14px + 10 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 165, src/scss/_components/_contacts.scss */
+  /* line 187, src/scss/_components/_contacts.scss */
   .contact__col-text span {
     font-size: 24px;
   }
 }
 
-/* line 173, src/scss/_components/_contacts.scss */
+/* line 195, src/scss/_components/_contacts.scss */
 .contact__map {
   position: relative;
   min-height: 379px;
@@ -2136,7 +2191,7 @@ picture {
   background-color: #e4eaef;
 }
 
-/* line 179, src/scss/_components/_contacts.scss */
+/* line 201, src/scss/_components/_contacts.scss */
 .contact__map:before {
   z-index: 0;
   content: '';
@@ -2150,7 +2205,7 @@ picture {
   background-color: #e4eaef;
 }
 
-/* line 192, src/scss/_components/_contacts.scss */
+/* line 214, src/scss/_components/_contacts.scss */
 .contact__map #map {
   position: absolute !important;
   top: 0;
@@ -2161,7 +2216,7 @@ picture {
   border: 3px solid #8d96ae;
 }
 
-/* line 202, src/scss/_components/_contacts.scss */
+/* line 224, src/scss/_components/_contacts.scss */
 .contact__map-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2177,20 +2232,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 202, src/scss/_components/_contacts.scss */
+  /* line 224, src/scss/_components/_contacts.scss */
   .contact__map-info {
     padding-top: calc(16px + 10 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 202, src/scss/_components/_contacts.scss */
+  /* line 224, src/scss/_components/_contacts.scss */
   .contact__map-info {
     padding-top: 26px;
   }
 }
 
-/* line 209, src/scss/_components/_contacts.scss */
+/* line 231, src/scss/_components/_contacts.scss */
 .contact__map-info p {
   margin-right: 24px;
   color: #393d47;
@@ -2199,28 +2254,28 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 209, src/scss/_components/_contacts.scss */
+  /* line 231, src/scss/_components/_contacts.scss */
   .contact__map-info p {
     font-size: calc(15px + 9 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 209, src/scss/_components/_contacts.scss */
+  /* line 231, src/scss/_components/_contacts.scss */
   .contact__map-info p {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 209, src/scss/_components/_contacts.scss */
+  /* line 231, src/scss/_components/_contacts.scss */
   .contact__map-info p {
     margin-right: 0;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 219, src/scss/_components/_contacts.scss */
+  /* line 241, src/scss/_components/_contacts.scss */
   .contact__map-info i {
     -webkit-transform: scale(0.5);
         -ms-transform: scale(0.5);
@@ -2268,64 +2323,77 @@ picture {
 .notFound__bg {
   z-index: 0;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 431px;
   background-image: url("../img/img-bg.png");
   background-repeat: no-repeat;
-  background-position: center 50%;
-  background-size: contain;
+  background-position: bottom center;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (min-width: 320px) {
   /* line 9, src/scss/_components/_notFound.scss */
   .notFound__bg {
-    background-size: cover;
+    height: calc(431px + 150 * (100vw - 320px) / 1600);
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 1920px) {
   /* line 9, src/scss/_components/_notFound.scss */
   .notFound__bg {
-    background-position: 0 0;
+    height: 581px;
   }
 }
 
-/* line 28, src/scss/_components/_notFound.scss */
+/* line 20, src/scss/_components/_notFound.scss */
+.notFound__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 32, src/scss/_components/_notFound.scss */
 .notFound .c-grid {
   z-index: 1;
   position: relative;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 28, src/scss/_components/_notFound.scss */
+  /* line 32, src/scss/_components/_notFound.scss */
   .notFound .c-grid {
     padding-left: 25px;
     padding-right: 25px;
   }
 }
 
-/* line 37, src/scss/_components/_notFound.scss */
+/* line 41, src/scss/_components/_notFound.scss */
 .notFound__wrapper {
   padding-top: 75px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 37, src/scss/_components/_notFound.scss */
+  /* line 41, src/scss/_components/_notFound.scss */
   .notFound__wrapper {
     padding-top: calc(75px + 21 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 37, src/scss/_components/_notFound.scss */
+  /* line 41, src/scss/_components/_notFound.scss */
   .notFound__wrapper {
     padding-top: 96px;
   }
 }
 
-/* line 41, src/scss/_components/_notFound.scss */
+/* line 45, src/scss/_components/_notFound.scss */
 .notFound__img {
   display: block;
   max-width: 100%;
@@ -2334,7 +2402,14 @@ picture {
   margin-right: auto;
 }
 
-/* line 48, src/scss/_components/_notFound.scss */
+@media screen and (min-width: 768px) {
+  /* line 45, src/scss/_components/_notFound.scss */
+  .notFound__img {
+    width: 430px;
+  }
+}
+
+/* line 55, src/scss/_components/_notFound.scss */
 .notFound__img-wrap {
   padding-left: 35px;
   padding-right: 35px;
@@ -2342,20 +2417,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 48, src/scss/_components/_notFound.scss */
+  /* line 55, src/scss/_components/_notFound.scss */
   .notFound__img-wrap {
     padding-bottom: calc(18px + 18 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 48, src/scss/_components/_notFound.scss */
+  /* line 55, src/scss/_components/_notFound.scss */
   .notFound__img-wrap {
     padding-bottom: 36px;
   }
 }
 
-/* line 55, src/scss/_components/_notFound.scss */
+/* line 62, src/scss/_components/_notFound.scss */
 .notFound__message {
   text-align: center;
   font-weight: bold;
@@ -2363,16 +2438,16 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 55, src/scss/_components/_notFound.scss */
+  /* line 62, src/scss/_components/_notFound.scss */
   .notFound__message {
-    font-size: calc(18px + 42 * (100vw - 320px) / 1600);
+    font-size: calc(18px + 46 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 55, src/scss/_components/_notFound.scss */
+  /* line 62, src/scss/_components/_notFound.scss */
   .notFound__message {
-    font-size: 60px;
+    font-size: 64px;
   }
 }
 

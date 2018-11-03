@@ -41,7 +41,7 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    @include fluid(padding-top, 320px, 1920px, 70px, 105px);
+    @include fluid(padding-top, 320px, 1920px, 50px, 105px);
     @include respond(max-small) {
       flex-wrap: wrap;
     }

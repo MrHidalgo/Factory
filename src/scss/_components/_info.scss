@@ -4,6 +4,9 @@
   &__wrapper {
     padding-top: 55px;
     padding-bottom: 95px;
+    @include respond(max-small) {
+      padding-top: 0;
+    }
   }
 
   &__box {
