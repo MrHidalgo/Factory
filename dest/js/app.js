@@ -187,6 +187,20 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initFocusFormElem = function initFocusFormElem() {
+    var formElem = $('[form-focus-js]');
+
+    formElem.on('focus', function (ev) {
+      $(ev.currentTarget).closest('.c-form__field').addClass('is-focus');
+    });
+    formElem.on('blur', function (ev) {
+      $(ev.currentTarget).closest('.c-form__field').removeClass('is-focus');
+    });
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -198,6 +212,7 @@ $(document).ready(function (ev) {
     // callback
     initSelect();
     initMap();
+    initFocusFormElem();
   };
   initJquery();
 });

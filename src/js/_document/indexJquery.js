@@ -79,6 +79,21 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
+  const initFocusFormElem = () => {
+    const formElem = $('[form-focus-js]');
+
+    formElem.on('focus', (ev) => {
+      $(ev.currentTarget).closest('.c-form__field').addClass('is-focus');
+    });
+    formElem.on('blur', (ev) => {
+      $(ev.currentTarget).closest('.c-form__field').removeClass('is-focus');
+    });
+  };
+
+
 
   /**
    * @description Init all method
@@ -92,6 +107,7 @@ $(document).ready((ev) => {
     // callback
     initSelect();
     initMap();
+    initFocusFormElem();
   };
   initJquery();
 });
