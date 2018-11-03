@@ -1223,14 +1223,14 @@ picture {
 .main {
   overflow: hidden;
   position: relative;
-  min-height: 369px;
+  min-height: 431px;
   padding-top: 50px;
 }
 
 @media screen and (min-width: 320px) {
   /* line 3, src/scss/_components/_main.scss */
   .main {
-    min-height: calc(369px + 271 * (100vw - 320px) / 1600);
+    min-height: calc(431px + 209 * (100vw - 320px) / 1600);
   }
 }
 
@@ -1258,8 +1258,8 @@ picture {
 @media screen and (max-width: 575px) {
   /* line 9, src/scss/_components/_main.scss */
   .main .c-grid {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1267,31 +1267,44 @@ picture {
 .main__bg {
   z-index: 0;
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 431px;
   background-image: url("../img/img-bg-main.png");
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: contain;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (min-width: 320px) {
   /* line 16, src/scss/_components/_main.scss */
   .main__bg {
-    background-size: cover;
+    height: calc(431px + 150 * (100vw - 320px) / 1600);
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 1920px) {
   /* line 16, src/scss/_components/_main.scss */
   .main__bg {
-    background-position: 0 0;
+    height: 581px;
   }
 }
 
-/* line 35, src/scss/_components/_main.scss */
+/* line 27, src/scss/_components/_main.scss */
+.main__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 39, src/scss/_components/_main.scss */
 .main__wrapper {
   z-index: 1;
   position: relative;
@@ -1301,45 +1314,53 @@ picture {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 75px;
+  padding-top: 70px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 35, src/scss/_components/_main.scss */
+  /* line 39, src/scss/_components/_main.scss */
   .main__wrapper {
-    padding-top: calc(75px + 30 * (100vw - 320px) / 1600);
+    padding-top: calc(70px + 35 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 35, src/scss/_components/_main.scss */
+  /* line 39, src/scss/_components/_main.scss */
   .main__wrapper {
     padding-top: 105px;
   }
 }
 
-/* line 42, src/scss/_components/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 39, src/scss/_components/_main.scss */
+  .main__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 49, src/scss/_components/_main.scss */
 .main__wrapper-left {
   width: 580px;
   padding-left: 67px;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 42, src/scss/_components/_main.scss */
+  /* line 49, src/scss/_components/_main.scss */
   .main__wrapper-left {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 42, src/scss/_components/_main.scss */
+  /* line 49, src/scss/_components/_main.scss */
   .main__wrapper-left {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 42, src/scss/_components/_main.scss */
+  /* line 49, src/scss/_components/_main.scss */
   .main__wrapper-left {
     z-index: 1;
     position: relative;
@@ -1347,7 +1368,7 @@ picture {
   }
 }
 
-/* line 58, src/scss/_components/_main.scss */
+/* line 65, src/scss/_components/_main.scss */
 .main__wrapper-right {
   width: 100%;
   max-width: calc(100% - 580px);
@@ -1355,27 +1376,22 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 58, src/scss/_components/_main.scss */
+  /* line 65, src/scss/_components/_main.scss */
   .main__wrapper-right {
     max-width: 50%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 58, src/scss/_components/_main.scss */
+  /* line 65, src/scss/_components/_main.scss */
   .main__wrapper-right {
-    z-index: 0;
-    position: absolute;
+    position: relative;
     max-width: 100%;
-    bottom: 0;
-    right: 0;
-    -webkit-transform: translateX(40%);
-        -ms-transform: translateX(40%);
-            transform: translateX(40%);
+    height: 180px;
   }
 }
 
-/* line 74, src/scss/_components/_main.scss */
+/* line 78, src/scss/_components/_main.scss */
 .main__wrapper-right img {
   z-index: 0;
   position: relative;
@@ -1387,20 +1403,37 @@ picture {
   margin-left: auto;
 }
 
-/* line 87, src/scss/_components/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 78, src/scss/_components/_main.scss */
+  .main__wrapper-right img {
+    position: absolute;
+    top: -20px;
+    right: -45%;
+    max-height: 100%;
+  }
+}
+
+/* line 97, src/scss/_components/_main.scss */
 .main__title, .main__subtitle {
   white-space: nowrap;
   color: #fff;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 87, src/scss/_components/_main.scss */
+  /* line 97, src/scss/_components/_main.scss */
   .main__title, .main__subtitle {
     white-space: normal;
   }
 }
 
-/* line 96, src/scss/_components/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 97, src/scss/_components/_main.scss */
+  .main__title, .main__subtitle {
+    text-align: center;
+  }
+}
+
+/* line 109, src/scss/_components/_main.scss */
 .main__title {
   line-height: 1.4;
   font-weight: bold;
@@ -1408,20 +1441,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 96, src/scss/_components/_main.scss */
+  /* line 109, src/scss/_components/_main.scss */
   .main__title {
     font-size: calc(24px + 47 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 96, src/scss/_components/_main.scss */
+  /* line 109, src/scss/_components/_main.scss */
   .main__title {
     font-size: 71px;
   }
 }
 
-/* line 102, src/scss/_components/_main.scss */
+/* line 115, src/scss/_components/_main.scss */
 .main__subtitle {
   padding-bottom: 38px;
   font-weight: 600;
@@ -1430,28 +1463,28 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 102, src/scss/_components/_main.scss */
+  /* line 115, src/scss/_components/_main.scss */
   .main__subtitle {
     padding-bottom: calc(20px + 18 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 102, src/scss/_components/_main.scss */
+  /* line 115, src/scss/_components/_main.scss */
   .main__subtitle {
     padding-bottom: 38px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 102, src/scss/_components/_main.scss */
+  /* line 115, src/scss/_components/_main.scss */
   .main__subtitle {
     font-size: calc(16px + 16 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 102, src/scss/_components/_main.scss */
+  /* line 115, src/scss/_components/_main.scss */
   .main__subtitle {
     font-size: 32px;
   }
