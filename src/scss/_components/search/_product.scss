@@ -1,12 +1,37 @@
 // PRODUCT :: START
 
 .product {
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
   &__wrapper {
     display: flex;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include respond(max-small) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      @include respond(medium) {
+        padding-right: 15px;
+      }
+    }
+
+    &-right {
+      @include respond(medium) {
+        padding-left: 15px;
+      }
     }
   }
 
@@ -18,13 +43,18 @@
 
     &-head {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       padding-bottom: 41px;
 
       p {
+        white-space: nowrap;
         font-size: 36px;
         font-weight: 600;
+        @include respond(max-small) {
+          font-size: 30px;
+        }
       }
 
       span {
@@ -35,9 +65,15 @@
         color: #f98911;
         font-size: 18px;
         font-weight: 600;
+        @include respond(max-small) {
+          font-size: 16px;
+        }
 
         i {
           margin-right: 18px;
+          @include respond(max-small) {
+            margin-right: 10px;
+          }
         }
       }
     }
@@ -47,10 +83,18 @@
       align-items: flex-start;
       height: 310px;
       margin-bottom: 48px;
+      @include respond(max-extra-small) {
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 30px;
+      }
 
       > div {
         width: 50%;
         height: 100%;
+        @include respond(max-extra-small) {
+          width: 100%;
+        }
 
         &:nth-of-type(2) {
           display: flex;
@@ -64,6 +108,11 @@
           display: block;
           max-width: 100%;
           max-height: 100%;
+          @include respond(max-extra-small) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+          }
         }
       }
     }
@@ -79,6 +128,12 @@
         a {
           color: #d72d42;
           font-weight: bold;
+          @include transition(color);
+
+          &:hover {
+            color: #0a1723;
+            @include transition(color);
+          }
         }
       }
     }
@@ -115,6 +170,9 @@
         line-height: 1;
         font-size: 24px;
         font-weight: 600;
+        @include respond(max-small) {
+          font-size: 20px;
+        }
       }
 
       p,
@@ -127,6 +185,9 @@
     &-price {
       font-size: 48px;
       font-weight: bold;
+      @include respond(max-small) {
+        font-size: 40px;
+      }
     }
 
     &-desc {
@@ -174,6 +235,7 @@
       border-radius: 5px;
       background-color: #4f6a7a;
       color: $c-white;
+      text-align: center;
       font-size: 14px;
       font-weight: 500;
       @include transition(background-color);

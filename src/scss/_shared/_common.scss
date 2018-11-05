@@ -15,6 +15,10 @@
     height: 1px;
     margin-top: 150px;
     margin-bottom: 176px;
+    @include respond(max-small) {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
   }
 }
 // line :: end

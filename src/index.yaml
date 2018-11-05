@@ -9,7 +9,7 @@ PageList:
   ready: 90
 - file: search.html
   titleName: Search
-  ready: 1
+  ready: 30
 - file: 404.html
   titleName: 404
   ready: 90
