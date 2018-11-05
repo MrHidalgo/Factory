@@ -31,6 +31,7 @@ gulp.task('vendorStyle', function() {
     .src(files)
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(order([
+          'reset.css',
           'normalize.css',
           '*'
       ]))
