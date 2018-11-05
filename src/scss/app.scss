@@ -44,8 +44,10 @@
 @import "_components/header";
 @import "_components/footer";
 
-@import "_components/main";
-@import "_components/info";
+@import "_components/homepage/main";
+@import "_components/homepage/info";
 
-@import "_components/contacts";
+@import "_components/contacts/contacts";
 @import "_components/notFound";
+
+@import "_components/search/product";

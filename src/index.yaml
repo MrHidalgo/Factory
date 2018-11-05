@@ -3,10 +3,13 @@ ProjectTitle: HP Factory
 PageList:
 - file: index.html
   titleName: Home
-  ready: 80
+  ready: 90
 - file: contacts.html
   titleName: Contacts
-  ready: 80
+  ready: 90
+- file: search.html
+  titleName: Search
+  ready: 1
 - file: 404.html
   titleName: 404
-  ready: 80
+  ready: 90

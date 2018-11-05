@@ -9,6 +9,13 @@
   margin-right: auto;
   margin-bottom: 100px;
   background-color: rgba(#0a1723, 0.3);
+
+  .search-page & {
+    max-width: 1129px;
+    height: 1px;
+    margin-top: 150px;
+    margin-bottom: 176px;
+  }
 }
 // line :: end
 
