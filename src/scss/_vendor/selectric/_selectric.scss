@@ -75,6 +75,7 @@ $selectric-font-size:       16px !default;                                      
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0;
     padding: 0 27px 0;
     font-size: $selectric-font-size;
     line-height: $selectric-inner-height;
@@ -96,11 +97,15 @@ $selectric-font-size:       16px !default;                                      
     border-bottom: 5px solid #bbc8d3;
     color: $selectric-secondary-color;
     text-align: center;
-    font: 0/0 a;
-    *font: 20px/#{$selectric-inner-height} Lucida Sans Unicode, Arial Unicode MS, Arial;
+    //font: 0/0 a;
+    //*font: 20px/#{$selectric-inner-height} Lucida Sans Unicode, Arial Unicode MS, Arial;
     @include transition(background-color, border-color);
 
     &:after {
+      display: none;
+    }
+
+    &:before {
       content: "↓";
       position: absolute;
       display: flex;
@@ -267,15 +272,15 @@ $selectric-font-size:       16px !default;                                      
       border-bottom: 0;
     }
 
-    //&.selected {
-    //  background: #E0E0E0;
-    //  color: #444;
-    //}
+    &.selected {
+      background: #e4eaef;
+      color: #4d5964;
+    }
 
-    //&.highlighted {
-    //  background: #D0D0D0;
-    //  color: #444;
-    //}
+    &.highlighted {
+      background: #e4eaef;
+      color: #4d5964;
+    }
 
     &:hover {
       background: #e4eaef;
