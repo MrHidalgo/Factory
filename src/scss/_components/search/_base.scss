@@ -4,7 +4,12 @@
   overflow: hidden;
   position: relative;
 
-  .c-grid {}
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
 
   &__bg {
     z-index: 0;
@@ -37,10 +42,16 @@
   &__row {
     &-0 {
       margin-top: 166px;
+      @include respond(max-small) {
+        margin-top: 100px;
+      }
     }
 
     &-1 {
       padding-bottom: 60px;
+      @include respond(max-small) {
+        padding-bottom: 30px;
+      }
     }
   }
 
@@ -52,6 +63,7 @@
       height: 54px;
       padding: 0 15px;
       margin-right: 14px;
+      margin-bottom: 5px;
       border-radius: 5px;
       background-color: #f3f6f9;
       color: #4d5964;
@@ -80,10 +92,17 @@
   &__title {
     display: flex;
     align-items: center;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
 
     &-left {
       width: 100%;
       max-width: calc(100% - 375px);
+      @include respond(max-small) {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
     }
 
     &-right {
@@ -91,18 +110,32 @@
       align-items: center;
       justify-content: flex-end;
       width: 375px;
+      @include respond(max-small) {
+        width: 100%;
+      }
     }
 
     p {
       padding-bottom: 26px;
       line-height: 1;
       font-size: 36px;
+      @include respond(max-extra-small) {
+        margin-top: 30px;
+        line-height: 1.4;
+        font-size: 30px;
+      }
     }
 
     hr {
       height: 1px;
       border: none;
       background-color: #cdd7df;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -122,6 +155,9 @@
             color: #d72d42;
             font-size: 18px;
             font-weight: 500;
+            @include respond(max-extra-small) {
+              font-size: 16px;
+            }
           }
         }
 
@@ -129,6 +165,9 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          @include respond(max-large) {
+            flex-wrap: wrap;
+          }
 
           a {
             display: inline-flex;
@@ -143,6 +182,9 @@
             font-size: 24px;
             font-weight: 600;
             @include transition(border-color, color);
+            @include respond(max-large) {
+              margin-bottom: 5px;
+            }
 
             &:first-of-type {
               border-color: #0a1723;
@@ -172,6 +214,9 @@
             @include respond(max-small) {
               font-size: 16px;
             }
+            @include respond(max-large) {
+              padding-top: 22px;
+            }
 
             i {
               margin-right: 18px;
@@ -187,16 +232,27 @@
     &-body {
       display: flex;
       align-items: flex-end;
+      @include respond(max-medium) {
+        flex-wrap: wrap;
+      }
 
       > div {
         &:nth-of-type(1) {
           width: 441px;
+          @include respond(max-medium) {
+            width: 100%;
+          }
 
           img {
             display: block;
             max-width: 100%;
             max-height: 100%;
             margin-left: -55px;
+            @include respond(max-medium) {
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 30px;
+            }
           }
         }
         &:nth-of-type(2) {
@@ -205,6 +261,9 @@
           align-items: flex-end;
           width: 100%;
           max-width: calc(100% - 441px);
+          @include respond(max-medium) {
+            max-width: 100%;
+          }
         }
       }
 
@@ -226,12 +285,19 @@
         padding: 0 25px;
         height: 42px;
         margin-right: 12px;
+        margin-bottom: 5px;
         border-radius: 5px;
         background-color: #4f6a7a;
         text-align: center;
         font-size: 14px;
         font-weight: 500;
         @include transition(background-color, color);
+        @include respond(max-large) {
+          display: flex;
+          margin: 0;
+          margin-bottom: 5px;
+          margin-left: auto;
+        }
 
         &:first-of-type {
           background-color: #95a6b2;
@@ -299,15 +365,29 @@
 
     ul {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-around;
+      @include respond(max-small) {
+        flex-wrap: wrap;
+      }
 
       li {
         cursor: pointer;
         display: flex;
         align-items: center;
         padding-bottom: 40px;
+        @include respond(max-small) {
+          width: calc(50% - 20px);
+        }
+        @include respond(max-extra-small) {
+          width: 100%;
+        }
+
+        &.base__list-line {
+          @include respond(max-small) {
+            display: none;
+          }
+        }
 
         &:hover {
           img {
@@ -387,6 +467,9 @@
       flex-direction: column;
       align-items: flex-end;
       width: 100%;
+      @include respond(max-extra-small) {
+        flex-wrap: wrap;
+      }
 
       &:last-of-type {
         display: flex;
@@ -403,6 +486,9 @@
         line-height: 1;
         font-size: 72px;
         font-weight: bold;
+        @include respond(max-extra-small) {
+          font-size: 50px;
+        }
 
         span {
           margin-right: 29px;
@@ -410,6 +496,9 @@
           color: #99aab3;
           font-size: 24px;
           font-weight: normal;
+          @include respond(max-extra-small) {
+            font-size: 20px;
+          }
         }
       }
 
@@ -421,8 +510,14 @@
         height: 50px;
         margin-right: 16px;
         border-radius: 2em;
+        text-align: center;
         font-size: 18px;
         font-weight: 500;
+        @include respond(max-extra-small) {
+          display: flex;
+          margin: 0;
+          margin-bottom: 5px;
+        }
 
         &:last-of-type {
           margin-right: 0;
@@ -496,6 +591,9 @@
       color: #55636e;
       font-size: 14px;
       font-weight: normal;
+      @include respond(max-extra-small) {
+        font-size: 12px;
+      }
     }
 
     td {
@@ -507,15 +605,24 @@
         text-align: left;
         font-size: 16px;
         font-weight: normal;
+        @include respond(max-extra-small) {
+          font-size: 12px;
+        }
       }
       &:nth-of-type(2),
       &:nth-of-type(3) {
         color: #0a1723;
         font-size: 20px;
+        @include respond(max-extra-small) {
+          font-size: 12px;
+        }
       }
       &:last-of-type {
         font-size: 24px;
         font-weight: bold;
+        @include respond(max-extra-small) {
+          font-size: 14px;
+        }
       }
 
       &.orange {
@@ -528,6 +635,9 @@
       img {
         margin-right: 16px;
         vertical-align: middle;
+        @include respond(max-extra-small) {
+          display: none;
+        }
       }
     }
   }
