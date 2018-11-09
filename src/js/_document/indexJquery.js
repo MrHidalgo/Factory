@@ -108,6 +108,29 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
+  const initDropDownLevel1 = () => {
+    $('[navdrop-js]').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      if(_window.width() < 768) {
+        elem.toggleClass('is-drop');
+        elem.siblings('.nav__link-dropdown').slideToggle('300');
+      }
+    });
+    $('[navsubdrop-js]').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      if(_window.width() < 768) {
+        elem.toggleClass('is-subdrop');
+        elem.siblings('.nav__link-subdropdown').slideToggle('300');
+      }
+    });
+  };
+
+
 
   /**
    * @description Init all method
@@ -123,6 +146,7 @@ $(document).ready((ev) => {
     initMap();
     initFocusFormElem();
     initSelectric();
+    initDropDownLevel1();
   };
   initJquery();
 });

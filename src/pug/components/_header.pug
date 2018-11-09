@@ -6,9 +6,12 @@ header#header.header
       .header__wrapper-left
         +logotype('header', '', 'img-logo', 'png')
 
-        +hamburger()
+        +hamburgerCustom()
 
       .header__wrapper-right(mobile-block-js)
+        .header__wrapper-title
+          p!= "Menu główne"
+
         +navIconPNG('header', dataObj.navHeader)
 
 // HEADER :: END

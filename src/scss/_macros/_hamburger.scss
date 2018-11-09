@@ -1,0 +1,75 @@
+// HAMBURGER :: START
+
+.c-hamburger {
+  cursor: pointer;
+  display: none;
+  @include respond(max-large) {
+    display: flex;
+  }
+
+  &.is-active {
+    @include respond(max-large) {
+      z-index: 1000;
+      position: fixed;
+      right: 15px;
+    }
+
+    .c-hamburger__inner {
+      background-color: #999fa5;
+      @include transition(background-color);
+
+      &:after,
+      &:before {
+        background-color: #999fa5;
+        @include transition(transform, background-color);
+      }
+      &:before {
+        transform: translateX(-4px);
+      }
+      &:after {
+        transform: translateX(-8px);
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 20px;
+    height: 17px;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #0a1723;
+    @include transition(background-color);
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #0a1723;
+      @include transition(transform, background-color);
+    }
+
+    &:before {
+      bottom: -7px;
+      transform: translateX(0);
+    }
+
+    &:after {
+      bottom: -14px;
+      transform: translateX(0);
+    }
+  }
+}
+
+// HAMBURGER :: END

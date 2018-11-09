@@ -44,7 +44,30 @@ mixin navIconPNG(classMod, arrData)
             href!= arrData[idx].href
             title=""
             class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
+            navdrop-js!= (idx === 2) ? 'navdrop-js':''
           )
             .nav__link-icon
               i.icon-png(class!= arrData[idx].icon)
             span.nav__link-text!= arrData[idx].name
+
+          if(idx === 2)
+            .nav__link-dropdown
+              ul
+                li
+                  a(href="#" class="" title="" navsubdrop-js)!= "Marki"
+                  .nav__link-subdropdown
+                    ul
+                      li
+                        a(href="#" class="" title="")!= "Magnaflow"
+                      li
+                        a(href="#" class="" title="")!= "Magnaflow"
+                li
+                  a(href="#" class="" title="")!= "Marki"
+                li
+                  a(href="#" class="" title="" navsubdrop-js)!= "Marki"
+                  .nav__link-subdropdown
+                    ul
+                      li
+                        a(href="#" class="" title="")!= "Magnaflow"
+                      li
+                        a(href="#" class="" title="")!= "Magnaflow"

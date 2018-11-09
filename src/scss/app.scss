@@ -7,7 +7,7 @@
 ///
 /// VENDOR
 /// ===============
-@import "_vendor/hamburger/_hamburgers";
+//@import "_vendor/hamburger/_hamburgers";
 @import "_vendor/selectric/_selectric";
 ///
 /// GENERATED
@@ -34,6 +34,7 @@
 /// ===============
 @import "_macros/logotype";
 @import "_macros/nav";
+@import "_macros/hamburger";
 //@import "_macros/title";
 //@import "_macros/btn";
 //@import "_macros/modal";
