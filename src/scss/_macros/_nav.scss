@@ -115,6 +115,9 @@
     &-dropdown {
       display: none;
       margin-left: 46px;
+      @include respond(extra-large) {
+        display: none !important;
+      }
 
       > ul {
         > li {
@@ -175,6 +178,9 @@
     &-subdropdown {
       display: none;
       margin-left: 21px;
+      @include respond(extra-large) {
+        display: none !important;
+      }
 
       > ul {
         > li {

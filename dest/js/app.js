@@ -236,6 +236,44 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initProductHeadBtn = function initProductHeadBtn() {
+    $('[product-head-js]').on('click', function (ev) {
+      $('[product-head-js]').removeClass("is-active");
+      $(ev.currentTarget).addClass("is-active");
+    });
+    $('[product-js]').on('click', function (ev) {
+      $('[product-js]').removeClass("is-active");
+      $(ev.currentTarget).addClass("is-active");
+    });
+  };
+
+  /**
+   *
+   */
+  var initCollapseSearch = function initCollapseSearch() {
+    var collapseInit = function collapseInit(className, parentName, bodyName) {
+      $(className).on('click', function (ev) {
+        var elem = $(ev.currentTarget),
+            parentElem = elem.closest(parentName),
+            bodyElem = parentElem.find(bodyName);
+
+        if (parentElem.hasClass("is-open")) {
+          parentElem.removeClass('is-open');
+          bodyElem.slideUp(300);
+        } else {
+          parentElem.addClass('is-open');
+          bodyElem.slideDown(300);
+        }
+      });
+    };
+
+    collapseInit('.base__collapse-head', '.base__collapse-wrapper', '.base__collapse-body');
+    collapseInit('.product__collapse-head', '.product__collapse-wrapper', '.product__collapse-body');
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -250,6 +288,8 @@ $(document).ready(function (ev) {
     initFocusFormElem();
     initSelectric();
     initDropDownLevel1();
+    initProductHeadBtn();
+    initCollapseSearch();
   };
   initJquery();
 });

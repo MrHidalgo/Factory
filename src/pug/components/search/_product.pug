@@ -5,6 +5,13 @@ section#product.product
     .product__wrapper
       .product__wrapper-left
         .product__box
+          .product__box-mobile
+            div
+              p!= "Wybierz wersję produktu:"
+            div
+              a.is-active(href="#" class="" title="" product-js)!= "PowerControl"
+              a(href="#" class="" title="" product-js)!= "PowerControl X"
+
           .product__box-head
             p!= "PedalBox"
             span
@@ -14,41 +21,65 @@ section#product.product
           .product__box-main
             div
               img(src="./img/img-product-0.png" srcset="./img/img-product-0@2x.png 2x" alt="" title="")
+
+              p.product__box-badge
+                i.icon-png.product-head
+                != "Bez utraty gwarancji"
             div
               p.product__box-price!= "749,-"
               p.product__box-desc!= "cena brutto"
               a.product__box-btn(href="#" class="" title="")!= "Kup teraz"
 
-          .product__box-body
-            p!= "Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie s prawdź, czy opracowaliśmy  wersję dla Twojego pojazdu! <a href='#'>Czytaj więcej...</a>"
-
-          .product__box-footer
-            ul
-              li
-                div
-                  img(src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title="")
-                div
-                  h3!= "4 programy do wyboru"
-                  p!= "Programy Sport, Sport Plus oraz City."
-                  span!= "Dodatkowo czwarty program to program seryjny."
-              li
-                div
-                  img(src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title="")
-                div
-                  h3!= "4 programy do wyboru"
-                  p!= "Programy Sport, Sport Plus oraz City."
-                  span!= "Dodatkowo czwarty program to program seryjny."
-              li
-                div
-                  img(src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title="")
-                div
-                  h3!= "4 programy do wyboru"
-                  p!= "Programy Sport, Sport Plus oraz City."
-                  span!= "Dodatkowo czwarty program to program seryjny."
-              li
-                div
-                div
+          .product__collapse
+            .product__collapse-wrapper.product__collapse-wrapper--description
+              .product__collapse-head
+                p!= "Opis produktu"
+                span!= "↓"
+              .product__collapse-body
+                .product__box-body
+                  p!= "Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie s prawdź, czy opracowaliśmy  wersję dla Twojego pojazdu! <a href='#'>Czytaj więcej...</a>"
                   a.product__box-link(href="#" class="" title="")!= "Kliknij, aby dowiedzieć się więcej"
+
+            .product__collapse-wrapper.product__collapse-wrapper--list.is-open
+              .product__collapse-head
+                p!= "Cechy produktu"
+                span!= "↓"
+              .product__collapse-body(style="display: block;")
+                .product__box-footer
+                  ul
+                    li
+                      div
+                        img(src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title="")
+                      div
+                        h3!= "4 programy do wyboru"
+                        p!= "Programy Sport, Sport Plus oraz City."
+                        span!= "Dodatkowo czwarty program to program seryjny."
+                    li
+                      div
+                        img(src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title="")
+                      div
+                        h3!= "4 programy do wyboru"
+                        p!= "Programy Sport, Sport Plus oraz City."
+                        span!= "Dodatkowo czwarty program to program seryjny."
+                    li
+                      div
+                        img(src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title="")
+                      div
+                        h3!= "4 programy do wyboru"
+                        p!= "Programy Sport, Sport Plus oraz City."
+                        span!= "Dodatkowo czwarty program to program seryjny."
+                    li
+                      div
+                      div
+                        a.product__box-link(href="#" class="" title="")!= "Kliknij, aby dowiedzieć się więcej"
+
+          .base__price
+            hr
+            div
+              p!= "<span>cena brutto</span>2099,-"
+            div
+              a.base__box-link(href="#" class="" title="")!= "Umów sie na montaż ze strojeniem na hamowni"
+              a.base__box-btn(href="#" class="" title="")!= "Kup teraz"
 
       .product__wrapper-right
         .product__box

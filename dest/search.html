@@ -110,11 +110,15 @@
       <!-- BASE :: START-->
       <section class="base" id="base">
         <div class="base__bg"></div>
-        <div class="c-grid">
+        <div class="c-grid c-grid--0">
           <div class="base__wrapper">
             <div class="base__row base__row-0">
-              <div class="base__pagination"><a class="base__pagination-btn" href="#" title="">← Wróć do strony głównej</a><a class="base__pagination-btn" href="#" title="">Zmień wybór</a></div>
+              <div class="base__pagination"><a class="base__pagination-btn" href="#" title="">← Wróć <span>do strony głównej</span></a><a class="base__pagination-btn" href="#" title="">Zmień wybór</a></div>
             </div>
+          </div>
+        </div>
+        <div class="c-grid c-grid--1">
+          <div class="base__wrapper">
             <div class="base__row base__row-1">
               <div class="base__title">
                 <div class="base__title-left">
@@ -124,6 +128,10 @@
                 <div class="base__title-right"><img src="./img/img-base-title.png" srcset="./img/img-base-title@2x.png 2x" alt="" title=""></div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="c-grid c-grid--2">
+          <div class="base__wrapper">
             <div class="base__row base__row-2">
               <div class="base__box">
                 <div class="base__box-head">
@@ -131,13 +139,18 @@
                     <p>Wybierz wersję produktu:</p>
                   </div>
                   <div>
-                    <div><a href="#" title="">PowerControl</a><a href="#" title="">PowerControl X</a></div>
+                    <div><a class="is-active" href="#" title="" product-head-js>PowerControl</a><a href="#" title="" product-head-js>PowerControl X</a></div>
                     <p><i class="icon-png product-head"></i>Bez utraty gwarancji
                     </p>
                   </div>
                 </div>
                 <div class="base__box-body">
-                  <div><img src="./img/img-base-main.png" srcset="./img/img-base-main@2x.png 2x" alt="" title=""></div>
+                  <div><img src="./img/img-base-main.png" srcset="./img/img-base-main@2x.png 2x" alt="" title="">
+                    <div class="base__box-body--badge">
+                      <p><i class="icon-png product-head"></i>Bez utraty gwarancji
+                      </p>
+                    </div>
+                  </div>
                   <div>
                     <div class="base__table">
                       <table>
@@ -153,16 +166,22 @@
                           <tr>
                             <td><img src="./img/img-base-table-0.png" srcset="./img/img-base-table-0@2x.png 2x" alt="" title="">Moc silnika
                             </td>
-                            <td>106 KM</td>
-                            <td>136 KM</td>
-                            <td class="orange">+31 KM</td>
+                            <td>106 KM<span>Dane seryjne</span>
+                            </td>
+                            <td>136 KM<span>Dane po tuningu</span>
+                            </td>
+                            <td class="orange">+31 KM<span>Przyrost</span>
+                            </td>
                           </tr>
                           <tr>
                             <td><img src="./img/img-base-table-1.png" srcset="./img/img-base-table-1@2x.png 2x" alt="" title="">Moment obrotowy
                             </td>
-                            <td>255 KM</td>
-                            <td>290 KM</td>
-                            <td class="red">+35 Nm</td>
+                            <td>255 KM<span>Dane seryjne</span>
+                            </td>
+                            <td>290 KM<span>Dane po tuningu</span>
+                            </td>
+                            <td class="red">+35 Nm<span>Przyrost</span>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
@@ -176,66 +195,87 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="c-grid c-grid--3">
+          <div class="base__wrapper">
             <div class="base__row base__row-3">
-              <div class="base__list">
-                <ul>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+              <div class="base__collapse">
+                <div class="base__collapse-wrapper base__collapse-wrapper--description is-open">
+                  <div class="base__collapse-head">
+                    <p>Opis produktu</p><span>↓</span>
+                  </div>
+                  <div class="base__collapse-body" style="display: block;">
+                    <p class="base__collapse-desc">Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie sprawdź, czy opracowaliśmy  wersję dla Twojego pojazdu!</p><a class="base__collapse-btn" href="#" title="">Kliknij, aby dowiedzieć się więcej</a>
+                  </div>
+                </div>
+                <div class="base__collapse-wrapper base__collapse-wrapper--list">
+                  <div class="base__collapse-head">
+                    <p>Cechy produktu</p><span>↓</span>
+                  </div>
+                  <div class="base__collapse-body">
+                    <div class="base__list">
+                      <ul>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                        <li class="base__list-line"><i></i></li>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                        <li class="base__list-line"><i></i></li>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                        <li class="base__list-line"><i></i></li>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                        <li class="base__list-line"><i></i></li>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                        <li class="base__list-line"><i></i></li>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                        <li class="base__list-line"><i></i></li>
+                        <li>
+                          <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
+                          <div>
+                            <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                  </li>
-                  <li class="base__list-line"><i></i></li>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                  <li class="base__list-line"><i></i></li>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                  <li class="base__list-line"><i></i></li>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                  <li class="base__list-line"><i></i></li>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                  <li class="base__list-line"><i></i></li>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                  <li class="base__list-line"><i></i></li>
-                  <li>
-                    <div><img src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title=""><img src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title=""></div>
-                    <div>
-                      <p>Nie tracisz gwarancji</p><span>modyfikacje bez utraty gwarancji</span>
-                    </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="base__row base__row-4">
@@ -258,47 +298,79 @@
           <div class="product__wrapper">
             <div class="product__wrapper-left">
               <div class="product__box">
+                <div class="product__box-mobile">
+                  <div>
+                    <p>Wybierz wersję produktu:</p>
+                  </div>
+                  <div><a class="is-active" href="#" title="" product-js>PowerControl</a><a href="#" title="" product-js>PowerControl X</a></div>
+                </div>
                 <div class="product__box-head">
                   <p>PedalBox</p><span><i class="icon-png product-head"></i>Bez utraty gwarancji</span>
                 </div>
                 <div class="product__box-main">
-                  <div><img src="./img/img-product-0.png" srcset="./img/img-product-0@2x.png 2x" alt="" title=""></div>
+                  <div><img src="./img/img-product-0.png" srcset="./img/img-product-0@2x.png 2x" alt="" title="">
+                    <p class="product__box-badge"><i class="icon-png product-head"></i>Bez utraty gwarancji
+                    </p>
+                  </div>
                   <div>
                     <p class="product__box-price">749,-</p>
                     <p class="product__box-desc">cena brutto</p><a class="product__box-btn" href="#" title="">Kup teraz</a>
                   </div>
                 </div>
-                <div class="product__box-body">
-                  <p>Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie s prawdź, czy opracowaliśmy  wersję dla Twojego pojazdu! <a href='#'>Czytaj więcej...</a></p>
+                <div class="product__collapse">
+                  <div class="product__collapse-wrapper product__collapse-wrapper--description">
+                    <div class="product__collapse-head">
+                      <p>Opis produktu</p><span>↓</span>
+                    </div>
+                    <div class="product__collapse-body">
+                      <div class="product__box-body">
+                        <p>Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie s prawdź, czy opracowaliśmy  wersję dla Twojego pojazdu! <a href='#'>Czytaj więcej...</a></p><a class="product__box-link" href="#" title="">Kliknij, aby dowiedzieć się więcej</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__collapse-wrapper product__collapse-wrapper--list is-open">
+                    <div class="product__collapse-head">
+                      <p>Cechy produktu</p><span>↓</span>
+                    </div>
+                    <div class="product__collapse-body" style="display: block;">
+                      <div class="product__box-footer">
+                        <ul>
+                          <li>
+                            <div><img src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title=""></div>
+                            <div>
+                              <h3>4 programy do wyboru</h3>
+                              <p>Programy Sport, Sport Plus oraz City.</p><span>Dodatkowo czwarty program to program seryjny.</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div><img src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title=""></div>
+                            <div>
+                              <h3>4 programy do wyboru</h3>
+                              <p>Programy Sport, Sport Plus oraz City.</p><span>Dodatkowo czwarty program to program seryjny.</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div><img src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title=""></div>
+                            <div>
+                              <h3>4 programy do wyboru</h3>
+                              <p>Programy Sport, Sport Plus oraz City.</p><span>Dodatkowo czwarty program to program seryjny.</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div></div>
+                            <div><a class="product__box-link" href="#" title="">Kliknij, aby dowiedzieć się więcej</a></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="product__box-footer">
-                  <ul>
-                    <li>
-                      <div><img src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title=""></div>
-                      <div>
-                        <h3>4 programy do wyboru</h3>
-                        <p>Programy Sport, Sport Plus oraz City.</p><span>Dodatkowo czwarty program to program seryjny.</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title=""></div>
-                      <div>
-                        <h3>4 programy do wyboru</h3>
-                        <p>Programy Sport, Sport Plus oraz City.</p><span>Dodatkowo czwarty program to program seryjny.</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="./img/img-product-list.png" srcset="./img/img-product-list@2x.png 2x" alt="" title=""></div>
-                      <div>
-                        <h3>4 programy do wyboru</h3>
-                        <p>Programy Sport, Sport Plus oraz City.</p><span>Dodatkowo czwarty program to program seryjny.</span>
-                      </div>
-                    </li>
-                    <li>
-                      <div></div>
-                      <div><a class="product__box-link" href="#" title="">Kliknij, aby dowiedzieć się więcej</a></div>
-                    </li>
-                  </ul>
+                <div class="base__price">
+                  <hr>
+                  <div>
+                    <p><span>cena brutto</span>2099,-</p>
+                  </div>
+                  <div><a class="base__box-link" href="#" title="">Umów sie na montaż ze strojeniem na hamowni</a><a class="base__box-btn" href="#" title="">Kup teraz</a></div>
                 </div>
               </div>
             </div>

@@ -3,13 +3,15 @@
 section#base.base
   .base__bg
 
-  .c-grid
+  .c-grid.c-grid--0
     .base__wrapper
       .base__row.base__row-0
         .base__pagination
-          a.base__pagination-btn(href="#" class="" title="")!= "← Wróć do strony głównej"
+          a.base__pagination-btn(href="#" class="" title="")!= "← Wróć <span>do strony głównej</span>"
           a.base__pagination-btn(href="#" class="" title="")!= "Zmień wybór"
 
+  .c-grid.c-grid--1
+    .base__wrapper
       .base__row.base__row-1
         .base__title
           .base__title-left
@@ -18,16 +20,18 @@ section#base.base
           .base__title-right
             img(src="./img/img-base-title.png" srcset="./img/img-base-title@2x.png 2x" alt="" title="")
 
-
+  .c-grid.c-grid--2
+    .base__wrapper
       .base__row.base__row-2
         .base__box
           .base__box-head
             div
               p!= "Wybierz wersję produktu:"
+
             div
               div
-                a(href="#" class="" title="")!= "PowerControl"
-                a(href="#" class="" title="")!= "PowerControl X"
+                a.is-active(href="#" class="" title="" product-head-js)!= "PowerControl"
+                a(href="#" class="" title="" product-head-js)!= "PowerControl X"
 
               p
                 i.icon-png.product-head
@@ -36,6 +40,11 @@ section#base.base
           .base__box-body
             div
               img(src="./img/img-base-main.png" srcset="./img/img-base-main@2x.png 2x" alt="" title="")
+
+              .base__box-body--badge
+                p
+                  i.icon-png.product-head
+                  != "Bez utraty gwarancji"
             div
               .base__table
                 table
@@ -50,16 +59,28 @@ section#base.base
                       td
                         img(src="./img/img-base-table-0.png" srcset="./img/img-base-table-0@2x.png 2x" alt="" title="")
                         != "Moc silnika"
-                      td!= "106 KM"
-                      td!= "136 KM"
-                      td.orange!= "+31 KM"
+                      td
+                        != "106 KM"
+                        span!= "Dane seryjne"
+                      td
+                        != "136 KM"
+                        span!= "Dane po tuningu"
+                      td.orange
+                        != "+31 KM"
+                        span!= "Przyrost"
                     tr
                       td
                         img(src="./img/img-base-table-1.png" srcset="./img/img-base-table-1@2x.png 2x" alt="" title="")
                         != "Moment obrotowy"
-                      td!= "255 KM"
-                      td!= "290 KM"
-                      td.red!= "+35 Nm"
+                      td
+                        != "255 KM"
+                        span!= "Dane seryjne"
+                      td
+                        != "290 KM"
+                        span!= "Dane po tuningu"
+                      td.red
+                        != "+35 Nm"
+                        span!= "Przyrost"
 
               hr
               div
@@ -69,79 +90,95 @@ section#base.base
           .base__box-footer
             p!= "Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie sprawdź, czy opracowaliśmy  wersję dla Twojego pojazdu! <a href='#'>Czytaj więcej...</a>"
 
+  .c-grid.c-grid--3
+    .base__wrapper
       .base__row.base__row-3
-        .base__list
-          ul
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
-            li.base__list-line
-              i
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
-            li.base__list-line
-              i
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
-            li.base__list-line
-              i
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
+        .base__collapse
+          .base__collapse-wrapper.base__collapse-wrapper--description.is-open
+            .base__collapse-head
+              p!= "Opis produktu"
+              span!= "↓"
+            .base__collapse-body(style="display: block;")
+              p.base__collapse-desc!= "Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika. Nie jest to produkt uniwersalny, dlatego koniecznie sprawdź, czy opracowaliśmy  wersję dla Twojego pojazdu!"
+              a.base__collapse-btn(href="#" class="" title="")!= "Kliknij, aby dowiedzieć się więcej"
 
-          ul
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
-            li.base__list-line
-              i
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
-            li.base__list-line
-              i
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
-            li.base__list-line
-              i
-            li
-              div
-                img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
-                img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
-              div
-                p!= "Nie tracisz gwarancji"
-                span!= "modyfikacje bez utraty gwarancji"
+          .base__collapse-wrapper.base__collapse-wrapper--list
+            .base__collapse-head
+              p!= "Cechy produktu"
+              span!= "↓"
+            .base__collapse-body
+              .base__list
+                ul
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+                  li.base__list-line
+                    i
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+                  li.base__list-line
+                    i
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+                  li.base__list-line
+                    i
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+
+                ul
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+                  li.base__list-line
+                    i
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+                  li.base__list-line
+                    i
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
+                  li.base__list-line
+                    i
+                  li
+                    div
+                      img(src="./img/img-base-list.png" srcset="./img/img-base-list@2x.png 2x" alt="" title="")
+                      img(src="./img/img-base-list-h.png" srcset="./img/img-base-list-h@2x.png 2x" alt="" title="")
+                    div
+                      p!= "Nie tracisz gwarancji"
+                      span!= "modyfikacje bez utraty gwarancji"
 
       .base__row.base__row-4
         .base__price

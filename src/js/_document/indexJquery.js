@@ -131,6 +131,46 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
+  const initProductHeadBtn = () => {
+    $('[product-head-js]').on('click', (ev) => {
+      $('[product-head-js]').removeClass("is-active");
+      $(ev.currentTarget).addClass("is-active");
+    });
+    $('[product-js]').on('click', (ev) => {
+      $('[product-js]').removeClass("is-active");
+      $(ev.currentTarget).addClass("is-active");
+    });
+  };
+
+
+  /**
+   *
+   */
+  const initCollapseSearch = () => {
+    const collapseInit = (className, parentName, bodyName) => {
+      $(className).on('click', (ev) => {
+        const elem = $(ev.currentTarget),
+          parentElem = elem.closest(parentName),
+          bodyElem = parentElem.find(bodyName);
+
+        if(parentElem.hasClass("is-open")) {
+          parentElem.removeClass('is-open');
+          bodyElem.slideUp(300);
+        } else {
+          parentElem.addClass('is-open');
+          bodyElem.slideDown(300);
+        }
+      });
+    };
+
+    collapseInit('.base__collapse-head', '.base__collapse-wrapper', '.base__collapse-body');
+    collapseInit('.product__collapse-head', '.product__collapse-wrapper', '.product__collapse-body');
+  };
+
+
 
   /**
    * @description Init all method
@@ -147,6 +187,8 @@ $(document).ready((ev) => {
     initFocusFormElem();
     initSelectric();
     initDropDownLevel1();
+    initProductHeadBtn();
+    initCollapseSearch();
   };
   initJquery();
 });

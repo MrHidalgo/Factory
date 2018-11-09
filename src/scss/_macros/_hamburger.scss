@@ -45,7 +45,7 @@
     width: 100%;
     height: 3px;
     border-radius: 2px;
-    background-color: #0a1723;
+    background-color: #4d5964;
     @include transition(background-color);
 
     &:after,
@@ -56,7 +56,7 @@
       width: 100%;
       height: 3px;
       border-radius: 2px;
-      background-color: #0a1723;
+      background-color: #4d5964;
       @include transition(transform, background-color);
     }
 
