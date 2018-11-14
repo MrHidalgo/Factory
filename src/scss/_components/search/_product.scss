@@ -152,6 +152,10 @@
         white-space: nowrap;
         font-size: 36px;
         font-weight: 600;
+        @include respond(max-large) {
+          width: 100%;
+          padding-bottom: 10px;
+        }
         @include respond(max-small) {
           font-size: 30px;
         }
@@ -449,7 +453,7 @@
     &-body {
       display: none;
       @include respond(medium) {
-        display: block;
+        display: block !important;
       }
       @include respond(max-small) {
         padding: 22px 15px;
