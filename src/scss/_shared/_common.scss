@@ -34,7 +34,7 @@
     align-items: flex-start;
 
     &--select {
-      @include respond(max-extra-small) {
+      @include respond(max-medium) {
         flex-wrap: wrap;
       }
 
@@ -42,6 +42,11 @@
         width: 160px;
         margin-left: 6px;
         margin-right: 6px;
+        @include respond(max-medium) {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 10px;
+        }
         @include respond(max-extra-small) {
           width: 100%;
           margin-left: 0;

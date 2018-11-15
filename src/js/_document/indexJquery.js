@@ -115,7 +115,7 @@ $(document).ready((ev) => {
     $('[navdrop-js]').on('click', (ev) => {
       const elem = $(ev.currentTarget);
 
-      if(_window.width() < 768) {
+      if(_window.width() < 1200) {
         elem.toggleClass('is-drop');
         elem.siblings('.nav__link-dropdown').slideToggle('300');
       }
@@ -123,7 +123,7 @@ $(document).ready((ev) => {
     $('[navsubdrop-js]').on('click', (ev) => {
       const elem = $(ev.currentTarget);
 
-      if(_window.width() < 768) {
+      if(_window.width() < 1200) {
         elem.toggleClass('is-subdrop');
         elem.siblings('.nav__link-subdropdown').slideToggle('300');
       }

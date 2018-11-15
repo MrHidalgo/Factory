@@ -83,6 +83,11 @@ $selectric-font-size:       16px !default;                                      
     height: $selectric-inner-height;
     user-select: none;
     border-bottom: 5px solid #e4eaef;
+    @include respond(max-small) {
+      height: 36px;
+      line-height: 36px;
+      font-size: 14px;
+    }
   }
 
   .button {
@@ -100,6 +105,10 @@ $selectric-font-size:       16px !default;                                      
     //font: 0/0 a;
     //*font: 20px/#{$selectric-inner-height} Lucida Sans Unicode, Arial Unicode MS, Arial;
     @include transition(background-color, border-color);
+    @include respond(max-small) {
+      height: 36px;
+      line-height: 36px;
+    }
 
     &:after {
       display: none;
@@ -151,6 +160,9 @@ $selectric-font-size:       16px !default;                                      
 
   .selectric-items {
     display: block;
+    @include respond(large) {
+      width: 280px !important;
+    }
   }
 }
 

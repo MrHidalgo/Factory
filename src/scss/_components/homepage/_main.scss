@@ -24,9 +24,22 @@
     left: 0;
     width: 100%;
     @include fluid(height, 320px, 1920px, 431px, 581px);
-    background-image: url('../img/img-bg-main.png');
     background-repeat: no-repeat;
     background-position: bottom center;
+    @include respond(wide-medium) {
+      background-image: url('../img/bg-main.svg');
+      background-size: cover;
+    }
+    @include respond(max-wide-small) {
+      background-image: url('../img/img-bg-main.png');
+    }
+    @include respond(max-small) {
+      top: 20px;
+      background-position-x: 40%;
+    }
+    @include respond(large) {
+      top: 60px;
+    }
   }
 
   &__wrapper {
@@ -35,8 +48,12 @@
     display: flex;
     align-items: flex-start;
     @include fluid(padding-top, 320px, 1920px, 50px, 105px);
+    @include respond(max-medium) {
+      align-items: center;
+    }
     @include respond(max-small) {
       flex-wrap: wrap;
+      padding-top: 15px;
     }
 
     &-left {
@@ -67,9 +84,12 @@
         max-width: 100%;
         height: 180px;
       }
+      @include respond(max-extra-small) {
+        height: 160px;
+      }
 
       img {
-        z-index: 0;
+        z-index: -1;
         position: relative;
         top: 15px;
         left: 6px;
@@ -79,9 +99,12 @@
         margin-left: auto;
         @include respond(max-small) {
           position: absolute;
-          top: -20px;
-          right: -45%;
+          top: -15px;
+          right: -140px;
           max-height: 100%;
+        }
+        @include respond(max-extra-small) {
+          max-width: 105%;
         }
       }
     }

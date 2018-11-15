@@ -28,6 +28,9 @@
     align-items: center;
     min-height: 147px;
     @include transition(min-height);
+    @include respond(max-wide-small) {
+      min-height: 100px;
+    }
     @include respond(max-large) {
       min-height: 75px;
     }
