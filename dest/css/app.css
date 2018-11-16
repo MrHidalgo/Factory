@@ -2337,12 +2337,16 @@ picture {
 @media screen and (max-width: 991px) {
   /* line 54, src/scss/_components/homepage/_info.scss */
   .info__box-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 62, src/scss/_components/homepage/_info.scss */
+/* line 63, src/scss/_components/homepage/_info.scss */
 .info__box-title {
   z-index: 1;
   position: absolute;
@@ -2364,14 +2368,14 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 62, src/scss/_components/homepage/_info.scss */
+  /* line 63, src/scss/_components/homepage/_info.scss */
   .info__box-title {
     padding-left: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 62, src/scss/_components/homepage/_info.scss */
+  /* line 63, src/scss/_components/homepage/_info.scss */
   .info__box-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2380,7 +2384,7 @@ picture {
   }
 }
 
-/* line 81, src/scss/_components/homepage/_info.scss */
+/* line 82, src/scss/_components/homepage/_info.scss */
 .info__box-title p,
 .info__box-title span {
   color: #0a1723;
@@ -2388,51 +2392,51 @@ picture {
   font-weight: bold;
 }
 
-/* line 88, src/scss/_components/homepage/_info.scss */
+/* line 89, src/scss/_components/homepage/_info.scss */
 .info__box-title p {
   font-size: 30px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 88, src/scss/_components/homepage/_info.scss */
+  /* line 89, src/scss/_components/homepage/_info.scss */
   .info__box-title p {
     font-size: calc(30px + 13 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 88, src/scss/_components/homepage/_info.scss */
+  /* line 89, src/scss/_components/homepage/_info.scss */
   .info__box-title p {
     font-size: 43px;
   }
 }
 
-/* line 92, src/scss/_components/homepage/_info.scss */
+/* line 93, src/scss/_components/homepage/_info.scss */
 .info__box-title span {
   font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 92, src/scss/_components/homepage/_info.scss */
+  /* line 93, src/scss/_components/homepage/_info.scss */
   .info__box-title span {
     font-size: calc(18px + 12 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 92, src/scss/_components/homepage/_info.scss */
+  /* line 93, src/scss/_components/homepage/_info.scss */
   .info__box-title span {
     font-size: 30px;
   }
 }
 
-/* line 97, src/scss/_components/homepage/_info.scss */
+/* line 98, src/scss/_components/homepage/_info.scss */
 .info__box-img {
   z-index: 0;
   position: relative;
 }
 
-/* line 101, src/scss/_components/homepage/_info.scss */
+/* line 102, src/scss/_components/homepage/_info.scss */
 .info__box-img img {
   display: block;
   max-width: 100%;
@@ -2440,14 +2444,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 101, src/scss/_components/homepage/_info.scss */
+  /* line 102, src/scss/_components/homepage/_info.scss */
   .info__box-img img {
     right: 0;
     margin: 0 auto;
   }
 }
 
-/* line 110, src/scss/_components/homepage/_info.scss */
+/* line 111, src/scss/_components/homepage/_info.scss */
 .info__box-img img:last-of-type {
   opacity: 0;
   z-index: 0;
