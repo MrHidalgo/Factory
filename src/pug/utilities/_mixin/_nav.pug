@@ -18,8 +18,11 @@ mixin nav(classMod, arrData)
           a.nav__link(
             href!= arrData[idx].href
             title=""
-            class!= (idx === 0) ? "is-active nav__link-" + idx: "nav__link-" + idx
+            class!= "nav__link-" + idx
           )!= arrData[idx].name
+        if(idx !== arrData.length - 1)
+          li.nav__item-empty
+            span!= "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;"
 
 mixin navIconFont(classMod, arrData)
   nav.nav(class!= "nav--" + classMod)

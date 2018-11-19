@@ -1,7 +1,50 @@
 // FOOTER :: START
 
 footer#footer.footer
+  .footer__bar
+    .c-grid
+      .footer__wrapper.footer__wrapper-0
+        .footer__wrapper-left
+          a.contact__col.contact__col-0(href="tel:+48221855911")
+            .contact__col-img
+              img(src="./img/img-contacts-0.png" srcset="./img/img-contacts-0@2x.png 2x" alt="" title="")
+            .contact__col-text
+              p!= "+48 22 1855 911"
+              span!= "Dzwoń codziennie w godzinach 10:00-18:00!"
+
+          a.contact__col.contact__col-1(href="mailto:info@hpfactory.pl")
+            .contact__col-img
+              img(src="./img/img-contacts-1.png" srcset="./img/img-contacts-1@2x.png 2x" alt="" title="")
+            .contact__col-text
+              p!= "info@hpfactory.pl"
+              span!= "Pisz codziennie o każdej porze!"
+
+        .footer__wrapper-middle
+          .social
+            ul.social__list
+              li.social__item
+                a.social__link(href="#" class="" title="")
+                  i.icon-png.fb
+              li.social__item
+                a.social__link(href="#" class="" title="")
+                  i.icon-png.yt
+              li.social__item
+                a.social__link(href="#" class="" title="")
+                  i.icon-png.in
+
+        .footer__wrapper-right
+          img(src="./img/img-footer-car.png" srcset="./img/img-footer-car@2x.png 2x" alt="" title="")
+
   .c-grid
-    .footer__wrapper
+    .footer__wrapper.footer__wrapper-1
+      .footer__wrapper-left
+        +nav('footer', dataObj.navFooter)
+
+      .footer__wrapper-right
+        .copyright
+          p!= "Copyright © HP Factory. All rights reserved. Wszelkie prawa zastrzeżone."
+          span!= "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;"
+          +logotype('footer', '', 'img-logo-footer', 'png')
+
 
 // FOOTER :: END

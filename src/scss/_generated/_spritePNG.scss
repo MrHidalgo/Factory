@@ -1,10 +1,19 @@
 $sprite: (
+  fb: (
+    offset-x: -94px,
+    offset-y: -38px,
+    width: 10px,
+    height: 16px,
+    total-width: 110px,
+    total-height: 87px,
+    image: '../img/sprite.png'
+  ),
   icon-nav-0: (
     offset-x: -39px,
     offset-y: -53px,
     width: 31px,
     height: 32px,
-    total-width: 89px,
+    total-width: 110px,
     total-height: 87px,
     image: '../img/sprite.png'
   ),
@@ -13,7 +22,16 @@ $sprite: (
     offset-y: -53px,
     width: 34px,
     height: 34px,
-    total-width: 89px,
+    total-width: 110px,
+    total-height: 87px,
+    image: '../img/sprite.png'
+  ),
+  in: (
+    offset-x: -94px,
+    offset-y: 0px,
+    width: 16px,
+    height: 16px,
+    total-width: 110px,
     total-height: 87px,
     image: '../img/sprite.png'
   ),
@@ -22,7 +40,7 @@ $sprite: (
     offset-y: 0px,
     width: 48px,
     height: 48px,
-    total-width: 89px,
+    total-width: 110px,
     total-height: 87px,
     image: '../img/sprite.png'
   ),
@@ -31,7 +49,16 @@ $sprite: (
     offset-y: 0px,
     width: 36px,
     height: 36px,
-    total-width: 89px,
+    total-width: 110px,
+    total-height: 87px,
+    image: '../img/sprite.png'
+  ),
+  yt: (
+    offset-x: -94px,
+    offset-y: -21px,
+    width: 16px,
+    height: 12px,
+    total-width: 110px,
     total-height: 87px,
     image: '../img/sprite.png'
   ),
@@ -80,15 +107,24 @@ $sprite: (
   }
 }
 
+.fb:before {
+  @include sprite(fb);
+}
 .icon-nav-0:before {
   @include sprite(icon-nav-0);
 }
 .icon-nav-1:before {
   @include sprite(icon-nav-1);
 }
+.in:before {
+  @include sprite(in);
+}
 .label-contact:before {
   @include sprite(label-contact);
 }
 .product-head:before {
   @include sprite(product-head);
+}
+.yt:before {
+  @include sprite(yt);
 }

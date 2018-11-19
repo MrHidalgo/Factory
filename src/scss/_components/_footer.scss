@@ -1,5 +1,41 @@
 // FOOTER :: START
 
-.footer {}
+.footer {
+  &__bar {
+    background-color: #ecf7ff;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
+
+    &-0 {
+      .footer__wrapper-left {
+        display: flex;
+        align-items: center;
+      }
+      .footer__wrapper-middle {}
+      .footer__wrapper-right {
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: (27px * 3);
+
+      .footer__wrapper-left {}
+      .footer__wrapper-right {}
+    }
+  }
+}
 
 // FOOTER :: END

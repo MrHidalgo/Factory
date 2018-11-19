@@ -10,6 +10,12 @@ PageList:
 - file: search.html
   titleName: Search
   ready: 90
+- file: about.html
+  titleName: About
+  ready: 1
+- file: basket.html
+  titleName: Basket
+  ready: 1
 - file: 404.html
   titleName: 404
   ready: 90
