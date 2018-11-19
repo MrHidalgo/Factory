@@ -22,7 +22,7 @@ mixin nav(classMod, arrData)
           )!= arrData[idx].name
         if(idx !== arrData.length - 1)
           li.nav__item-empty
-            span!= "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;"
+            span!= "|"
 
 mixin navIconFont(classMod, arrData)
   nav.nav(class!= "nav--" + classMod)

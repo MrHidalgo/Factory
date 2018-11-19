@@ -3,8 +3,8 @@
 .contact {
   overflow: hidden;
   position: relative;
+  @include fluid(min-height, 320px, 1920px, 431px, 640px);
   @include fluid(padding-top, 320px, 1920px, 50px, 147px);
-  @include fluid(padding-bottom, 320px, 1920px, 100px, 200px);
 
   &__bg {
     overflow: hidden;
@@ -152,6 +152,13 @@
       .footer & {
         padding-bottom: 0;
         padding-right: 60px;
+        @include respond(max-medium) {
+          padding-right: 30px;
+        }
+        @include respond(max-small) {
+          padding-right: 0;
+          padding-bottom: 33px;
+        }
       }
     }
 

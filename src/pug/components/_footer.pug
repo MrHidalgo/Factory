@@ -24,13 +24,13 @@ footer#footer.footer
             ul.social__list
               li.social__item
                 a.social__link(href="#" class="" title="")
-                  i.icon-png.fb
+                  i.icon-font.icon-facebook-logo
               li.social__item
                 a.social__link(href="#" class="" title="")
-                  i.icon-png.yt
+                  i.icon-font.icon-youtube-logo
               li.social__item
                 a.social__link(href="#" class="" title="")
-                  i.icon-png.in
+                  i.icon-font.icon-instagram-logo
 
         .footer__wrapper-right
           img(src="./img/img-footer-car.png" srcset="./img/img-footer-car@2x.png 2x" alt="" title="")
@@ -38,11 +38,23 @@ footer#footer.footer
   .c-grid
     .footer__wrapper.footer__wrapper-1
       .footer__wrapper-left
+        .social
+          ul.social__list
+            li.social__item
+              a.social__link(href="#" class="" title="")
+                i.icon-font.icon-facebook-logo
+            li.social__item
+              a.social__link(href="#" class="" title="")
+                i.icon-font.icon-youtube-logo
+            li.social__item
+              a.social__link(href="#" class="" title="")
+                i.icon-font.icon-instagram-logo
+
         +nav('footer', dataObj.navFooter)
 
       .footer__wrapper-right
         .copyright
-          p!= "Copyright © HP Factory. All rights reserved. Wszelkie prawa zastrzeżone."
+          p!= "Copyright © HP Factory. <span>All rights reserved. Wszelkie prawa zastrzeżone.<span>"
           span!= "&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;"
           +logotype('footer', '', 'img-logo-footer', 'png')
 

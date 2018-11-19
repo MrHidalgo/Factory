@@ -32,15 +32,31 @@
 .social {
   padding-left: 40px;
   padding-right: 40px;
+  @include respond(max-large) {
+    padding-right: 0;
+  }
+  @include respond(max-medium) {
+    padding-left: 30px;
+  }
+  @include respond(max-small) {
+    padding-left: 0;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
+    @include respond(max-small) {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 
   &__item {
     padding-top: 5px;
     padding-bottom: 5px;
+    @include respond(max-small) {
+      padding: 0 5px;
+    }
   }
 
   &__link {
@@ -51,7 +67,13 @@
     height: 38px;
     border-radius: 100%;
     background-color: #434c62;
+    color: #ecf7ff;
+    font-size: 18px;
     @include transition(opacity);
+    @include respond(max-small) {
+      background-color: #b0b6c6;
+      color: $c-white;
+    }
 
     &:hover {
       opacity: 0.9;
@@ -66,11 +88,30 @@
 .copyright {
   display: flex;
   align-items: center;
+  @include respond(max-small) {
+    flex-direction: column-reverse;
+  }
 
   p {
     color: #8d96ae;
     font-size: 12px;
     font-weight: 500;
+    @include respond(max-small) {
+      padding-top: 27px;
+      text-align: center;
+    }
+
+    span {
+      @include respond(max-small) {
+        display: block;
+      }
+    }
+  }
+
+  > span {
+    @include respond(max-small) {
+      display: none;
+    }
   }
 }
 // copyright :: end

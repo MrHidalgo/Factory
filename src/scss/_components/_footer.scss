@@ -3,6 +3,9 @@
 .footer {
   &__bar {
     background-color: #ecf7ff;
+    @include respond(max-small) {
+      padding: 33px 15px;
+    }
   }
 
   &__wrapper {
@@ -15,9 +18,24 @@
       .footer__wrapper-left {
         display: flex;
         align-items: center;
+        @include respond(max-small) {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+        }
       }
-      .footer__wrapper-middle {}
+
+      .footer__wrapper-middle {
+        @include respond(max-small) {
+          display: none;
+        }
+      }
+
       .footer__wrapper-right {
+        @include respond(max-large) {
+          display: none;
+        }
+
         img {
           display: block;
           max-width: 100%;
@@ -31,8 +49,26 @@
       align-items: center;
       justify-content: space-between;
       min-height: (27px * 3);
+      @include respond(max-large) {
+        flex-direction: column;
+        padding-top: 27px;
+        padding-bottom: 27px;
+      }
 
-      .footer__wrapper-left {}
+      .footer__wrapper-left {
+        @include respond(max-large) {
+          padding-bottom: 27px;
+        }
+
+        .social {
+          display: none;
+          @include respond(max-small) {
+            display: block !important;
+            padding-bottom: 27px;
+          }
+        }
+      }
+
       .footer__wrapper-right {}
     }
   }
