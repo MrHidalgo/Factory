@@ -6008,6 +6008,11 @@ section.section {
 }
 
 /* line 4, src/scss/_components/_basket.scss */
+.basket .c-grid {
+  max-width: 958px;
+}
+
+/* line 8, src/scss/_components/_basket.scss */
 .basket__wrapper {
   z-index: 1;
   position: relative;
@@ -6015,16 +6020,114 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 4, src/scss/_components/_basket.scss */
+  /* line 8, src/scss/_components/_basket.scss */
   .basket__wrapper {
     padding-top: calc(31px + 65 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 4, src/scss/_components/_basket.scss */
+  /* line 8, src/scss/_components/_basket.scss */
   .basket__wrapper {
     padding-top: 96px;
+  }
+}
+
+/* line 16, src/scss/_components/_basket.scss */
+.basket__tabs {
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 16, src/scss/_components/_basket.scss */
+  .basket__tabs {
+    display: none;
+  }
+}
+
+/* line 22, src/scss/_components/_basket.scss */
+.basket__tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 29, src/scss/_components/_basket.scss */
+.basket__tabs-item:last-of-type .basket__tabs-link {
+  margin-right: 0;
+}
+
+/* line 35, src/scss/_components/_basket.scss */
+.basket__tabs-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8d96ae;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 14px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 35, src/scss/_components/_basket.scss */
+  .basket__tabs-link {
+    margin-right: calc(15px + 12 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 35, src/scss/_components/_basket.scss */
+  .basket__tabs-link {
+    margin-right: 27px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 35, src/scss/_components/_basket.scss */
+  .basket__tabs-link {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 35, src/scss/_components/_basket.scss */
+  .basket__tabs-link {
+    font-size: 18px;
+  }
+}
+
+/* line 45, src/scss/_components/_basket.scss */
+.basket__tabs-link.is-active {
+  color: #0a1723;
+  font-size: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 45, src/scss/_components/_basket.scss */
+  .basket__tabs-link.is-active {
+    font-size: calc(24px + 6 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 45, src/scss/_components/_basket.scss */
+  .basket__tabs-link.is-active {
+    font-size: 30px;
   }
 }
 
