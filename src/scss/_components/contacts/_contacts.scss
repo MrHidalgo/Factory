@@ -1,14 +1,7 @@
 // CONTACTS :: START
 
 .contact {
-  overflow: hidden;
-  position: relative;
-  @include fluid(min-height, 320px, 1920px, 431px, 640px);
-  @include fluid(padding-top, 320px, 1920px, 50px, 147px);
-
   .c-grid {
-    z-index: 1;
-    position: relative;
     max-width: 1342px;
     @include respond(max-extra-small) {
       padding-left: 20px;
@@ -17,6 +10,8 @@
   }
 
   &__wrapper {
+    z-index: 1;
+    position: relative;
     @include fluid(padding-top, 320px, 1920px, 31px, 96px);
   }
 

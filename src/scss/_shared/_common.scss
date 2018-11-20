@@ -1,6 +1,18 @@
 // COMMON :: START
 
 
+// section
+section {
+  &.section {
+    overflow: hidden;
+    position: relative;
+    @include fluid(min-height, 320px, 1920px, 431px, 640px);
+    @include fluid(padding-top, 320px, 1920px, 50px, 147px);
+  }
+}
+// section :: end
+
+
 // bg
 .section__bg {
   overflow: hidden;
@@ -15,6 +27,10 @@
   @include respond(max-small) {
     top: 20px;
     background-position-x: 40%;
+
+    .search-page & {
+      display: none;
+    }
   }
   @include respond(large) {
     top: 60px;

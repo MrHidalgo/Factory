@@ -1,10 +1,6 @@
 // MAIN :: START
 
 .main {
-  position: relative;
-  @include fluid(min-height, 320px, 1920px, 431px, 640px);
-  @include fluid(padding-top, 320px, 1920px, 50px, 147px);
-
   .c-grid {
     @include respond(max-extra-small) {
       padding-left: 16px;

@@ -1,10 +1,12 @@
 // ABOUT :: START
 
 .about {
-  overflow: hidden;
-  position: relative;
-  @include fluid(min-height, 320px, 1920px, 431px, 640px);
-  @include fluid(padding-top, 320px, 1920px, 50px, 147px);
+  .c-grid {
+    @include respond(max-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
   &__wrapper {
     z-index: 1;

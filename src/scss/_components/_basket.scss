@@ -1,5 +1,11 @@
 // SECTION BASKET :: START
 
-.basket {}
+.basket {
+  &__wrapper {
+    z-index: 1;
+    position: relative;
+    @include fluid(padding-top, 320px, 1920px, 31px, 96px);
+  }
+}
 
 // SECTION BASKET :: END
