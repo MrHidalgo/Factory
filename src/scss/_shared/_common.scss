@@ -1,5 +1,48 @@
 // COMMON :: START
 
+
+// bg
+.section__bg {
+  overflow: hidden;
+  z-index: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  @include fluid(height, 320px, 1920px, 431px, 581px);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  @include respond(max-small) {
+    top: 20px;
+    background-position-x: 40%;
+  }
+  @include respond(large) {
+    top: 60px;
+  }
+
+  &--light {
+    @include respond(wide-medium) {
+      background-image: url('../img/bg.svg');
+      background-size: cover;
+    }
+    @include respond(max-wide-small) {
+      background-image: url('../img/img-bg.png');
+    }
+  }
+
+  &--dark {
+    @include respond(wide-medium) {
+      background-image: url('../img/bg-main.svg');
+      background-size: cover;
+    }
+    @include respond(max-wide-small) {
+      background-image: url('../img/img-bg-main.png');
+    }
+  }
+}
+// bg :: end
+
+
 // line
 .line {
   width: 100%;
