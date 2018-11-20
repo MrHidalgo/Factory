@@ -85,6 +85,7 @@
       padding-bottom: 110px;
       @include respond(max-small) {
         flex-wrap: wrap;
+        padding-bottom: 55px;
       }
 
       .contact__row-left,

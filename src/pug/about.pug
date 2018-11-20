@@ -6,5 +6,36 @@ contentClassName: p-about
 extends shared/_layout
 
 block content
-  div.body(class!= contentClassName)
+  div.body.body--start(class!= contentClassName)
 
+    section#about.about
+      .about__bg
+
+      .c-grid
+        .about__wrapper
+
+          h1.about__title!= "O nas"
+
+          .about__row.about__row-0
+            .about__row-left
+              .about__img-wrapper
+                img.about__img(src="./img/img-box-info.png" srcset="./img/img-box-info@2x.png 2x" alt="" title="")
+              .about__img-wrapper
+                img.about__img(src="./img/img-box-info.png" srcset="./img/img-box-info@2x.png 2x" alt="" title="")
+
+            .about__row-right
+              p.about__subtitle!= "HP Factory"
+              p.about__text!= "Firma HP Factory została założona przez pasjonatów motoryzacji, którzy całe swoje serce do samochodów wkładają w firmę, jej rozwój, a przede wszystkim obsługę klienta. Wywodzą się oni ze środowiska motorsportu, co powoduje, że znają tuning nawet z tej ekstremalnej strony. Zależy im przede wszystkim na tym, żeby każdy mógł pokochać swój samochód na nowo, poprzez zwiększenie jego osiągów."
+              p.about__text!= "HP Factory, jako jedyna firma w Polsce, jest oficjalnym partnerem i dystrybutorem niemieckiej firmy DTE Systems — numer jeden w europie zajmującej się chiptuningiem oraz opracowywaniem produktów z nim związanych."
+
+          .about__row.about__row-1
+            .about__row-left
+              .about__img-wrapper
+                img.about__img(src="./img/img-box-info.png" srcset="./img/img-box-info@2x.png 2x" alt="" title="")
+              .about__img-wrapper
+                img.about__img(src="./img/img-box-info.png" srcset="./img/img-box-info@2x.png 2x" alt="" title="")
+
+            .about__row-right
+              p.about__subtitle!= "DTE Systems"
+              p.about__text!= "Firma HP Factory została założona przez pasjonatów motoryzacji, którzy całe swoje serce do samochodów wkładają w firmę, jej rozwój, a przede wszystkim obsługę klienta. Wywodzą się oni ze środowiska motorsportu, co powoduje, że znają tuning nawet z tej ekstremalnej strony. Zależy im przede wszystkim na tym, żeby każdy mógł pokochać swój samochód na nowo, poprzez zwiększenie jego osiągów."
+              p.about__text!= "HP Factory, jako jedyna firma w Polsce, jest oficjalnym partnerem i dystrybutorem niemieckiej firmy DTE Systems — numer jeden w europie zajmującej się chiptuningiem oraz opracowywaniem produktów z nim związanych."

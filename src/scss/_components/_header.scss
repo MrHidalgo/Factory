@@ -46,10 +46,6 @@
     }
 
     &-left {
-      padding-left: 38px;
-      @include respond(max-wide-small) {
-        padding-left: 0;
-      }
       @include respond(max-large) {
         display: flex;
         align-items: center;

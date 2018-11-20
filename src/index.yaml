@@ -12,7 +12,7 @@ PageList:
   ready: 93
 - file: about.html
   titleName: About
-  ready: 1
+  ready: 93
 - file: basket.html
   titleName: Basket
   ready: 1
