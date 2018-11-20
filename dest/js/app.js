@@ -286,6 +286,19 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initBasketDeliveryBox = function initBasketDeliveryBox() {
+    $('.basket__delivery-box').on('click', function (ev) {
+      var elem = $(ev.currentTarget),
+          elemParent = elem.closest('.basket__delivery-box-wrapper');
+
+      elemParent.find('a').removeClass('is-active');
+      elem.addClass('is-active');
+    });
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -303,6 +316,7 @@ $(document).ready(function (ev) {
     initProductHeadBtn();
     initCollapseSearch();
     initBasketTabs();
+    initBasketDeliveryBox();
   };
   initJquery();
 });

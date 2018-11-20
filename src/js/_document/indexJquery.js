@@ -184,6 +184,20 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   */
+  const initBasketDeliveryBox = () => {
+    $('.basket__delivery-box').on('click', (ev) => {
+      const elem = $(ev.currentTarget),
+        elemParent = elem.closest('.basket__delivery-box-wrapper');
+
+      elemParent.find('a').removeClass('is-active');
+      elem.addClass('is-active');
+    });
+  };
+
+
 
   /**
    * @description Init all method
@@ -203,6 +217,7 @@ $(document).ready((ev) => {
     initProductHeadBtn();
     initCollapseSearch();
     initBasketTabs();
+    initBasketDeliveryBox();
   };
   initJquery();
 });

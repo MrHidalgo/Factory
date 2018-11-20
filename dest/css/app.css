@@ -6251,6 +6251,8 @@ section.section {
 
 /* line 29, src/scss/_components/_basket.scss */
 .basket__btn {
+  outline: none;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6287,7 +6289,7 @@ section.section {
   }
 }
 
-/* line 43, src/scss/_components/_basket.scss */
+/* line 45, src/scss/_components/_basket.scss */
 .basket__row--message .basket__btn {
   margin-left: auto;
   margin-right: auto;
@@ -6295,26 +6297,27 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 43, src/scss/_components/_basket.scss */
+  /* line 45, src/scss/_components/_basket.scss */
   .basket__row--message .basket__btn {
     max-width: calc(290px + 62 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 43, src/scss/_components/_basket.scss */
+  /* line 45, src/scss/_components/_basket.scss */
   .basket__row--message .basket__btn {
     max-width: 352px;
   }
 }
 
-/* line 49, src/scss/_components/_basket.scss */
-.basket__row--data .basket__btn {
+/* line 51, src/scss/_components/_basket.scss */
+.basket__row--data .basket__btn,
+.basket__row--delivery .basket__btn {
   max-width: 270px;
   margin-left: auto;
 }
 
-/* line 54, src/scss/_components/_basket.scss */
+/* line 57, src/scss/_components/_basket.scss */
 .basket__btn:hover {
   background-color: transparent;
   color: #d72d42;
@@ -6323,7 +6326,7 @@ section.section {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 60, src/scss/_components/_basket.scss */
+/* line 63, src/scss/_components/_basket.scss */
 .basket__btn:active {
   border-color: #0a1723;
   background-color: #0a1723;
@@ -6334,13 +6337,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 68, src/scss/_components/_basket.scss */
+  /* line 71, src/scss/_components/_basket.scss */
   .basket__tabs {
     display: none;
   }
 }
 
-/* line 73, src/scss/_components/_basket.scss */
+/* line 76, src/scss/_components/_basket.scss */
 .basket__tabs-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6350,12 +6353,12 @@ section.section {
           align-items: center;
 }
 
-/* line 80, src/scss/_components/_basket.scss */
+/* line 83, src/scss/_components/_basket.scss */
 .basket__tabs-item:last-of-type .basket__tabs-link {
   margin-right: 0;
 }
 
-/* line 86, src/scss/_components/_basket.scss */
+/* line 89, src/scss/_components/_basket.scss */
 .basket__tabs-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6374,34 +6377,34 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 86, src/scss/_components/_basket.scss */
+  /* line 89, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     margin-right: calc(15px + 12 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 86, src/scss/_components/_basket.scss */
+  /* line 89, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     margin-right: 27px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 86, src/scss/_components/_basket.scss */
+  /* line 89, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 86, src/scss/_components/_basket.scss */
+  /* line 89, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     font-size: 18px;
   }
 }
 
-/* line 96, src/scss/_components/_basket.scss */
+/* line 99, src/scss/_components/_basket.scss */
 .basket__tabs-link.is-active {
   color: #0a1723;
   font-size: 30px;
@@ -6413,47 +6416,332 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 96, src/scss/_components/_basket.scss */
+  /* line 99, src/scss/_components/_basket.scss */
   .basket__tabs-link.is-active {
     font-size: calc(24px + 6 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 96, src/scss/_components/_basket.scss */
+  /* line 99, src/scss/_components/_basket.scss */
   .basket__tabs-link.is-active {
     font-size: 30px;
   }
 }
 
-/* line 110, src/scss/_components/_basket.scss */
+/* line 113, src/scss/_components/_basket.scss */
 .basket__data-col--0 {
   padding-top: 98px;
   border-top: 1px solid #cdd7df;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 110, src/scss/_components/_basket.scss */
+  /* line 113, src/scss/_components/_basket.scss */
   .basket__data-col--0 {
     padding-top: 49px;
     border-bottom: 1px solid #cdd7df;
   }
 }
 
-/* line 119, src/scss/_components/_basket.scss */
+/* line 122, src/scss/_components/_basket.scss */
 .basket__data-col--1 {
   padding-top: 38px;
   border-top: 1px solid #cdd7df;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 119, src/scss/_components/_basket.scss */
+  /* line 122, src/scss/_components/_basket.scss */
   .basket__data-col--1 {
     display: none;
   }
 }
 
-/* line 133, src/scss/_components/_basket.scss */
+/* line 131, src/scss/_components/_basket.scss */
+.basket__data-cover {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 141, src/scss/_components/_basket.scss */
+.basket__delivery-col--0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  border-top: 1px solid #cdd7df;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 141, src/scss/_components/_basket.scss */
+  .basket__delivery-col--0 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 152, src/scss/_components/_basket.scss */
+.basket__delivery-col--1 {
+  padding-top: 65px;
+  padding-bottom: 35px;
+  border-top: 1px solid #cdd7df;
+}
+
+/* line 158, src/scss/_components/_basket.scss */
+.basket__delivery-col--2 {
+  padding-top: 38px;
+  border-top: 1px solid #cdd7df;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 158, src/scss/_components/_basket.scss */
+  .basket__delivery-col--2 {
+    display: none;
+  }
+}
+
+/* line 168, src/scss/_components/_basket.scss */
+.basket__delivery-cover--0 {
+  position: relative;
+  width: 100%;
+  max-width: calc(179px * 3);
+}
+
+@media screen and (max-width: 991px) {
+  /* line 168, src/scss/_components/_basket.scss */
+  .basket__delivery-cover--0 {
+    max-width: 100%;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #cdd7df;
+  }
+}
+
+/* line 179, src/scss/_components/_basket.scss */
+.basket__delivery-cover--0:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -17px;
+  width: 1px;
+  height: 151px;
+  background-color: #cdd7df;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 179, src/scss/_components/_basket.scss */
+  .basket__delivery-cover--0:after {
+    display: none;
+  }
+}
+
+/* line 193, src/scss/_components/_basket.scss */
+.basket__delivery-cover--1 {
+  width: 100%;
+  max-width: calc(179px * 2);
+}
+
+@media screen and (max-width: 991px) {
+  /* line 193, src/scss/_components/_basket.scss */
+  .basket__delivery-cover--1 {
+    max-width: 100%;
+  }
+}
+
+/* line 202, src/scss/_components/_basket.scss */
+.basket__delivery-title {
+  padding-bottom: 26px;
+  color: #222e39;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 202, src/scss/_components/_basket.scss */
+  .basket__delivery-title {
+    font-size: calc(20px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 202, src/scss/_components/_basket.scss */
+  .basket__delivery-title {
+    font-size: 24px;
+  }
+}
+
+/* line 209, src/scss/_components/_basket.scss */
+.basket__delivery-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 179px;
+  margin-right: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 209, src/scss/_components/_basket.scss */
+  .basket__delivery-box {
+    max-width: calc(50% - 10px);
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 35px;
+  }
+}
+
+/* line 224, src/scss/_components/_basket.scss */
+.basket__delivery-box:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 224, src/scss/_components/_basket.scss */
+  .basket__delivery-box:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+/* line 232, src/scss/_components/_basket.scss */
+.basket__delivery-box.is-active > div {
+  border-color: #0a1723;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 236, src/scss/_components/_basket.scss */
+.basket__delivery-box.is-active > div img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+/* line 241, src/scss/_components/_basket.scss */
+.basket__delivery-box.is-active > div:after {
+  background-color: #8d96ae;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 248, src/scss/_components/_basket.scss */
+.basket__delivery-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 248, src/scss/_components/_basket.scss */
+  .basket__delivery-box-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/* line 257, src/scss/_components/_basket.scss */
+.basket__delivery-box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 111px;
+  border-radius: 5px;
+  border: 3px solid #8d96ae;
+  background-color: #fff;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 268, src/scss/_components/_basket.scss */
+.basket__delivery-box > div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 0.3s ease-in-out;
+  transition: -webkit-filter 0.3s ease-in-out;
+  -o-transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+}
+
+/* line 276, src/scss/_components/_basket.scss */
+.basket__delivery-box > div:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 9px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: 100%;
+  border-radius: 5px;
+  background-color: #e4eaef;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 290, src/scss/_components/_basket.scss */
+.basket__delivery-box p,
+.basket__delivery-box span {
+  line-height: 1;
+}
+
+/* line 295, src/scss/_components/_basket.scss */
+.basket__delivery-box p {
+  padding-top: 28px;
+  padding-bottom: 16px;
+  color: #8d96ae;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* line 303, src/scss/_components/_basket.scss */
+.basket__delivery-box span {
+  color: #0a1723;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 313, src/scss/_components/_basket.scss */
 .basket__message {
   padding-top: 182px;
   border-top: 1px solid #cdd7df;
@@ -6461,14 +6749,14 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 133, src/scss/_components/_basket.scss */
+  /* line 313, src/scss/_components/_basket.scss */
   .basket__message {
     padding-top: 125px;
     border-top: none;
   }
 }
 
-/* line 142, src/scss/_components/_basket.scss */
+/* line 322, src/scss/_components/_basket.scss */
 .basket__message-title {
   padding-bottom: 45px;
   color: #d72d42;
@@ -6477,48 +6765,48 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 142, src/scss/_components/_basket.scss */
+  /* line 322, src/scss/_components/_basket.scss */
   .basket__message-title {
     font-size: calc(18px + 18 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 142, src/scss/_components/_basket.scss */
+  /* line 322, src/scss/_components/_basket.scss */
   .basket__message-title {
     font-size: 36px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 142, src/scss/_components/_basket.scss */
+  /* line 322, src/scss/_components/_basket.scss */
   .basket__message-title {
     padding-bottom: 25px;
   }
 }
 
-/* line 152, src/scss/_components/_basket.scss */
+/* line 332, src/scss/_components/_basket.scss */
 .basket__message-text {
   padding-bottom: 50px;
   font-size: 10px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 152, src/scss/_components/_basket.scss */
+  /* line 332, src/scss/_components/_basket.scss */
   .basket__message-text {
     font-size: calc(10px + 10 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 152, src/scss/_components/_basket.scss */
+  /* line 332, src/scss/_components/_basket.scss */
   .basket__message-text {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 152, src/scss/_components/_basket.scss */
+  /* line 332, src/scss/_components/_basket.scss */
   .basket__message-text {
     padding-bottom: 30px;
   }
