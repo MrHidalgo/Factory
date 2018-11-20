@@ -38,6 +38,7 @@
       background-image: url('../img/img-bg.png');
     }
     @include respond(max-small) {
+      display: none;
       top: 20px;
       background-position-x: 40%;
     }

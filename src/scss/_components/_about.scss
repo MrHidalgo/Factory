@@ -52,12 +52,12 @@
 
   &__title {
     padding-bottom: 73px;
-    @include fluid(font-size, 320px, 1920px, 30px, 48px);
+    @include fluid(font-size, 320px, 1920px, 35px, 48px);
   }
 
   &__subtitle {
     padding-bottom: 40px;
-    @include fluid(font-size, 320px, 1920px, 24px, 30px);
+    @include fluid(font-size, 320px, 1920px, 22px, 30px);
     @include respond(max-small) {
       padding-bottom: 20px;
     }
@@ -67,7 +67,7 @@
     padding-bottom: 60px;
     color: #4f6a7a;
     line-height: 1.6;
-    @include fluid(font-size, 320px, 1920px, 18px, 24px);
+    @include fluid(font-size, 320px, 1920px, 16px, 24px);
     @include respond(max-small) {
       padding-bottom: 20px;
     }
@@ -188,7 +188,7 @@
       height: 337px;
       background-color: #8d96ae;
       margin-bottom: 80px;
-      @include fluid(height, 320px, 1200px, 270px, 337px);
+      @include fluid(height, 320px, 1200px, 250px, 337px);
       @include respond(max-small) {
         margin-bottom: 40px;
       }
