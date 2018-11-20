@@ -6012,7 +6012,15 @@ section.section {
   max-width: 958px;
 }
 
-/* line 8, src/scss/_components/_basket.scss */
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/_basket.scss */
+  .basket .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 12, src/scss/_components/_basket.scss */
 .basket__wrapper {
   z-index: 1;
   position: relative;
@@ -6020,32 +6028,118 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 8, src/scss/_components/_basket.scss */
+  /* line 12, src/scss/_components/_basket.scss */
   .basket__wrapper {
     padding-top: calc(31px + 65 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 8, src/scss/_components/_basket.scss */
+  /* line 12, src/scss/_components/_basket.scss */
   .basket__wrapper {
     padding-top: 96px;
   }
 }
 
-/* line 16, src/scss/_components/_basket.scss */
-.basket__tabs {
-  padding-bottom: 30px;
+/* line 18, src/scss/_components/_basket.scss */
+.basket__row {
+  padding-bottom: 253px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 16, src/scss/_components/_basket.scss */
+  /* line 18, src/scss/_components/_basket.scss */
+  .basket__row {
+    padding-bottom: 125px;
+  }
+}
+
+/* line 24, src/scss/_components/_basket.scss */
+.basket__row-0 {
+  padding-bottom: 30px;
+}
+
+/* line 29, src/scss/_components/_basket.scss */
+.basket__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2em;
+  border: 2px solid #d72d42;
+  background-color: #d72d42;
+  color: #fff;
+  font-weight: 500;
+  max-width: 290px;
+  font-size: 18px;
+  -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 29, src/scss/_components/_basket.scss */
+  .basket__btn {
+    max-width: calc(290px + 62 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 29, src/scss/_components/_basket.scss */
+  .basket__btn {
+    max-width: 352px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 29, src/scss/_components/_basket.scss */
+  .basket__btn {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 29, src/scss/_components/_basket.scss */
+  .basket__btn {
+    font-size: 24px;
+  }
+}
+
+/* line 46, src/scss/_components/_basket.scss */
+.basket__btn:hover {
+  background-color: transparent;
+  color: #d72d42;
+  -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 52, src/scss/_components/_basket.scss */
+.basket__btn:active {
+  border-color: #0a1723;
+  background-color: #0a1723;
+  color: #fff;
+  -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 60, src/scss/_components/_basket.scss */
   .basket__tabs {
     display: none;
   }
 }
 
-/* line 22, src/scss/_components/_basket.scss */
+/* line 65, src/scss/_components/_basket.scss */
 .basket__tabs-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6055,12 +6149,12 @@ section.section {
           align-items: center;
 }
 
-/* line 29, src/scss/_components/_basket.scss */
+/* line 72, src/scss/_components/_basket.scss */
 .basket__tabs-item:last-of-type .basket__tabs-link {
   margin-right: 0;
 }
 
-/* line 35, src/scss/_components/_basket.scss */
+/* line 78, src/scss/_components/_basket.scss */
 .basket__tabs-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6079,34 +6173,34 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 35, src/scss/_components/_basket.scss */
+  /* line 78, src/scss/_components/_basket.scss */
   .basket__tabs-link {
-    margin-right: calc(15px + 12 * (100vw - 320px) / 1600);
+    margin-right: calc(15px + 12 * (100vw - 320px) / 1120);
   }
 }
 
-@media screen and (min-width: 1920px) {
-  /* line 35, src/scss/_components/_basket.scss */
+@media screen and (min-width: 1440px) {
+  /* line 78, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     margin-right: 27px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 35, src/scss/_components/_basket.scss */
+  /* line 78, src/scss/_components/_basket.scss */
   .basket__tabs-link {
-    font-size: calc(14px + 4 * (100vw - 320px) / 1600);
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
-@media screen and (min-width: 1920px) {
-  /* line 35, src/scss/_components/_basket.scss */
+@media screen and (min-width: 1440px) {
+  /* line 78, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     font-size: 18px;
   }
 }
 
-/* line 45, src/scss/_components/_basket.scss */
+/* line 88, src/scss/_components/_basket.scss */
 .basket__tabs-link.is-active {
   color: #0a1723;
   font-size: 30px;
@@ -6118,16 +6212,87 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 45, src/scss/_components/_basket.scss */
+  /* line 88, src/scss/_components/_basket.scss */
   .basket__tabs-link.is-active {
-    font-size: calc(24px + 6 * (100vw - 320px) / 1600);
+    font-size: calc(24px + 6 * (100vw - 320px) / 1120);
   }
 }
 
-@media screen and (min-width: 1920px) {
-  /* line 45, src/scss/_components/_basket.scss */
+@media screen and (min-width: 1440px) {
+  /* line 88, src/scss/_components/_basket.scss */
   .basket__tabs-link.is-active {
     font-size: 30px;
+  }
+}
+
+/* line 106, src/scss/_components/_basket.scss */
+.basket__message {
+  padding-top: 182px;
+  border-top: 1px solid #cdd7df;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 106, src/scss/_components/_basket.scss */
+  .basket__message {
+    padding-top: 125px;
+    border-top: none;
+  }
+}
+
+/* line 115, src/scss/_components/_basket.scss */
+.basket__message-title {
+  padding-bottom: 45px;
+  color: #d72d42;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 115, src/scss/_components/_basket.scss */
+  .basket__message-title {
+    font-size: calc(18px + 18 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 115, src/scss/_components/_basket.scss */
+  .basket__message-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 115, src/scss/_components/_basket.scss */
+  .basket__message-title {
+    padding-bottom: 25px;
+  }
+}
+
+/* line 125, src/scss/_components/_basket.scss */
+.basket__message-text {
+  padding-bottom: 50px;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 125, src/scss/_components/_basket.scss */
+  .basket__message-text {
+    font-size: calc(10px + 10 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 125, src/scss/_components/_basket.scss */
+  .basket__message-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 125, src/scss/_components/_basket.scss */
+  .basket__message-text {
+    padding-bottom: 30px;
   }
 }
 
