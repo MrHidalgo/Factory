@@ -1221,21 +1221,108 @@ section.section {
 }
 
 /* line 233, src/scss/_shared/_common.scss */
+.basket__data-cover--0 .c-form__group--input .c-form__group-col {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 233, src/scss/_shared/_common.scss */
+  .basket__data-cover--0 .c-form__group--input .c-form__group-col {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* line 243, src/scss/_shared/_common.scss */
+.basket__data-cover--2 .c-form__group--input .c-form__group-col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 247, src/scss/_shared/_common.scss */
+.basket__data-cover--2 .c-form__group--input .c-form__group-col-0 {
+  width: calc(50% - 10px);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 247, src/scss/_shared/_common.scss */
+  .basket__data-cover--2 .c-form__group--input .c-form__group-col-0 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* line 254, src/scss/_shared/_common.scss */
+.basket__data-cover--2 .c-form__group--input .c-form__group-col-1, .basket__data-cover--2 .c-form__group--input .c-form__group-col-2 {
+  width: calc(25% - 10px);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 254, src/scss/_shared/_common.scss */
+  .basket__data-cover--2 .c-form__group--input .c-form__group-col-1, .basket__data-cover--2 .c-form__group--input .c-form__group-col-2 {
+    width: calc(50% - 10px);
+    margin: 0;
+  }
+}
+
+/* line 264, src/scss/_shared/_common.scss */
+.basket__data-cover--3 .c-form__group--input .c-form__group-col {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 268, src/scss/_shared/_common.scss */
+.basket__data-cover--3 .c-form__group--input .c-form__group-col-0, .basket__data-cover--3 .c-form__group--input .c-form__group-col-1 {
+  width: calc(20% - 10px);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 272, src/scss/_shared/_common.scss */
+  .basket__data-cover--3 .c-form__group--input .c-form__group-col-0 {
+    width: calc(35% - 10px);
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 278, src/scss/_shared/_common.scss */
+  .basket__data-cover--3 .c-form__group--input .c-form__group-col-1 {
+    width: calc(65% - 10px);
+    margin: 0;
+  }
+}
+
+/* line 284, src/scss/_shared/_common.scss */
+.basket__data-cover--3 .c-form__group--input .c-form__group-col-2 {
+  width: calc(60% - 10px);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 284, src/scss/_shared/_common.scss */
+  .basket__data-cover--3 .c-form__group--input .c-form__group-col-2 {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* line 293, src/scss/_shared/_common.scss */
 .c-form__group--input .c-form__group-col:first-of-type {
   margin-left: 0;
 }
 
-/* line 236, src/scss/_shared/_common.scss */
+/* line 296, src/scss/_shared/_common.scss */
 .c-form__group--input .c-form__group-col:last-of-type {
   margin-right: 0;
 }
 
-/* line 249, src/scss/_shared/_common.scss */
+/* line 309, src/scss/_shared/_common.scss */
 .c-form__field {
   position: relative;
 }
 
-/* line 255, src/scss/_shared/_common.scss */
+/* line 315, src/scss/_shared/_common.scss */
 .c-form__field.is-focus .c-form__input-wrapper input,
 .c-form__field.is-focus .c-form__input-wrapper textarea,
 .c-form__field.is-focus .c-form__textarea-wrapper input,
@@ -1246,7 +1333,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 261, src/scss/_shared/_common.scss */
+/* line 321, src/scss/_shared/_common.scss */
 .c-form__field.is-focus .c-form__input-wrapper:before,
 .c-form__field.is-focus .c-form__textarea-wrapper:before {
   border-color: #8d96ae;
@@ -1255,7 +1342,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 268, src/scss/_shared/_common.scss */
+/* line 328, src/scss/_shared/_common.scss */
 .c-form__field--btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1290,13 +1377,13 @@ section.section {
   color: #4d5964;
 }
 
-/* line 280, src/scss/_shared/_common.scss */
+/* line 340, src/scss/_shared/_common.scss */
 .c-form__input-wrapper, .c-form__textarea-wrapper {
   position: relative;
   margin-bottom: 16px;
 }
 
-/* line 284, src/scss/_shared/_common.scss */
+/* line 344, src/scss/_shared/_common.scss */
 .c-form__input-wrapper:before, .c-form__textarea-wrapper:before {
   z-index: 0;
   content: '';
@@ -1313,7 +1400,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 300, src/scss/_shared/_common.scss */
+/* line 360, src/scss/_shared/_common.scss */
 .c-form__input-wrapper:hover input,
 .c-form__input-wrapper:hover textarea, .c-form__input-wrapper:active input,
 .c-form__input-wrapper:active textarea, .c-form__textarea-wrapper:hover input,
@@ -1325,7 +1412,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 306, src/scss/_shared/_common.scss */
+/* line 366, src/scss/_shared/_common.scss */
 .c-form__input-wrapper:hover:before, .c-form__input-wrapper:active:before, .c-form__textarea-wrapper:hover:before, .c-form__textarea-wrapper:active:before {
   border-color: #8d96ae;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1333,7 +1420,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 314, src/scss/_shared/_common.scss */
+/* line 374, src/scss/_shared/_common.scss */
 .c-form__input {
   outline: none;
   position: absolute;
@@ -1354,13 +1441,13 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 330, src/scss/_shared/_common.scss */
+/* line 390, src/scss/_shared/_common.scss */
 .c-form__input-wrapper {
   min-height: 62px;
   background-color: #fff;
 }
 
-/* line 336, src/scss/_shared/_common.scss */
+/* line 396, src/scss/_shared/_common.scss */
 .c-form__textarea {
   outline: none;
   resize: none;
@@ -1382,12 +1469,12 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 353, src/scss/_shared/_common.scss */
+/* line 413, src/scss/_shared/_common.scss */
 .c-form__textarea-wrapper {
   min-height: 309px;
 }
 
-/* line 358, src/scss/_shared/_common.scss */
+/* line 418, src/scss/_shared/_common.scss */
 .c-form__select {
   overflow: hidden;
   height: 100%;
@@ -1397,13 +1484,13 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 358, src/scss/_shared/_common.scss */
+  /* line 418, src/scss/_shared/_common.scss */
   .c-form__select {
     min-height: 36px;
   }
 }
 
-/* line 369, src/scss/_shared/_common.scss */
+/* line 429, src/scss/_shared/_common.scss */
 .c-form__select:hover .c-form__select-icon-wrap {
   background-color: #d6273c;
   border-color: #ab182a;
@@ -1412,7 +1499,7 @@ section.section {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 374, src/scss/_shared/_common.scss */
+/* line 434, src/scss/_shared/_common.scss */
 .c-form__select:hover .c-form__select-icon-wrap i {
   text-shadow: 0 1px 0 #ab182a;
   color: #fff;
@@ -1421,7 +1508,7 @@ section.section {
   transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 382, src/scss/_shared/_common.scss */
+/* line 442, src/scss/_shared/_common.scss */
 .c-form__select select {
   opacity: 0;
   cursor: pointer;
@@ -1437,7 +1524,7 @@ section.section {
           box-shadow: none;
 }
 
-/* line 396, src/scss/_shared/_common.scss */
+/* line 456, src/scss/_shared/_common.scss */
 .c-form__select-value {
   white-space: nowrap;
   overflow: hidden;
@@ -1458,19 +1545,19 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 396, src/scss/_shared/_common.scss */
+  /* line 456, src/scss/_shared/_common.scss */
   .c-form__select-value {
     line-height: 36px;
     font-size: 14px;
   }
 }
 
-/* line 417, src/scss/_shared/_common.scss */
+/* line 477, src/scss/_shared/_common.scss */
 .c-form__select-value.is-choose {
   color: #000;
 }
 
-/* line 422, src/scss/_shared/_common.scss */
+/* line 482, src/scss/_shared/_common.scss */
 .c-form__select-icon {
   text-shadow: 0 1px 0 white;
   color: #4d5964;
@@ -1482,7 +1569,7 @@ section.section {
   transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 430, src/scss/_shared/_common.scss */
+/* line 490, src/scss/_shared/_common.scss */
 .c-form__select-icon-wrap {
   position: absolute;
   display: -webkit-box;
@@ -1507,7 +1594,111 @@ section.section {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 448, src/scss/_shared/_common.scss */
+/* line 508, src/scss/_shared/_common.scss */
+.c-form__checkbox {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 530, src/scss/_shared/_common.scss */
+.c-form__checkbox-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 62px;
+  margin-bottom: 32px;
+  margin-top: 15px;
+}
+
+/* line 538, src/scss/_shared/_common.scss */
+.c-form__checkbox-content {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 547, src/scss/_shared/_common.scss */
+.c-form__checkbox:checked + label .c-form__checkbox-icon i {
+  border-color: #8d96ae;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 551, src/scss/_shared/_common.scss */
+.c-form__checkbox:checked + label .c-form__checkbox-icon i:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 560, src/scss/_shared/_common.scss */
+.c-form__checkbox-icon {
+  width: 52px;
+}
+
+/* line 563, src/scss/_shared/_common.scss */
+.c-form__checkbox-icon i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: 3px solid rgba(141, 150, 174, 0.5);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* line 573, src/scss/_shared/_common.scss */
+.c-form__checkbox-icon i:before {
+  content: '';
+  opacity: 0;
+  position: relative;
+  top: -2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid #8d96ae;
+  border-width: 0 2px 2px 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 588, src/scss/_shared/_common.scss */
+.c-form__checkbox-text {
+  max-width: calc(100% - 52px);
+  color: #4d5964;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 594, src/scss/_shared/_common.scss */
+.c-form__checkbox-text span {
+  color: #d6273c;
+}
+
+/* line 600, src/scss/_shared/_common.scss */
 .c-form__btn {
   outline: none;
   cursor: pointer;
@@ -1530,13 +1721,13 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 448, src/scss/_shared/_common.scss */
+  /* line 600, src/scss/_shared/_common.scss */
   .c-form__btn {
     max-width: 100%;
   }
 }
 
-/* line 469, src/scss/_shared/_common.scss */
+/* line 621, src/scss/_shared/_common.scss */
 .c-form__btn:hover {
   background-color: #23394e;
   text-shadow: 0 2px 0 #0a1723;
@@ -1545,7 +1736,7 @@ section.section {
   transition: background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-/* line 474, src/scss/_shared/_common.scss */
+/* line 626, src/scss/_shared/_common.scss */
 .c-form__btn:hover:before {
   border-color: #0a1723;
   background-color: #0a1723;
@@ -1554,7 +1745,7 @@ section.section {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 481, src/scss/_shared/_common.scss */
+/* line 633, src/scss/_shared/_common.scss */
 .c-form__btn:active {
   line-height: 50px;
   background-color: #d6273c;
@@ -1564,7 +1755,7 @@ section.section {
   transition: line-height 0.3s ease-in-out, background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-/* line 487, src/scss/_shared/_common.scss */
+/* line 639, src/scss/_shared/_common.scss */
 .c-form__btn:active:before {
   bottom: 6px;
   border-color: #af1932;
@@ -1574,7 +1765,7 @@ section.section {
   transition: bottom 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 495, src/scss/_shared/_common.scss */
+/* line 647, src/scss/_shared/_common.scss */
 .c-form__btn:before {
   z-index: -1;
   content: '';
@@ -6071,32 +6262,15 @@ section.section {
           justify-content: center;
   width: 100%;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 2em;
   border: 2px solid #d72d42;
   background-color: #d72d42;
   color: #fff;
   font-weight: 500;
-  max-width: 290px;
   font-size: 18px;
   -webkit-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   -o-transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 29, src/scss/_components/_basket.scss */
-  .basket__btn {
-    max-width: calc(290px + 62 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 29, src/scss/_components/_basket.scss */
-  .basket__btn {
-    max-width: 352px;
-  }
 }
 
 @media screen and (min-width: 320px) {
@@ -6113,7 +6287,34 @@ section.section {
   }
 }
 
-/* line 46, src/scss/_components/_basket.scss */
+/* line 43, src/scss/_components/_basket.scss */
+.basket__row--message .basket__btn {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 290px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 43, src/scss/_components/_basket.scss */
+  .basket__row--message .basket__btn {
+    max-width: calc(290px + 62 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 43, src/scss/_components/_basket.scss */
+  .basket__row--message .basket__btn {
+    max-width: 352px;
+  }
+}
+
+/* line 49, src/scss/_components/_basket.scss */
+.basket__row--data .basket__btn {
+  max-width: 270px;
+  margin-left: auto;
+}
+
+/* line 54, src/scss/_components/_basket.scss */
 .basket__btn:hover {
   background-color: transparent;
   color: #d72d42;
@@ -6122,7 +6323,7 @@ section.section {
   transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 52, src/scss/_components/_basket.scss */
+/* line 60, src/scss/_components/_basket.scss */
 .basket__btn:active {
   border-color: #0a1723;
   background-color: #0a1723;
@@ -6133,13 +6334,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 60, src/scss/_components/_basket.scss */
+  /* line 68, src/scss/_components/_basket.scss */
   .basket__tabs {
     display: none;
   }
 }
 
-/* line 65, src/scss/_components/_basket.scss */
+/* line 73, src/scss/_components/_basket.scss */
 .basket__tabs-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6149,12 +6350,12 @@ section.section {
           align-items: center;
 }
 
-/* line 72, src/scss/_components/_basket.scss */
+/* line 80, src/scss/_components/_basket.scss */
 .basket__tabs-item:last-of-type .basket__tabs-link {
   margin-right: 0;
 }
 
-/* line 78, src/scss/_components/_basket.scss */
+/* line 86, src/scss/_components/_basket.scss */
 .basket__tabs-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6173,34 +6374,34 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 78, src/scss/_components/_basket.scss */
+  /* line 86, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     margin-right: calc(15px + 12 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 78, src/scss/_components/_basket.scss */
+  /* line 86, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     margin-right: 27px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 78, src/scss/_components/_basket.scss */
+  /* line 86, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 78, src/scss/_components/_basket.scss */
+  /* line 86, src/scss/_components/_basket.scss */
   .basket__tabs-link {
     font-size: 18px;
   }
 }
 
-/* line 88, src/scss/_components/_basket.scss */
+/* line 96, src/scss/_components/_basket.scss */
 .basket__tabs-link.is-active {
   color: #0a1723;
   font-size: 30px;
@@ -6212,20 +6413,47 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 88, src/scss/_components/_basket.scss */
+  /* line 96, src/scss/_components/_basket.scss */
   .basket__tabs-link.is-active {
     font-size: calc(24px + 6 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 88, src/scss/_components/_basket.scss */
+  /* line 96, src/scss/_components/_basket.scss */
   .basket__tabs-link.is-active {
     font-size: 30px;
   }
 }
 
-/* line 106, src/scss/_components/_basket.scss */
+/* line 110, src/scss/_components/_basket.scss */
+.basket__data-col--0 {
+  padding-top: 98px;
+  border-top: 1px solid #cdd7df;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 110, src/scss/_components/_basket.scss */
+  .basket__data-col--0 {
+    padding-top: 49px;
+    border-bottom: 1px solid #cdd7df;
+  }
+}
+
+/* line 119, src/scss/_components/_basket.scss */
+.basket__data-col--1 {
+  padding-top: 38px;
+  border-top: 1px solid #cdd7df;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 119, src/scss/_components/_basket.scss */
+  .basket__data-col--1 {
+    display: none;
+  }
+}
+
+/* line 133, src/scss/_components/_basket.scss */
 .basket__message {
   padding-top: 182px;
   border-top: 1px solid #cdd7df;
@@ -6233,14 +6461,14 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 106, src/scss/_components/_basket.scss */
+  /* line 133, src/scss/_components/_basket.scss */
   .basket__message {
     padding-top: 125px;
     border-top: none;
   }
 }
 
-/* line 115, src/scss/_components/_basket.scss */
+/* line 142, src/scss/_components/_basket.scss */
 .basket__message-title {
   padding-bottom: 45px;
   color: #d72d42;
@@ -6249,48 +6477,48 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 115, src/scss/_components/_basket.scss */
+  /* line 142, src/scss/_components/_basket.scss */
   .basket__message-title {
     font-size: calc(18px + 18 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 115, src/scss/_components/_basket.scss */
+  /* line 142, src/scss/_components/_basket.scss */
   .basket__message-title {
     font-size: 36px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 115, src/scss/_components/_basket.scss */
+  /* line 142, src/scss/_components/_basket.scss */
   .basket__message-title {
     padding-bottom: 25px;
   }
 }
 
-/* line 125, src/scss/_components/_basket.scss */
+/* line 152, src/scss/_components/_basket.scss */
 .basket__message-text {
   padding-bottom: 50px;
   font-size: 10px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 125, src/scss/_components/_basket.scss */
+  /* line 152, src/scss/_components/_basket.scss */
   .basket__message-text {
     font-size: calc(10px + 10 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 125, src/scss/_components/_basket.scss */
+  /* line 152, src/scss/_components/_basket.scss */
   .basket__message-text {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/_basket.scss */
+  /* line 152, src/scss/_components/_basket.scss */
   .basket__message-text {
     padding-bottom: 30px;
   }

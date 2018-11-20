@@ -32,16 +32,24 @@
     justify-content: center;
     width: 100%;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 2em;
     border: 2px solid #d72d42;
     background-color: #d72d42;
     color: $c-white;
     font-weight: 500;
-    @include fluid(max-width, 320px, 1440px, 290px, 352px);
     @include fluid(font-size, 320px, 1440px, 18px, 24px);
     @include transition(border, background-color, color);
+
+    .basket__row--message & {
+      margin-left: auto;
+      margin-right: auto;
+      @include fluid(max-width, 320px, 1440px, 290px, 352px);
+    }
+
+    .basket__row--data & {
+      max-width: 270px;
+      margin-left: auto;
+    }
 
     &:hover {
       background-color: transparent;
@@ -97,7 +105,26 @@
 
   &__card {}
 
-  &__data {}
+  &__data {
+    &-col {
+      &--0 {
+        padding-top: 98px;
+        border-top: 1px solid #cdd7df;
+        @include respond(max-small) {
+          padding-top: 49px;
+          border-bottom: 1px solid #cdd7df;
+        }
+      }
+
+      &--1 {
+        padding-top: 38px;
+        border-top: 1px solid #cdd7df;
+        @include respond(max-small) {
+          display: none;
+        }
+      }
+    }
+  }
 
   &__delivery {}
 

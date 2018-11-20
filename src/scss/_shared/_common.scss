@@ -230,6 +230,66 @@ section {
           margin: 0;
         }
 
+        .basket__data-cover--0 & {
+          width: calc(50% - 10px);
+          margin-left: 10px;
+          margin-right: 10px;
+          @include respond(max-extra-small) {
+            width: 100%;
+            margin: 0;
+          }
+        }
+
+        .basket__data-cover--2 & {
+          margin-left: 10px;
+          margin-right: 10px;
+
+          &-0 {
+            width: calc(50% - 10px);
+            @include respond(max-extra-small) {
+              width: 100%;
+              margin: 0;
+            }
+          }
+          &-1,
+          &-2 {
+            width: calc(25% - 10px);
+            @include respond(max-extra-small) {
+              width: calc(50% - 10px);
+              margin: 0;
+            }
+          }
+        }
+
+        .basket__data-cover--3 & {
+          margin-left: 10px;
+          margin-right: 10px;
+
+          &-0,
+          &-1 {
+            width: calc(20% - 10px);
+          }
+          &-0 {
+            @include respond(max-extra-small) {
+              width: calc(35% - 10px);
+              margin: 0;
+            }
+          }
+          &-1 {
+            @include respond(max-extra-small) {
+              width: calc(65% - 10px);
+              margin: 0;
+            }
+          }
+          &-2 {
+            width: calc(60% - 10px);
+            @include respond(max-extra-small) {
+              width: 100%;
+              margin: 0;
+            }
+          }
+        }
+
         &:first-of-type {
           margin-left: 0;
         }
@@ -441,6 +501,98 @@ section {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         @include transition(background-color, border-color);
+      }
+    }
+  }
+
+  &__checkbox {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+
+    $form-checkbox-icon-wrapper-width: 52px;
+    $form-checkbox-icon-width: 24px;
+    $form-checkbox-icon-height: $form-checkbox-icon-width;
+    $form-checkbox-icon-border-radius: 5px;
+    $form-checkbox-icon-border-width: 3px;
+    $form-checkbox-icon-border-color-inactive: rgba(#8d96ae, 0.5);
+    $form-checkbox-icon-border-color-active: rgba(#8d96ae, 1);
+    $form-checkbox-font-size: 14px;
+    $form-checkbox-icon-inner-width: 6px;
+    $form-checkbox-icon-inner-height: $form-checkbox-icon-inner-width * 2;
+    $form-checkbox-icon-inner-border-color: rgba(#8d96ae, 1);
+    $form-checkbox-icon-inner-border-width: 2px;
+    $form-radio-icon-border-color-active: rgba(#8d96ae, 1);
+
+    &-wrapper {
+      position: relative;
+      display: flex;
+      min-height: 62px;
+      margin-bottom: 32px;
+      margin-top: 15px;
+    }
+
+    &-content {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    &:checked {
+      &+label {
+        .c-form__checkbox-icon {
+          i {
+            border-color: $form-radio-icon-border-color-active;
+            @include transition(border-color);
+
+            &:before {
+              opacity: 1;
+              @include transition(opacity);
+            }
+          }
+        }
+      }
+    }
+
+    &-icon {
+      width: 52px;
+
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $form-checkbox-icon-width;
+        height: $form-checkbox-icon-height;
+        border-radius: $form-checkbox-icon-border-radius;
+        border: $form-checkbox-icon-border-width solid $form-checkbox-icon-border-color-inactive;
+        @include transition(border-color);
+
+        &:before {
+          content: '';
+          opacity: 0;
+          position: relative;
+          top: -2px;
+          transform: rotate(45deg);
+          width: $form-checkbox-icon-inner-width;
+          height: $form-checkbox-icon-inner-height;
+          border: solid $form-checkbox-icon-inner-border-color;
+          border-width: 0 $form-checkbox-icon-inner-border-width $form-checkbox-icon-inner-border-width 0;
+          @include transition(opacity);
+        }
+      }
+    }
+
+    &-text {
+      max-width: calc(100% - 52px);
+      color: #4d5964;
+      font-size: 14px;
+      font-weight: 500;
+
+      span {
+        color: rgb(214, 39, 60);
       }
     }
   }
