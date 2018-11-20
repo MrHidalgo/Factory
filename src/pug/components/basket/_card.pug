@@ -1,1 +1,95 @@
+
 .basket__row.basket__row-1.basket__row--card
+  .basket__card
+
+    .c-grid
+      .basket__card-col.basket__card-col-0
+        .basket__product.basket__product-0
+          .basket__product-left
+            img(src="./img/img-product-0.png" srcset="./img/img-product-0@2x.png 2x" alt="" title="")
+          .basket__product-right
+            div
+              p.basket__product-name!= "PowerControl"
+
+            div
+              p.basket__product-price!= "suma brutto <span>2099,-</span>"
+              a.basket__product-btn(href="#" class="" title="")!= "x"
+
+    .c-grid-fluid
+      .basket__card-col.basket__card-col-1
+        .c-grid
+          .basket__additional
+            .basket__additional-left
+              p.basket__additional-info!= "Dodaj Pedalbox do swojego zamówienia<br><span>a otrzymasz 15% rabatu do całego zamówienia<span>"
+            .basket__additional-right
+              .basket__additional-item
+                div
+                  img(src="./img/img-product-1.png" srcset="./img/img-product-1@2x.png 2x" alt="" title="")
+                div
+                  p.basket__additional-title!= "Pedalbox+"
+                  p.basket__additional-sum!= "<span>849,-</span> cena brutto"
+                  a.basket__additional-link(href="#" class="" title="")!= "Dodaj do zamówienia"
+
+              .basket__additional-item
+                div
+                  img(src="./img/img-product-2.png" srcset="./img/img-product-2@2x.png 2x" alt="" title="")
+                div
+                  p.basket__additional-title!= "Pedalbox"
+                  p.basket__additional-sum!= "<span>749,-</span> cena brutto"
+                  a.basket__additional-link(href="#" class="" title="")!= "Dodaj do zamówienia"
+
+    .c-grid
+      .basket__card-col.basket__card-col-2
+        .basket__price
+          .basket__price-left
+            p.basket__price-desc!= "Montaż ze strojeniem na hamowni"
+            a.basket__price-link(href="#" class="" title="")!= "Zmień"
+          .basket__price-right
+            p.basket__price-sum!= "suma brutto <span>2099,-</span>"
+
+      .basket__card-col.basket__card-col-3
+        a.basket__link(href="#" class="" title="")!= "← Wróc do zakupów"
+        button.basket__btn(type="submit")!= "Następny krok"
+
+.basket__row.basket__row-1.basket__row--card(style="padding-bottom: 0;")
+  .basket__card
+    .c-grid
+      .basket__row.basket__row-1.basket__row--card
+        .basket__card
+          .basket__card-col.basket__card-col-0
+            .basket__product.basket__product-0
+              .basket__product-left
+                img(src="./img/img-product-0.png" srcset="./img/img-product-0@2x.png 2x" alt="" title="")
+              .basket__product-right
+                div
+                  p.basket__product-name!= "PowerControl"
+
+                div
+                  p.basket__product-price!= "suma brutto <span>2099,-</span>"
+                  a.basket__product-btn(href="#" class="" title="")!= "x"
+
+            .basket__product.basket__product-1
+              .basket__product-left
+                img(src="./img/img-product-1.png" srcset="./img/img-product-1@2x.png 2x" alt="" title="")
+              .basket__product-right
+                div
+                  p.basket__product-name!= "Pedalbox+"
+
+                div
+                  p.basket__product-price!= "suma brutto <span>849,-</span>"
+                  a.basket__product-btn(href="#" class="" title="")!= "x"
+
+          .basket__card-col.basket__card-col-2
+            .basket__price
+              .basket__price-left
+                p.basket__price-desc!= "Montaż ze strojeniem na hamowni"
+                a.basket__price-link(href="#" class="" title="")!= "Zmień"
+              .basket__price-right
+                p.basket__price-info
+                  span.basket__price-info--perc!= "-15%"
+                  span.basket__price-info--old!= "2948,-"
+                p.basket__price-sum!= "suma brutto <span>2099,-</span>"
+
+          .basket__card-col.basket__card-col-3
+            a.basket__link(href="#" class="" title="")!= "← Wróc do zakupów"
+            button.basket__btn(type="submit")!= "Następny krok"

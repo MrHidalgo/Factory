@@ -18,16 +18,17 @@
     }
   ];
 
-.basket__row.basket__row-0.basket__row--tabs
-  .basket__tabs
-    ul.basket__tabs-list
-      each val, idx in basketTabsData
-        li.basket__tabs-item
-          a.basket__tabs-link(
-            href= basketTabsData[idx].href
-            class!= (idx === 0) ? "is-active": ""
-            title=""
-            data-basket-tabs-id= idx
-          )!= basketTabsData[idx].name
+.c-grid
+  .basket__row.basket__row-0.basket__row--tabs
+    .basket__tabs
+      ul.basket__tabs-list
+        each val, idx in basketTabsData
+          li.basket__tabs-item
+            a.basket__tabs-link(
+              href= basketTabsData[idx].href
+              class!= (idx === 0) ? "is-active": ""
+              title=""
+              data-basket-tabs-id= idx
+            )!= basketTabsData[idx].name
 
 
