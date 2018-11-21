@@ -198,7 +198,7 @@
         padding-top: 65px;
         padding-bottom: 35px;
         border-top: 1px solid #cdd7df;
-        @include respond(max-medium) {
+        @include respond(max-large) {
           flex-direction: column;
           padding-bottom: 0;
           padding-top: 35px;
@@ -230,10 +230,11 @@
         width: 100%;
         max-width: calc((179px * 3) + (34px * 2));
         margin-right: 60px;
-        @include respond(max-medium) {
+        @include respond(max-large) {
           max-width: 100%;
           padding-bottom: 35px;
           margin-bottom: 35px;
+          margin-right: 0;
           border-bottom: 1px solid #cdd7df;
         }
 
@@ -246,7 +247,7 @@
           width: 1px;
           height: 151px;
           background-color: #cdd7df;
-          @include respond(max-medium) {
+          @include respond(max-large) {
             display: none;
           }
         }
@@ -255,8 +256,10 @@
         width: 100%;
         max-width: calc((179px * 2) + 34px);
         margin-left: 60px;
-        @include respond(max-medium) {
+        @include respond(max-large) {
           max-width: 100%;
+          padding-bottom: 35px;
+          margin-left: 0;
         }
       }
     }
@@ -441,7 +444,7 @@
     }
 
     &-title {
-      padding-bottom: 34px;
+      min-height: 68px;
       color: #222e39;
       font-size: 24px;
       font-weight: 500;
@@ -628,6 +631,9 @@
 
         &:first-of-type {
           width: 60%;
+          @include respond(max-medium) {
+            width: 50%;
+          }
         }
 
         &:last-of-type {
@@ -635,6 +641,9 @@
           align-items: center;
           justify-content: space-between;
           width: 40%;
+          @include respond(max-medium) {
+            width: 50%;
+          }
         }
       }
     }
