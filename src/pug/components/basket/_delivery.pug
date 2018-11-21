@@ -63,3 +63,19 @@
 
       .basket__delivery-col.basket__delivery-col--2
         button.basket__btn(type="submit")!= "Następny krok"
+
+      .basket__delivery-col.basket__delivery-col--3
+        .basket__card-col.basket__card-col-2
+          .basket__price
+            .basket__price-left
+              p.basket__price-desc!= "Montaż ze strojeniem na hamowni"
+              a.basket__price-link(href="#" class="" title="")!= "Zmień"
+            .basket__price-right
+              p.basket__price-sum!= "suma brutto"
+              p.basket__price-info
+                span.basket__price-info--perc!= "-15%"
+                span.basket__price-info--old!= "2948,-"
+              p.basket__price-sum!= "<span>2099,-</span>"
+
+      .basket__delivery-col.basket__delivery-col--4
+        button.basket__btn(type="submit")!= "Złóż zamówienie"

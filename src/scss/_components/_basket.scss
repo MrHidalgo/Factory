@@ -26,10 +26,21 @@
     @include respond(max-small) {
       padding-bottom: 125px;
     }
+    @include respond(max-extra-small) {
+      padding-bottom: 55px;
+    }
 
     &--tabs {
       padding-bottom: 30px;
       @include respond(max-small) {
+        display: none;
+      }
+    }
+
+    &--link {
+      display: none;
+      @include respond(max-small) {
+        display: block;
         padding-top: 30px;
         padding-bottom: 15px;
       }
@@ -220,6 +231,54 @@
         border-top: 1px solid #cdd7df;
         @include respond(max-small) {
           display: none;
+        }
+      }
+
+      &--3 {
+        display: none;
+        @include respond(max-small) {
+          display: block;
+
+          .basket__price-left {
+            display: none;
+          }
+
+          .basket__price-right {
+            display: flex;
+          }
+
+          .basket__price-info {
+            position: static;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            &--perc {
+              font-size: 14px;
+            }
+            &--old {
+              font-size: 16px;
+            }
+          }
+
+          .basket__price-sum {
+            font-size: 16px;
+
+            span {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+
+      &--4 {
+        display: none;
+        @include respond(max-small) {
+          display: block;
+
+         .basket__btn {
+           max-width: 290px;
+         }
         }
       }
     }
@@ -473,6 +532,9 @@
     @include respond(max-small) {
       padding-top: 125px;
       border-top: none;
+    }
+    @include respond(max-extra-small) {
+      padding-top: 55px;
     }
 
     &-title {
