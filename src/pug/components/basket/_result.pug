@@ -1,2 +1,61 @@
 .c-grid
   .basket__row.basket__row-4.basket__row--result
+    .basket__result
+      .basket__result-col.basket__result-col-0
+        .basket__card-col.basket__card-col-0
+          p.basket__product-title!= "Produkt:"
+          .basket__product.basket__product-0
+            .basket__product-left
+              img(src="./img/img-product-0.png" srcset="./img/img-product-0@2x.png 2x" alt="" title="")
+            .basket__product-right
+              div
+                p.basket__product-name!= "PowerControl"
+
+              div
+                p.basket__product-price!= "suma brutto <span>2099,-</span>"
+
+      .basket__result-col.basket__result-col-1
+        .basket__result-wrapper
+          .basket__result-left
+            p.basket__result-title!= "Dane adresowe:"
+
+            .basket__result-address
+              p
+                span!= "John Doe"
+                span!= "Coca Cola S.A."
+
+              p
+                span!= "ul. Joliet 25/7"
+                span!= "00-000 Warszawa"
+
+          .basket__result-middle
+            p.basket__result-title!= "Wysyłka z przedpłatą:"
+
+            a.basket__delivery-box(href="#" class="" title="")
+              div
+                img(src="./img/img-paypal.png" srcset="./img/img-paypal@2x.png 2x" alt="" title="")
+              p!= "PayPal"
+
+          .basket__result-right
+            p.basket__result-title!= "Płatność za pośrednictwem:"
+
+            a.basket__delivery-box(href="#" class="" title="")
+              div
+                img(src="./img/img-kurier.png" srcset="./img/img-kurier@2x.png 2x" alt="" title="")
+              p!= "Kurier UPS"
+              span!= "14,99,-"
+
+      .basket__result-col.basket__result-col-2
+        .basket__card-col.basket__card-col-2
+          .basket__price
+            .basket__price-left
+              p.basket__price-desc!= "Montaż ze strojeniem na hamowni"
+              a.basket__price-link(href="#" class="" title="")!= "Zmień"
+            .basket__price-right
+              p.basket__price-info
+                span.basket__price-info--perc!= "-15%"
+                span.basket__price-info--old!= "2948,-"
+              p.basket__price-sum!= "suma brutto <span>2099,-</span>"
+
+        .basket__card-col.basket__card-col-3
+          button.basket__btn(type="submit")!= "Zapłać"

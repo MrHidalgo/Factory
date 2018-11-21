@@ -539,6 +539,9 @@ section {
       cursor: pointer;
       display: flex;
       align-items: center;
+      @include respond(max-small) {
+        align-items: flex-start;
+      }
     }
 
     &:checked {
@@ -588,8 +591,8 @@ section {
     &-text {
       max-width: calc(100% - 52px);
       color: #4d5964;
-      font-size: 14px;
       font-weight: 500;
+      @include fluid(font-size, 320px, 1440px, 12px, 14px);
 
       span {
         color: rgb(214, 39, 60);
