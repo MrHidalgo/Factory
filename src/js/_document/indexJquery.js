@@ -174,19 +174,6 @@ $(document).ready((ev) => {
   /**
    *
    */
-  const initBasketTabs = () => {
-    $('.basket__tabs-link').on('click', (ev) => {
-      const elem = $(ev.currentTarget);
-
-      $('.basket__tabs-link').removeClass('is-active');
-      elem.addClass('is-active');
-    });
-  };
-
-
-  /**
-   *
-   */
   const initBasketDeliveryBox = () => {
     $('.basket__delivery-box').on('click', (ev) => {
       const elem = $(ev.currentTarget),
@@ -216,7 +203,6 @@ $(document).ready((ev) => {
     initDropDownLevel1();
     initProductHeadBtn();
     initCollapseSearch();
-    initBasketTabs();
     initBasketDeliveryBox();
   };
   initJquery();

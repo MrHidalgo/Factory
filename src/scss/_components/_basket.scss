@@ -2,7 +2,6 @@
 
 .basket {
   .c-grid {
-    max-width: 958px;
     @include respond(max-small) {
       padding-left: 15px;
       padding-right: 15px;
@@ -195,7 +194,7 @@
     &-col {
       &--0 {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding-top: 65px;
         padding-bottom: 35px;
         border-top: 1px solid #cdd7df;
@@ -229,7 +228,8 @@
       &--0 {
         position: relative;
         width: 100%;
-        max-width: calc(179px * 3);
+        max-width: calc((179px * 3) + (34px * 2));
+        margin-right: 60px;
         @include respond(max-medium) {
           max-width: 100%;
           padding-bottom: 35px;
@@ -242,7 +242,7 @@
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          right: -17px;
+          right: -60px;
           width: 1px;
           height: 151px;
           background-color: #cdd7df;
@@ -253,7 +253,8 @@
       }
       &--1 {
         width: 100%;
-        max-width: calc(179px * 2);
+        max-width: calc((179px * 2) + 34px);
+        margin-left: 60px;
         @include respond(max-medium) {
           max-width: 100%;
         }
@@ -273,7 +274,7 @@
       justify-content: center;
       width: 100%;
       max-width: 179px;
-      margin-right: 14px;
+      margin-right: 34px;
       text-align: center;
       @include respond(max-extra-small) {
         max-width: calc(50% - 10px);
@@ -621,15 +622,19 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
         @include respond(max-small) {
           width: 100%;
+        }
+
+        &:first-of-type {
+          width: 60%;
         }
 
         &:last-of-type {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          width: 40%;
         }
       }
     }

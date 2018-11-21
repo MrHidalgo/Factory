@@ -15,7 +15,7 @@ PageList:
   ready: 93
 - file: basket.html
   titleName: Basket
-  ready: 1
+  ready: 80
 - file: 404.html
   titleName: 404
   ready: 93

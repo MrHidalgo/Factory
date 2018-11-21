@@ -1,14 +1,57 @@
 // SECTION BASKET :: START
 
+-
+  var basketTabsData = [
+    {
+      href: "#",
+      name: '1. Twoje zamówienie'
+    },
+    {
+      href: "#",
+      name: '2. Dane adresowe'
+    },
+    {
+      href: "#",
+      name: '3. Dostawa i płatność'
+    },
+    {
+      href: "#",
+      name: '4. Podsumowanie'
+    }
+  ];
+
+mixin basketTabs(arr, activeID)
+  .c-grid
+    .basket__row.basket__row-0.basket__row--tabs
+      .basket__tabs
+        ul.basket__tabs-list
+          each val, idx in arr
+            li.basket__tabs-item
+              a.basket__tabs-link(
+                href= arr[idx].href
+                class!= (idx === activeID) ? "is-active": ""
+                title=""
+                data-basket-tabs-id= idx
+              )!= arr[idx].name
+
+
 section.section#basket.basket
   .section__bg.section__bg--light
 
   .basket__wrapper
-    include ./_tabs
+    +basketTabs(basketTabsData, 0)
     include ./_card
+
+    +basketTabs(basketTabsData, 1)
     include ./_data
+
+    +basketTabs(basketTabsData, 2)
     include ./_delivery
+
+    +basketTabs(basketTabsData, 3)
     include ./_result
+
+    +basketTabs(basketTabsData, 3)
     include ./_message
 
 // SECTION BASKET :: END
