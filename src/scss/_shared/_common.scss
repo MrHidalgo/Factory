@@ -128,15 +128,29 @@ section {
     background-color: #434c62;
     color: #ecf7ff;
     font-size: 18px;
-    @include transition(opacity);
+    @include transition(background-color);
     @include respond(max-small) {
       background-color: #b0b6c6;
       color: $c-white;
     }
 
-    &:hover {
-      opacity: 0.9;
-      @include transition(opacity);
+    &--fb {
+      &:hover {
+        background-color: #4267B2;
+        @include transition(background-color);
+      }
+    }
+    &--yb {
+      &:hover {
+        background-color: #FF0000;
+        @include transition(background-color);
+      }
+    }
+    &--in {
+      &:hover {
+        background-color: #E24F4E;
+        @include transition(background-color);
+      }
     }
   }
 }

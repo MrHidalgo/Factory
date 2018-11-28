@@ -1059,9 +1059,9 @@ section.section {
   background-color: #434c62;
   color: #ecf7ff;
   font-size: 18px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -1072,15 +1072,31 @@ section.section {
   }
 }
 
-/* line 137, src/scss/_shared/_common.scss */
-.social__link:hover {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+/* line 138, src/scss/_shared/_common.scss */
+.social__link--fb:hover {
+  background-color: #4267B2;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* line 147, src/scss/_shared/_common.scss */
+/* line 144, src/scss/_shared/_common.scss */
+.social__link--yb:hover {
+  background-color: #FF0000;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 150, src/scss/_shared/_common.scss */
+.social__link--in:hover {
+  background-color: #E24F4E;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 161, src/scss/_shared/_common.scss */
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1091,7 +1107,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 147, src/scss/_shared/_common.scss */
+  /* line 161, src/scss/_shared/_common.scss */
   .copyright {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1100,7 +1116,7 @@ section.section {
   }
 }
 
-/* line 154, src/scss/_shared/_common.scss */
+/* line 168, src/scss/_shared/_common.scss */
 .copyright p {
   color: #8d96ae;
   font-size: 12px;
@@ -1108,7 +1124,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 154, src/scss/_shared/_common.scss */
+  /* line 168, src/scss/_shared/_common.scss */
   .copyright p {
     padding-top: 27px;
     text-align: center;
@@ -1116,20 +1132,20 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 163, src/scss/_shared/_common.scss */
+  /* line 177, src/scss/_shared/_common.scss */
   .copyright p span {
     display: block;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 170, src/scss/_shared/_common.scss */
+  /* line 184, src/scss/_shared/_common.scss */
   .copyright > span {
     display: none;
   }
 }
 
-/* line 181, src/scss/_shared/_common.scss */
+/* line 195, src/scss/_shared/_common.scss */
 .c-form__group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1140,14 +1156,14 @@ section.section {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 185, src/scss/_shared/_common.scss */
+  /* line 199, src/scss/_shared/_common.scss */
   .c-form__group--select {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 190, src/scss/_shared/_common.scss */
+/* line 204, src/scss/_shared/_common.scss */
 .c-form__group--select .c-form__group-col {
   width: 160px;
   margin-left: 6px;
@@ -1155,7 +1171,7 @@ section.section {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 190, src/scss/_shared/_common.scss */
+  /* line 204, src/scss/_shared/_common.scss */
   .c-form__group--select .c-form__group-col {
     width: 100%;
     margin: 0;
@@ -1164,7 +1180,7 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 190, src/scss/_shared/_common.scss */
+  /* line 204, src/scss/_shared/_common.scss */
   .c-form__group--select .c-form__group-col {
     width: 100%;
     margin-left: 0;
@@ -1173,24 +1189,24 @@ section.section {
   }
 }
 
-/* line 206, src/scss/_shared/_common.scss */
+/* line 220, src/scss/_shared/_common.scss */
 .c-form__group--select .c-form__group-col:first-of-type {
   margin-left: 0;
 }
 
-/* line 209, src/scss/_shared/_common.scss */
+/* line 223, src/scss/_shared/_common.scss */
 .c-form__group--select .c-form__group-col:last-of-type {
   margin-right: 0;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 209, src/scss/_shared/_common.scss */
+  /* line 223, src/scss/_shared/_common.scss */
   .c-form__group--select .c-form__group-col:last-of-type {
     margin-bottom: 0;
   }
 }
 
-/* line 218, src/scss/_shared/_common.scss */
+/* line 232, src/scss/_shared/_common.scss */
 .c-form__group--input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1198,14 +1214,14 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 218, src/scss/_shared/_common.scss */
+  /* line 232, src/scss/_shared/_common.scss */
   .c-form__group--input {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 224, src/scss/_shared/_common.scss */
+/* line 238, src/scss/_shared/_common.scss */
 .c-form__group--input .c-form__group-col {
   width: 190px;
   margin-left: 5px;
@@ -1213,14 +1229,14 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 224, src/scss/_shared/_common.scss */
+  /* line 238, src/scss/_shared/_common.scss */
   .c-form__group--input .c-form__group-col {
     width: 100%;
     margin: 0;
   }
 }
 
-/* line 233, src/scss/_shared/_common.scss */
+/* line 247, src/scss/_shared/_common.scss */
 .basket__data-cover--0 .c-form__group--input .c-form__group-col {
   width: calc(50% - 10px);
   margin-left: 10px;
@@ -1228,58 +1244,58 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 233, src/scss/_shared/_common.scss */
+  /* line 247, src/scss/_shared/_common.scss */
   .basket__data-cover--0 .c-form__group--input .c-form__group-col {
     width: 100%;
     margin: 0;
   }
 }
 
-/* line 243, src/scss/_shared/_common.scss */
+/* line 257, src/scss/_shared/_common.scss */
 .basket__data-cover--2 .c-form__group--input .c-form__group-col {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 247, src/scss/_shared/_common.scss */
+/* line 261, src/scss/_shared/_common.scss */
 .basket__data-cover--2 .c-form__group--input .c-form__group-col-0 {
   width: calc(50% - 10px);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 247, src/scss/_shared/_common.scss */
+  /* line 261, src/scss/_shared/_common.scss */
   .basket__data-cover--2 .c-form__group--input .c-form__group-col-0 {
     width: 100%;
     margin: 0;
   }
 }
 
-/* line 254, src/scss/_shared/_common.scss */
+/* line 268, src/scss/_shared/_common.scss */
 .basket__data-cover--2 .c-form__group--input .c-form__group-col-1, .basket__data-cover--2 .c-form__group--input .c-form__group-col-2 {
   width: calc(25% - 10px);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 254, src/scss/_shared/_common.scss */
+  /* line 268, src/scss/_shared/_common.scss */
   .basket__data-cover--2 .c-form__group--input .c-form__group-col-1, .basket__data-cover--2 .c-form__group--input .c-form__group-col-2 {
     width: calc(50% - 10px);
     margin: 0;
   }
 }
 
-/* line 264, src/scss/_shared/_common.scss */
+/* line 278, src/scss/_shared/_common.scss */
 .basket__data-cover--3 .c-form__group--input .c-form__group-col {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 268, src/scss/_shared/_common.scss */
+/* line 282, src/scss/_shared/_common.scss */
 .basket__data-cover--3 .c-form__group--input .c-form__group-col-0, .basket__data-cover--3 .c-form__group--input .c-form__group-col-1 {
   width: calc(20% - 10px);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 272, src/scss/_shared/_common.scss */
+  /* line 286, src/scss/_shared/_common.scss */
   .basket__data-cover--3 .c-form__group--input .c-form__group-col-0 {
     width: calc(35% - 10px);
     margin: 0;
@@ -1287,42 +1303,42 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 278, src/scss/_shared/_common.scss */
+  /* line 292, src/scss/_shared/_common.scss */
   .basket__data-cover--3 .c-form__group--input .c-form__group-col-1 {
     width: calc(65% - 10px);
     margin: 0;
   }
 }
 
-/* line 284, src/scss/_shared/_common.scss */
+/* line 298, src/scss/_shared/_common.scss */
 .basket__data-cover--3 .c-form__group--input .c-form__group-col-2 {
   width: calc(60% - 10px);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 284, src/scss/_shared/_common.scss */
+  /* line 298, src/scss/_shared/_common.scss */
   .basket__data-cover--3 .c-form__group--input .c-form__group-col-2 {
     width: 100%;
     margin: 0;
   }
 }
 
-/* line 293, src/scss/_shared/_common.scss */
+/* line 307, src/scss/_shared/_common.scss */
 .c-form__group--input .c-form__group-col:first-of-type {
   margin-left: 0;
 }
 
-/* line 296, src/scss/_shared/_common.scss */
+/* line 310, src/scss/_shared/_common.scss */
 .c-form__group--input .c-form__group-col:last-of-type {
   margin-right: 0;
 }
 
-/* line 309, src/scss/_shared/_common.scss */
+/* line 323, src/scss/_shared/_common.scss */
 .c-form__field {
   position: relative;
 }
 
-/* line 315, src/scss/_shared/_common.scss */
+/* line 329, src/scss/_shared/_common.scss */
 .c-form__field.is-focus .c-form__input-wrapper input,
 .c-form__field.is-focus .c-form__input-wrapper textarea,
 .c-form__field.is-focus .c-form__textarea-wrapper input,
@@ -1333,7 +1349,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 321, src/scss/_shared/_common.scss */
+/* line 335, src/scss/_shared/_common.scss */
 .c-form__field.is-focus .c-form__input-wrapper:before,
 .c-form__field.is-focus .c-form__textarea-wrapper:before {
   border-color: #8d96ae;
@@ -1342,7 +1358,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 328, src/scss/_shared/_common.scss */
+/* line 342, src/scss/_shared/_common.scss */
 .c-form__field--btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1377,13 +1393,13 @@ section.section {
   color: #4d5964;
 }
 
-/* line 340, src/scss/_shared/_common.scss */
+/* line 354, src/scss/_shared/_common.scss */
 .c-form__input-wrapper, .c-form__textarea-wrapper {
   position: relative;
   margin-bottom: 16px;
 }
 
-/* line 344, src/scss/_shared/_common.scss */
+/* line 358, src/scss/_shared/_common.scss */
 .c-form__input-wrapper:before, .c-form__textarea-wrapper:before {
   z-index: 0;
   content: '';
@@ -1400,7 +1416,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 360, src/scss/_shared/_common.scss */
+/* line 374, src/scss/_shared/_common.scss */
 .c-form__input-wrapper:hover input,
 .c-form__input-wrapper:hover textarea, .c-form__input-wrapper:active input,
 .c-form__input-wrapper:active textarea, .c-form__textarea-wrapper:hover input,
@@ -1412,7 +1428,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 366, src/scss/_shared/_common.scss */
+/* line 380, src/scss/_shared/_common.scss */
 .c-form__input-wrapper:hover:before, .c-form__input-wrapper:active:before, .c-form__textarea-wrapper:hover:before, .c-form__textarea-wrapper:active:before {
   border-color: #8d96ae;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1420,7 +1436,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 374, src/scss/_shared/_common.scss */
+/* line 388, src/scss/_shared/_common.scss */
 .c-form__input {
   outline: none;
   position: absolute;
@@ -1441,13 +1457,13 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 390, src/scss/_shared/_common.scss */
+/* line 404, src/scss/_shared/_common.scss */
 .c-form__input-wrapper {
   min-height: 62px;
   background-color: #fff;
 }
 
-/* line 396, src/scss/_shared/_common.scss */
+/* line 410, src/scss/_shared/_common.scss */
 .c-form__textarea {
   outline: none;
   resize: none;
@@ -1469,12 +1485,12 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 413, src/scss/_shared/_common.scss */
+/* line 427, src/scss/_shared/_common.scss */
 .c-form__textarea-wrapper {
   min-height: 309px;
 }
 
-/* line 418, src/scss/_shared/_common.scss */
+/* line 432, src/scss/_shared/_common.scss */
 .c-form__select {
   overflow: hidden;
   height: 100%;
@@ -1484,13 +1500,13 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 418, src/scss/_shared/_common.scss */
+  /* line 432, src/scss/_shared/_common.scss */
   .c-form__select {
     min-height: 36px;
   }
 }
 
-/* line 429, src/scss/_shared/_common.scss */
+/* line 443, src/scss/_shared/_common.scss */
 .c-form__select:hover .c-form__select-icon-wrap {
   background-color: #d6273c;
   border-color: #ab182a;
@@ -1499,7 +1515,7 @@ section.section {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 434, src/scss/_shared/_common.scss */
+/* line 448, src/scss/_shared/_common.scss */
 .c-form__select:hover .c-form__select-icon-wrap i {
   text-shadow: 0 1px 0 #ab182a;
   color: #fff;
@@ -1508,7 +1524,7 @@ section.section {
   transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 442, src/scss/_shared/_common.scss */
+/* line 456, src/scss/_shared/_common.scss */
 .c-form__select select {
   opacity: 0;
   cursor: pointer;
@@ -1524,7 +1540,7 @@ section.section {
           box-shadow: none;
 }
 
-/* line 456, src/scss/_shared/_common.scss */
+/* line 470, src/scss/_shared/_common.scss */
 .c-form__select-value {
   white-space: nowrap;
   overflow: hidden;
@@ -1545,19 +1561,19 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 456, src/scss/_shared/_common.scss */
+  /* line 470, src/scss/_shared/_common.scss */
   .c-form__select-value {
     line-height: 36px;
     font-size: 14px;
   }
 }
 
-/* line 477, src/scss/_shared/_common.scss */
+/* line 491, src/scss/_shared/_common.scss */
 .c-form__select-value.is-choose {
   color: #000;
 }
 
-/* line 482, src/scss/_shared/_common.scss */
+/* line 496, src/scss/_shared/_common.scss */
 .c-form__select-icon {
   text-shadow: 0 1px 0 white;
   color: #4d5964;
@@ -1569,7 +1585,7 @@ section.section {
   transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* line 490, src/scss/_shared/_common.scss */
+/* line 504, src/scss/_shared/_common.scss */
 .c-form__select-icon-wrap {
   position: absolute;
   display: -webkit-box;
@@ -1594,7 +1610,7 @@ section.section {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* line 508, src/scss/_shared/_common.scss */
+/* line 522, src/scss/_shared/_common.scss */
 .c-form__checkbox {
   opacity: 0;
   position: absolute;
@@ -1604,7 +1620,7 @@ section.section {
   height: 0;
 }
 
-/* line 530, src/scss/_shared/_common.scss */
+/* line 544, src/scss/_shared/_common.scss */
 .c-form__checkbox-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1615,7 +1631,7 @@ section.section {
   margin-top: 15px;
 }
 
-/* line 538, src/scss/_shared/_common.scss */
+/* line 552, src/scss/_shared/_common.scss */
 .c-form__checkbox-content {
   cursor: pointer;
   display: -webkit-box;
@@ -1627,7 +1643,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 538, src/scss/_shared/_common.scss */
+  /* line 552, src/scss/_shared/_common.scss */
   .c-form__checkbox-content {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1635,7 +1651,7 @@ section.section {
   }
 }
 
-/* line 550, src/scss/_shared/_common.scss */
+/* line 564, src/scss/_shared/_common.scss */
 .c-form__checkbox:checked + label .c-form__checkbox-icon i {
   border-color: #8d96ae;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1643,7 +1659,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 554, src/scss/_shared/_common.scss */
+/* line 568, src/scss/_shared/_common.scss */
 .c-form__checkbox:checked + label .c-form__checkbox-icon i:before {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1651,12 +1667,12 @@ section.section {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 563, src/scss/_shared/_common.scss */
+/* line 577, src/scss/_shared/_common.scss */
 .c-form__checkbox-icon {
   width: 52px;
 }
 
-/* line 566, src/scss/_shared/_common.scss */
+/* line 580, src/scss/_shared/_common.scss */
 .c-form__checkbox-icon i {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1676,7 +1692,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 576, src/scss/_shared/_common.scss */
+/* line 590, src/scss/_shared/_common.scss */
 .c-form__checkbox-icon i:before {
   content: '';
   opacity: 0;
@@ -1694,7 +1710,7 @@ section.section {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 591, src/scss/_shared/_common.scss */
+/* line 605, src/scss/_shared/_common.scss */
 .c-form__checkbox-text {
   max-width: calc(100% - 52px);
   color: #4d5964;
@@ -1703,25 +1719,25 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 591, src/scss/_shared/_common.scss */
+  /* line 605, src/scss/_shared/_common.scss */
   .c-form__checkbox-text {
     font-size: calc(12px + 2 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 591, src/scss/_shared/_common.scss */
+  /* line 605, src/scss/_shared/_common.scss */
   .c-form__checkbox-text {
     font-size: 14px;
   }
 }
 
-/* line 597, src/scss/_shared/_common.scss */
+/* line 611, src/scss/_shared/_common.scss */
 .c-form__checkbox-text span {
   color: #d6273c;
 }
 
-/* line 603, src/scss/_shared/_common.scss */
+/* line 617, src/scss/_shared/_common.scss */
 .c-form__btn {
   outline: none;
   cursor: pointer;
@@ -1744,13 +1760,13 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 603, src/scss/_shared/_common.scss */
+  /* line 617, src/scss/_shared/_common.scss */
   .c-form__btn {
     max-width: 100%;
   }
 }
 
-/* line 624, src/scss/_shared/_common.scss */
+/* line 638, src/scss/_shared/_common.scss */
 .c-form__btn:hover {
   background-color: #23394e;
   text-shadow: 0 2px 0 #0a1723;
@@ -1759,7 +1775,7 @@ section.section {
   transition: background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-/* line 629, src/scss/_shared/_common.scss */
+/* line 643, src/scss/_shared/_common.scss */
 .c-form__btn:hover:before {
   border-color: #0a1723;
   background-color: #0a1723;
@@ -1768,7 +1784,7 @@ section.section {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 636, src/scss/_shared/_common.scss */
+/* line 650, src/scss/_shared/_common.scss */
 .c-form__btn:active {
   line-height: 50px;
   background-color: #d6273c;
@@ -1778,7 +1794,7 @@ section.section {
   transition: line-height 0.3s ease-in-out, background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-/* line 642, src/scss/_shared/_common.scss */
+/* line 656, src/scss/_shared/_common.scss */
 .c-form__btn:active:before {
   bottom: 6px;
   border-color: #af1932;
@@ -1788,7 +1804,7 @@ section.section {
   transition: bottom 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 650, src/scss/_shared/_common.scss */
+/* line 664, src/scss/_shared/_common.scss */
 .c-form__btn:before {
   z-index: -1;
   content: '';
@@ -1964,18 +1980,33 @@ section.section {
           align-items: center;
   padding-bottom: 0;
   color: #8d96ae;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
   /* line 83, src/scss/_macros/_nav.scss */
   .nav--footer .nav__link {
-    font-size: 12px;
+    font-size: calc(12px + 4 * (100vw - 320px) / 1600);
   }
 }
 
-/* line 96, src/scss/_macros/_nav.scss */
+@media screen and (min-width: 1920px) {
+  /* line 83, src/scss/_macros/_nav.scss */
+  .nav--footer .nav__link {
+    font-size: 16px;
+  }
+}
+
+/* line 91, src/scss/_macros/_nav.scss */
+.nav--footer .nav__link:hover {
+  color: #0a1723;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 98, src/scss/_macros/_nav.scss */
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1985,12 +2016,12 @@ section.section {
           align-items: center;
 }
 
-/* line 101, src/scss/_macros/_nav.scss */
+/* line 103, src/scss/_macros/_nav.scss */
 .nav__item {
   margin-right: 22px;
 }
 
-/* line 105, src/scss/_macros/_nav.scss */
+/* line 107, src/scss/_macros/_nav.scss */
 .nav__link {
   position: relative;
   display: -webkit-box;
@@ -2005,7 +2036,7 @@ section.section {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 115, src/scss/_macros/_nav.scss */
+/* line 117, src/scss/_macros/_nav.scss */
 .nav__link.is-active, .nav__link:hover {
   color: #0a1723;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2014,13 +2045,13 @@ section.section {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 115, src/scss/_macros/_nav.scss */
+  /* line 117, src/scss/_macros/_nav.scss */
   .nav__link.is-active, .nav__link:hover {
     color: #e4eaef;
   }
 }
 
-/* line 123, src/scss/_macros/_nav.scss */
+/* line 125, src/scss/_macros/_nav.scss */
 .nav__link.is-active .nav__link-icon, .nav__link:hover .nav__link-icon {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2028,7 +2059,7 @@ section.section {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 129, src/scss/_macros/_nav.scss */
+/* line 131, src/scss/_macros/_nav.scss */
 .nav__link.is-drop {
   color: #fab32a;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2036,7 +2067,7 @@ section.section {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 133, src/scss/_macros/_nav.scss */
+/* line 135, src/scss/_macros/_nav.scss */
 .nav__link.is-drop:before {
   background-color: #fab32a;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2044,7 +2075,7 @@ section.section {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 138, src/scss/_macros/_nav.scss */
+/* line 140, src/scss/_macros/_nav.scss */
 .nav__link.is-drop:after {
   top: calc(50% - 6px);
   -webkit-transform: translateY(-50%) rotate(-135deg);
@@ -2058,7 +2089,7 @@ section.section {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 146, src/scss/_macros/_nav.scss */
+/* line 148, src/scss/_macros/_nav.scss */
 .nav__link-icon {
   opacity: 0;
   position: absolute;
@@ -2073,7 +2104,7 @@ section.section {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 146, src/scss/_macros/_nav.scss */
+  /* line 148, src/scss/_macros/_nav.scss */
   .nav__link-icon {
     opacity: 1;
     position: static;
@@ -2085,20 +2116,20 @@ section.section {
   }
 }
 
-/* line 162, src/scss/_macros/_nav.scss */
+/* line 164, src/scss/_macros/_nav.scss */
 .nav__link-dropdown {
   display: none;
   margin-left: 46px;
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 162, src/scss/_macros/_nav.scss */
+  /* line 164, src/scss/_macros/_nav.scss */
   .nav__link-dropdown {
     display: none !important;
   }
 }
 
-/* line 171, src/scss/_macros/_nav.scss */
+/* line 173, src/scss/_macros/_nav.scss */
 .nav__link-dropdown > ul > li > a {
   position: relative;
   display: -webkit-box;
@@ -2117,7 +2148,7 @@ section.section {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 182, src/scss/_macros/_nav.scss */
+/* line 184, src/scss/_macros/_nav.scss */
 .nav__link-dropdown > ul > li > a.is-subdrop {
   color: #fab32a;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2125,7 +2156,7 @@ section.section {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 186, src/scss/_macros/_nav.scss */
+/* line 188, src/scss/_macros/_nav.scss */
 .nav__link-dropdown > ul > li > a.is-subdrop:before {
   background-color: #fab32a;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2133,7 +2164,7 @@ section.section {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 191, src/scss/_macros/_nav.scss */
+/* line 193, src/scss/_macros/_nav.scss */
 .nav__link-dropdown > ul > li > a.is-subdrop:after {
   border-color: #fab32a transparent transparent transparent;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -2141,7 +2172,7 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 197, src/scss/_macros/_nav.scss */
+/* line 199, src/scss/_macros/_nav.scss */
 .nav__link-dropdown > ul > li > a:before {
   content: '';
   position: absolute;
@@ -2158,7 +2189,7 @@ section.section {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 209, src/scss/_macros/_nav.scss */
+/* line 211, src/scss/_macros/_nav.scss */
 .nav__link-dropdown > ul > li > a:after {
   content: '';
   position: absolute;
@@ -2175,20 +2206,20 @@ section.section {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 225, src/scss/_macros/_nav.scss */
+/* line 227, src/scss/_macros/_nav.scss */
 .nav__link-subdropdown {
   display: none;
   margin-left: 21px;
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 225, src/scss/_macros/_nav.scss */
+  /* line 227, src/scss/_macros/_nav.scss */
   .nav__link-subdropdown {
     display: none !important;
   }
 }
 
-/* line 234, src/scss/_macros/_nav.scss */
+/* line 236, src/scss/_macros/_nav.scss */
 .nav__link-subdropdown > ul > li > a {
   position: relative;
   display: -webkit-box;
@@ -2203,7 +2234,7 @@ section.section {
   font-size: 16px;
 }
 
-/* line 243, src/scss/_macros/_nav.scss */
+/* line 245, src/scss/_macros/_nav.scss */
 .nav__link-subdropdown > ul > li > a:before {
   content: '';
   position: absolute;
@@ -3508,14 +3539,14 @@ section.section {
 /* line 180, src/scss/_components/contacts/_contacts.scss */
 .footer .contact__col-text p {
   color: #434c62;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 10px;
 }
 
 @media screen and (min-width: 320px) {
   /* line 180, src/scss/_components/contacts/_contacts.scss */
   .footer .contact__col-text p {
-    font-size: calc(16px + 8 * (100vw - 320px) / 1600);
+    font-size: calc(18px + 6 * (100vw - 320px) / 1600);
   }
 }
 
@@ -3563,13 +3594,13 @@ section.section {
 
 /* line 192, src/scss/_components/contacts/_contacts.scss */
 .footer .contact__col-text span {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 320px) {
   /* line 192, src/scss/_components/contacts/_contacts.scss */
   .footer .contact__col-text span {
-    font-size: calc(12px + 6 * (100vw - 320px) / 1600);
+    font-size: calc(14px + 4 * (100vw - 320px) / 1600);
   }
 }
 

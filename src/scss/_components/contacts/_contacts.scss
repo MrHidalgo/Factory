@@ -179,7 +179,7 @@
 
         .footer & {
           color: #434c62;
-          @include fluid(font-size, 320px, 1920px, 16px, 24px);
+          @include fluid(font-size, 320px, 1920px, 18px, 24px);
           @include fluid(padding-bottom, 320px, 1920px, 10px, 16px);
         }
       }
@@ -190,7 +190,7 @@
         @include fluid(font-size, 320px, 1920px, 14px, 24px);
 
         .footer & {
-          @include fluid(font-size, 320px, 1920px, 12px, 18px);
+          @include fluid(font-size, 320px, 1920px, 14px, 18px);
         }
       }
     }
