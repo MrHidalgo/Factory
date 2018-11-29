@@ -33,8 +33,11 @@
 	@if $filename == instagram-logo {
 		$char: "\E002";
 	}
-	@if $filename == youtube-logo {
+	@if $filename == play {
 		$char: "\E003";
+	}
+	@if $filename == youtube-logo {
+		$char: "\E004";
 	}
 
 	@return $char;
@@ -57,6 +60,10 @@
 }
 .icon-instagram-logo {
 	@include icon(instagram-logo);
+
+}
+.icon-play {
+	@include icon(play);
 
 }
 .icon-youtube-logo {

@@ -18,7 +18,7 @@ PageList:
   ready: 80
 - file: pedalbox.html
   titleName: Pedalbox
-  ready: 10
+  ready: 15
 - file: 404.html
   titleName: 404
   ready: 93

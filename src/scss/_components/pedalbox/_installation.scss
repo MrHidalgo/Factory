@@ -1,0 +1,256 @@
+// SECTION INSTALLATION :: START
+
+.installation {
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &-0 {
+      z-index: 2;
+      padding-top: 155px;
+      padding-bottom: 255px;
+      @include fluid(padding-top, 320px, 1440px, 50px, 155px);
+      @include fluid(padding-bottom, 320px, 1440px, 50px, 155px);
+    }
+
+    &-1 {
+      z-index: 1;
+      background-image: url('../img/img-bg-installation.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @include fluid(min-height, 320px, 1440px, 230px, 300px);
+    }
+  }
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    span {
+      z-index: 0;
+      position: absolute;
+      left: 0;
+      width: 100%;
+
+      &:nth-child(1) {
+        top: 0;
+        height: 50%;
+        background-color: #d6273c;
+        transform: skewY(-2deg);
+        @include respond(max-extra-small) {
+          top: -10px;
+        }
+      }
+
+      &:nth-child(2) {
+        bottom: 0;
+        height: 50%;
+        background-color: #e4eaef;
+        transform: skewY(-2deg);
+        @include respond(max-extra-small) {
+          bottom: -10px;
+        }
+      }
+
+      &:nth-child(3) {
+        top: 0;
+        height: 100%;
+        background-color: #0a1723;
+        transform: skewY(5deg);
+      }
+    }
+  }
+
+  &__row {
+    z-index: 1;
+    position: relative;
+    padding-left: 80px;
+    @include respond(max-large) {
+      padding-left: 0;
+    }
+  }
+
+  &__col {
+    display: flex;
+    align-items: center;
+    @include respond(max-large) {
+      flex-direction: column;
+    }
+
+    &-left {
+      width: 100%;
+      max-width: calc(100% - 520px);
+      padding-right: 80px;
+      @include respond(max-large) {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @include respond(max-small) {
+        padding: 0;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-right {
+      width: 520px;
+      @include respond(max-large) {
+        width: 100%;
+        max-width: 672px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__title {
+    color: $c-white;
+    font-weight: bold;
+    @include fluid(padding-bottom, 320px, 1440px, 34px, 71px);
+    @include fluid(font-size, 320px, 1440px, 24px, 48px);
+    @include respond(max-large) {
+      padding-left: 80px;
+    }
+    @include respond(max-medium) {
+      padding-left: 0;
+    }
+    @include respond(max-small) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @include respond(max-large) {
+      padding-top: 46px;
+    }
+    @include respond(max-extra-small) {
+      padding-top: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    @include respond(max-extra-small) {
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    &-left {
+      width: 80px;
+      @include respond(max-extra-small) {
+        padding-bottom: 30px;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 80px);
+      @include respond(max-extra-small) {
+        max-width: 100%;
+      }
+    }
+
+    &-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border: 1px solid #95a6b2;
+      background-color: transparent;
+      color: #95a6b2;
+      font-size: 29px;
+      font-weight: 300;
+    }
+
+    &-text {
+      width: 100%;
+      max-width: 382px;
+      color: $c-white;
+      line-height: line-height-convert(30, 18);
+      @include fluid(font-size, 320px, 1440px, 14px, 18px);
+      @include respond(max-large) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__video {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @include fluid(min-height, 320px, 1440px, 230px, 300px);
+    @include fluid(padding-bottom, 320px, 1440px, 40px, 65px);
+
+    p {
+      color: $c-white;
+      font-weight: bold;
+      @include fluid(padding-bottom, 320px, 1440px, 20px, 30px);
+      @include fluid(font-size, 320px, 1440px, 18px, 24px);
+      @include respond(max-extra-small) {
+        text-align: center;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+      border: 3px solid $c-white;
+      background-color: transparent;
+      @include fluid(width height, 320px, 1440px, 60px, 80px);
+      @include transition(background-color);
+
+      &:hover {
+        background-color: rgba($c-white, 0.1);
+        @include transition(background-color);
+
+        .icon-play {
+          transform: scale(0.9);
+          @include transition(transform);
+        }
+      }
+    }
+
+    .icon-play {
+      position: relative;
+      left: 3px;
+      color: $c-white;
+      transform-origin: center;
+      @include fluid(font-size, 320px, 1440px, 23px, 33px);
+      @include transition(transform);
+    }
+  }
+}
+
+// SECTION INSTALLATION :: END

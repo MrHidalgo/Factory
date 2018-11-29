@@ -523,7 +523,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-facebook-logo:before, .icon-instagram-logo:before, .icon-youtube-logo:before {
+.icon-facebook-logo:before, .icon-instagram-logo:before, .icon-play:before, .icon-youtube-logo:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -534,19 +534,24 @@
   text-transform: none;
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
+/* line 47, src/scss/_generated/_spriteFont.scss */
 .icon-facebook-logo:before {
   content: "";
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
+/* line 47, src/scss/_generated/_spriteFont.scss */
 .icon-instagram-logo:before {
   content: "";
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-youtube-logo:before {
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-play:before {
   content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-youtube-logo:before {
+  content: "";
 }
 
 @font-face {
@@ -8175,6 +8180,583 @@ section.section {
 /* line 80, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__text span:nth-child(2) {
   display: block;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 4, src/scss/_components/pedalbox/_installation.scss */
+  .installation .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 11, src/scss/_components/pedalbox/_installation.scss */
+.installation__wrapper {
+  position: relative;
+}
+
+/* line 14, src/scss/_components/pedalbox/_installation.scss */
+.installation__wrapper-0 {
+  z-index: 2;
+  padding-top: 155px;
+  padding-bottom: 255px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 14, src/scss/_components/pedalbox/_installation.scss */
+  .installation__wrapper-0 {
+    padding-top: calc(50px + 105 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 14, src/scss/_components/pedalbox/_installation.scss */
+  .installation__wrapper-0 {
+    padding-top: 155px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 14, src/scss/_components/pedalbox/_installation.scss */
+  .installation__wrapper-0 {
+    padding-bottom: calc(50px + 105 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 14, src/scss/_components/pedalbox/_installation.scss */
+  .installation__wrapper-0 {
+    padding-bottom: 155px;
+  }
+}
+
+/* line 22, src/scss/_components/pedalbox/_installation.scss */
+.installation__wrapper-1 {
+  z-index: 1;
+  background-image: url("../img/img-bg-installation.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 230px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 22, src/scss/_components/pedalbox/_installation.scss */
+  .installation__wrapper-1 {
+    min-height: calc(230px + 70 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 22, src/scss/_components/pedalbox/_installation.scss */
+  .installation__wrapper-1 {
+    min-height: 300px;
+  }
+}
+
+/* line 32, src/scss/_components/pedalbox/_installation.scss */
+.installation__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 40, src/scss/_components/pedalbox/_installation.scss */
+.installation__bg span {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+/* line 46, src/scss/_components/pedalbox/_installation.scss */
+.installation__bg span:nth-child(1) {
+  top: 0;
+  height: 50%;
+  background-color: #d6273c;
+  -webkit-transform: skewY(-2deg);
+      -ms-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 46, src/scss/_components/pedalbox/_installation.scss */
+  .installation__bg span:nth-child(1) {
+    top: -10px;
+  }
+}
+
+/* line 56, src/scss/_components/pedalbox/_installation.scss */
+.installation__bg span:nth-child(2) {
+  bottom: 0;
+  height: 50%;
+  background-color: #e4eaef;
+  -webkit-transform: skewY(-2deg);
+      -ms-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 56, src/scss/_components/pedalbox/_installation.scss */
+  .installation__bg span:nth-child(2) {
+    bottom: -10px;
+  }
+}
+
+/* line 66, src/scss/_components/pedalbox/_installation.scss */
+.installation__bg span:nth-child(3) {
+  top: 0;
+  height: 100%;
+  background-color: #0a1723;
+  -webkit-transform: skewY(5deg);
+      -ms-transform: skewY(5deg);
+          transform: skewY(5deg);
+}
+
+/* line 75, src/scss/_components/pedalbox/_installation.scss */
+.installation__row {
+  z-index: 1;
+  position: relative;
+  padding-left: 80px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 75, src/scss/_components/pedalbox/_installation.scss */
+  .installation__row {
+    padding-left: 0;
+  }
+}
+
+/* line 84, src/scss/_components/pedalbox/_installation.scss */
+.installation__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 84, src/scss/_components/pedalbox/_installation.scss */
+  .installation__col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 91, src/scss/_components/pedalbox/_installation.scss */
+.installation__col-left {
+  width: 100%;
+  max-width: calc(100% - 520px);
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 91, src/scss/_components/pedalbox/_installation.scss */
+  .installation__col-left {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 91, src/scss/_components/pedalbox/_installation.scss */
+  .installation__col-left {
+    padding: 0;
+  }
+}
+
+/* line 104, src/scss/_components/pedalbox/_installation.scss */
+.installation__col-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 113, src/scss/_components/pedalbox/_installation.scss */
+.installation__col-right {
+  width: 520px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 113, src/scss/_components/pedalbox/_installation.scss */
+  .installation__col-right {
+    width: 100%;
+    max-width: 672px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 124, src/scss/_components/pedalbox/_installation.scss */
+.installation__title {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 34px;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    padding-bottom: calc(34px + 37 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    padding-bottom: 71px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    font-size: calc(24px + 24 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 124, src/scss/_components/pedalbox/_installation.scss */
+  .installation__title {
+    text-align: center;
+  }
+}
+
+/* line 140, src/scss/_components/pedalbox/_installation.scss */
+.installation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 140, src/scss/_components/pedalbox/_installation.scss */
+  .installation__list {
+    padding-top: 46px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 140, src/scss/_components/pedalbox/_installation.scss */
+  .installation__list {
+    padding-top: 30px;
+  }
+}
+
+/* line 151, src/scss/_components/pedalbox/_installation.scss */
+.installation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 151, src/scss/_components/pedalbox/_installation.scss */
+  .installation__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 160, src/scss/_components/pedalbox/_installation.scss */
+.installation__item:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 164, src/scss/_components/pedalbox/_installation.scss */
+.installation__item-left {
+  width: 80px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 164, src/scss/_components/pedalbox/_installation.scss */
+  .installation__item-left {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 171, src/scss/_components/pedalbox/_installation.scss */
+.installation__item-right {
+  width: 100%;
+  max-width: calc(100% - 80px);
+}
+
+@media screen and (max-width: 575px) {
+  /* line 171, src/scss/_components/pedalbox/_installation.scss */
+  .installation__item-right {
+    max-width: 100%;
+  }
+}
+
+/* line 179, src/scss/_components/pedalbox/_installation.scss */
+.installation__item-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #95a6b2;
+  background-color: transparent;
+  color: #95a6b2;
+  font-size: 29px;
+  font-weight: 300;
+}
+
+/* line 193, src/scss/_components/pedalbox/_installation.scss */
+.installation__item-text {
+  width: 100%;
+  max-width: 382px;
+  color: #fff;
+  line-height: 1.66667;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 193, src/scss/_components/pedalbox/_installation.scss */
+  .installation__item-text {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 193, src/scss/_components/pedalbox/_installation.scss */
+  .installation__item-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 193, src/scss/_components/pedalbox/_installation.scss */
+  .installation__item-text {
+    max-width: 100%;
+  }
+}
+
+/* line 205, src/scss/_components/pedalbox/_installation.scss */
+.installation__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 230px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 205, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video {
+    min-height: calc(230px + 70 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 205, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 205, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video {
+    padding-bottom: calc(40px + 25 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 205, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video {
+    padding-bottom: 65px;
+  }
+}
+
+/* line 212, src/scss/_components/pedalbox/_installation.scss */
+.installation__video p {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 212, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video p {
+    padding-bottom: calc(20px + 10 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 212, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video p {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 212, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video p {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 212, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 212, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video p {
+    text-align: center;
+  }
+}
+
+/* line 222, src/scss/_components/pedalbox/_installation.scss */
+.installation__video a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 222, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video a {
+    width: calc(60px + 20 * (100vw - 320px) / 1120);
+    height: calc(60px + 20 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 222, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video a {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* line 234, src/scss/_components/pedalbox/_installation.scss */
+.installation__video a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 238, src/scss/_components/pedalbox/_installation.scss */
+.installation__video a:hover .icon-play {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 245, src/scss/_components/pedalbox/_installation.scss */
+.installation__video .icon-play {
+  position: relative;
+  left: 3px;
+  color: #fff;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  font-size: 23px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 245, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video .icon-play {
+    font-size: calc(23px + 10 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 245, src/scss/_components/pedalbox/_installation.scss */
+  .installation__video .icon-play {
+    font-size: 33px;
+  }
 }
 
 /* line 4, src/scss/_components/pedalbox/_certificates.scss */
