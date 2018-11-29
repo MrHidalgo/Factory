@@ -36,6 +36,12 @@ section {
     top: 60px;
   }
 
+  .pedalbox & {
+    @include respond(max-extra-small) {
+      top: 250px;
+    }
+  }
+
   &--light {
     @include respond(wide-medium) {
       background-image: url('../img/bg.svg');

@@ -1,5 +1,40 @@
 // BUTTON :: START
 
-.c-btn {}
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 2em;
+  border: 2px solid #d72d42;
+  background-color: #d72d42;
+  color: $c-white;
+  font-weight: 500;
+  @include fluid(height, 320px, 1440px, 47px, 68px);
+  @include fluid(font-size, 320px, 1440px, 18px, 24px);
+  @include transition(border, background-color, color);
+
+  .pedalbox & {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    @include fluid(max-width, 320px, 1440px, 240px, 350px);
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: #d72d42;
+    @include transition(border, background-color, color);
+  }
+
+  &:active {
+    border-color: #0a1723;
+    background-color: #0a1723;
+    color: $c-white;
+    @include transition(border, background-color, color);
+  }
+}
 
 // BUTTON :: END
