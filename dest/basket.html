@@ -182,11 +182,23 @@
                   </div>
                 </div>
                 <div class="basket__card-col basket__card-col-3"><a class="basket__link" href="#" title="">← Wróc do zakupów</a>
-                  <button class="basket__btn" type="submit">Następny krok</button>
+                  <button class="basket__btn" type="submit">Złóż zamówienie</button>
                 </div>
               </div>
             </div>
           </div>
+                <div class="c-grid">
+                  <div class="basket__row basket__row-0 basket__row--tabs">
+                    <div class="basket__tabs">
+                      <ul class="basket__tabs-list">
+                        <li class="basket__tabs-item"><a class="basket__tabs-link is-active" href="#" title="" data-basket-tabs-id="0">1. Twoje zamówienie</a></li>
+                        <li class="basket__tabs-item"><a class="basket__tabs-link" href="#" title="" data-basket-tabs-id="1">2. Dane adresowe</a></li>
+                        <li class="basket__tabs-item"><a class="basket__tabs-link" href="#" title="" data-basket-tabs-id="2">3. Dostawa i płatność</a></li>
+                        <li class="basket__tabs-item"><a class="basket__tabs-link" href="#" title="" data-basket-tabs-id="3">4. Podsumowanie</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
           <div class="basket__row basket__row-1 basket__row--card" style="padding-bottom: 0;">
             <div class="basket__card">
               <div class="c-grid">
@@ -228,7 +240,7 @@
                       </div>
                     </div>
                     <div class="basket__card-col basket__card-col-3"><a class="basket__link" href="#" title="">← Wróc do zakupów</a>
-                      <button class="basket__btn" type="submit">Następny krok</button>
+                      <button class="basket__btn" type="submit">Złóż zamówienie</button>
                     </div>
                   </div>
                 </div>
@@ -269,10 +281,114 @@
                       </div>
                     </div>
                   </div>
-                  <div class="basket__data-cover basket__data-cover--1">
-                    <div class="c-form__field c-form__field--input">
-                      <div class="c-form__input-wrapper">
-                        <input class="c-form__input" type="text" name="" placeholder="Nazwa firmy (opcjonalnie)" form-focus-js>
+                  <div class="basket__data-cover basket__data-cover--2">
+                    <div class="c-form__group c-form__group--input">
+                      <div class="c-form__group-col c-form__group-col-0">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Ulica" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-form__group-col c-form__group-col-1">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Numer domu" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-form__group-col c-form__group-col-2">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Numer mieszkania" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__data-cover basket__data-cover--3">
+                    <div class="c-form__group c-form__group--input">
+                      <div class="c-form__group-col c-form__group-col-0">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Ulica" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-form__group-col c-form__group-col-1">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Numer domu" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-form__group-col c-form__group-col-2">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Numer mieszkania" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__data-cover basket__data-cover--4 basket__data-cover basket__data-cover--wm">
+                    <div class="c-form__field c-form__field--checkbox">
+                      <div class="c-form__checkbox-wrapper">
+                        <input class="c-form__checkbox" type="checkbox" id="checkbox1" name="checkbox1" value="">
+                        <label class="c-form__checkbox-content" for="checkbox1">
+                          <div class="c-form__checkbox-icon"><i></i></div><span class="c-form__checkbox-text">Potrzebuję fakturę VAT na firmę</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__data-cover basket__data-cover--4">
+                    <div class="c-form__field c-form__field--checkbox">
+                      <div class="c-form__checkbox-wrapper">
+                        <input class="c-form__checkbox" type="checkbox" id="checkbox2" name="checkbox1" value="">
+                        <label class="c-form__checkbox-content" for="checkbox2">
+                          <div class="c-form__checkbox-icon"><i></i></div><span class="c-form__checkbox-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu rekrutacji zgodnie z art. 6 ust. 1 lit. a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) <span>*</span></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="basket__data-col basket__data-col--1">
+                  <button class="basket__btn" type="submit">Następny krok</button>
+                </div>
+              </form>
+            </div>
+          </div>
+                <div class="c-grid">
+                  <div class="basket__row basket__row-0 basket__row--tabs">
+                    <div class="basket__tabs">
+                      <ul class="basket__tabs-list">
+                        <li class="basket__tabs-item"><a class="basket__tabs-link" href="#" title="" data-basket-tabs-id="0">1. Twoje zamówienie</a></li>
+                        <li class="basket__tabs-item"><a class="basket__tabs-link is-active" href="#" title="" data-basket-tabs-id="1">2. Dane adresowe</a></li>
+                        <li class="basket__tabs-item"><a class="basket__tabs-link" href="#" title="" data-basket-tabs-id="2">3. Dostawa i płatność</a></li>
+                        <li class="basket__tabs-item"><a class="basket__tabs-link" href="#" title="" data-basket-tabs-id="3">4. Podsumowanie</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          <div class="c-grid">
+            <div class="basket__row basket__row-2 basket__row--data">
+              <form class="c-form basket__data">
+                <div class="basket__data-col basket__data-col--0">
+                  <div class="basket__data-cover basket__data-cover--0">
+                    <div class="c-form__group c-form__group--input">
+                      <div class="c-form__group-col c-form__group-col-0">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Imię" form-focus-js>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-form__group-col c-form__group-col-1">
+                        <div class="c-form__field c-form__field--input">
+                          <div class="c-form__input-wrapper">
+                            <input class="c-form__input" type="text" name="" placeholder="Nazwisko" form-focus-js>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -329,8 +445,8 @@
                   <div class="basket__data-cover basket__data-cover--4">
                     <div class="c-form__field c-form__field--checkbox">
                       <div class="c-form__checkbox-wrapper">
-                        <input class="c-form__checkbox" type="checkbox" id="checkbox" name="checkbox" value="">
-                        <label class="c-form__checkbox-content" for="checkbox">
+                        <input class="c-form__checkbox" type="checkbox" id="checkbox2" name="checkbox1" value="">
+                        <label class="c-form__checkbox-content" for="checkbox2">
                           <div class="c-form__checkbox-icon"><i></i></div><span class="c-form__checkbox-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu rekrutacji zgodnie z art. 6 ust. 1 lit. a Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) <span>*</span></span>
                         </label>
                       </div>
@@ -387,7 +503,9 @@
                         <div><img src="./img/img-przelewy24.png" srcset="./img/img-przelewy24@2x.png 2x" alt="" title=""></div>
                         <p>Przelewy24</p></a><a class="basket__delivery-box" href="#" title="">
                         <div><img src="./img/img-płatnicza.png" srcset="./img/img-płatnicza@2x.png 2x" alt="" title=""></div>
-                        <p>Karta płatnicza</p></a></div>
+                        <p>Karta płatnicza</p></a><a class="basket__delivery-box" href="#" title="">
+                        <div><img src="./img/img-gotówka.png" srcset="./img/img-gotówka@2x.png 2x" alt="" title=""></div>
+                        <p>Gotówka</p></a></div>
                   </div>
                 </div>
                 <div class="basket__delivery-col basket__delivery-col--2">

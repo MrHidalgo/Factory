@@ -36,6 +36,7 @@ mixin basketTabs(arr, activeID)
 
 
 section.section#basket.basket
+
   .section__bg.section__bg--light
 
   .basket__wrapper
@@ -45,6 +46,9 @@ section.section#basket.basket
 
     +basketTabs(basketTabsData, 1)
     include ./_data
+
+    +basketTabs(basketTabsData, 1)
+    include ./_data1
 
     +basketTabs(basketTabsData, 2)
     include ./_delivery
