@@ -238,6 +238,11 @@ $selectric-font-size:       16px !default;                                      
   z-index: -1;
   //box-shadow: 0 0 10px -6px;
 
+  .reduced & {
+    left: auto;
+    right: 0;
+  }
+
 
   .selectric-scroll {
     height: 100%;
