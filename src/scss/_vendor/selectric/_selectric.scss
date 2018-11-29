@@ -88,6 +88,11 @@ $selectric-font-size:       16px !default;                                      
       line-height: 36px;
       font-size: 14px;
     }
+
+    .details & {
+      border-color: #fff;
+      background-color: #fff;
+    }
   }
 
   .button {
@@ -108,6 +113,10 @@ $selectric-font-size:       16px !default;                                      
     @include respond(max-small) {
       height: 36px;
       line-height: 36px;
+    }
+
+    .details & {
+      background-color: #b1bec7;
     }
 
     &:after {
@@ -131,6 +140,10 @@ $selectric-font-size:       16px !default;                                      
       font-size: 19px;
       font-family: 'Neris', sans-serif;
       @include transition(text-shadow, color);
+
+      .details & {
+        color: #fff;
+      }
     }
   }
 }
@@ -238,11 +251,11 @@ $selectric-font-size:       16px !default;                                      
   z-index: -1;
   //box-shadow: 0 0 10px -6px;
 
+  .details &,
   .reduced & {
     left: auto;
     right: 0;
   }
-
 
   .selectric-scroll {
     height: 100%;

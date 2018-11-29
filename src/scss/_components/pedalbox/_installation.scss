@@ -164,6 +164,7 @@
     &-left {
       width: 80px;
       @include respond(max-extra-small) {
+        width: 100%;
         padding-bottom: 30px;
       }
     }
@@ -188,6 +189,10 @@
       color: #95a6b2;
       font-size: 29px;
       font-weight: 300;
+      @include respond(max-extra-small) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &-text {
