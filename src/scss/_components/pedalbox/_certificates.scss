@@ -1,0 +1,72 @@
+// SECTION CERTIFICATES :: START
+
+.certificates {
+  &__wrapper {
+    @include fluid(padding-top, 320px, 1440px, 55px, 150px);
+    @include fluid(padding-bottom, 320px, 1440px, 55px, 260px);
+  }
+
+  &__title,
+  &__text {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    @include fluid(padding-bottom, 320px, 1440px, 30px, 53px);
+    @include fluid(font-size, 320px, 1440px, 24px, 48px);
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 940px;
+    line-height: line-height-convert(30, 18);
+    @include fluid(padding-bottom, 320px, 1440px, 30px, 71px);
+    @include fluid(font-size, 320px, 1440px, 14px, 18px);
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__img {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% / 4);
+    @include respond(max-medium) {
+      width: calc(100% / 2);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0);
+        @include transition(filter);
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      filter: grayscale(1);
+      @include transition(filter);
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+// SECTION CERTIFICATES :: END
