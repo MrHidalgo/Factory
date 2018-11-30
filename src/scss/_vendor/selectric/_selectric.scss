@@ -300,6 +300,10 @@ $selectric-font-size:       16px !default;                                      
 
     &:last-of-type {
       border-bottom: 0;
+
+      &:after {
+        display: none;
+      }
     }
 
     &.selected {

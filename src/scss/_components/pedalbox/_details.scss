@@ -2,7 +2,7 @@
 
 .details {
   overflow: hidden;
-  @include fluid(padding-top, 320px, 1920px, 53px, 103px);
+  @include fluid(padding-top, 320px, 1920px, 53px, 153px);
   @include fluid(padding-bottom, 320px, 1920px, 71px, 171px);
 
   .c-grid {
@@ -38,7 +38,6 @@
   }
 
   &__wrapper {
-    z-index: 1;
     position: relative;
     display: flex;
     @include respond(max-wide-small) {
