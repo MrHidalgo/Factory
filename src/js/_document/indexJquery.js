@@ -195,6 +195,7 @@ $(document).ready((ev) => {
     initPreventBehavior();
     // lib
     initHamburger();
+    initSwiper();
     // callback
     initSelect();
     initMap();

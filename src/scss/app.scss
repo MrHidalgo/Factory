@@ -24,7 +24,7 @@
 @import "_shared/common";
 //@import "_shared/viewPortChecker";
 //@import "_shared/magnificPopup";
-//@import "_shared/swiper";
+@import "_shared/swiper";
 //@import "_shared/objectFitImages";
 @import "_shared/iconPNG";
 //@import "_shared/iconSVG";
@@ -60,6 +60,7 @@
 @import "_components/basket";
 
 @import "_components/pedalbox/pedalbox";
+@import "_components/pedalbox/working";
 @import "_components/pedalbox/item";
 @import "_components/pedalbox/application";
 @import "_components/pedalbox/details";

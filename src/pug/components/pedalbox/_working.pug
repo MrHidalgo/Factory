@@ -1,0 +1,108 @@
+// SECTION WORKING :: START
+
+section#working.working
+  .working__wrapper.working__wrapper-0
+
+    .working__bg
+      span
+      span
+      span
+
+    .c-grid
+
+      h2.working__title!= "Jak to działa?"
+      p.working__text!= "<span>PedalBox</span> zmienia dwie rzeczy. <i></i>Po pierwsze sygnał pedału gazu jest znacznie częściej przekazywany do komputera sterującego silnikiem. <i></i>Po drugie zmieniona jest charakterystyka pedału w zależności od wybranego <span>programu.</span>"
+
+      .working__col
+        .working__col-left
+
+          p.working__subtitle!= "Rodzaje programów"
+
+          .working__mobile
+            .working__box
+              p.working__box-title!= "Sport+<span>(zmienia kolor diody na kolor czerwony)</span>"
+              p.working__box-description!= "Tryb najbardziej sportowy, który pozwala poszaleć samochodem, wykorzystując wszystkie jego walory. Najszybszy start samochodu ze świateł."
+
+              mixin swiperWorkingContent()
+                .swiper-slide
+                  img(src="./img/img-pedalbox-slider.png" srcset="./img/img-pedalbox-slider@2x.png 2x" alt="" title="")
+                .swiper-slide
+                  img(src="./img/img-pedalbox-slider.png" srcset="./img/img-pedalbox-slider@2x.png 2x" alt="" title="")
+                .swiper-slide
+                  img(src="./img/img-pedalbox-slider.png" srcset="./img/img-pedalbox-slider@2x.png 2x" alt="" title="")
+
+              +swiper('swiper-container--working', 'swiperWorkingContent', true, true, false)
+
+          .working__box
+            img.working__box-img(src="./img/img-item-working.png" srcset="./img/img-item-working@2x.png 2x" alt="" title="")
+
+            p.working__box-title!= "Sport+ <span>(zmienia kolor diody na kolor czerwony)</span>"
+
+            p.working__box-subtitle!= "Sport"
+            p.working__box-subtitle!= "City"
+            p.working__box-subtitle.working__box-subtitle--pb!= "Off"
+
+            p.working__box-description!= "Tryb najbardziej sportowy, który pozwala poszaleć samochodem, wykorzystując wszystkie jego walory. Najszybszy start samochodu ze świateł."
+
+            .working__block.working__block-0
+              .working__block-left
+                span!= "+"
+
+              .working__block-middle
+                p!= "Użyj symbolu plusa, żeby zwiększyć czułość modułu"
+                span!= "3 stopnie zwiększonej czułości, wyświetlane na czerwono"
+
+              .working__block-right
+                img(src="./img/img-level-plus.png" srcset="./img/img-level-plus@2x.png 2x" alt="" title="")
+
+            .working__block.working__block-1
+              .working__block-left
+                span!= "-"
+
+              .working__block-middle
+                p!= "Użyj symbolu minusa, żeby zmniejszyć czułość modułu"
+                span!= "3 stopnie zmniejszonej czułości, wyświetlane na zielono"
+
+              .working__block-right
+                img(src="./img/img-level-minus.png" srcset="./img/img-level-minus@2x.png 2x" alt="" title="")
+
+
+        .working__col-right
+          img(src="./img/img-graph-working.png" srcset="./img/img-graph-working@2x.png 2x" alt="" title="")
+
+          p!= "<span>Oś pionowa</span> to otwarcie przepustnicy, zaś <span>oś pozioma</span> pokazuje, <br>jak mocno wciśnięty jest pedał gazu."
+
+          .working__mobile
+            .working__block.working__block-0
+              .working__block-left
+                span!= "+"
+
+              .working__block-middle
+                p!= "Użyj symbolu plusa, żeby zwiększyć czułość modułu"
+                span!= "3 stopnie zwiększonej czułości, wyświetlane na czerwono"
+
+              .working__block-right
+                img(src="./img/img-level-plus.png" srcset="./img/img-level-plus@2x.png 2x" alt="" title="")
+
+            .working__block.working__block-1
+              .working__block-left
+                span!= "-"
+
+              .working__block-middle
+                p!= "Użyj symbolu minusa, żeby zmniejszyć czułość modułu"
+                span!= "3 stopnie zmniejszonej czułości, wyświetlane na zielono"
+
+              .working__block-right
+                img(src="./img/img-level-minus.png" srcset="./img/img-level-minus@2x.png 2x" alt="" title="")
+
+
+  .working__wrapper.working__wrapper-1
+    .c-grid
+
+      .working__video
+        .working__video-wrapper
+          p!= "Zobacz video z montażem krok po kroku"
+          a(href="#" class="" title="")
+            i.icon-font.icon-play
+
+// SECTION WORKING :: END

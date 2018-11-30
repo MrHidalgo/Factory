@@ -17,8 +17,8 @@
     }
 
     &-1 {
-      @include fluid(padding-top, 320px, 1440px, 100px, 155px);
-      @include fluid(padding-bottom, 320px, 1440px, 15px, 199px);
+      @include fluid(padding-top, 320px, 1440px, 120px, 155px);
+      @include fluid(padding-bottom, 320px, 1440px, 40px, 199px);
     }
 
     &-left {

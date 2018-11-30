@@ -71,6 +71,63 @@ var initPreventBehavior = function initPreventBehavior() {
 };
 
 /**
+ * @name initSwiper
+ * @description initialize Swiper
+ */
+var initSwiper = function initSwiper() {
+  var mySwiper = new Swiper('.swiper-container--working', {
+    // Optional parameters
+    wrapperClass: "swiper-wrapper",
+    slideClass: "swiper-slide",
+    direction: 'horizontal', // 'horizontal' or 'vertical'
+    loop: true,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    effect: 'slide', // "slide", "fade", "cube", "coverflow" or "flip"
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    // Disable preloading of all images
+    // preloadImages: false,
+    // Enable lazy loading
+    // lazy: {
+    //   loadPrevNext: true,
+    // },
+
+    // off touch for destop
+    // touchMoveStopPropagation:false,
+    // simulateTouch : false,
+    // allowSwipeToNext: true,
+    // allowSwipeToPrev: true,
+    // allowPageScroll: "auto ",
+
+    slidesPerView: 1,
+    spaceBetween: 0,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+      // renderBullet: function (index, className) {
+      //   return `
+      //     <div class="${className}">
+      //       ${index}
+      //     </div>
+      //   `;
+      // }
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  });
+};
+
+/**
  * @name initWebFontLoader
  * @description Loading fonts regardless of the source, then adds a standard set of events you may use to control the loading experience... for more details => https://github.com/typekit/fvd
  */
@@ -295,6 +352,7 @@ $(document).ready(function (ev) {
     initPreventBehavior();
     // lib
     initHamburger();
+    initSwiper();
     // callback
     initSelect();
     initMap();

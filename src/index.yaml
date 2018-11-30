@@ -15,10 +15,10 @@ PageList:
   ready: 93
 - file: basket.html
   titleName: Basket
-  ready: 80
+  ready: 70
 - file: pedalbox.html
   titleName: Pedalbox
-  ready: 15
+  ready: 70
 - file: 404.html
   titleName: 404
   ready: 93

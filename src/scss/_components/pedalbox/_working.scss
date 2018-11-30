@@ -1,0 +1,397 @@
+// SECTION WORKING :: START
+
+.working {
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &-0 {
+      z-index: 2;
+      @include fluid(padding-top, 320px, 1440px, 50px, 155px);
+      @include fluid(padding-bottom, 320px, 1440px, 50px, 175px);
+    }
+
+    &-1 {
+      z-index: 1;
+      background-image: url('../img/img-bg-installation.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @include fluid(min-height, 320px, 1440px, 230px, 300px);
+    }
+  }
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    span {
+      z-index: 0;
+      position: absolute;
+      left: 0;
+      width: 100%;
+
+      &:nth-child(1) {
+        top: 0;
+        height: 50%;
+        background-color: #d6273c;
+        transform: skewY(-2deg);
+        @include respond(max-extra-small) {
+          top: -10px;
+        }
+      }
+
+      &:nth-child(2) {
+        bottom: 0;
+        height: 50%;
+        background-color: #e4eaef;
+        transform: skewY(-2deg);
+        @include respond(max-extra-small) {
+          bottom: -10px;
+        }
+      }
+
+      &:nth-child(3) {
+        top: 0;
+        height: 100%;
+        background-color: #0a1723;
+        transform: skewY(5deg);
+      }
+    }
+  }
+
+  &__row {
+    z-index: 1;
+    position: relative;
+    padding-left: 80px;
+    @include respond(max-extra-large) {
+      padding-left: 0;
+    }
+  }
+
+  &__title,
+  &__text {
+    z-index: 1;
+    position: relative;
+    padding-left: 75px;
+    @include respond(max-extra-large) {
+      padding-left: 0;
+    }
+  }
+
+  &__title {
+    color: $c-white;
+    line-height: line-height-convert(60, 48);
+    font-weight: bold;
+    @include fluid(padding-bottom, 320px, 1440px, 36px, 55px);
+    @include fluid(font-size, 320px, 1440px, 36px, 48px);
+    @include respond(max-small) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 1090px;
+    color: $c-white;
+    line-height: line-height-convert(30, 18);
+    @include fluid(padding-bottom, 320px, 1440px, 64px, 58px);
+    @include fluid(font-size, 320px, 1440px, 14px, 18px);
+    @include respond(max-small) {
+      text-align: center;
+    }
+
+    i {
+      @include respond(max-small) {
+        display: block;
+        padding-bottom: 40px;
+      }
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__col {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+    @include respond(max-extra-large) {
+      padding-left: 0;
+    }
+    @include respond(max-medium) {
+      flex-direction: column;
+    }
+
+    &-left {
+      width: 635px;
+      @include respond(max-medium) {
+        width: 100%;
+        padding-bottom: 50px;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 635px);
+      @include respond(max-medium) {
+        max-width: 100%;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: #979fb5;
+        text-align: center;
+        line-height: line-height-convert(24, 16);
+        @include fluid(font-size, 320px, 1440px, 10px, 16px);
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $c-white;
+    font-size: 30px;
+    font-weight: bold;
+    @include fluid(padding-bottom, 320px, 1440px, 37px, 58px);
+    @include respond(max-extra-small) {
+      text-align: center;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    @include respond(max-extra-small) {
+      display: block;
+    }
+
+    .working__box {
+      display: block;
+      min-height: 0;
+
+      &-title {
+        display: block;
+        text-align: center;
+
+        span {
+          display: block;
+          padding-left: 0;
+        }
+      }
+
+      &-description {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 100%;
+    max-width: 575px;
+    min-height: 351px;
+    color: $c-white;
+    @include respond(max-medium) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include respond(max-extra-small) {
+      display: none;
+    }
+
+    &-img {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 18px;
+      line-height: line-height-convert(30, 24);
+      font-size: 24px;
+      font-weight: bold;
+
+      span {
+        padding-left: 10px;
+        color: #979fb5;
+        line-height: line-height-convert(30, 16);
+        font-size: 16px;
+      }
+    }
+
+    &-subtitle {
+      color: #979fb5;
+      line-height: line-height-convert(30, 18);
+      font-size: 18px;
+      font-weight: bold;
+
+      &--pb {
+        padding-bottom: 29px;
+      }
+    }
+
+    &-description {
+      width: 100%;
+      max-width: 320px;
+      padding-bottom: 42px;
+      line-height: line-height-convert(20, 14);
+      font-size: 14px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    color: $c-white;
+    @include respond(max-extra-small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &-0 {
+        margin-top: 32px;
+      }
+    }
+
+    &-1 {
+      margin-bottom: 0;
+    }
+
+    &-left {
+      display: flex;
+      justify-content: flex-end;
+      width: 80px;
+      padding-right: 17px;
+      @include respond(max-extra-small) {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+        padding-bottom: 15px;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        border-radius: 5px;
+        border: 3px solid $c-white;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+
+    &-middle {
+      width: 100%;
+      max-width: calc(100% - (80px + 93px));
+      @include respond(max-extra-small) {
+        max-width: 100%;
+        padding-bottom: 15px;
+      }
+
+      p {
+        line-height: line-height-convert(20, 14);
+        font-size: 14px;
+      }
+
+      span {
+        display: block;
+        color: #d9e6e9;
+        line-height: line-height-convert(20, 12);
+        font-size: 12px;
+      }
+    }
+
+    &-right {
+      width: 93px;
+      @include respond(max-extra-small) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__video {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    @include fluid(min-height, 320px, 1440px, 230px, 300px);
+    @include fluid(padding-bottom, 320px, 1440px, 40px, 65px);
+
+    p {
+      color: $c-white;
+      font-weight: bold;
+      @include fluid(padding-bottom, 320px, 1440px, 20px, 30px);
+      @include fluid(font-size, 320px, 1440px, 18px, 24px);
+      @include respond(max-extra-small) {
+        text-align: center;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+      border: 3px solid $c-white;
+      background-color: transparent;
+      @include fluid(width height, 320px, 1440px, 60px, 80px);
+      @include transition(background-color);
+
+      &:hover {
+        background-color: rgba($c-white, 0.1);
+        @include transition(background-color);
+
+        .icon-play {
+          transform: scale(0.9);
+          @include transition(transform);
+        }
+      }
+    }
+
+    .icon-play {
+      position: relative;
+      left: 3px;
+      color: $c-white;
+      transform-origin: center;
+      @include fluid(font-size, 320px, 1440px, 23px, 33px);
+      @include transition(transform);
+    }
+  }
+}
+
+// SECTION WORKING :: END

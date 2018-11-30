@@ -1,5 +1,51 @@
-.swiper-container {
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
+.swiper {
+  &-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+  }
+
+  &-slide {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-pagination {
+    &-bullet {
+      opacity: 1;
+      border: 1px solid #e4eaef;
+      background-color: transparent;
+      @include transition(background-color);
+
+      &-active {
+        background-color: #e4eaef;
+        @include transition(background-color);
+      }
+    }
+  }
+
+  &-button {
+    &-prev,
+    &-next {
+      width: 15px;
+      height: 64px;
+      margin-top: -55px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &-prev {
+      background-image: url('../img/img-btn-prev.png');
+    }
+    &-next {
+      background-image: url('../img/img-btn-next.png');
+
+    }
+  }
 }
