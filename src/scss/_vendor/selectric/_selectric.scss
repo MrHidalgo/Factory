@@ -34,6 +34,10 @@ $selectric-font-size:       16px !default;                                      
         border-color: #ab182a;
         @include transition(background-color, border-color);
 
+        .details & {
+          background-color: #0A1723;
+        }
+
         &:after {
           text-shadow: 0 1px 0 rgba(#ab182a, 1);
           color: $c-white;

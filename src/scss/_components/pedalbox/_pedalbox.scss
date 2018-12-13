@@ -82,6 +82,12 @@
       }
     }
   }
+
+  &__btn {
+    @include respond(max-small) {
+      display: none;
+    }
+  }
 }
 
 // SECTION PEDALBOX :: END

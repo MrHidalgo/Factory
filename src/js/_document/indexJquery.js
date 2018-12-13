@@ -193,9 +193,12 @@ $(document).ready((ev) => {
     // default
     initWebFontLoader();
     initPreventBehavior();
+
     // lib
     initHamburger();
     initSwiper();
+    initSmoothScroll();
+
     // callback
     initSelect();
     initMap();
