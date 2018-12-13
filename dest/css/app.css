@@ -1130,7 +1130,7 @@ section.section {
 
 /* line 156, src/scss/_shared/_common.scss */
 .social__link--in:hover {
-  background-color: #E24F4E;
+  background-color: #E33A61;
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -2121,7 +2121,6 @@ section.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 16px;
   color: #7984a1;
   font-size: 14px;
   font-weight: 500;
@@ -2185,7 +2184,7 @@ section.section {
 
 /* line 148, src/scss/_macros/_nav.scss */
 .nav__link-icon {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: calc(100% - 8px);
   left: 50%;
@@ -2200,7 +2199,7 @@ section.section {
 @media screen and (max-width: 1199px) {
   /* line 148, src/scss/_macros/_nav.scss */
   .nav__link-icon {
-    opacity: 1;
+    display: block;
     position: static;
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
