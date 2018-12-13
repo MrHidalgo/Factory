@@ -3,22 +3,22 @@ ProjectTitle: HP Factory
 PageList:
 - file: index.html
   titleName: Home
-  ready: 93
+  ready: 90
 - file: contacts.html
   titleName: Contacts
-  ready: 93
+  ready: 90
 - file: search.html
   titleName: Search
-  ready: 93
+  ready: 90
 - file: about.html
   titleName: About
-  ready: 93
+  ready: 90
 - file: basket.html
   titleName: Basket
-  ready: 70
+  ready: 90
 - file: pedalbox.html
   titleName: Pedalbox
-  ready: 70
+  ready: 90
 - file: 404.html
   titleName: 404
-  ready: 93
+  ready: 90
