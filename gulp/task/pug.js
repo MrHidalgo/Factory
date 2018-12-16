@@ -29,7 +29,7 @@ const renderPug = () => {
 	return gulp
 		.src(srcPath)
 		.pipe(plumber(configOption.pipeBreaking.err))
-		.pipe(gulpif(global.isPugWatching, emitty.stream(global.emittyChangedPugFile)))
+		// .pipe(gulpif(global.isPugWatching, emitty.stream(global.emittyChangedPugFile)))
 		.pipe(emitty.stream(global.emittyChangedPugFile))
 		.pipe(frontMatter({
 			property: 'data'
@@ -58,7 +58,7 @@ gulp.task('pug', function() {
  * @description Gulp PUG/JADE watch - keeps track of changes in files.
  */
 gulp.task('pug:watch', function() {
-	global.isPugWatching = true;
+	// global.isPugWatching = true;
 
 	gulp.watch(configPath.src.templates + '/**', ['pug']).on('all', (event, filepath) => {
 		global.emittyChangedPugFile = filepath;
