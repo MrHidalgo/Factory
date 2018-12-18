@@ -8865,7 +8865,7 @@ section.section {
 /* line 324, src/scss/_components/pedalbox/_working.scss */
 .working__box-description {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   padding-bottom: 42px;
   line-height: 1.42857;
   font-size: 14px;

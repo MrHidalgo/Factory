@@ -50,7 +50,10 @@ section#working.working
 
             .working__box-title(
               working-title-js
-              data-num="0" data-name="Sport+" data-desc="(zmienia kolor diody na kolor czerwony)"
+              data-num="0"
+              data-name="Sport+"
+              data-desc="(zmienia kolor diody na kolor czerwony)"
+              data-text="Tryb najbardziej sportowy, który pozwala poszaleć samochodem, wykorzystując wszystkie jego walory. Najszybszy start samochodu ze świateł."
             )!= "<span working-btnName-js>Sport+</span> <span class='working__box-title--desc' working-btnDesc-js>(zmienia kolor diody na kolor czerwony)</span>"
 
             a.working__box-subtitle(
@@ -59,6 +62,7 @@ section#working.working
               data-num="1"
               data-name="Sport"
               data-desc="(zmienia kolor diody na kolor pomarańczowy)"
+              data-text="W trybie Sport reakcja pedału gazu jest zwiększona do 16%, co powoduje, że jest to tryb mający zastosowanie w większości sytuacji drogowych. Idealny do codziennej jazdy."
             )!= "Sport"
 
             a.working__box-subtitle(
@@ -67,6 +71,7 @@ section#working.working
               data-num="2"
               data-name="City"
               data-desc="(zmienia kolor diody na kolor zielony)"
+              data-text="City pozwala cieszyć się szybszą reakcją pedału gazu w miejskim zgiełku. Jest to tryb słabszy od Sport, ale za to bardzo przewidywalny i komfortowy."
             ).working__box-subtitle!= "City"
 
             a.working__box-subtitle.working__box-subtitle--pb(
@@ -75,9 +80,10 @@ section#working.working
               data-num="3"
               data-name="Off"
               data-desc="(wyłącza diodę)"
+              data-text="Ostatni tryb powoduje wyłączenie PedalBoxa z obwodu pedału gazu. Wtedy pedał gazu działa w stu procentach fabrycznie, bo PedalBox nie modyfikuje jego wartości."
             )!= "Off"
 
-            p.working__box-description!= "Tryb najbardziej sportowy, który pozwala poszaleć samochodem, wykorzystując wszystkie jego walory. Najszybszy start samochodu ze świateł."
+            p.working__box-description(working-text-js)!= "Tryb najbardziej sportowy, który pozwala poszaleć samochodem, wykorzystując wszystkie jego walory. Najszybszy start samochodu ze świateł."
 
             .working__block.working__block-0
               .working__block-left

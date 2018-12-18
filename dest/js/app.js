@@ -376,22 +376,26 @@ $(document).ready(function (ev) {
           elemId = elem.data('num'),
           elemName = elem.data('name'),
           elemDesc = elem.data('desc'),
+          elemText = elem.data('text'),
           prevElemId = $('[working-title-js]').data('num'),
           prevElemName = $('[working-title-js] [working-btnName-js]').text(),
           prevElemDesc = $('[working-title-js] [working-btnDesc-js]').text(),
+          prevElemText = $('[working-title-js]').data('text'),
           nodeNameBtn = $('[working-btnName-js]'),
-          nodeDescBtn = $('[working-btnDesc-js]');
+          nodeDescBtn = $('[working-btnDesc-js]'),
+          nodeTextContainer = $('[working-text-js]');
 
       var imageItem = $('.working__box-img--' + elemId),
           graphLine = $('.working__graph-img--' + elemId);
 
       nodeNameBtn.html(elemName);
       nodeDescBtn.html(elemDesc);
+      nodeTextContainer.html(elemText);
 
       setTimeout(function () {
-        elem.html(prevElemName).data('num', prevElemId).data('name', prevElemName).data('desc', prevElemDesc);
+        elem.html(prevElemName).data('num', prevElemId).data('name', prevElemName).data('desc', prevElemDesc).data('text', prevElemText);
 
-        $('[working-title-js]').data('num', elemId).data('name', elemName).data('desc', elemDesc);
+        $('[working-title-js]').data('num', elemId).data('name', elemName).data('desc', elemDesc).data('text', elemText);
       }, 100);
 
       if (elemId === 3) {
