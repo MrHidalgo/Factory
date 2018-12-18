@@ -96,7 +96,7 @@ var initSmoothScroll = function initSmoothScroll() {
  * @description initialize Swiper
  */
 var initSwiper = function initSwiper() {
-  var mySwiper = new Swiper('.swiper-container--working', {
+  var workingSlider = new Swiper('.swiper-container--working', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",
     slideClass: "swiper-slide",
@@ -145,6 +145,19 @@ var initSwiper = function initSwiper() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
+  });
+
+  /**
+   *
+   */
+  workingSlider.on('slideChange', function () {
+    var activeSlide = workingSlider.slides[workingSlider.activeIndex],
+        activeSlideID = $(activeSlide).data('slide-id');
+
+    var graphLine = $('.working__graph-img--' + activeSlideID);
+
+    $('[working-graph-js]').hide();
+    graphLine.fadeIn();
   });
 };
 

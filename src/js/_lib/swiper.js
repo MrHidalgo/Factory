@@ -5,7 +5,7 @@
  * @description initialize Swiper
  */
 const initSwiper = () => {
-  const mySwiper = new Swiper('.swiper-container--working', {
+  const workingSlider = new Swiper('.swiper-container--working', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",
     slideClass: "swiper-slide",
@@ -53,6 +53,19 @@ const initSwiper = () => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+    }
+  });
+
+  /**
+   *
+   */
+  workingSlider.on('slideChange', function() {
+    const activeSlide = workingSlider.slides[workingSlider.activeIndex],
+      activeSlideID = $(activeSlide).data('slide-id');
+
+    const graphLine = $('.working__graph-img--' + activeSlideID);
+
+    $('[working-graph-js]').hide();
+    graphLine.fadeIn();
   });
 };
