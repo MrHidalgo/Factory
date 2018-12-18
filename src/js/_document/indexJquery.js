@@ -185,6 +185,55 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   *
+   * @name initPedalBoxWorking
+   *
+   * @description
+   */
+  const initPedalBoxWorking = () => {
+    $('[working-btn-js]').on('click', (ev) => {
+      const elem = $(ev.currentTarget),
+        elemId = elem.data('num'),
+        elemName = elem.data('name'),
+        elemDesc = elem.data('desc'),
+        prevElemId = $('[working-title-js]').data('num'),
+        prevElemName = $('[working-title-js] [working-btnName-js]').text(),
+        prevElemDesc = $('[working-title-js] [working-btnDesc-js]').text(),
+        nodeNameBtn = $('[working-btnName-js]'),
+        nodeDescBtn = $('[working-btnDesc-js]');
+
+      const imageItem = $('.working__box-img--' + elemId),
+        graphLine = $('.working__graph-img--' + elemId);
+
+      nodeNameBtn.html(elemName);
+      nodeDescBtn.html(elemDesc);
+
+      setTimeout(() => {
+        elem.html(prevElemName)
+          .data('num', prevElemId)
+          .data('name', prevElemName)
+          .data('desc', prevElemDesc);
+
+        $('[working-title-js]')
+          .data('num', elemId)
+          .data('name', elemName)
+          .data('desc', elemDesc);
+      }, 100);
+
+      if(elemId === 3) {
+        $('[working-image-js]').hide();
+      } else {
+        $('[working-image-js]').fadeOut();
+        imageItem.fadeIn();
+      }
+
+      $('[working-graph-js]').hide();
+      graphLine.fadeIn();
+    });
+  };
+
+
 
   /**
    * @description Init all method
@@ -208,6 +257,7 @@ $(document).ready((ev) => {
     initProductHeadBtn();
     initCollapseSearch();
     initBasketDeliveryBox();
+    initPedalBoxWorking();
   };
   initJquery();
 });

@@ -171,15 +171,6 @@
         max-width: 100%;
       }
 
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-      }
-
       p {
         color: #979fb5;
         text-align: center;
@@ -189,6 +180,45 @@
         span {
           font-weight: bold;
         }
+      }
+    }
+  }
+
+  &__graph {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    max-width: 427px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-img {
+      position: relative;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+
+      &--0,
+      &--1,
+      &--2,
+      &--3 {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &--0 {
+        display: block;
+      }
+      &--1,
+      &--2,
+      &--3 {
+        display: none;
       }
     }
   }
@@ -246,10 +276,19 @@
     }
 
     &-img {
-      z-index: 0;
+      z-index: -1;
       position: absolute;
       top: 0;
       right: 0;
+
+      &--0 {
+        display: block;
+      }
+      &--1,
+      &--2,
+      &--3 {
+        display: none;
+      }
     }
 
     &-title {
@@ -257,11 +296,12 @@
       flex-wrap: wrap;
       align-items: center;
       padding-bottom: 18px;
+      color: $c-white;
       line-height: line-height-convert(30, 24);
       font-size: 24px;
       font-weight: bold;
 
-      span {
+      &--desc {
         padding-left: 10px;
         color: #979fb5;
         line-height: line-height-convert(30, 16);
@@ -270,6 +310,7 @@
     }
 
     &-subtitle {
+      display: flex;
       color: #979fb5;
       line-height: line-height-convert(30, 18);
       font-size: 18px;
