@@ -318,9 +318,15 @@
       line-height: line-height-convert(30, 18);
       font-size: 18px;
       font-weight: bold;
+      @include transition(color);
 
       &--pb {
         padding-bottom: 29px;
+      }
+
+      &:hover {
+        color: $c-white;
+        @include transition(color);
       }
     }
 

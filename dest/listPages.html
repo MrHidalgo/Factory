@@ -168,6 +168,10 @@
       position: relative;
     }
 
+    .is-notready {
+      pointer-events: none;
+    }
+
     .is-notready .pagelist__title {
       color: #aaaaaa;
       background: #fff;
@@ -245,13 +249,26 @@
     .pagelist__progress i {
       height: 5px;
       display: block;
-      background: #9e9e9e;
+      background: #2196f3;
     }
 
     .pagelist__filename {
       font-size: 14px;
       font-weight: bold;
       margin: 0;
+    }
+
+    .pagelist__filename--notfound {
+      color: #e98df5;
+    }
+    .pagelist__filename--finished {
+      color: #41c300;
+    }
+    .pagelist__filename--testing {
+      color: #ff9e22;
+    }
+    .pagelist__filename--developing {
+      color: #e54304;
     }
 
     header {
@@ -468,12 +485,12 @@
 <!-- content -->
 <header class="header">
   <!--<h1>-->
-    <!--<span>HP Factory</span>-->
+  <!--<span>HP Factory</span>-->
   <!--</h1>-->
   
   <div class="header__updated">
     <em>HP Factory</em> -
-    updated <strong>18.12.2018</strong>, 7 pages
+    updated <strong>19.12.2018</strong>, 8 pages
   </div>
 
   <nav class="types">
@@ -519,7 +536,7 @@
     
     
     <li
-      
+    
     >
 
     <a
@@ -537,17 +554,31 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">index.html</p>
+    <p class="pagelist__filename">
+      index.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
     
     <li
-      
+    
     >
 
     <a
@@ -565,17 +596,31 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">contacts.html</p>
+    <p class="pagelist__filename">
+      contacts.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
     
     <li
-      
+    
     >
 
     <a
@@ -593,17 +638,31 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">search.html</p>
+    <p class="pagelist__filename">
+      search.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
     
     <li
-      
+    
     >
 
     <a
@@ -621,17 +680,31 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">about.html</p>
+    <p class="pagelist__filename">
+      about.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
     
     <li
-      
+    
     >
 
     <a
@@ -649,17 +722,31 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">basket.html</p>
+    <p class="pagelist__filename">
+      basket.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
     
     <li
-      
+    
     >
 
     <a
@@ -677,17 +764,73 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">pedalbox.html</p>
+    <p class="pagelist__filename">
+      pedalbox.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
     
     <li
+    
+    >
+
+    <a
+      class="pagelist__title "
+      target="_blank"
+      href="powercontrol.html"
+    >
+      <span>7.</span>
+      <em>PowerControl</em>
+    </a>
+
+    <a href="powercontrol.html" class="pagelist__url" target="_blank">
+      <svg class="icon icon-link">
+        <use xlink:href="#icon-link"></use>
+      </svg>
+    </a>
+
+    <p class="pagelist__filename">
+      powercontrol.html - 1%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+         - IN DEVELOPING 
+      </span>
+      <span class="pagelist__filename--finished">
+        
+      </span>
+    </p>
+
+    <div class="pagelist__progress">
       
+      <i style="width:1%"></i>
+    </div>
+
+    </li>
+    
+    <li
+    
     >
 
     <a
@@ -695,7 +838,7 @@
       target="_blank"
       href="404.html"
     >
-      <span>7.</span>
+      <span>8.</span>
       <em>404</em>
     </a>
 
@@ -705,11 +848,25 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename">404.html</p>
+    <p class="pagelist__filename">
+      404.html - 96%
+      <span class="pagelist__filename--notfound">
+        
+      </span>
+      <span class="pagelist__filename--testing">
+        
+      </span>
+      <span class="pagelist__filename--developing">
+        
+      </span>
+      <span class="pagelist__filename--finished">
+         - PAGE FINISHED 
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       
-      <i style="width:90%"></i>
+      <i style="width:96%"></i>
     </div>
 
     </li>
