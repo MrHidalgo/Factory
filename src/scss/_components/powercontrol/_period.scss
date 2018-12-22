@@ -1,0 +1,38 @@
+// SECTION period :: START
+
+.period {
+  background-color: #ecf7ff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 287px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 357px;
+      padding-right: 90px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 357px);
+    }
+  }
+
+  &__title {
+    padding-bottom: 36px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}
+
+// SECTION period :: END

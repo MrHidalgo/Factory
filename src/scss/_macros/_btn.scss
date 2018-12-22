@@ -16,7 +16,8 @@
   @include fluid(font-size, 320px, 1440px, 18px, 24px);
   @include transition(border, background-color, color);
 
-  .pedalbox & {
+  .pedalbox &,
+  .powercontrol & {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;

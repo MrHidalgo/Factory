@@ -4,6 +4,10 @@
   @include fluid(padding-top, 320px, 1920px, 50px, 200px);
   @include fluid(padding-bottom, 320px, 1920px, 75px, 175px);
 
+  .p-powercontrol & {
+    @include fluid(padding-top, 320px, 1920px, 50px, 100px);
+  }
+
   .c-grid {
     @include respond(max-extra-small) {
       padding-left: 15px;
@@ -23,11 +27,22 @@
     }
   }
 
+  &__wrapper {
+    .p-powercontrol & {
+      display: flex;
+    }
+  }
+
   &__row {
     display: flex;
     align-items: flex-start;
     @include respond(max-small) {
       flex-direction: column;
+    }
+
+    .p-powercontrol & {
+      flex-direction: column;
+      width: 50%;
     }
 
     &-0 {
@@ -43,6 +58,10 @@
       @include respond(max-small) {
         width: 100%;
         margin-bottom: 51px;
+      }
+
+      .p-powercontrol & {
+        width: 100%;
       }
 
       .item__mobile {
@@ -69,6 +88,10 @@
         height: 122px;
         background-color: #e4eaef;
         transform: skewX(-15deg);
+
+        .p-powercontrol & {
+          max-width: 399px;
+        }
       }
 
       img {
@@ -89,6 +112,10 @@
       @include respond(max-small) {
         max-width: 100%;
       }
+
+      .p-powercontrol & {
+        max-width: 100%;
+      }
     }
   }
 
@@ -99,6 +126,11 @@
     @include fluid(font-size, 320px, 1920px, 36px, 48px);
     @include respond(max-small) {
       display: none;
+      text-align: center;
+    }
+
+    .p-powercontrol & {
+      margin-top: 60px;
       text-align: center;
     }
 
@@ -114,6 +146,14 @@
     }
   }
 
+  &__image {
+    .p-powercontrol & {
+      display: flex;
+      align-items: flex-end;
+      min-height: 273px;
+    }
+  }
+
   &__block {
     .product__box-footer {
       padding-bottom: 0;
@@ -123,15 +163,30 @@
       display: flex;
       flex-wrap: wrap;
 
+      .p-powercontrol & {
+        width: 100%;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       li {
         width: 50%;
         @include respond(max-large) {
           width: 100%;
         }
 
+        .p-powercontrol & {
+          width: 100%;
+        }
+
         &.item__block--wm {
           margin-bottom: 0;
           @include respond(max-large) {
+            margin-bottom: 51px;
+          }
+
+          .p-powercontrol & {
             margin-bottom: 51px;
           }
         }
@@ -151,6 +206,10 @@
                 line-height: 1;
                 font-size: 20px;
                 font-weight: bold;
+
+                .p-powercontrol & {
+                  display: none;
+                }
               }
             }
           }

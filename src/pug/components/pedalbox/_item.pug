@@ -2,20 +2,35 @@
 
 section#item.item
   .c-grid
+
+    if(contentClassName === 'p-powercontrol')
+      h2.item__title!= "Dwie wersje produktu"
+
     .item__wrapper
 
-      h2.item__title!= "Dwie wersje produktu"
+      if(contentClassName !== 'p-powercontrol')
+        h2.item__title!= "Dwie wersje produktu"
 
       .item__row.item__row-0
         .item__row-left
 
           .item__mobile
-            p.item__subtitle!= "Pedalbox"
+            if(contentClassName !== 'p-powercontrol')
+              p.item__subtitle!= "Pedalbox"
+            else
+              p.item__subtitle!= "PowerControl"
 
-          img(src="./img/img-item-0.png" srcset="./img/img-item-0@2x.png 2x" alt="" title="")
+          .item__image
+            if(contentClassName !== 'p-powercontrol')
+              img(src="./img/img-item-0.png" srcset="./img/img-item-0@2x.png 2x" alt="" title="")
+            else
+              img(src="./img/img-powercontrol-main.png" srcset="./img/img-powercontrol-main@2x.png 2x" alt="" title="")
 
         .item__row-right
-          p.item__subtitle!= "Pedalbox"
+          if(contentClassName !== 'p-powercontrol')
+            p.item__subtitle!= "Pedalbox"
+          else
+            p.item__subtitle!= "PowerControl"
 
           .item__block
             .product__box-footer
@@ -53,12 +68,22 @@ section#item.item
         .item__row-left
 
           .item__mobile
-            p.item__subtitle!= "Pedalbox<span>+</span>"
+            if(contentClassName !== 'p-powercontrol')
+              p.item__subtitle!= "Pedalbox<span>+</span>"
+            else
+              p.item__subtitle!= "PowerControl X"
 
-          img(src="./img/img-item-1.png" srcset="./img/img-item-1@2x.png 2x" alt="" title="")
+          .item__image
+            if(contentClassName !== 'p-powercontrol')
+              img(src="./img/img-item-1.png" srcset="./img/img-item-1@2x.png 2x" alt="" title="")
+            else
+              img(src="./img/img-powercontrol-x-main.png" srcset="./img/img-powercontrol-x-main@2x.png 2x" alt="" title="")
 
         .item__row-right
-          p.item__subtitle!= "Pedalbox<span>+</span>"
+          if(contentClassName !== 'p-powercontrol')
+            p.item__subtitle!= "Pedalbox<span>+</span>"
+          else
+            p.item__subtitle!= "PowerControl X"
 
           .item__block
             .product__box-footer

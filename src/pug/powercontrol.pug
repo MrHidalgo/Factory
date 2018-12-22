@@ -9,11 +9,14 @@ extends shared/_layout
 block content
   div.body.body--start(class!= contentClassName)
 
-    //- include ./components/pedalbox/_pedalbox
+    include ./components/powercontrol/_powercontrol
     //- include ./components/pedalbox/_working
-    //- include ./components/pedalbox/_item
+    include ./components/powercontrol/_period
+    include ./components/pedalbox/_item
     include ./components/pedalbox/_application
     //- include ./components/pedalbox/_details
     //- include ./components/pedalbox/_installation
+    include ./components/powercontrol/_types
+    include ./components/powercontrol/_order
     include ./components/pedalbox/_certificates
     include ./components/pedalbox/_reduced

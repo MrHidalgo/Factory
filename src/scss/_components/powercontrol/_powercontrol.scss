@@ -1,0 +1,131 @@
+// SECTION powercontrol :: START
+
+.powercontrol {
+  background-color: gray;
+
+  &__wrapper {
+    z-index: 1;
+    position: relative;
+    @include fluid(padding-top, 320px, 1920px, 15px, 105px);
+  }
+
+  &__row {
+    &-0 {
+      display: flex;
+      align-items: center;
+      @include respond(max-extra-small) {
+        flex-direction: column;
+      }
+    }
+
+    &-1 {
+      @include fluid(padding-top, 320px, 1440px, 120px, 155px);
+      @include fluid(padding-bottom, 320px, 1440px, 40px, 199px);
+    }
+
+    &-left {
+      width: 487px;
+      padding-right: 65px;
+      @include respond(max-large) {
+        width: 300px;
+        padding-right: 0;
+      }
+      @include respond(max-extra-small) {
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        @include respond(max-large) {
+          margin-right: auto;
+        }
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 487px);
+      @include respond(max-large) {
+        max-width: calc(100% - 300px);
+      }
+      @include respond(max-extra-small) {
+        position: relative;
+        top: -40px;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__title {
+    color: $c-white;
+    line-height: 1;
+    font-weight: bold;
+    @include fluid(padding-bottom, 320px, 1440px, 15px, 25px);
+    @include fluid(font-size, 320px, 1440px, 36px, 48px);
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 630px;
+    color: $c-white;
+    line-height: line-height-convert(30, 18);
+    @include fluid(font-size, 320px, 1440px, 14px, 18px);
+
+    &--pb {
+      padding-bottom: 25px;
+    }
+
+    span {
+      font-weight: bold;
+
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      padding-left: 15px;
+      color: $c-white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  &__btn {
+    @include respond(max-small) {
+      display: none;
+    }
+  }
+}
+
+// SECTION powercontrol :: END
