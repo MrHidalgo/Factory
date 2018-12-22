@@ -149,7 +149,6 @@
 
         &:nth-child(3),
         &:nth-child(4) {
-          margin-bottom: 0;
           @include respond(max-large) {
             margin-bottom: 51px;
           }
@@ -179,6 +178,23 @@
           @include fluid(font-size, 320px, 1440px, 14px, 16px);
         }
       }
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: flex-start;
+
+    &--ios {
+      margin-right: 15px;
+    }
+
+    &-wrapper {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 65px;
     }
   }
 }

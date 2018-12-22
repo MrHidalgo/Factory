@@ -55,4 +55,12 @@ section#application.application
                     p!= "Programy Sport, Sport Plus oraz City."
                     span!= "Dodatkowo czwarty program to program seryjny."
 
+      if(contentClassName === 'p-powercontrol')
+        .application__btn-wrapper
+          a.application__btn.application__btn--ios(href="#" class="" title="")
+            img(src="/img/img-ios.png" srcset="/img/img-ios@2x.png 2x" alt="" title="")
+          a.application__btn.application__btn--android(href="#" class="" title="")
+            img(src="/img/img-android.png" srcset="/img/img-android@2x.png 2x" alt="" title="")
+
+
 // SECTION APPLICATION :: END
