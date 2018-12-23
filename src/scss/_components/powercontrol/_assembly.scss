@@ -1,0 +1,160 @@
+// SECTION assembly :: START
+
+.assembly {
+  padding-top: 55px;
+  padding-bottom: 100px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 43px;
+
+    > div {
+      &:nth-of-type(1) {
+        width: 100%;
+        max-width: calc(100% - 135px);
+        padding-left: 90px;
+      }
+
+      &:nth-of-type(2) {
+        display: flex;
+        justify-content: flex-end;
+        width: 135px;
+        padding-right: 25px;
+      }
+    }
+  }
+
+  &__title {
+    color: #0a1723;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    &-left,
+    &-right {
+      width: 100%;
+    }
+
+    &-left {
+      padding-left: 90px;
+      max-width: calc(100 - 625px);
+    }
+
+    &-right {
+      max-width: 625px;
+      padding: 0 25px;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      align-items: stretch;
+      padding-bottom: 40px;
+
+      > div {
+        &:nth-of-type(1) {
+          position: relative;
+          width: 68px;
+        }
+
+        &:nth-of-type(2) {
+          width: 100%;
+          max-width: calc(100% - 68px);
+          padding-right: 90px;
+        }
+      }
+
+      h3,
+      p {
+        color: #0a1723;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      h3 {
+        padding-bottom: 10px;
+        font-size: 23px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    &-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 49px;
+      height: 49px;
+      border-radius: 100%;
+      border: 1px solid #95a6b2;
+      background-color: transparent;
+      color: #95a6b2;
+      font-size: 29px;
+      font-weight: 300;
+      @include respond(max-small) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 17px;
+      }
+    }
+
+    &-line {
+      position: absolute;
+      top: 49px;
+      left: 0;
+      width: 49px;
+      height: calc(100% - 24px);
+      padding: 12px;
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: calc(100% - (24px));
+        background-color: #95a6b2;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        padding: 3px;
+        border: solid #95a6b2;
+        border-width: 0 1px 1px 0;
+        transform: translateX(-50%) rotate(45deg);
+      }
+    }
+  }
+}
+
+// SECTION assembly :: END
