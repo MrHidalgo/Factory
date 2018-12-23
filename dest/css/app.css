@@ -13040,4 +13040,82 @@ section.section {
   border-radius: 2em;
 }
 
+/* line 3, src/scss/_components/powercontrol/_article.scss */
+.article {
+  position: relative;
+  min-height: 276px;
+  padding-bottom: 55px;
+}
+
+/* line 8, src/scss/_components/powercontrol/_article.scss */
+.article:before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - (55px + 30px + 50px));
+  background-color: #ecf7ff;
+}
+
+/* line 19, src/scss/_components/powercontrol/_article.scss */
+.article__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 22, src/scss/_components/powercontrol/_article.scss */
+.article__wrapper-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 459px;
+}
+
+/* line 28, src/scss/_components/powercontrol/_article.scss */
+.article__wrapper-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 35, src/scss/_components/powercontrol/_article.scss */
+.article__wrapper-right {
+  width: 100%;
+  max-width: calc(100% - 459px);
+}
+
+/* line 41, src/scss/_components/powercontrol/_article.scss */
+.article__text {
+  padding-top: 130px;
+  padding-bottom: 52px;
+  color: #0a1723;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 49, src/scss/_components/powercontrol/_article.scss */
+.article__btn {
+  max-width: 350px;
+}
+
+/* line 52, src/scss/_components/powercontrol/_article.scss */
+.article__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 115px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
