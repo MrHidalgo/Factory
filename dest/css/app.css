@@ -1892,12 +1892,16 @@ section.section {
 /* line 2, src/scss/_shared/_swiper.scss */
 .swiper-container {
   width: 100%;
+}
+
+/* line 5, src/scss/_shared/_swiper.scss */
+.swiper-container--working {
   max-width: 500px;
   padding-bottom: 50px;
 }
 
-/* line 9, src/scss/_shared/_swiper.scss */
-.swiper-slide img {
+/* line 11, src/scss/_shared/_swiper.scss */
+.swiper-container--working .swiper-slide img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -1905,8 +1909,8 @@ section.section {
   margin-right: auto;
 }
 
-/* line 19, src/scss/_shared/_swiper.scss */
-.swiper-pagination-bullet {
+/* line 21, src/scss/_shared/_swiper.scss */
+.swiper-container--working .swiper-pagination-bullet {
   opacity: 1;
   border: 1px solid #e4eaef;
   background-color: transparent;
@@ -1915,32 +1919,132 @@ section.section {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 25, src/scss/_shared/_swiper.scss */
-.swiper-pagination-bullet-active {
+/* line 27, src/scss/_shared/_swiper.scss */
+.swiper-container--working .swiper-pagination-bullet-active {
   background-color: #e4eaef;
   -webkit-transition: background-color 0.3s ease-in-out;
   -o-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 33, src/scss/_shared/_swiper.scss */
-.swiper-button-prev, .swiper-button-next {
-  width: 15px;
-  height: 64px;
+/* line 35, src/scss/_shared/_swiper.scss */
+.swiper-container--working .swiper-button-prev, .swiper-container--working .swiper-button-next {
   margin-top: 5%;
+}
+
+/* line 43, src/scss/_shared/_swiper.scss */
+.swiper-container--save {
+  max-width: 1300px;
+  padding-bottom: 50px;
+}
+
+/* line 48, src/scss/_shared/_swiper.scss */
+.swiper-container--save .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+/* line 53, src/scss/_shared/_swiper.scss */
+.swiper-container--save .swiper-slide-left, .swiper-container--save .swiper-slide-right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 60, src/scss/_shared/_swiper.scss */
+.swiper-container--save .swiper-slide-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 697px;
+  padding-left: 130px;
+}
+
+/* line 67, src/scss/_shared/_swiper.scss */
+.swiper-container--save .swiper-slide-right {
+  position: relative;
+  max-width: calc(100% - 697px);
+  min-height: 248px;
+  padding-right: 90px;
+}
+
+/* line 74, src/scss/_shared/_swiper.scss */
+.swiper-container--save .swiper-slide-car {
+  z-index: -1;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: 0;
+  width: calc(100% + 107px);
+  height: 100%;
+}
+
+/* line 84, src/scss/_shared/_swiper.scss */
+.swiper-container--save .swiper-slide-car img {
+  position: relative;
+  top: 50px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 98, src/scss/_shared/_swiper.scss */
+.swiper-button-prev, .swiper-button-next {
+  width: 31px;
+  height: 130px;
+  margin-top: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-/* line 43, src/scss/_shared/_swiper.scss */
-.swiper-button-prev {
-  background-image: url("../img/img-btn-prev.png");
+@media screen and (max-width: 767px) {
+  /* line 98, src/scss/_shared/_swiper.scss */
+  .swiper-button-prev, .swiper-button-next {
+    width: 15px;
+    height: 64px;
+  }
 }
 
-/* line 46, src/scss/_shared/_swiper.scss */
+/* line 113, src/scss/_shared/_swiper.scss */
+.swiper-button-prev {
+  background-image: url("../img/img-btn-prev-d.png");
+}
+
+@media screen and (max-width: 767px) {
+  /* line 113, src/scss/_shared/_swiper.scss */
+  .swiper-button-prev {
+    background-image: url("../img/img-btn-prev.png");
+  }
+}
+
+/* line 120, src/scss/_shared/_swiper.scss */
 .swiper-button-next {
-  background-image: url("../img/img-btn-next.png");
+  background-image: url("../img/img-btn-next-d.png");
+}
+
+@media screen and (max-width: 767px) {
+  /* line 120, src/scss/_shared/_swiper.scss */
+  .swiper-button-next {
+    background-image: url("../img/img-btn-next.png");
+  }
 }
 
 /* line 4, src/scss/_shared/_iconPNG.scss */
@@ -12782,6 +12886,158 @@ section.section {
 .order span {
   display: block;
   color: #d72d42;
+}
+
+/* line 3, src/scss/_components/powercontrol/_save.scss */
+.save {
+  padding-bottom: 115px;
+}
+
+/* line 6, src/scss/_components/powercontrol/_save.scss */
+.save__title {
+  padding-left: 180px;
+  padding-bottom: 80px;
+  color: #101c28;
+  font-size: 36px;
+}
+
+/* line 12, src/scss/_components/powercontrol/_save.scss */
+.save__title span {
+  font-weight: bold;
+}
+
+/* line 15, src/scss/_components/powercontrol/_save.scss */
+.save__title span:last-of-type {
+  text-decoration: underline;
+}
+
+/* line 21, src/scss/_components/powercontrol/_save.scss */
+.save__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+/* line 27, src/scss/_components/powercontrol/_save.scss */
+.save__block-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 31, src/scss/_components/powercontrol/_save.scss */
+.save__block-head p {
+  padding-bottom: 10px;
+  color: #d72d42;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 39, src/scss/_components/powercontrol/_save.scss */
+.save__block-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 44, src/scss/_components/powercontrol/_save.scss */
+.save__block-left {
+  width: 175px;
+}
+
+/* line 47, src/scss/_components/powercontrol/_save.scss */
+.save__block-left p {
+  color: #0a1723;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* line 54, src/scss/_components/powercontrol/_save.scss */
+.save__block-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: calc(100% - 175px);
+}
+
+/* line 61, src/scss/_components/powercontrol/_save.scss */
+.save__block-line {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 323px;
+  height: 30px;
+  padding: 5px 17px;
+  border-radius: 2em;
+  background-color: #b1bec7;
+}
+
+/* line 72, src/scss/_components/powercontrol/_save.scss */
+.save__block-line--0 {
+  margin-bottom: 8px;
+}
+
+/* line 75, src/scss/_components/powercontrol/_save.scss */
+.save__block-line--0 > div {
+  background-color: #d72d42;
+}
+
+/* line 80, src/scss/_components/powercontrol/_save.scss */
+.save__block-line--1 {
+  margin-top: 8px;
+}
+
+/* line 83, src/scss/_components/powercontrol/_save.scss */
+.save__block-line--1 > div {
+  background-color: #ee6623;
+}
+
+/* line 88, src/scss/_components/powercontrol/_save.scss */
+.save__block-line span {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* line 93, src/scss/_components/powercontrol/_save.scss */
+.save__block-line div {
+  position: absolute;
+  top: -4px;
+  right: -67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 138px;
+  height: 38px;
+  border-radius: 2em;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

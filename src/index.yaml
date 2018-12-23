@@ -21,7 +21,7 @@ PageList:
   ready: 96
 - file: powercontrol.html
   titleName: PowerControl
-  ready: 30
+  ready: 35
 - file: 404.html
   titleName: 404
   ready: 96
