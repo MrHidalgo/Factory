@@ -42,6 +42,10 @@ section {
     }
   }
 
+  .powercontrol & {
+    @include fluid(height, 320px, 1920px, 431px, 731px);
+  }
+
   &--light {
     @include respond(wide-medium) {
       background-image: url('../img/bg.svg');
@@ -56,6 +60,10 @@ section {
     @include respond(wide-medium) {
       background-image: url('../img/bg-main.svg');
       background-size: cover;
+
+      .powercontrol & {
+        background-image: url('../img/bg-main-1.svg');
+      }
     }
     @include respond(max-wide-small) {
       background-image: url('../img/img-bg-main.png');

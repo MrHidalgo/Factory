@@ -5,13 +5,23 @@ section#details.details
     .c-grid
       .details__wrapper.details__wrapper-0
         .details__wrapper-left
-          img(src="./img/img-details-0.jpg" srcset="./img/img-details-0@2x.jpg 2x" alt="" title="")
+          if(contentClassName !== 'p-powercontrol')
+            img(src="./img/img-details-0.jpg" srcset="./img/img-details-0@2x.jpg 2x" alt="" title="")
+          else
+            img(src="./img/img-details-3.jpg" srcset="./img/img-details-3@2x.jpg 2x" alt="" title="")
 
         .details__wrapper-right
-          h2.details__title!= "Dla Twojego samochodu"
+          if(contentClassName !== 'p-powercontrol')
+            h2.details__title!= "Dla Twojego samochodu"
+          else
+            h2.details__title!= "Dla Twojego samochodu"
 
-          p.details__text!= "PedalBox pasuje do każdego samochodu z elektronicznym pedałem gazu (czyli większość pojazdów wyprodukowanych po 2000 roku), choć nie jest produktem w pełni uniwersalnym."
-          p.details__text!= "W zależności od posiadanego samochodu potrzebny jest inny PedalBox (inne ustawienia oraz okablowanie), dlatego sprawdź, czy mamy produkt dla Twojego pojazdu <span>wypełniając pola poniżej!</span>"
+          if(contentClassName !== 'p-powercontrol')
+            p.details__text!= "PedalBox pasuje do każdego samochodu z elektronicznym pedałem gazu (czyli większość pojazdów wyprodukowanych po 2000 roku), choć nie jest produktem w pełni uniwersalnym."
+            p.details__text!= "W zależności od posiadanego samochodu potrzebny jest inny PedalBox (inne ustawienia oraz okablowanie), dlatego sprawdź, czy mamy produkt dla Twojego pojazdu <span>wypełniając pola poniżej!</span>"
+          else
+            p.details__text!= "Każdy zestaw PowerControl jest programowany, konfigurowany oraz kompletowany specjalnie pod Twoje zamówienie oraz dla Twojego modelu samochodu i silnika."
+            p.details__text!= "Nie jest to produkt uniwersalny, dlatego koniecznie sprawdź, czy opracowaliśmy wersję dla Twojego pojazdu!"
 
           .details__select
             form.c-form(action='' method='')
@@ -50,9 +60,13 @@ section#details.details
     .c-grid
       .details__wrapper.details__wrapper-1
         .details__wrapper-left
-          h2.details__title!= "Gwarantujemy satysfakcję"
+          if(contentClassName !== 'p-powercontrol')
+            h2.details__title!= "Gwarantujemy satysfakcję"
+          else
+            h2.details__title!= "Bezpieczeństwo"
 
-          p.details__text!= "Nasz program <span>Gwarancji Satysfakcji</span> składa się z trzech elementów:"
+          if(contentClassName !== 'p-powercontrol')
+            p.details__text!= "Nasz program <span>Gwarancji Satysfakcji</span> składa się z trzech elementów:"
 
           ul.details__list
             -
@@ -73,23 +87,89 @@ section#details.details
                   text: 'Zarówno przed, jak i po zakupie jesteśmy dla Ciebie dostępni przez cały tydzień. Pomożemy w każdej kwestii, wyjaśnimy każde zagadnienie. Najbardziej cenimy sobie zadowolenie naszych klientów.'
                 }
               ];
+            -
+              var detailsListNumArr1 = [
+                {
+                  num: '1',
+                  title: 'Nie tracisz fabrycznej gwarancji na swój samochód',
+                  text: 'Instalacja PedalBoxa nie wpływa w żaden sposób na fabryczną gwarancję pojazdu. Nie ingerujemy również w żadne ustawienia samochodu.'
+                },
+                {
+                  num: '2',
+                  title: 'Pełna certyfikację niemieckiego oraz austriackiego urzędu TÜV',
+                  text: 'PowerControl musiał przejść szereg wymagających testów określających jego bezpieczeństwo dla Twojego pojazdu. Nasze produkty są okresowo testowane przez TÜV, który tym samym upewnia się, czy nadal spełniamy ich rygorystyczne wymogi.'
+                },
+                {
+                  num: '3',
+                  title: 'Kupujesz raz, a korzystasz przez wiele lat.',
+                  text: 'Jeśli zmienisz samochód, przeprogramujemy za darmo Twój PowerControl tak, aby pasował do nowego pojazdu.'
+                }
+              ];
 
-            each val, idx in detailsListNumArr
+            each val, idx in (contentClassName !== 'p-powercontrol') ? detailsListNumArr : detailsListNumArr1
               li.details__item
                 .details__item-left
-                  span.details__item-num!= detailsListNumArr[idx].num
+                  span.details__item-num!= detailsListNumArr1[idx].num
                 .details__item-right
-                  p.details__item-title!= detailsListNumArr[idx].title
-                  p.details__item-text!= detailsListNumArr[idx].text
+                  p.details__item-title!= detailsListNumArr1[idx].title
+                  p.details__item-text!= detailsListNumArr1[idx].text
 
         .details__wrapper-right
-          img(src="./img/img-details-1.jpg" srcset="./img/img-details-1@2x.jpg 2x" alt="" title="")
+          if(contentClassName !== 'p-powercontrol')
+            img(src="./img/img-details-1.jpg" srcset="./img/img-details-1@2x.jpg 2x" alt="" title="")
+          else
+            img(src="./img/img-details-4.jpg" srcset="./img/img-details-4@2x.jpg 2x" alt="" title="")
+
+  if(contentClassName === 'p-powercontrol')
+
+    .details__row.details__row-4
+      .c-grid
+        .details__wrapper.details__wrapper-4
+          .details__wrapper-left
+
+            img(src="./img/img-details-5.jpg" srcset="./img/img-details-5@2x.jpg 2x" alt="" title="")
+
+          .details__wrapper-right
+            h2.details__title!= "Gwarantujemy satysfakcję"
+
+            p.details__text!= "Nasz program <span>Gwarancji Satysfakcji</span> składa się z trzech elementów:"
+
+            ul.details__list
+              -
+                var detailsListNumArr2 = [
+                {
+                  num: '1',
+                  title: '14 dni na przetestowanie PedalBox',
+                  text: 'Kupując PedalBox otrzymujesz od nas aż 14 dni na sprawdzenie, czy urządzenie spełnia Twoje oczekiwania.'
+                },
+                {
+                  num: '2',
+                  title: 'Nie tracisz gwarancji',
+                  text: 'Instalacja PedalBoxa nie wpływa w żaden sposób na fabryczną gwarancję pojazdu. Nie ingerujemy również w żadne ustawienia samochodu.'
+                },
+                {
+                  num: '3',
+                  title: 'Pomoc',
+                  text: 'Zarówno przed, jak i po zakupie jesteśmy dla Ciebie dostępni przez cały tydzień. Pomożemy w każdej kwestii, wyjaśnimy każde zagadnienie. Najbardziej cenimy sobie zadowolenie naszych klientów.'
+                }
+                ];
+
+              each val, idx in detailsListNumArr2
+                li.details__item
+                  .details__item-left
+                    span.details__item-num!= detailsListNumArr2[idx].num
+                  .details__item-right
+                    p.details__item-title!= detailsListNumArr2[idx].title
+                    p.details__item-text!= detailsListNumArr2[idx].text
 
   .details__row.details__row-2
     .c-grid
       .details__wrapper.details__wrapper-2
         .details__wrapper-left
-          img(src="./img/img-details-2.jpg" srcset="./img/img-details-2@2x.jpg 2x" alt="" title="")
+          if(contentClassName !== 'p-powercontrol')
+            img(src="./img/img-details-2.jpg" srcset="./img/img-details-2@2x.jpg 2x" alt="" title="")
+          else
+            img(src="./img/img-details-6.png" srcset="./img/img-details-6@2x.png 2x" alt="" title="")
 
         .details__wrapper-right
           h2.details__title!= "A co znajdę w zestawie?"
@@ -107,11 +187,19 @@ section#details.details
                 'Rzepy do przyklejenia PedalBoxa lub jego uchwytu',
                 '2 letnią gwarancję na PedalBo'
               ];
+              var detailsListArr1 = [
+                'Moduł PowerControl',
+                'Okablowanie zgodne ze wszystkimi normami producentów',
+                'Instrukcję instalacji w Twoim pojeździe',
+                'Certyfikat TÜV',
+                '2 letnią gwarancję na PowerControl',
+                'Możliwość darmowego przeprogramowania modułu w celu przystosowania do innego samochodu'
+              ];
 
-            each val, idx in detailsListArr
+            each val, idx in (contentClassName !== 'p-powercontrol') ? detailsListArr : detailsListArr1
               li.details__item
                 .details__item-left
-                  span!= ""
+                  span
                 .details__item-right
                   p.details__item-text!= val
 
@@ -120,6 +208,6 @@ section#details.details
               span
                 i.icon-font.icon-play
             div
-              span!= "Zobacz unboxing Pedalbox"
+              span!= (contentClassName !== 'p-powercontrol') ? "Zobacz unboxing Pedalbox" : "Zobacz unboxing PowerControl"
 
 // SECTION DETAILS :: END

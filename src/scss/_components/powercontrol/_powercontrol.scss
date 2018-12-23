@@ -1,8 +1,6 @@
 // SECTION powercontrol :: START
 
 .powercontrol {
-  background-color: gray;
-
   &__wrapper {
     z-index: 1;
     position: relative;
@@ -20,7 +18,7 @@
 
     &-1 {
       @include fluid(padding-top, 320px, 1440px, 120px, 155px);
-      @include fluid(padding-bottom, 320px, 1440px, 40px, 199px);
+      @include fluid(padding-bottom, 320px, 1440px, 40px, 100px);
     }
 
     &-left {

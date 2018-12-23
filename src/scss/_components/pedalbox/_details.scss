@@ -70,7 +70,8 @@
       }
     }
 
-    &-1 {
+    &-1,
+    &-4 {
       padding-bottom: 96px;
       @include respond(max-small) {
         flex-direction: column-reverse;
@@ -161,10 +162,20 @@
     }
 
     &-2 {
+      .p-powercontrol & {
+        flex-direction: row-reverse;
+      }
+
       .details__wrapper-left {
         padding-right: 15px;
         @include respond(max-small) {
           padding-right: 0;
+        }
+      }
+
+      .details__wrapper-right {
+        .p-powercontrol & {
+          padding-left: 90px;
         }
       }
 
@@ -175,7 +186,7 @@
 
         &__item {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           padding-bottom: 5px;
 
           &:last-of-type {
@@ -186,6 +197,7 @@
             display: flex;
             justify-content: center;
             width: 65px;
+            padding-top: 10px;
             @include respond(max-small) {
               justify-content: flex-start;
               width: 25px;
