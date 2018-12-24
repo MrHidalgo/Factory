@@ -10360,20 +10360,39 @@ section.section {
   }
 }
 
-@media screen and (max-width: 575px) {
+/* line 8, src/scss/_components/pedalbox/_details.scss */
+.p-powercontrol .details {
+  padding-top: 0px;
+}
+
+@media screen and (min-width: 320px) {
   /* line 8, src/scss/_components/pedalbox/_details.scss */
+  .p-powercontrol .details {
+    padding-top: calc(0px + 153 * (100vw - 320px) / 1600);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* line 8, src/scss/_components/pedalbox/_details.scss */
+  .p-powercontrol .details {
+    padding-top: 153px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 12, src/scss/_components/pedalbox/_details.scss */
   .details .c-grid {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 16, src/scss/_components/pedalbox/_details.scss */
+/* line 20, src/scss/_components/pedalbox/_details.scss */
 .details__row-0 {
   position: relative;
 }
 
-/* line 19, src/scss/_components/pedalbox/_details.scss */
+/* line 23, src/scss/_components/pedalbox/_details.scss */
 .details__row-0:before {
   content: '';
   z-index: 0;
@@ -10387,21 +10406,21 @@ section.section {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 19, src/scss/_components/pedalbox/_details.scss */
+  /* line 23, src/scss/_components/pedalbox/_details.scss */
   .details__row-0:before {
     min-height: 255px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 19, src/scss/_components/pedalbox/_details.scss */
+  /* line 23, src/scss/_components/pedalbox/_details.scss */
   .details__row-0:before {
     bottom: -55px;
     min-height: 242px;
   }
 }
 
-/* line 40, src/scss/_components/pedalbox/_details.scss */
+/* line 44, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper {
   position: relative;
   display: -webkit-box;
@@ -10410,7 +10429,7 @@ section.section {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 40, src/scss/_components/pedalbox/_details.scss */
+  /* line 44, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -10419,7 +10438,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 40, src/scss/_components/pedalbox/_details.scss */
+  /* line 44, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10428,49 +10447,49 @@ section.section {
   }
 }
 
-/* line 50, src/scss/_components/pedalbox/_details.scss */
+/* line 54, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-0 {
   padding-bottom: 125px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 50, src/scss/_components/pedalbox/_details.scss */
+  /* line 54, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-0 {
     padding-bottom: 17px;
   }
 }
 
-/* line 56, src/scss/_components/pedalbox/_details.scss */
+/* line 60, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-0 .details__wrapper-left {
   padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/_components/pedalbox/_details.scss */
+  /* line 60, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-0 .details__wrapper-left {
     padding-right: 0;
   }
 }
 
-/* line 64, src/scss/_components/pedalbox/_details.scss */
+/* line 68, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-0 .details__text:last-of-type {
   padding-bottom: 81px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 64, src/scss/_components/pedalbox/_details.scss */
+  /* line 68, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-0 .details__text:last-of-type {
     padding-bottom: 17px;
   }
 }
 
-/* line 73, src/scss/_components/pedalbox/_details.scss */
+/* line 77, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1, .details__wrapper-4 {
   padding-bottom: 96px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 73, src/scss/_components/pedalbox/_details.scss */
+  /* line 77, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1, .details__wrapper-4 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -10480,41 +10499,41 @@ section.section {
   }
 }
 
-/* line 81, src/scss/_components/pedalbox/_details.scss */
+/* line 85, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__wrapper-left, .details__wrapper-4 .details__wrapper-left {
   width: 55%;
   padding-left: 90px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 81, src/scss/_components/pedalbox/_details.scss */
+  /* line 85, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__wrapper-left, .details__wrapper-4 .details__wrapper-left {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 81, src/scss/_components/pedalbox/_details.scss */
+  /* line 85, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__wrapper-left, .details__wrapper-4 .details__wrapper-left {
     width: 100%;
   }
 }
 
-/* line 92, src/scss/_components/pedalbox/_details.scss */
+/* line 96, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__wrapper-right, .details__wrapper-4 .details__wrapper-right {
   width: 45%;
   padding-left: 15px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 92, src/scss/_components/pedalbox/_details.scss */
+  /* line 96, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__wrapper-right, .details__wrapper-4 .details__wrapper-right {
     width: 100%;
     padding-left: 0;
   }
 }
 
-/* line 101, src/scss/_components/pedalbox/_details.scss */
+/* line 105, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item, .details__wrapper-4 .details__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10526,7 +10545,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 101, src/scss/_components/pedalbox/_details.scss */
+  /* line 105, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item, .details__wrapper-4 .details__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10536,38 +10555,38 @@ section.section {
   }
 }
 
-/* line 110, src/scss/_components/pedalbox/_details.scss */
+/* line 114, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item:last-of-type, .details__wrapper-4 .details__item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 114, src/scss/_components/pedalbox/_details.scss */
+/* line 118, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item-left, .details__wrapper-4 .details__item-left {
   width: 80px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 114, src/scss/_components/pedalbox/_details.scss */
+  /* line 118, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-left, .details__wrapper-4 .details__item-left {
     width: 100%;
   }
 }
 
-/* line 121, src/scss/_components/pedalbox/_details.scss */
+/* line 125, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item-right, .details__wrapper-4 .details__item-right {
   width: 100%;
   max-width: calc(100% - 80px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 121, src/scss/_components/pedalbox/_details.scss */
+  /* line 125, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-right, .details__wrapper-4 .details__item-right {
     max-width: 100%;
     text-align: center;
   }
 }
 
-/* line 130, src/scss/_components/pedalbox/_details.scss */
+/* line 134, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item-num, .details__wrapper-4 .details__item-num {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10589,7 +10608,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 130, src/scss/_components/pedalbox/_details.scss */
+  /* line 134, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-num, .details__wrapper-4 .details__item-num {
     margin-left: auto;
     margin-right: auto;
@@ -10597,7 +10616,7 @@ section.section {
   }
 }
 
-/* line 149, src/scss/_components/pedalbox/_details.scss */
+/* line 153, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item-title, .details__wrapper-4 .details__item-title {
   line-height: 1.25;
   font-weight: 600;
@@ -10605,20 +10624,20 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 149, src/scss/_components/pedalbox/_details.scss */
+  /* line 153, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-title, .details__wrapper-4 .details__item-title {
     font-size: calc(18px + 6 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 149, src/scss/_components/pedalbox/_details.scss */
+  /* line 153, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-title, .details__wrapper-4 .details__item-title {
     font-size: 24px;
   }
 }
 
-/* line 155, src/scss/_components/pedalbox/_details.scss */
+/* line 159, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-1 .details__item-text, .details__wrapper-4 .details__item-text {
   width: 100%;
   max-width: 580px;
@@ -10627,20 +10646,28 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 155, src/scss/_components/pedalbox/_details.scss */
+  /* line 159, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-text, .details__wrapper-4 .details__item-text {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 155, src/scss/_components/pedalbox/_details.scss */
+  /* line 159, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-1 .details__item-text, .details__wrapper-4 .details__item-text {
     font-size: 18px;
   }
 }
 
-/* line 165, src/scss/_components/pedalbox/_details.scss */
+@media screen and (max-width: 767px) {
+  /* line 159, src/scss/_components/pedalbox/_details.scss */
+  .details__wrapper-1 .details__item-text, .details__wrapper-4 .details__item-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 173, src/scss/_components/pedalbox/_details.scss */
 .p-powercontrol .details__wrapper-2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -10648,29 +10675,59 @@ section.section {
           flex-direction: row-reverse;
 }
 
-/* line 169, src/scss/_components/pedalbox/_details.scss */
+@media screen and (max-width: 767px) {
+  /* line 173, src/scss/_components/pedalbox/_details.scss */
+  .p-powercontrol .details__wrapper-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 179, src/scss/_components/pedalbox/_details.scss */
+.p-powercontrol .details__wrapper-2 .details__wrapper-left {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 179, src/scss/_components/pedalbox/_details.scss */
+  .p-powercontrol .details__wrapper-2 .details__wrapper-left {
+    padding-left: 0;
+  }
+}
+
+/* line 188, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__wrapper-left {
   padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 169, src/scss/_components/pedalbox/_details.scss */
+  /* line 188, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-2 .details__wrapper-left {
     padding-right: 0;
   }
 }
 
-/* line 177, src/scss/_components/pedalbox/_details.scss */
+/* line 196, src/scss/_components/pedalbox/_details.scss */
 .p-powercontrol .details__wrapper-2 .details__wrapper-right {
   padding-left: 90px;
 }
 
-/* line 183, src/scss/_components/pedalbox/_details.scss */
+@media screen and (max-width: 1199px) {
+  /* line 196, src/scss/_components/pedalbox/_details.scss */
+  .p-powercontrol .details__wrapper-2 .details__wrapper-right {
+    padding-left: 0;
+  }
+}
+
+/* line 205, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__list {
   padding-bottom: 40px;
 }
 
-/* line 187, src/scss/_components/pedalbox/_details.scss */
+/* line 209, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10681,12 +10738,12 @@ section.section {
   padding-bottom: 5px;
 }
 
-/* line 192, src/scss/_components/pedalbox/_details.scss */
+/* line 214, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__item:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 196, src/scss/_components/pedalbox/_details.scss */
+/* line 218, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__item-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10699,7 +10756,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 196, src/scss/_components/pedalbox/_details.scss */
+  /* line 218, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-2 .details__item-left {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -10708,7 +10765,7 @@ section.section {
   }
 }
 
-/* line 206, src/scss/_components/pedalbox/_details.scss */
+/* line 228, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__item-left span {
   display: block;
   width: 10px;
@@ -10717,52 +10774,103 @@ section.section {
   background-color: #b1bec7;
 }
 
-/* line 216, src/scss/_components/pedalbox/_details.scss */
+/* line 238, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__item-right {
   width: 100%;
   max-width: calc(100% - 65px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 216, src/scss/_components/pedalbox/_details.scss */
+  /* line 238, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-2 .details__item-right {
     max-width: calc(100% - 25px);
   }
 }
 
-/* line 224, src/scss/_components/pedalbox/_details.scss */
+/* line 246, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-2 .details__item-text {
   line-height: 1.66667;
   font-size: 14px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 224, src/scss/_components/pedalbox/_details.scss */
+  /* line 246, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-2 .details__item-text {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 224, src/scss/_components/pedalbox/_details.scss */
+  /* line 246, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-2 .details__item-text {
     font-size: 18px;
   }
 }
 
-/* line 232, src/scss/_components/pedalbox/_details.scss */
+@media screen and (max-width: 767px) {
+  /* line 254, src/scss/_components/pedalbox/_details.scss */
+  .details__wrapper-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 259, src/scss/_components/pedalbox/_details.scss */
+.details__wrapper-4 .details__wrapper-left {
+  width: 45%;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 259, src/scss/_components/pedalbox/_details.scss */
+  .details__wrapper-4 .details__wrapper-left {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 259, src/scss/_components/pedalbox/_details.scss */
+  .details__wrapper-4 .details__wrapper-left {
+    width: 100%;
+  }
+}
+
+/* line 270, src/scss/_components/pedalbox/_details.scss */
+.details__wrapper-4 .details__wrapper-right {
+  width: 55%;
+  padding-left: 90px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 270, src/scss/_components/pedalbox/_details.scss */
+  .details__wrapper-4 .details__wrapper-right {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 270, src/scss/_components/pedalbox/_details.scss */
+  .details__wrapper-4 .details__wrapper-right {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+/* line 283, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-left, .details__wrapper-right {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 232, src/scss/_components/pedalbox/_details.scss */
+  /* line 283, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-left, .details__wrapper-right {
     width: 100%;
   }
 }
 
-/* line 239, src/scss/_components/pedalbox/_details.scss */
+/* line 290, src/scss/_components/pedalbox/_details.scss */
 .details__wrapper-left img, .details__wrapper-right img {
   display: block;
   max-width: 100%;
@@ -10772,13 +10880,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 239, src/scss/_components/pedalbox/_details.scss */
+  /* line 290, src/scss/_components/pedalbox/_details.scss */
   .details__wrapper-left img, .details__wrapper-right img {
     margin-bottom: 30px;
   }
 }
 
-/* line 252, src/scss/_components/pedalbox/_details.scss */
+/* line 303, src/scss/_components/pedalbox/_details.scss */
 .details__title {
   line-height: 1.25;
   font-weight: bold;
@@ -10787,41 +10895,41 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 252, src/scss/_components/pedalbox/_details.scss */
+  /* line 303, src/scss/_components/pedalbox/_details.scss */
   .details__title {
     padding-bottom: calc(17px + 15 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 252, src/scss/_components/pedalbox/_details.scss */
+  /* line 303, src/scss/_components/pedalbox/_details.scss */
   .details__title {
     padding-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 252, src/scss/_components/pedalbox/_details.scss */
+  /* line 303, src/scss/_components/pedalbox/_details.scss */
   .details__title {
     font-size: calc(24px + 24 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 252, src/scss/_components/pedalbox/_details.scss */
+  /* line 303, src/scss/_components/pedalbox/_details.scss */
   .details__title {
     font-size: 48px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 252, src/scss/_components/pedalbox/_details.scss */
+  /* line 303, src/scss/_components/pedalbox/_details.scss */
   .details__title {
     text-align: center;
   }
 }
 
-/* line 262, src/scss/_components/pedalbox/_details.scss */
+/* line 313, src/scss/_components/pedalbox/_details.scss */
 .details__text {
   width: 100%;
   max-width: 650px;
@@ -10831,47 +10939,49 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 262, src/scss/_components/pedalbox/_details.scss */
+  /* line 313, src/scss/_components/pedalbox/_details.scss */
   .details__text {
     padding-bottom: calc(17px + 7 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 262, src/scss/_components/pedalbox/_details.scss */
+  /* line 313, src/scss/_components/pedalbox/_details.scss */
   .details__text {
     padding-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 262, src/scss/_components/pedalbox/_details.scss */
+  /* line 313, src/scss/_components/pedalbox/_details.scss */
   .details__text {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 262, src/scss/_components/pedalbox/_details.scss */
+  /* line 313, src/scss/_components/pedalbox/_details.scss */
   .details__text {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 262, src/scss/_components/pedalbox/_details.scss */
+  /* line 313, src/scss/_components/pedalbox/_details.scss */
   .details__text {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 }
 
-/* line 273, src/scss/_components/pedalbox/_details.scss */
+/* line 326, src/scss/_components/pedalbox/_details.scss */
 .details__text span {
   font-weight: bold;
 }
 
-/* line 278, src/scss/_components/pedalbox/_details.scss */
+/* line 331, src/scss/_components/pedalbox/_details.scss */
 .details__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10882,7 +10992,7 @@ section.section {
           flex-direction: column;
 }
 
-/* line 283, src/scss/_components/pedalbox/_details.scss */
+/* line 336, src/scss/_components/pedalbox/_details.scss */
 .details__btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10901,28 +11011,28 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 283, src/scss/_components/pedalbox/_details.scss */
+  /* line 336, src/scss/_components/pedalbox/_details.scss */
   .details__btn {
     height: calc(60px + 16 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 283, src/scss/_components/pedalbox/_details.scss */
+  /* line 336, src/scss/_components/pedalbox/_details.scss */
   .details__btn {
     height: 76px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 283, src/scss/_components/pedalbox/_details.scss */
+  /* line 336, src/scss/_components/pedalbox/_details.scss */
   .details__btn {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 297, src/scss/_components/pedalbox/_details.scss */
+/* line 350, src/scss/_components/pedalbox/_details.scss */
 .details__btn:hover {
   background-color: #0A1723;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -10930,7 +11040,7 @@ section.section {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 303, src/scss/_components/pedalbox/_details.scss */
+/* line 356, src/scss/_components/pedalbox/_details.scss */
 .details__btn > div:first-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10942,13 +11052,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 303, src/scss/_components/pedalbox/_details.scss */
+  /* line 356, src/scss/_components/pedalbox/_details.scss */
   .details__btn > div:first-of-type {
     width: 80px;
   }
 }
 
-/* line 311, src/scss/_components/pedalbox/_details.scss */
+/* line 364, src/scss/_components/pedalbox/_details.scss */
 .details__btn > div:first-of-type span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10966,7 +11076,7 @@ section.section {
   background-color: transparent;
 }
 
-/* line 321, src/scss/_components/pedalbox/_details.scss */
+/* line 374, src/scss/_components/pedalbox/_details.scss */
 .details__btn > div:first-of-type span .icon-play {
   position: relative;
   left: 2px;
@@ -10974,20 +11084,20 @@ section.section {
   font-size: 15px;
 }
 
-/* line 330, src/scss/_components/pedalbox/_details.scss */
+/* line 383, src/scss/_components/pedalbox/_details.scss */
 .details__btn > div:last-of-type {
   width: 100%;
   max-width: calc(100% - 110px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 330, src/scss/_components/pedalbox/_details.scss */
+  /* line 383, src/scss/_components/pedalbox/_details.scss */
   .details__btn > div:last-of-type {
     max-width: calc(100% - 80px);
   }
 }
 
-/* line 337, src/scss/_components/pedalbox/_details.scss */
+/* line 390, src/scss/_components/pedalbox/_details.scss */
 .details__btn > div:last-of-type span {
   color: #fff;
   line-height: 1.66667;
@@ -10997,20 +11107,20 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 337, src/scss/_components/pedalbox/_details.scss */
+  /* line 390, src/scss/_components/pedalbox/_details.scss */
   .details__btn > div:last-of-type span {
     font-size: calc(16px + 2 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 337, src/scss/_components/pedalbox/_details.scss */
+  /* line 390, src/scss/_components/pedalbox/_details.scss */
   .details__btn > div:last-of-type span {
     font-size: 18px;
   }
 }
 
-/* line 348, src/scss/_components/pedalbox/_details.scss */
+/* line 401, src/scss/_components/pedalbox/_details.scss */
 .details__select {
   position: relative;
   display: -webkit-box;

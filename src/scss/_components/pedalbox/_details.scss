@@ -5,6 +5,10 @@
   @include fluid(padding-top, 320px, 1920px, 53px, 153px);
   @include fluid(padding-bottom, 320px, 1920px, 71px, 171px);
 
+  .p-powercontrol & {
+    @include fluid(padding-top, 320px, 1920px, 0px, 153px);
+  }
+
   .c-grid {
     @include respond(max-extra-small) {
       padding-left: 15px;
@@ -157,6 +161,10 @@
           max-width: 580px;
           line-height: line-height-convert(30, 18);
           @include fluid(font-size, 320px, 1440px, 14px, 18px);
+          @include respond(max-small) {
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
       }
     }
@@ -164,6 +172,17 @@
     &-2 {
       .p-powercontrol & {
         flex-direction: row-reverse;
+        @include respond(max-small) {
+          flex-direction: column;
+        }
+
+        .details__wrapper-left {
+          padding-left: 15px;
+          padding-right: 0;
+          @include respond(max-small) {
+            padding-left: 0;
+          }
+        }
       }
 
       .details__wrapper-left {
@@ -176,6 +195,9 @@
       .details__wrapper-right {
         .p-powercontrol & {
           padding-left: 90px;
+          @include respond(max-large) {
+            padding-left: 0;
+          }
         }
       }
 
@@ -229,6 +251,35 @@
       }
     }
 
+    &-4 {
+      @include respond(max-small) {
+        flex-direction: column;
+      }
+
+      .details__wrapper-left {
+        width: 45%;
+        padding-left: 15px;
+        @include respond(max-large) {
+          padding-left: 0;
+        }
+        @include respond(max-small) {
+          width: 100%;
+        }
+      }
+
+      .details__wrapper-right {
+        width: 55%;
+        padding-left: 90px;
+        @include respond(max-large) {
+          padding-left: 15px;
+        }
+        @include respond(max-small) {
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+    }
+
     &-left,
     &-right {
       width: 50%;
@@ -267,6 +318,8 @@
     @include fluid(font-size, 320px, 1440px, 14px, 18px);
     @include respond(max-small) {
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
     }
 
