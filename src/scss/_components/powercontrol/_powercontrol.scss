@@ -11,7 +11,7 @@
     &-0 {
       display: flex;
       align-items: center;
-      @include respond(max-extra-small) {
+      @include respond(max-small) {
         flex-direction: column;
       }
     }
@@ -28,7 +28,7 @@
         width: 300px;
         padding-right: 0;
       }
-      @include respond(max-extra-small) {
+      @include respond(max-small) {
         width: 100%;
       }
 
@@ -49,9 +49,9 @@
       @include respond(max-large) {
         max-width: calc(100% - 300px);
       }
-      @include respond(max-extra-small) {
+      @include respond(max-small) {
         position: relative;
-        top: -40px;
+        top: 0;
         max-width: 100%;
         padding-left: 15px;
         padding-right: 15px;
@@ -60,12 +60,43 @@
     }
   }
 
+  &__img {
+    &--desktop {
+      @include respond(max-small) {
+        display: none !important;
+      }
+    }
+
+    &--mobile {
+      display: none !important;
+      @include respond(max-small) {
+        display: block !important;
+      }
+    }
+
+    &--dte {
+      display: none;
+      max-width: 100%;
+      height: auto;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      @include respond(max-small) {
+        display: block;
+      }
+    }
+  }
+
   &__title {
     color: $c-white;
     line-height: 1;
     font-weight: bold;
-    @include fluid(padding-bottom, 320px, 1440px, 15px, 25px);
+    @include fluid(padding-bottom, 320px, 1440px, 0, 25px);
     @include fluid(font-size, 320px, 1440px, 36px, 48px);
+
+    + .powercontrol__text {
+      font-size: 18px !important;
+    }
   }
 
   &__text {
@@ -74,9 +105,16 @@
     color: $c-white;
     line-height: line-height-convert(30, 18);
     @include fluid(font-size, 320px, 1440px, 14px, 18px);
+    @include respond(max-small) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &--pb {
       padding-bottom: 25px;
+      @include respond(max-extra-small) {
+        padding-bottom: 15px;
+      }
     }
 
     span {
@@ -92,6 +130,9 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
+    @include respond(max-extra-small) {
+      margin-right: 15px;
+    }
 
     &:last-of-type {
       margin-right: 0;
@@ -103,12 +144,19 @@
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 15px;
+      @include respond(max-small) {
+        justify-content: center;
+        padding-left: 0;
+      }
     }
 
     img {
       display: block;
       max-width: 100%;
       height: auto;
+      @include respond(max-extra-small) {
+        transform: scale(0.75);
+      }
     }
 
     p {
@@ -116,6 +164,10 @@
       color: $c-white;
       font-size: 24px;
       font-weight: bold;
+      @include fluid(font-size, 320px, 1440px, 18px, 24px);
+      @include respond(max-extra-small) {
+        padding-left: 0;
+      }
     }
   }
 

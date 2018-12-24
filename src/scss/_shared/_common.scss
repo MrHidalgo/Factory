@@ -43,7 +43,27 @@ section {
   }
 
   .powercontrol & {
-    @include fluid(height, 320px, 1920px, 431px, 731px);
+    @include fluid(height, 320px, 1920px, 731px, 731px);
+    background-size: cover;
+
+    @include respond(max-wide-medium) {
+      top: 0;
+    }
+    @include respond(max-wide-small) {
+      top: -25px;
+    }
+    @include respond(max-extra-large) {
+      top: -50px;
+    }
+    @include respond(max-large) {
+      top: -75px;
+    }
+    @include respond(max-small) {
+      top: 25px;
+    }
+    @include respond(max-extra-small) {
+      top: 5px;
+    }
   }
 
   &--light {
@@ -51,6 +71,7 @@ section {
       background-image: url('../img/bg.svg');
       background-size: cover;
     }
+
     @include respond(max-wide-small) {
       background-image: url('../img/img-bg.png');
     }
