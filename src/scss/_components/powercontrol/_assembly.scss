@@ -1,19 +1,36 @@
 // SECTION assembly :: START
 
 .assembly {
-  padding-top: 55px;
-  padding-bottom: 100px;
+  @include fluid(padding-top, 320px, 1440px, 30px, 55px);
+  @include fluid(padding-bottom, 320px, 1440px, 50px, 100px);
+
+  .c-grid {
+    @include respond(max-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
   &__header {
     display: flex;
     align-items: center;
     padding-bottom: 43px;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
 
     > div {
       &:nth-of-type(1) {
         width: 100%;
         max-width: calc(100% - 135px);
         padding-left: 90px;
+        @include respond(max-wide-small) {
+          padding-left: 0;
+        }
+        @include respond(max-small) {
+          max-width: 100%;
+          padding-bottom: 15px;
+        }
       }
 
       &:nth-of-type(2) {
@@ -21,14 +38,23 @@
         justify-content: flex-end;
         width: 135px;
         padding-right: 25px;
+        @include respond(max-small) {
+          width: 100%;
+          padding-right: 0;
+          justify-content: center;
+        }
       }
     }
   }
 
   &__title {
     color: #0a1723;
-    font-size: 48px;
     font-weight: bold;
+    @include fluid(font-size, 320px, 1440px, 24px, 48px);
+    @include respond(max-small) {
+      padding-top: 30px;
+      text-align: center;
+    }
   }
 
   &__wrapper {
@@ -43,11 +69,17 @@
     &-left {
       padding-left: 90px;
       max-width: calc(100 - 625px);
+      @include respond(max-wide-small) {
+        padding-left: 0;
+      }
     }
 
     &-right {
       max-width: 625px;
       padding: 0 25px;
+      @include respond(max-small) {
+        display: none;
+      }
 
       img {
         display: block;
@@ -75,12 +107,22 @@
         &:nth-of-type(1) {
           position: relative;
           width: 68px;
+          @include respond(max-small) {
+            display: none;
+          }
         }
 
         &:nth-of-type(2) {
           width: 100%;
           max-width: calc(100% - 68px);
           padding-right: 90px;
+          @include respond(max-medium) {
+            padding-right: 0;
+          }
+          @include respond(max-small) {
+            max-width: 100%;
+            text-align: center;
+          }
         }
       }
 
@@ -94,13 +136,21 @@
       }
 
       h3 {
-        padding-bottom: 10px;
-        font-size: 23px;
         font-weight: bold;
+        @include fluid(padding-bottom, 320px, 1440px, 0px, 10px);
+        @include fluid(font-size, 320px, 1440px, 18px, 23px);
+
+        span {
+          display: none;
+          @include respond(max-small) {
+            display: inline-block;
+            padding-right: 5px;
+          }
+        }
       }
 
       p {
-        font-size: 18px;
+        @include fluid(font-size, 320px, 1440px, 14px, 18px);
       }
     }
 
@@ -152,6 +202,21 @@
         border: solid #95a6b2;
         border-width: 0 1px 1px 0;
         transform: translateX(-50%) rotate(45deg);
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--mobile {
+      display: none;
+      @include respond(max-small) {
+        display: block;
       }
     }
   }

@@ -13821,11 +13821,47 @@ section.section {
 
 /* line 3, src/scss/_components/powercontrol/_assembly.scss */
 .assembly {
-  padding-top: 55px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
-/* line 7, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly {
+    padding-top: calc(30px + 25 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 3, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly {
+    padding-top: 55px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly {
+    padding-bottom: calc(50px + 50 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 3, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 7, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 14, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13836,14 +13872,37 @@ section.section {
   padding-bottom: 43px;
 }
 
-/* line 13, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (max-width: 767px) {
+  /* line 14, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 23, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__header > div:nth-of-type(1) {
   width: 100%;
   max-width: calc(100% - 135px);
   padding-left: 90px;
 }
 
-/* line 19, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (max-width: 1439px) {
+  /* line 23, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__header > div:nth-of-type(1) {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 23, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__header > div:nth-of-type(1) {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+}
+
+/* line 36, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__header > div:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13855,14 +13914,47 @@ section.section {
   padding-right: 25px;
 }
 
-/* line 28, src/scss/_components/powercontrol/_assembly.scss */
-.assembly__title {
-  color: #0a1723;
-  font-size: 48px;
-  font-weight: bold;
+@media screen and (max-width: 767px) {
+  /* line 36, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__header > div:nth-of-type(2) {
+    width: 100%;
+    padding-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-/* line 34, src/scss/_components/powercontrol/_assembly.scss */
+/* line 50, src/scss/_components/powercontrol/_assembly.scss */
+.assembly__title {
+  color: #0a1723;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 50, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__title {
+    font-size: calc(24px + 24 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 50, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 50, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__title {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+/* line 60, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13872,24 +13964,38 @@ section.section {
           align-items: flex-start;
 }
 
-/* line 38, src/scss/_components/powercontrol/_assembly.scss */
+/* line 64, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__wrapper-left, .assembly__wrapper-right {
   width: 100%;
 }
 
-/* line 43, src/scss/_components/powercontrol/_assembly.scss */
+/* line 69, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__wrapper-left {
   padding-left: 90px;
   max-width: calc(100 - 625px);
 }
 
-/* line 48, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (max-width: 1439px) {
+  /* line 69, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__wrapper-left {
+    padding-left: 0;
+  }
+}
+
+/* line 77, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__wrapper-right {
   max-width: 625px;
   padding: 0 25px;
 }
 
-/* line 52, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (max-width: 767px) {
+  /* line 77, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__wrapper-right {
+    display: none;
+  }
+}
+
+/* line 84, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__wrapper-right img {
   display: block;
   max-width: 100%;
@@ -13897,12 +14003,12 @@ section.section {
   margin-bottom: 25px;
 }
 
-/* line 58, src/scss/_components/powercontrol/_assembly.scss */
+/* line 90, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__wrapper-right img:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 65, src/scss/_components/powercontrol/_assembly.scss */
+/* line 97, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13913,7 +14019,7 @@ section.section {
           flex-direction: column;
 }
 
-/* line 69, src/scss/_components/powercontrol/_assembly.scss */
+/* line 101, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13924,44 +14030,121 @@ section.section {
   padding-bottom: 40px;
 }
 
-/* line 75, src/scss/_components/powercontrol/_assembly.scss */
+/* line 107, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-item > div:nth-of-type(1) {
   position: relative;
   width: 68px;
 }
 
-/* line 80, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (max-width: 767px) {
+  /* line 107, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item > div:nth-of-type(1) {
+    display: none;
+  }
+}
+
+/* line 115, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-item > div:nth-of-type(2) {
   width: 100%;
   max-width: calc(100% - 68px);
   padding-right: 90px;
 }
 
-/* line 87, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (max-width: 991px) {
+  /* line 115, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item > div:nth-of-type(2) {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 115, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item > div:nth-of-type(2) {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 129, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-item h3,
 .assembly__list-item p {
   color: #0a1723;
 }
 
-/* line 91, src/scss/_components/powercontrol/_assembly.scss */
+/* line 133, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-item h3 span,
 .assembly__list-item p span {
   font-weight: bold;
 }
 
-/* line 96, src/scss/_components/powercontrol/_assembly.scss */
+/* line 138, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-item h3 {
-  padding-bottom: 10px;
-  font-size: 23px;
   font-weight: bold;
-}
-
-/* line 102, src/scss/_components/powercontrol/_assembly.scss */
-.assembly__list-item p {
+  padding-bottom: 0px;
   font-size: 18px;
 }
 
-/* line 107, src/scss/_components/powercontrol/_assembly.scss */
+@media screen and (min-width: 320px) {
+  /* line 138, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item h3 {
+    padding-bottom: calc(0px + 10 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 138, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item h3 {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 138, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item h3 {
+    font-size: calc(18px + 5 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 138, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item h3 {
+    font-size: 23px;
+  }
+}
+
+/* line 143, src/scss/_components/powercontrol/_assembly.scss */
+.assembly__list-item h3 span {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 143, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item h3 span {
+    display: inline-block;
+    padding-right: 5px;
+  }
+}
+
+/* line 152, src/scss/_components/powercontrol/_assembly.scss */
+.assembly__list-item p {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 152, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item p {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 152, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__list-item p {
+    font-size: 18px;
+  }
+}
+
+/* line 157, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-num {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13983,7 +14166,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 107, src/scss/_components/powercontrol/_assembly.scss */
+  /* line 157, src/scss/_components/powercontrol/_assembly.scss */
   .assembly__list-num {
     margin-left: auto;
     margin-right: auto;
@@ -13991,7 +14174,7 @@ section.section {
   }
 }
 
-/* line 126, src/scss/_components/powercontrol/_assembly.scss */
+/* line 176, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-line {
   position: absolute;
   top: 49px;
@@ -14001,7 +14184,7 @@ section.section {
   padding: 12px;
 }
 
-/* line 134, src/scss/_components/powercontrol/_assembly.scss */
+/* line 184, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-line:before {
   content: '';
   z-index: -1;
@@ -14016,7 +14199,7 @@ section.section {
   background-color: #95a6b2;
 }
 
-/* line 146, src/scss/_components/powercontrol/_assembly.scss */
+/* line 196, src/scss/_components/powercontrol/_assembly.scss */
 .assembly__list-line:after {
   content: '';
   position: absolute;
@@ -14028,6 +14211,27 @@ section.section {
   -webkit-transform: translateX(-50%) rotate(45deg);
       -ms-transform: translateX(-50%) rotate(45deg);
           transform: translateX(-50%) rotate(45deg);
+}
+
+/* line 209, src/scss/_components/powercontrol/_assembly.scss */
+.assembly__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 216, src/scss/_components/powercontrol/_assembly.scss */
+.assembly__img--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 216, src/scss/_components/powercontrol/_assembly.scss */
+  .assembly__img--mobile {
+    display: block;
+  }
 }
 
 /* line 3, src/scss/_components/powercontrol/_generation.scss */
@@ -14052,7 +14256,7 @@ section.section {
           flex-direction: row;
 }
 
-/* line 20, src/scss/_components/powercontrol/_generation.scss */
+/* line 18, src/scss/_components/powercontrol/_generation.scss */
 .generation__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14063,7 +14267,7 @@ section.section {
   padding-bottom: 50px;
 }
 
-/* line 25, src/scss/_components/powercontrol/_generation.scss */
+/* line 23, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14074,7 +14278,7 @@ section.section {
           flex-direction: column;
 }
 
-/* line 30, src/scss/_components/powercontrol/_generation.scss */
+/* line 28, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14086,20 +14290,20 @@ section.section {
   padding-right: 60px;
 }
 
-/* line 37, src/scss/_components/powercontrol/_generation.scss */
+/* line 35, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-right {
   width: 100%;
   max-width: calc(100% - 350px);
   padding-right: 100px;
 }
 
-/* line 43, src/scss/_components/powercontrol/_generation.scss */
+/* line 41, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-title {
   font-size: 24px;
   font-weight: bold;
 }
 
-/* line 48, src/scss/_components/powercontrol/_generation.scss */
+/* line 46, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-text {
   font-size: 18px;
 }
