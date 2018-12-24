@@ -14817,15 +14817,74 @@ section.section {
 /* line 3, src/scss/_components/powercontrol/_created.scss */
 .created {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
-/* line 8, src/scss/_components/powercontrol/_created.scss */
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/powercontrol/_created.scss */
+  .created {
+    padding-top: calc(30px + 45 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 3, src/scss/_components/powercontrol/_created.scss */
+  .created {
+    padding-top: 75px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  /* line 3, src/scss/_components/powercontrol/_created.scss */
+  .created {
+    padding-bottom: calc(50px + 50 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 3, src/scss/_components/powercontrol/_created.scss */
+  .created {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 8, src/scss/_components/powercontrol/_created.scss */
+  .created .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 15, src/scss/_components/powercontrol/_created.scss */
 .created__wrapper,
 .created .assembly__wrapper {
   z-index: 2;
   position: relative;
+}
+
+/* line 21, src/scss/_components/powercontrol/_created.scss */
+.created__img {
+  z-index: 2;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* line 30, src/scss/_components/powercontrol/_created.scss */
+.created__img--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 30, src/scss/_components/powercontrol/_created.scss */
+  .created__img--mobile {
+    display: block !important;
+  }
 }
 
 /* line 3, src/scss/_components/powercontrol/_control.scss */

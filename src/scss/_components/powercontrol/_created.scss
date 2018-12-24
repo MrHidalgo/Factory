@@ -2,13 +2,37 @@
 
 .created {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 100px;
+  @include fluid(padding-top, 320px, 1440px, 30px, 75px);
+  @include fluid(padding-bottom, 320px, 1440px, 50px, 100px);
+
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
   &__wrapper,
   .assembly__wrapper {
     z-index: 2;
     position: relative;
+  }
+
+  &__img {
+    z-index: 2;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    &--mobile {
+      display: none;
+      @include respond(max-small) {
+        display: block !important;
+      }
+    }
   }
 }
 
