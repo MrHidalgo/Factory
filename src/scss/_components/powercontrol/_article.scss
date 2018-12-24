@@ -14,27 +14,53 @@
     width: 100%;
     height: calc(100% - (55px + 30px + 50px));
     background-color: #ecf7ff;
+    @include respond(max-extra-small) {
+      height: calc(100% - (55px + 50px));
+    }
   }
 
   &__wrapper {
     display: flex;
+    @include respond(max-extra-small) {
+      flex-direction: column;
+    }
 
     &-left {
       display: flex;
       align-items: flex-start;
       justify-content: center;
       width: 459px;
+      @include respond(max-small) {
+        width: 40%;
+      }
+      @include respond(max-extra-small) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       img {
         display: block;
         max-width: 100%;
         height: auto;
+        @include respond(max-extra-small) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 459px);
+      @include respond(max-small) {
+        max-width: 60%;
+        padding-left: 15px;
+      }
+      @include respond(max-extra-small) {
+        max-width: 100%;
+        padding-left: 0;
+      }
     }
   }
 
@@ -44,15 +70,31 @@
     color: #0a1723;
     font-size: 30px;
     font-weight: bold;
+    @include fluid(font-size, 320px, 1440px, 16px, 30px);
+    @include respond(max-small) {
+      padding-top: 100px;
+    }
+    @include respond(max-extra-small) {
+      padding-top: 45px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
   }
 
   &__btn {
-    max-width: 350px;
+    @include fluid(max-width, 320px, 1440px, 196px, 350px);
+    @include respond(max-extra-small) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &-wrapper {
       display: flex;
       justify-content: flex-end;
       padding-right: 115px;
+      @include respond(max-medium) {
+        padding-right: 0;
+      }
     }
   }
 }
