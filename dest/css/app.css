@@ -14409,12 +14409,20 @@ section.section {
   padding-bottom: 65px;
 }
 
-/* line 8, src/scss/_components/powercontrol/_generation.scss */
+@media screen and (max-width: 767px) {
+  /* line 7, src/scss/_components/powercontrol/_generation.scss */
+  .generation > .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 15, src/scss/_components/powercontrol/_generation.scss */
 .generation__wrapper-0 {
   padding-bottom: 100px;
 }
 
-/* line 11, src/scss/_components/powercontrol/_generation.scss */
+/* line 18, src/scss/_components/powercontrol/_generation.scss */
 .generation__wrapper-0 .details__wrapper-2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -14425,7 +14433,30 @@ section.section {
           flex-direction: row;
 }
 
-/* line 18, src/scss/_components/powercontrol/_generation.scss */
+@media screen and (max-width: 767px) {
+  /* line 18, src/scss/_components/powercontrol/_generation.scss */
+  .generation__wrapper-0 .details__wrapper-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 25, src/scss/_components/powercontrol/_generation.scss */
+.generation__wrapper-0 .details__wrapper-2 .details__wrapper-left {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/_components/powercontrol/_generation.scss */
+  .generation__wrapper-0 .details__wrapper-2 .details__wrapper-left {
+    padding-right: 0;
+  }
+}
+
+/* line 36, src/scss/_components/powercontrol/_generation.scss */
 .generation__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14436,7 +14467,23 @@ section.section {
   padding-bottom: 50px;
 }
 
-/* line 23, src/scss/_components/powercontrol/_generation.scss */
+@media screen and (max-width: 575px) {
+  /* line 36, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* line 46, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14447,7 +14494,7 @@ section.section {
           flex-direction: column;
 }
 
-/* line 28, src/scss/_components/powercontrol/_generation.scss */
+/* line 51, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14459,22 +14506,85 @@ section.section {
   padding-right: 60px;
 }
 
-/* line 35, src/scss/_components/powercontrol/_generation.scss */
+@media screen and (max-width: 991px) {
+  /* line 51, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-left {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 51, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-left {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 67, src/scss/_components/powercontrol/_generation.scss */
 .generation__block-right {
   width: 100%;
   max-width: calc(100% - 350px);
   padding-right: 100px;
 }
 
-/* line 41, src/scss/_components/powercontrol/_generation.scss */
-.generation__block-title {
-  font-size: 24px;
-  font-weight: bold;
+@media screen and (max-width: 991px) {
+  /* line 67, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-right {
+    max-width: calc(100% - 250px);
+    padding-right: 0;
+  }
 }
 
-/* line 46, src/scss/_components/powercontrol/_generation.scss */
-.generation__block-text {
+@media screen and (max-width: 575px) {
+  /* line 67, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-right {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 81, src/scss/_components/powercontrol/_generation.scss */
+.generation__block-title {
+  font-weight: bold;
   font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 81, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-title {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 81, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-title {
+    font-size: 24px;
+  }
+}
+
+/* line 86, src/scss/_components/powercontrol/_generation.scss */
+.generation__block-text {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 86, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-text {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 86, src/scss/_components/powercontrol/_generation.scss */
+  .generation__block-text {
+    font-size: 18px;
+  }
 }
 
 /* line 3, src/scss/_components/powercontrol/_wiring.scss */
