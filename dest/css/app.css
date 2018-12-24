@@ -2187,12 +2187,30 @@ section.section {
   padding-top: 30px;
 }
 
-/* line 195, src/scss/_shared/_swiper.scss */
+@media screen and (max-width: 1199px) {
+  /* line 189, src/scss/_shared/_swiper.scss */
+  .swiper-container--control .swiper-slide-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 198, src/scss/_shared/_swiper.scss */
 .swiper-container--control .swiper-slide-bottom > div:nth-of-type(1) {
   width: 30%;
 }
 
-/* line 198, src/scss/_shared/_swiper.scss */
+@media screen and (max-width: 1199px) {
+  /* line 198, src/scss/_shared/_swiper.scss */
+  .swiper-container--control .swiper-slide-bottom > div:nth-of-type(1) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 205, src/scss/_shared/_swiper.scss */
 .swiper-container--control .swiper-slide-bottom > div:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2206,18 +2224,32 @@ section.section {
   width: 70%;
 }
 
-/* line 209, src/scss/_shared/_swiper.scss */
+@media screen and (max-width: 1199px) {
+  /* line 205, src/scss/_shared/_swiper.scss */
+  .swiper-container--control .swiper-slide-bottom > div:nth-of-type(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+/* line 221, src/scss/_shared/_swiper.scss */
 .swiper-container--control .swiper-pagination-bullet {
   opacity: 1;
   background-color: #95a6b2;
 }
 
-/* line 213, src/scss/_shared/_swiper.scss */
+/* line 225, src/scss/_shared/_swiper.scss */
 .swiper-container--control .swiper-pagination-bullet-active {
   background-color: #0a1723;
 }
 
-/* line 223, src/scss/_shared/_swiper.scss */
+/* line 235, src/scss/_shared/_swiper.scss */
 .swiper-button-prev, .swiper-button-next {
   width: 31px;
   height: 130px;
@@ -2231,32 +2263,32 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 223, src/scss/_shared/_swiper.scss */
+  /* line 235, src/scss/_shared/_swiper.scss */
   .swiper-button-prev, .swiper-button-next {
     width: 15px;
     height: 64px;
   }
 }
 
-/* line 238, src/scss/_shared/_swiper.scss */
+/* line 250, src/scss/_shared/_swiper.scss */
 .swiper-button-prev {
   background-image: url("../img/img-btn-prev-d.png");
 }
 
 @media screen and (max-width: 767px) {
-  /* line 238, src/scss/_shared/_swiper.scss */
+  /* line 250, src/scss/_shared/_swiper.scss */
   .swiper-button-prev {
     background-image: url("../img/img-btn-prev.png");
   }
 }
 
-/* line 245, src/scss/_shared/_swiper.scss */
+/* line 257, src/scss/_shared/_swiper.scss */
 .swiper-button-next {
   background-image: url("../img/img-btn-next-d.png");
 }
 
 @media screen and (max-width: 767px) {
-  /* line 245, src/scss/_shared/_swiper.scss */
+  /* line 257, src/scss/_shared/_swiper.scss */
   .swiper-button-next {
     background-image: url("../img/img-btn-next.png");
   }
@@ -14897,17 +14929,47 @@ section.section {
 .control__title {
   padding-left: 90px;
   padding-bottom: 41px;
-  font-size: 48px;
   font-weight: bold;
+  font-size: 24px;
 }
 
-/* line 14, src/scss/_components/powercontrol/_control.scss */
+@media screen and (min-width: 320px) {
+  /* line 7, src/scss/_components/powercontrol/_control.scss */
+  .control__title {
+    font-size: calc(24px + 24 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 7, src/scss/_components/powercontrol/_control.scss */
+  .control__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 7, src/scss/_components/powercontrol/_control.scss */
+  .control__title {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 7, src/scss/_components/powercontrol/_control.scss */
+  .control__title {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 22, src/scss/_components/powercontrol/_control.scss */
 .control__name {
   font-size: 24px;
   font-weight: bold;
 }
 
-/* line 19, src/scss/_components/powercontrol/_control.scss */
+/* line 27, src/scss/_components/powercontrol/_control.scss */
 .control__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14917,22 +14979,65 @@ section.section {
           align-items: center;
 }
 
-/* line 23, src/scss/_components/powercontrol/_control.scss */
+@media screen and (max-width: 1199px) {
+  /* line 27, src/scss/_components/powercontrol/_control.scss */
+  .control__info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 35, src/scss/_components/powercontrol/_control.scss */
 .control__info:nth-of-type(1) {
   margin-right: 37px;
 }
 
-/* line 27, src/scss/_components/powercontrol/_control.scss */
-.control__info p {
-  font-size: 18px;
-  padding-right: 12px;
+@media screen and (max-width: 1199px) {
+  /* line 35, src/scss/_components/powercontrol/_control.scss */
+  .control__info:nth-of-type(1) {
+    margin-right: 0;
+  }
 }
 
-/* line 32, src/scss/_components/powercontrol/_control.scss */
+/* line 43, src/scss/_components/powercontrol/_control.scss */
+.control__info p {
+  padding-right: 12px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 43, src/scss/_components/powercontrol/_control.scss */
+  .control__info p {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 43, src/scss/_components/powercontrol/_control.scss */
+  .control__info p {
+    font-size: 18px;
+  }
+}
+
+/* line 48, src/scss/_components/powercontrol/_control.scss */
 .control__info span {
   padding-left: 12px;
-  font-size: 24px;
   font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 48, src/scss/_components/powercontrol/_control.scss */
+  .control__info span {
+    font-size: calc(16px + 8 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 48, src/scss/_components/powercontrol/_control.scss */
+  .control__info span {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */
