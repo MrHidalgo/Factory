@@ -2033,7 +2033,77 @@ section.section {
   background-color: #0a1723;
 }
 
-/* line 129, src/scss/_shared/_swiper.scss */
+/* line 127, src/scss/_shared/_swiper.scss */
+.swiper-container--control {
+  max-width: 1290px;
+  padding-bottom: 50px;
+}
+
+/* line 132, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-slide {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* line 136, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-slide-top, .swiper-container--control .swiper-slide-bottom {
+  width: 100%;
+  max-width: 1052px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 145, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-slide-top img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 154, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-slide-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+/* line 160, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-slide-bottom > div:nth-of-type(1) {
+  width: 30%;
+}
+
+/* line 163, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-slide-bottom > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70%;
+}
+
+/* line 174, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #95a6b2;
+}
+
+/* line 178, src/scss/_shared/_swiper.scss */
+.swiper-container--control .swiper-pagination-bullet-active {
+  background-color: #0a1723;
+}
+
+/* line 188, src/scss/_shared/_swiper.scss */
 .swiper-button-prev, .swiper-button-next {
   width: 31px;
   height: 130px;
@@ -2047,32 +2117,32 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 129, src/scss/_shared/_swiper.scss */
+  /* line 188, src/scss/_shared/_swiper.scss */
   .swiper-button-prev, .swiper-button-next {
     width: 15px;
     height: 64px;
   }
 }
 
-/* line 144, src/scss/_shared/_swiper.scss */
+/* line 203, src/scss/_shared/_swiper.scss */
 .swiper-button-prev {
   background-image: url("../img/img-btn-prev-d.png");
 }
 
 @media screen and (max-width: 767px) {
-  /* line 144, src/scss/_shared/_swiper.scss */
+  /* line 203, src/scss/_shared/_swiper.scss */
   .swiper-button-prev {
     background-image: url("../img/img-btn-prev.png");
   }
 }
 
-/* line 151, src/scss/_shared/_swiper.scss */
+/* line 210, src/scss/_shared/_swiper.scss */
 .swiper-button-next {
   background-image: url("../img/img-btn-next-d.png");
 }
 
 @media screen and (max-width: 767px) {
-  /* line 151, src/scss/_shared/_swiper.scss */
+  /* line 210, src/scss/_shared/_swiper.scss */
   .swiper-button-next {
     background-image: url("../img/img-btn-next.png");
   }
@@ -13499,6 +13569,54 @@ section.section {
 .created .assembly__wrapper {
   z-index: 2;
   position: relative;
+}
+
+/* line 3, src/scss/_components/powercontrol/_control.scss */
+.control {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+/* line 7, src/scss/_components/powercontrol/_control.scss */
+.control__title {
+  padding-left: 90px;
+  padding-bottom: 41px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* line 14, src/scss/_components/powercontrol/_control.scss */
+.control__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 19, src/scss/_components/powercontrol/_control.scss */
+.control__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 23, src/scss/_components/powercontrol/_control.scss */
+.control__info:nth-of-type(1) {
+  margin-right: 37px;
+}
+
+/* line 27, src/scss/_components/powercontrol/_control.scss */
+.control__info p {
+  font-size: 18px;
+  padding-right: 12px;
+}
+
+/* line 32, src/scss/_components/powercontrol/_control.scss */
+.control__info span {
+  padding-left: 12px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

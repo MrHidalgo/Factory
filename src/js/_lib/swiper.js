@@ -81,4 +81,27 @@ const initSwiper = () => {
       prevEl: '.swiper-button-prev',
     }
   });
+
+
+  /**
+   *
+   */
+  const controlSlider = new Swiper('.swiper-container--control', {
+    loop: true,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 };

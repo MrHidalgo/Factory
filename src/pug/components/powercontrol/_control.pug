@@ -1,0 +1,78 @@
+// SECTION control :: START
+
+section#control.control
+  .c-grid
+
+    h1.control__title!= "Auta pracujące pod kontrolą PowerControl"
+
+    .control__wrapper
+
+      mixin swiperControlContent()
+        .swiper-slide
+          .swiper-slide-top
+            img(src="./img/img-control-0.jpg" srcset="./img/img-control-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide-bottom
+            div
+              p.control__name!= "Ferrari 488 GTB"
+            div
+              .control__info
+                p!= "Moc silnika"
+                img(src="./img/img-control-moc.png" srcset="./img/img-control-moc@2x.png 2x" alt="" title="")
+                span!= "+30%"
+              .control__info
+                p!= "Moment obrotowy"
+                img(src="./img/img-control-moment.png" srcset="./img/img-control-moment@2x.png 2x" alt="" title="")
+                span!= "+15%"
+
+        .swiper-slide
+          .swiper-slide-top
+            img(src="./img/img-control-0.jpg" srcset="./img/img-control-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide-bottom
+            div
+              p.control__name!= "Ferrari 488 GTB"
+            div
+              .control__info
+                p!= "Moc silnika"
+                img(src="./img/img-control-moc.png" srcset="./img/img-control-moc@2x.png 2x" alt="" title="")
+                span!= "+30%"
+              .control__info
+                p!= "Moment obrotowy"
+                img(src="./img/img-control-moment.png" srcset="./img/img-control-moment@2x.png 2x" alt="" title="")
+                span!= "+15%"
+
+        .swiper-slide
+          .swiper-slide-top
+            img(src="./img/img-control-0.jpg" srcset="./img/img-control-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide-bottom
+            div
+              p.control__name!= "Ferrari 488 GTB"
+            div
+              .control__info
+                p!= "Moc silnika"
+                img(src="./img/img-control-moc.png" srcset="./img/img-control-moc@2x.png 2x" alt="" title="")
+                span!= "+30%"
+              .control__info
+                p!= "Moment obrotowy"
+                img(src="./img/img-control-moment.png" srcset="./img/img-control-moment@2x.png 2x" alt="" title="")
+                span!= "+15%"
+
+        .swiper-slide
+          .swiper-slide-top
+            img(src="./img/img-control-0.jpg" srcset="./img/img-control-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide-bottom
+            div
+              p.control__name!= "Ferrari 488 GTB"
+            div
+              .control__info
+                p!= "Moc silnika"
+                img(src="./img/img-control-moc.png" srcset="./img/img-control-moc@2x.png 2x" alt="" title="")
+                span!= "+30%"
+              .control__info
+                p!= "Moment obrotowy"
+                img(src="./img/img-control-moment.png" srcset="./img/img-control-moment@2x.png 2x" alt="" title="")
+                span!= "+15%"
+
+
+      +swiper('swiper-container--control', 'swiperControlContent', true, true, false)
+
+// SECTION control :: END

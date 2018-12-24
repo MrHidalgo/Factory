@@ -1,0 +1,40 @@
+// SECTION control :: START
+
+.control {
+  padding-top: 75px;
+  padding-bottom: 100px;
+
+  &__title {
+    padding-left: 90px;
+    padding-bottom: 41px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &:nth-of-type(1) {
+      margin-right: 37px;
+    }
+
+    p {
+      font-size: 18px;
+      padding-right: 12px;
+    }
+
+    span {
+      padding-left: 12px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
+
+// SECTION control :: END
