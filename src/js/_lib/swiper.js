@@ -104,4 +104,23 @@ const initSwiper = () => {
       prevEl: '.swiper-button-prev',
     }
   });
+
+
+  /**
+   *
+   */
+  const typesSlider = new Swiper('.swiper-container--types', {
+    loop: true,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 };

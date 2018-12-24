@@ -13,6 +13,35 @@ section#types.types
 
       h1.types__title!= "Rodzaje programów"
 
+      .types__slider
+
+        mixin swiperTypesContent()
+          .swiper-slide
+            .types__box.types__box-0
+              img(src="./img/img-types-0.png" srcset="./img/img-types-0@2x.png 2x" alt="" title="")
+
+              p.types__box-title!= "Sport"
+              p.types__box-desc!= "(zmienia kolor diody na kolor czerwony)"
+              p.types__box-text!= "Najmocniejszy tryb pracy – tuning w pełnej okazałości. Idealny jeśli chcesz poczuć całą moc drzemiącą w Twoim samochodzie."
+
+          .swiper-slide
+            .types__box.types__box-1
+              img(src="./img/img-types-1.png" srcset="./img/img-types-1@2x.png 2x" alt="" title="")
+
+              p.types__box-title!= "Dynamic"
+              p.types__box-desc!= "(zmienia kolor diody na kolor żółty)"
+              p.types__box-text!= "Jest to idealny tryb do codziennej jazdy, kiedy potrzebujemy większej dynamiki, ale nadal dbamy o ekonomię jazdy."
+
+          .swiper-slide
+            .types__box.types__box-2
+              img(src="./img/img-types-2.png" srcset="./img/img-types-2@2x.png 2x" alt="" title="")
+
+              p.types__box-title!= "Eco"
+              p.types__box-desc!= "(zmienia kolor diody na kolor zielony)"
+              p.types__box-text!= "Najlepszy tryb do typowej jazdy miejskiej od świateł do świateł. Charakteryzuje się przede wszystkim oszczędnością paliwa."
+
+        +swiper('swiper-container--types', 'swiperTypesContent', false, true, false)
+
       .types__box-wrapper
         .types__box.types__box-0
           img(src="./img/img-types-0.png" srcset="./img/img-types-0@2x.png 2x" alt="" title="")

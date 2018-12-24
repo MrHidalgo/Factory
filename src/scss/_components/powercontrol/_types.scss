@@ -90,6 +90,14 @@
     }
   }
 
+  &__slider {
+    display: none;
+    padding-bottom: 50px;
+    @include respond(max-small) {
+      display: block;
+    }
+  }
+
   &__title {
     z-index: 1;
     position: relative;
@@ -113,6 +121,9 @@
     align-items: center;
     width: 100%;
     max-width: calc(100% / 3);
+    @include respond(max-small) {
+      max-width: 100%;
+    }
 
     &-wrapper {
       z-index: 2;
@@ -125,6 +136,9 @@
       margin-left: auto;
       margin-right: auto;
       padding-bottom: 70px;
+      @include respond(max-small) {
+        display: none;
+      }
     }
 
     img {
@@ -143,6 +157,7 @@
     &-desc {
       padding-bottom: 15px;
       color: #979fb5;
+      text-align: center;
       font-size: 18px;
     }
 
@@ -153,6 +168,7 @@
       margin-right: auto;
       color: $c-white;
       text-align: center;
+      @include fluid(font-size, 320px, 1440px, 14px, 16px);
     }
   }
 
@@ -162,17 +178,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include respond(max-small) {
+      flex-direction: column;
+    }
 
     .working__block {
       width: 100%;
       max-width: 420px;
+      @include respond(max-small) {
+        flex-direction: column;
+      }
 
       &-0 {
         margin-bottom: 0;
+        @include respond(max-small) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &-left {
+        @include respond(max-small) {
+          justify-content: center;
+          width: 100%;
+          padding-right: 0;
+        }
       }
 
       &-middle {
         max-width: calc(100% - 80px);
+        @include respond(max-small) {
+          max-width: 100%;
+          text-align: center;
+        }
       }
     }
   }
