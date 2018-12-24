@@ -30,6 +30,9 @@
   &__wrapper {
     .p-powercontrol & {
       display: flex;
+      @include respond(max-small) {
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -43,6 +46,9 @@
     .p-powercontrol & {
       flex-direction: column;
       width: 50%;
+      @include respond(max-small) {
+        width: 100%;
+      }
     }
 
     &-0 {
@@ -132,6 +138,9 @@
     .p-powercontrol & {
       margin-top: 60px;
       text-align: center;
+      @include respond(max-small) {
+        margin-top: 0;
+      }
     }
 
     span {
