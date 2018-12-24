@@ -49,6 +49,10 @@
           display: flex;
           align-items: center;
           height: 100%;
+          @include respond(max-medium) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+          }
 
           &-left,
           &-right {
@@ -62,6 +66,15 @@
             flex-direction: column;
             width: 697px;
             padding-left: 130px;
+            @include respond(max-medium) {
+              padding-right: 65px;
+              padding-left: 65px;
+            }
+            @include respond(max-small) {
+              width: 100%;
+              padding-left: 35px;
+              padding-right: 35px;
+            }
           }
 
           &-right {
@@ -69,6 +82,11 @@
             max-width: calc(100% - 697px);
             min-height: 248px;
             padding-right: 90px;
+            @include respond(max-medium) {
+              max-width: 100%;
+              min-height: 0;
+              padding-right: 0;
+            }
           }
 
           &-car {
@@ -80,6 +98,18 @@
             right: 0;
             width: calc(100% + 107px);
             height: 100%;
+            @include respond(max-medium) {
+              position: relative;
+              width: 100%;
+            }
+            @include respond(max-small) {
+              padding-left: 50px;
+              padding-right: 50px;
+            }
+            @include respond(max-extra-small) {
+              padding-left: 35px;
+              padding-right: 35px;
+            }
 
             img {
               position: relative;
@@ -87,6 +117,11 @@
               display: block;
               max-width: 100%;
               height: auto;
+              @include respond(max-medium) {
+                top: 0;
+                margin-left: auto;
+                margin-right: auto;
+              }
             }
           }
         }

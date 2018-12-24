@@ -1,13 +1,19 @@
 // SECTION save :: START
 
 .save {
-  padding-bottom: 115px;
+  @include fluid(padding-bottom, 320px, 1440px, 60px, 115px);
 
   &__title {
     padding-left: 180px;
-    padding-bottom: 80px;
     color: #101c28;
-    font-size: 36px;
+    @include fluid(padding-bottom, 320px, 1440px, 40px, 80px);
+    @include fluid(font-size, 320px, 1440px, 24px, 36px);
+    @include respond(max-wide-medium) {
+      padding-left: 0;
+    }
+    @include respond(max-small) {
+      text-align: center;
+    }
 
     span {
       font-weight: bold;
@@ -23,6 +29,17 @@
     flex-direction: column;
     margin-top: 13px;
     margin-bottom: 13px;
+    @include respond(max-small) {
+      width: 100%;
+      max-width: 390px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 45px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
 
     &-head {
       display: flex;
@@ -31,23 +48,33 @@
       p {
         padding-bottom: 10px;
         color: #d72d42;
-        font-size: 24px;
         font-weight: bold;
+        @include fluid(font-size, 320px, 1440px, 18px, 24px);
       }
     }
 
     &-body {
+      position: relative;
       display: flex;
       align-items: center;
+      @include respond(max-small) {
+        flex-direction: column;
+      }
     }
 
     &-left {
       width: 175px;
+      @include respond(max-small) {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        width: 100%;
+      }
 
       p {
         color: #0a1723;
-        font-size: 30px;
         font-weight: bold;
+        @include fluid(font-size, 320px, 1440px, 24px, 30px);
       }
     }
 
@@ -56,6 +83,9 @@
       flex-direction: column;
       width: 100%;
       max-width: calc(100% - 175px);
+      @include respond(max-small) {
+        max-width: 100%;
+      }
     }
 
     &-line {
@@ -68,6 +98,9 @@
       padding: 5px 17px;
       border-radius: 2em;
       background-color: #b1bec7;
+      @include respond(max-extra-small) {
+        max-width: 90%;
+      }
 
       &--0 {
         margin-bottom: 8px;
@@ -98,12 +131,11 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 138px;
         height: 38px;
         border-radius: 2em;
-
-        > span {
-
+        @include fluid(max-width, 320px, 1440px, 87px, 138px);
+        @include respond(max-extra-small) {
+          right: -10%;
         }
       }
     }
