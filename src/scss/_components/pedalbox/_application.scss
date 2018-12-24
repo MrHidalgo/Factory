@@ -187,6 +187,10 @@
 
     &--ios {
       margin-right: 15px;
+      @include respond(max-large) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
     }
 
     &-wrapper {
@@ -195,6 +199,18 @@
       display: flex;
       justify-content: flex-end;
       padding-right: 65px;
+      @include respond(max-large) {
+        margin-top: 51px;
+      }
+      @include respond(max-small) {
+        flex-wrap: wrap;
+        padding-right: 0;
+      }
+      @include respond(max-extra-small) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 }

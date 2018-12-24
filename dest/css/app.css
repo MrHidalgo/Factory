@@ -10405,7 +10405,15 @@ section.section {
   margin-right: 15px;
 }
 
-/* line 192, src/scss/_components/pedalbox/_application.scss */
+@media screen and (max-width: 1199px) {
+  /* line 188, src/scss/_components/pedalbox/_application.scss */
+  .application__btn--ios {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 196, src/scss/_components/pedalbox/_application.scss */
 .application__btn-wrapper {
   z-index: 2;
   position: relative;
@@ -10416,6 +10424,38 @@ section.section {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding-right: 65px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 196, src/scss/_components/pedalbox/_application.scss */
+  .application__btn-wrapper {
+    margin-top: 51px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 196, src/scss/_components/pedalbox/_application.scss */
+  .application__btn-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 196, src/scss/_components/pedalbox/_application.scss */
+  .application__btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 /* line 3, src/scss/_components/pedalbox/_details.scss */
