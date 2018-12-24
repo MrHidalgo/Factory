@@ -40,6 +40,7 @@ const initSwiper = () => {
     graphLine.fadeIn();
   });
 
+
   /**
    *
    */
@@ -56,5 +57,28 @@ const initSwiper = () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
-  })
+  });
+
+
+  /**
+   *
+   */
+  const wiringSlider = new Swiper('.swiper-container--wiring-0, .swiper-container--wiring-1', {
+    loop: true,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 };

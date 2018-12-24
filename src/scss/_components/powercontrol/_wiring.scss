@@ -1,5 +1,51 @@
 // SECTION wiring :: START
 
-.wiring {}
+.wiring {
+  padding-top: 65px;
+  padding-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &-0 {
+      padding-bottom: 50px;
+
+      .wiring__wrapper-right {
+        padding-left: 60px;
+      }
+    }
+
+    &-1 {
+      .wiring__wrapper-left {
+        padding-left: 60px;
+      }
+    }
+
+    &-left,
+    &-right {
+      width: 100%;
+      max-width: 50%;
+    }
+
+    &-left {}
+
+    &-right {}
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  &__text {
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+}
 
 // SECTION wiring :: END

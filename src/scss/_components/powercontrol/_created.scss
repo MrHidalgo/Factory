@@ -1,0 +1,15 @@
+// SECTION created :: START
+
+.created {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 100px;
+
+  &__wrapper,
+  .assembly__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+// SECTION created :: END

@@ -2,6 +2,49 @@
 
 section#wiring.wiring
   .c-grid
-    .wiring__wrapper
+    .wiring__wrapper.wiring__wrapper-0
+      .wiring__wrapper-left
+
+        mixin swiperWiringContent1()
+          .swiper-slide
+            img(src="./img/img-wiring-0.jpg" srcset="./img/img-wiring-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide
+            img(src="./img/img-wiring-0.jpg" srcset="./img/img-wiring-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide
+            img(src="./img/img-wiring-0.jpg" srcset="./img/img-wiring-0@2x.jpg 2x" alt="" title="")
+          .swiper-slide
+            img(src="./img/img-wiring-0.jpg" srcset="./img/img-wiring-0@2x.jpg 2x" alt="" title="")
+
+        +swiper('swiper-container--wiring-0', 'swiperWiringContent1', true, true, false)
+
+      .wiring__wrapper-right
+        p.wiring__title!= "Okablowanie"
+        p.wiring__text!= "Każdy model samochodu i jego silnik posiada indywidualny rodzaj okablowania. Jest ono często tworzone przy współpracy z producentami pojazdów. Dzięki temu nasze okablowanie jest w stu procentach zgodne i odpowiednie jakościowo do oryginalnego w Twoim samochodzie. Co ważne, okablowanie jest w całości produkowane w naszej fabryce w Niemczech. Pod żadnym pozorem nie jest to tani chiński zamiennik niskiej jakości."
+
+    .wiring__wrapper.wiring__wrapper-1
+      .wiring__wrapper-left
+        p.wiring__title!= "Instalacja"
+        p.wiring__text!= "Zadbaliśmy o to, aby proces instalacji był możliwie najprostszy. PowerControl może zamontować w swoim samochodzie każdy — nie trzeba posiadać specjalistycznej wiedzy, a zajmie to maksymalnie kilka minut. W razie jakichkolwiek problemów z instalacją wystarczy się z nami skontaktować, a zrobimy wszystko, co w naszej mocy, aby Ci pomóc. Nasza instrukcja instalacji jest spersonalizowana pod dany model samochodu i silnika, przez co ilustracje wiernie oddają to, co faktycznie widzisz u siebie pod maską. Obok znajduje się kilka przykładowych widoków z instrukcji instalacji PowerControl dla VW Golf VII 1.4 TSI."
+
+        a.details__btn(href="#" class="" title="")
+          div
+            span
+              i.icon-font.icon-play
+          div
+            span!= "Zobacz unboxing PowerControl"
+
+      .wiring__wrapper-right
+
+        mixin swiperWiringContent2()
+          .swiper-slide
+            img(src="./img/img-wiring-1.jpg" srcset="./img/img-wiring-1@2x.jpg 2x" alt="" title="")
+          .swiper-slide
+            img(src="./img/img-wiring-1.jpg" srcset="./img/img-wiring-1@2x.jpg 2x" alt="" title="")
+          .swiper-slide
+            img(src="./img/img-wiring-1.jpg" srcset="./img/img-wiring-1@2x.jpg 2x" alt="" title="")
+          .swiper-slide
+            img(src="./img/img-wiring-1.jpg" srcset="./img/img-wiring-1@2x.jpg 2x" alt="" title="")
+
+        +swiper('swiper-container--wiring-1', 'swiperWiringContent2', true, true, false)
 
 // SECTION wiring :: END

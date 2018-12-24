@@ -92,6 +92,37 @@
         }
       }
     }
+
+    &--wiring-0,
+    &--wiring-1 {
+      padding-bottom: 50px;
+
+      .swiper {
+        &-slide {
+          padding-left: 50px;
+          padding-right: 50px;
+
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        &-pagination {
+          &-bullet {
+            opacity: 1;
+            background-color: #95a6b2;
+
+            &-active {
+              background-color: #0a1723;
+            }
+          }
+        }
+      }
+    }
   }
 
   &-button {
