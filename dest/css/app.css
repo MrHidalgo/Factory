@@ -13444,7 +13444,15 @@ section.section {
   padding-top: 84px;
 }
 
-/* line 7, src/scss/_components/powercontrol/_order.scss */
+@media screen and (max-width: 575px) {
+  /* line 7, src/scss/_components/powercontrol/_order.scss */
+  .order .c-grid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 14, src/scss/_components/powercontrol/_order.scss */
 .order__bg {
   z-index: -1;
   position: absolute;
@@ -13455,7 +13463,14 @@ section.section {
   background-color: #ecf7ff;
 }
 
-/* line 17, src/scss/_components/powercontrol/_order.scss */
+@media screen and (max-width: 767px) {
+  /* line 14, src/scss/_components/powercontrol/_order.scss */
+  .order__bg {
+    height: 72%;
+  }
+}
+
+/* line 27, src/scss/_components/powercontrol/_order.scss */
 .order__wrapper {
   z-index: 2;
   position: relative;
@@ -13467,12 +13482,20 @@ section.section {
           align-items: center;
 }
 
-/* line 23, src/scss/_components/powercontrol/_order.scss */
+@media screen and (max-width: 767px) {
+  /* line 27, src/scss/_components/powercontrol/_order.scss */
+  .order__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 36, src/scss/_components/powercontrol/_order.scss */
 .order__wrapper-left, .order__wrapper-middle, .order__wrapper-right {
   width: 100%;
 }
 
-/* line 29, src/scss/_components/powercontrol/_order.scss */
+/* line 42, src/scss/_components/powercontrol/_order.scss */
 .order__wrapper-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13486,12 +13509,29 @@ section.section {
   max-width: 256px;
 }
 
-/* line 36, src/scss/_components/powercontrol/_order.scss */
+@media screen and (max-width: 767px) {
+  /* line 42, src/scss/_components/powercontrol/_order.scss */
+  .order__wrapper-left {
+    max-width: 100%;
+  }
+}
+
+/* line 52, src/scss/_components/powercontrol/_order.scss */
 .order__wrapper-middle {
   max-width: 775px;
 }
 
-/* line 40, src/scss/_components/powercontrol/_order.scss */
+@media screen and (max-width: 767px) {
+  /* line 52, src/scss/_components/powercontrol/_order.scss */
+  .order__wrapper-middle {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 62, src/scss/_components/powercontrol/_order.scss */
 .order__wrapper-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13505,14 +13545,38 @@ section.section {
   max-width: 388px;
 }
 
-/* line 48, src/scss/_components/powercontrol/_order.scss */
-.order p,
-.order span {
-  font-size: 30px;
-  font-weight: bold;
+@media screen and (max-width: 767px) {
+  /* line 62, src/scss/_components/powercontrol/_order.scss */
+  .order__wrapper-right {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-/* line 54, src/scss/_components/powercontrol/_order.scss */
+/* line 74, src/scss/_components/powercontrol/_order.scss */
+.order p,
+.order span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 74, src/scss/_components/powercontrol/_order.scss */
+  .order p,
+  .order span {
+    font-size: calc(18px + 12 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 74, src/scss/_components/powercontrol/_order.scss */
+  .order p,
+  .order span {
+    font-size: 30px;
+  }
+}
+
+/* line 80, src/scss/_components/powercontrol/_order.scss */
 .order span {
   display: block;
   color: #d72d42;

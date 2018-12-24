@@ -4,6 +4,13 @@
   position: relative;
   padding-top: 84px;
 
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
   &__bg {
     z-index: -1;
     position: absolute;
@@ -12,6 +19,9 @@
     width: 100%;
     height: 52%;
     background-color: #ecf7ff;
+    @include respond(max-small) {
+      height: 72%;
+    }
   }
 
   &__wrapper {
@@ -19,6 +29,9 @@
     position: relative;
     display: flex;
     align-items: center;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-middle,
@@ -31,10 +44,19 @@
       align-items: center;
       justify-content: center;
       max-width: 256px;
+      @include respond(max-small) {
+        max-width: 100%;
+      }
     }
 
     &-middle {
       max-width: 775px;
+      @include respond(max-small) {
+        max-width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
     }
 
     &-right {
@@ -42,13 +64,17 @@
       align-items: center;
       justify-content: center;
       max-width: 388px;
+      @include respond(max-small) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 
   p,
   span {
-    font-size: 30px;
     font-weight: bold;
+    @include fluid(font-size, 320px, 1440px, 18px, 30px);
   }
 
   span {
