@@ -1,24 +1,45 @@
 // SECTION wiring :: START
 
 .wiring {
-  padding-top: 65px;
-  padding-bottom: 100px;
+  @include fluid(padding-top, 320px, 1440px, 40px, 65px);
+  @include fluid(padding-bottom, 320px, 1440px, 50px, 100px);
+
+
+  .c-grid {
+    @include respond(max-extra-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
+    @include respond(max-small) {
+      flex-wrap: wrap;
+    }
 
     &-0 {
-      padding-bottom: 50px;
+      @include fluid(padding-bottom, 320px, 1440px, 30px, 50px);
 
       .wiring__wrapper-right {
         padding-left: 60px;
+        @include respond(max-medium) {
+          padding-left: 0;
+        }
       }
     }
 
     &-1 {
+      @include respond(max-small) {
+        flex-direction: column-reverse;
+      }
+
       .wiring__wrapper-left {
         padding-left: 60px;
+        @include respond(max-medium) {
+          padding-left: 0;
+        }
       }
     }
 
@@ -26,17 +47,23 @@
     &-right {
       width: 100%;
       max-width: 50%;
+      @include respond(max-small) {
+        max-width: 100%;
+      }
     }
+  }
 
-    &-left {}
-
-    &-right {}
+  &__title,
+  &__text {
+    @include respond(max-small) {
+      text-align: center;
+    }
   }
 
   &__title {
-    padding-bottom: 40px;
-    font-size: 48px;
     font-weight: bold;
+    @include fluid(padding-bottom, 320px, 1440px, 20px, 40px);
+    @include fluid(font-size, 320px, 1440px, 24px, 48px);
   }
 
   &__text {
@@ -44,7 +71,11 @@
     padding-right: 15px;
     padding-left: 15px;
     line-height: 1.6;
-    font-size: 18px;
+    @include fluid(font-size, 320px, 1440px, 14px, 18px);
+    @include respond(max-small) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 

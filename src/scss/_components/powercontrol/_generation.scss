@@ -1,11 +1,11 @@
 // SECTION generation :: START
 
 .generation {
-  padding-top: 180px;
-  padding-bottom: 65px;
+  @include fluid(padding-top, 320px, 1440px, 90px, 180px);
+  @include fluid(padding-bottom, 320px, 1440px, 0px, 65px);
 
   > .c-grid {
-    @include respond(max-small) {
+    @include respond(max-extra-small) {
       padding-left: 15px;
       padding-right: 15px;
     }

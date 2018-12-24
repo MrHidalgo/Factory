@@ -5,7 +5,7 @@
   @include fluid(padding-bottom, 320px, 1440px, 50px, 100px);
 
   .c-grid {
-    @include respond(max-small) {
+    @include respond(max-extra-small) {
       padding-left: 15px;
       padding-right: 15px;
     }
