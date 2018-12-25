@@ -351,7 +351,32 @@ $(document).ready(function (ev) {
     langBtn.selectric({
       responsive: true,
       inheritOriginalWidth: false,
-      disableOnMobile: false
+      disableOnMobile: false,
+      maxHeight: 170,
+      onInit: function onInit(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($elm.attr('placeholder'));
+      },
+      onBeforeOpen: function onBeforeOpen(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').data('value', $wrapper.find('.label').html()).html($elm.attr('placeholder'));
+      },
+      onBeforeClose: function onBeforeClose(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($wrapper.find('.label').data('value'));
+      },
+      onChange: function onChange(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').addClass('is-choose');
+      }
     });
   };
 

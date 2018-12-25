@@ -103,7 +103,32 @@ $(document).ready((ev) => {
     langBtn.selectric({
       responsive: true,
       inheritOriginalWidth: false,
-      disableOnMobile: false
+      disableOnMobile: false,
+      maxHeight: 170,
+      onInit: function(element, data){
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($elm.attr('placeholder'));
+      },
+      onBeforeOpen: function(element, data){
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').data('value', $wrapper.find('.label').html()).html($elm.attr('placeholder'));
+      },
+      onBeforeClose: function(element, data){
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($wrapper.find('.label').data('value'));
+      },
+      onChange: function(element, data) {
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').addClass('is-choose');
+      }
     });
   };
 

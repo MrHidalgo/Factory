@@ -29,32 +29,23 @@ section#details.details
                 .c-form__group-col.c-form__group-col-0
                   .c-form__field.c-form__field--select
                     .c-form__select-wrap
-                      select(name="" select-js)
-                        option(value="1")!= "Pokażemy Ci co możemy z nim zrobić!"
-                        option(value="1")!= "Marka"
-                        option(value="1")!= "Marka"
-                        option(value="1")!= "Marka"
-                        option(value="1")!= "Marka"
+                      select(name="" placeholder="Pokażemy Ci co możemy z nim zrobić!" select-js)
+                        each val, idx in [1,2,3,4,5,6]
+                          option(value!= val)!= "Marka " + val
 
                 .c-form__group-col.c-form__group-col-1
                   .c-form__field.c-form__field--select
                     .c-form__select-wrap
-                      select(name="" select-js)
-                        option(value="1")!= "Pokażemy Ci co możemy z nim zrobić!"
-                        option(value="1")!= "Model"
-                        option(value="1")!= "Model"
-                        option(value="1")!= "Model"
-                        option(value="1")!= "Model"
+                      select(name="" placeholder="Pokażemy Ci co możemy z nim zrobić!" select-js)
+                        each val, idx in [1,2,3,4,5,6]
+                          option(value!= val)!= "Model " + val
 
                 .c-form__group-col.c-form__group-col-2
                   .c-form__field.c-form__field--select
                     .c-form__select-wrap
-                      select(name="" select-js)
-                        option(value="1")!= "Pokażemy Ci co możemy z nim zrobić!"
-                        option(value="1")!= "Silnik"
-                        option(value="1")!= "Silnik"
-                        option(value="1")!= "Silnik"
-                        option(value="1")!= "Silnik"
+                      select(name="" placeholder="Pokażemy Ci co możemy z nim zrobić!" select-js)
+                        each val, idx in [1,2,3,4,5,6]
+                          option(value!= val)!= "Silnik " + val
 
   .details__row.details__row-1
     .c-grid
