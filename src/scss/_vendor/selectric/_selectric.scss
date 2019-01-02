@@ -36,6 +36,14 @@ $selectric-font-size:       16px !default;                                      
 
         .details & {
           background-color: #0A1723;
+          border-color: #0A1723;
+        }
+
+        .reduced & {
+          &:before {
+            color: $c-white;
+            text-shadow: 0 1px 0 rgba(#ab182a, 1);
+          }
         }
 
         &:after {
@@ -91,6 +99,7 @@ $selectric-font-size:       16px !default;                                      
       height: 36px;
       line-height: 36px;
       font-size: 14px;
+      padding-left: 15px;
     }
 
     .details & {
@@ -120,7 +129,7 @@ $selectric-font-size:       16px !default;                                      
     }
 
     .details & {
-      background-color: #b1bec7;
+      background-color: #bbc8d3;
     }
 
     &:after {

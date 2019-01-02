@@ -45,6 +45,12 @@
       padding-bottom: 50px;
 
       .swiper {
+        &-button {
+          &-prev,
+          &-next {
+            top: 20%;
+          }
+        }
         &-slide {
           display: flex;
           align-items: center;

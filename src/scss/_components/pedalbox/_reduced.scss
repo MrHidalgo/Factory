@@ -142,8 +142,9 @@
   }
 
   &__title {
+    line-height: 1;
     font-weight: bold;
-    @include fluid(padding-bottom, 320px, 1440px, 24px, 36px);
+    @include fluid(padding-bottom, 320px, 992px, 24px, 45px);
     @include fluid(font-size, 320px, 1440px, 24px, 48px);
   }
 

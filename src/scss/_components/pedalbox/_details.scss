@@ -348,7 +348,12 @@
     }
 
     &:hover {
-      background-color: #0A1723;
+      background-color: #d72d42;
+      @include transition(background-color);
+    }
+
+    &:active {
+      background-color: #0a1723;
       @include transition(background-color);
     }
 

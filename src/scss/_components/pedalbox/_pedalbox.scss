@@ -62,8 +62,9 @@
 
   &__title {
     color: $c-white;
+    line-height: 1;
     font-weight: bold;
-    @include fluid(padding-bottom, 320px, 1440px, 23px, 36px);
+    @include fluid(padding-bottom, 320px, 992px, 23px, 36px);
     @include fluid(font-size, 320px, 1440px, 36px, 48px);
   }
 
@@ -84,6 +85,7 @@
   }
 
   &__btn {
+    @include fluid(line-height, 320px, 1440px, 47px, 68px);
     @include respond(max-small) {
       display: none;
     }

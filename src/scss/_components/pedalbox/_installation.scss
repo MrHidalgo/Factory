@@ -115,7 +115,7 @@
         padding-left: 15px;
         padding-right: 15px;
       }
-      @include respond(max-small) {
+      @include respond(max-medium) {
         padding: 0;
       }
 

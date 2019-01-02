@@ -37,6 +37,7 @@
         max-width: 100%;
         height: auto;
         margin-left: auto;
+        margin-right: auto;
         @include respond(max-large) {
           margin-right: auto;
         }
@@ -61,6 +62,14 @@
   }
 
   &__img {
+    &-wrapper {
+      @include respond(medium) {
+        width: 100%;
+        max-width: 252px;
+        margin-left: auto;
+      }
+    }
+
     &--desktop {
       @include respond(max-small) {
         display: none !important;
@@ -83,6 +92,18 @@
       margin-right: auto;
       @include respond(max-small) {
         display: block;
+      }
+
+      &-desktop {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 34px;
+        margin-left: auto;
+        margin-right: auto;
+        @include respond(max-small) {
+          display: none !important;
+        }
       }
     }
   }
@@ -172,6 +193,7 @@
   }
 
   &__btn {
+    @include fluid(line-height, 320px, 1440px, 47px, 68px);
     @include respond(max-small) {
       display: none;
     }

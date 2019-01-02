@@ -8,6 +8,10 @@
 
   &__title,
   &__text {
+    padding-left: 80px;
+    @include respond(max-medium) {
+      padding-left: 0;
+    }
     @include respond(max-extra-small) {
       padding-left: 15px;
       padding-right: 15px;
@@ -34,13 +38,17 @@
   }
 
   &__img {
-    padding-left: 15px;
     padding-right: 15px;
     width: calc(100% / 4);
     @include respond(max-medium) {
       width: calc(100% / 2);
       padding-top: 15px;
       padding-bottom: 15px;
+      padding-right: 0;
+    }
+    @include respond(max-extra-small) {
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
     &:hover {
@@ -54,10 +62,12 @@
       display: block;
       max-width: 100%;
       height: auto;
-      margin-left: auto;
       margin-right: auto;
       filter: grayscale(1);
       @include transition(filter);
+      @include respond(max-medium) {
+        margin-left: auto;
+      }
     }
 
     &-wrapper {
@@ -65,6 +75,10 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      padding-left: 80px;
+      @include respond(max-medium) {
+        padding-left: 0;
+      }
     }
   }
 }

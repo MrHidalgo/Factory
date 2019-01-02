@@ -55,6 +55,7 @@
 
   &__title,
   &__text {
+    line-height: 1;
     @include respond(max-small) {
       text-align: center;
     }
@@ -62,8 +63,11 @@
 
   &__title {
     font-weight: bold;
-    @include fluid(padding-bottom, 320px, 1440px, 20px, 40px);
+    @include fluid(padding-bottom, 320px, 992px, 30px, 40px);
     @include fluid(font-size, 320px, 1440px, 24px, 48px);
+    @include respond(max-extra-small) {
+      padding-top: 10px;
+    }
   }
 
   &__text {

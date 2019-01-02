@@ -42,7 +42,7 @@ section {
   }
 
   .powercontrol & {
-    @include fluid(height, 320px, 1920px, 731px, 731px);
+    @include fluid(height, 320px, 1920px, 681px, 731px);
     background-size: cover;
 
     @include respond(max-wide-medium) {
