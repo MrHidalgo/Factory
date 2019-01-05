@@ -9,6 +9,17 @@
     @include fluid(padding-top, 320px, 1920px, 0px, 153px);
   }
 
+  .c-form {
+    @include respond(max-small) {
+      width: 100%;
+      max-width: 100%;
+
+      select {
+        opacity: 0;
+      }
+    }
+  }
+
   .c-grid {
     @include respond(max-extra-small) {
       padding-left: 15px;

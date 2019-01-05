@@ -31,12 +31,15 @@ $selectric-font-size:       16px !default;                                      
     &:hover {
       .button {
         background-color: #d6273c;
-        border-color: #ab182a;
+        //border-color: #ab182a;
         @include transition(background-color, border-color);
 
         .details & {
-          background-color: #0A1723;
-          border-color: #0A1723;
+          @include respond(medium) {
+            background-color: #0A1723;
+            border-color: #0A1723;
+            @include transition(background-color, border-color);
+          }
         }
 
         .reduced & {
@@ -73,7 +76,7 @@ $selectric-font-size:       16px !default;                                      
   &-hover {
     .button {
       background-color: #d6273c;
-      border-color: #ab182a;
+      //border-color: #ab182a;
 
       &:after {
         text-shadow: 0 1px 0 rgba(#ab182a, 1);
@@ -170,6 +173,11 @@ $selectric-font-size:       16px !default;                                      
 
   .button {
     color: darken($selectric-secondary-color, 10%);
+    @include respond(max-small) {
+      background-color: #0A1723;
+      border-color: #0A1723;
+      @include transition(background-color, border-color);
+    }
 
     &:after {
       border-top-color: darken($selectric-secondary-color, 10%);
@@ -268,6 +276,13 @@ $selectric-font-size:       16px !default;                                      
   .reduced & {
     left: auto;
     right: 0;
+  }
+
+  .p-powercontrol &,
+  .p-pedalbox & {
+    @include respond(max-small) {
+      width: 100% !important;
+    }
   }
 
   .selectric-scroll {
