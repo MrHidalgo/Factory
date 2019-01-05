@@ -4,7 +4,12 @@
   &__wrapper {
     z-index: 1;
     position: relative;
-    @include fluid(padding-top, 320px, 1920px, 15px, 105px);
+    @include respond(medium) {
+      @include fluid(padding-top, 320px, 1920px, 15px, 105px);
+    }
+    @include respond(max-small) {
+      padding-top: 75px;
+    }
   }
 
   &__row {

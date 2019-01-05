@@ -958,6 +958,13 @@ section.section {
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* line 38, src/scss/_shared/_common.scss */
+  .pedalbox .section__bg {
+    top: 100px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   /* line 38, src/scss/_shared/_common.scss */
   .pedalbox .section__bg {
@@ -965,63 +972,56 @@ section.section {
   }
 }
 
-/* line 44, src/scss/_shared/_common.scss */
+/* line 47, src/scss/_shared/_common.scss */
 .powercontrol .section__bg {
-  height: 681px;
+  height: 831px;
   background-size: cover;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
-    height: calc(681px + 50 * (100vw - 320px) / 1600);
+    height: calc(831px + -100 * (100vw - 320px) / 1600);
   }
 }
 
 @media screen and (min-width: 1920px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
     height: 731px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
     top: 0;
   }
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
     top: -25px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
     top: -50px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
-    top: -75px;
+    top: -115px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 44, src/scss/_shared/_common.scss */
-  .powercontrol .section__bg {
-    top: 25px;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 47, src/scss/_shared/_common.scss */
   .powercontrol .section__bg {
     top: 5px;
   }
@@ -8481,24 +8481,37 @@ section.section {
 .pedalbox__wrapper {
   z-index: 1;
   position: relative;
-  padding-top: 15px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
+  /* line 4, src/scss/_components/pedalbox/_pedalbox.scss */
+  .pedalbox__wrapper {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 320px) {
   /* line 4, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__wrapper {
     padding-top: calc(15px + 90 * (100vw - 320px) / 1600);
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 768px) and (min-width: 1920px) {
   /* line 4, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__wrapper {
     padding-top: 105px;
   }
 }
 
-/* line 11, src/scss/_components/pedalbox/_pedalbox.scss */
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/pedalbox/_pedalbox.scss */
+  .pedalbox__wrapper {
+    padding-top: 75px;
+  }
+}
+
+/* line 16, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__row-0 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8509,7 +8522,7 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 11, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 16, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-0 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -8518,48 +8531,48 @@ section.section {
   }
 }
 
-/* line 19, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__row-1 {
   padding-top: 120px;
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 19, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-1 {
     padding-top: calc(120px + 35 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 19, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-1 {
     padding-top: 155px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 19, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-1 {
     padding-bottom: calc(40px + 159 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 19, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-1 {
     padding-bottom: 199px;
   }
 }
 
-/* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 29, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__row-left {
   width: 487px;
   padding-right: 65px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 29, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-left {
     width: 300px;
     padding-right: 0;
@@ -8567,13 +8580,13 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 24, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 29, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-left {
     width: 100%;
   }
 }
 
-/* line 35, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 40, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__row-left img {
   display: block;
   max-width: 100%;
@@ -8582,27 +8595,27 @@ section.section {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 35, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 40, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-left img {
     margin-right: auto;
   }
 }
 
-/* line 46, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 51, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__row-right {
   width: 100%;
   max-width: calc(100% - 487px);
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 46, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 51, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-right {
     max-width: calc(100% - 300px);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 46, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 51, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__row-right {
     position: relative;
     top: -40px;
@@ -8613,7 +8626,7 @@ section.section {
   }
 }
 
-/* line 63, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 68, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__title {
   color: #fff;
   line-height: 1;
@@ -8623,34 +8636,34 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 63, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 68, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__title {
     padding-bottom: calc(23px + 13 * (100vw - 320px) / 672);
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 63, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 68, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__title {
     padding-bottom: 36px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 63, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 68, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__title {
     font-size: calc(36px + 12 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 63, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 68, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__title {
     font-size: 48px;
   }
 }
 
-/* line 71, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 76, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__text {
   width: 100%;
   max-width: 630px;
@@ -8660,50 +8673,50 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 71, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 76, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__text {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 71, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 76, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__text {
     font-size: 18px;
   }
 }
 
-/* line 78, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 83, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__text span {
   font-weight: bold;
 }
 
-/* line 81, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 86, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__text span:nth-child(2) {
   display: block;
 }
 
-/* line 87, src/scss/_components/pedalbox/_pedalbox.scss */
+/* line 92, src/scss/_components/pedalbox/_pedalbox.scss */
 .pedalbox__btn {
   line-height: 47px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 87, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 92, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__btn {
     line-height: calc(47px + 21 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 87, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 92, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__btn {
     line-height: 68px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 87, src/scss/_components/pedalbox/_pedalbox.scss */
+  /* line 92, src/scss/_components/pedalbox/_pedalbox.scss */
   .pedalbox__btn {
     display: none;
   }
@@ -12509,24 +12522,37 @@ section.section {
 .powercontrol__wrapper {
   z-index: 1;
   position: relative;
-  padding-top: 15px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 768px) {
+  /* line 4, src/scss/_components/powercontrol/_powercontrol.scss */
+  .powercontrol__wrapper {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 320px) {
   /* line 4, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__wrapper {
     padding-top: calc(15px + 90 * (100vw - 320px) / 1600);
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 768px) and (min-width: 1920px) {
   /* line 4, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__wrapper {
     padding-top: 105px;
   }
 }
 
-/* line 11, src/scss/_components/powercontrol/_powercontrol.scss */
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/powercontrol/_powercontrol.scss */
+  .powercontrol__wrapper {
+    padding-top: 75px;
+  }
+}
+
+/* line 16, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__row-0 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12537,7 +12563,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 16, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-0 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -12546,48 +12572,48 @@ section.section {
   }
 }
 
-/* line 19, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__row-1 {
   padding-top: 120px;
   padding-bottom: 40px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 19, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-1 {
     padding-top: calc(120px + 35 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 19, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-1 {
     padding-top: 155px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 19, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-1 {
     padding-bottom: calc(40px + 60 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 19, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-1 {
     padding-bottom: 100px;
   }
 }
 
-/* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 29, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__row-left {
   width: 487px;
   padding-right: 65px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 29, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-left {
     width: 300px;
     padding-right: 0;
@@ -12595,13 +12621,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 24, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 29, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-left {
     width: 100%;
   }
 }
 
-/* line 35, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 40, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__row-left img {
   display: block;
   max-width: 100%;
@@ -12611,39 +12637,39 @@ section.section {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 35, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 40, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-left img {
     margin-right: auto;
   }
 }
 
-/* line 47, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 52, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__row-right {
   width: 100%;
   max-width: calc(100% - 487px);
+  padding-left: 15px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 47, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 52, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-right {
     max-width: calc(100% - 300px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 47, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 52, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__row-right {
     position: relative;
     top: 0;
     max-width: 100%;
-    padding-left: 15px;
     padding-right: 15px;
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 65, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 70, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__img-wrapper {
     width: 100%;
     max-width: 252px;
@@ -12652,25 +12678,25 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 73, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 78, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__img--desktop {
     display: none !important;
   }
 }
 
-/* line 79, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 84, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__img--mobile {
   display: none !important;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 79, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 84, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__img--mobile {
     display: block !important;
   }
 }
 
-/* line 86, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 91, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__img--dte {
   display: none;
   max-width: 100%;
@@ -12681,13 +12707,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 86, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 91, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__img--dte {
     display: block;
   }
 }
 
-/* line 97, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 102, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__img--dte-desktop {
   display: block;
   max-width: 100%;
@@ -12698,13 +12724,13 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 97, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 102, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__img--dte-desktop {
     display: none !important;
   }
 }
 
-/* line 111, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 116, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__title {
   color: #fff;
   line-height: 1;
@@ -12714,39 +12740,39 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 111, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 116, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__title {
     padding-bottom: calc(0 + 25 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 111, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 116, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__title {
     padding-bottom: 25px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 111, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 116, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__title {
     font-size: calc(36px + 12 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 111, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 116, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__title {
     font-size: 48px;
   }
 }
 
-/* line 118, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 123, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__title + .powercontrol__text {
   font-size: 18px !important;
 }
 
-/* line 123, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 128, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__text {
   width: 100%;
   max-width: 630px;
@@ -12756,50 +12782,50 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 123, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 128, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__text {
     font-size: calc(14px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 123, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 128, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__text {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 123, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 128, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__text {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 134, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 139, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__text--pb {
   padding-bottom: 25px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 134, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 139, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__text--pb {
     padding-bottom: 15px;
   }
 }
 
-/* line 141, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 146, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__text span {
   font-weight: bold;
 }
 
-/* line 144, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 149, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__text span:nth-child(2) {
   display: block;
 }
 
-/* line 150, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 155, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12811,18 +12837,18 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 150, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 155, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__block {
     margin-right: 15px;
   }
 }
 
-/* line 158, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 163, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__block:last-of-type {
   margin-right: 0;
 }
 
-/* line 162, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 167, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12836,7 +12862,7 @@ section.section {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 162, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 167, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__block-wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -12845,7 +12871,7 @@ section.section {
   }
 }
 
-/* line 174, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 179, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__block img {
   display: block;
   max-width: 100%;
@@ -12853,7 +12879,7 @@ section.section {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 174, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 179, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__block img {
     -webkit-transform: scale(0.75);
         -ms-transform: scale(0.75);
@@ -12861,7 +12887,7 @@ section.section {
   }
 }
 
-/* line 183, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 188, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__block p {
   padding-left: 15px;
   color: #fff;
@@ -12871,47 +12897,47 @@ section.section {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 183, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 188, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__block p {
     font-size: calc(18px + 6 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 183, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 188, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__block p {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 183, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 188, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__block p {
     padding-left: 0;
   }
 }
 
-/* line 195, src/scss/_components/powercontrol/_powercontrol.scss */
+/* line 200, src/scss/_components/powercontrol/_powercontrol.scss */
 .powercontrol__btn {
   line-height: 47px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 195, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 200, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__btn {
     line-height: calc(47px + 21 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 195, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 200, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__btn {
     line-height: 68px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 195, src/scss/_components/powercontrol/_powercontrol.scss */
+  /* line 200, src/scss/_components/powercontrol/_powercontrol.scss */
   .powercontrol__btn {
     display: none;
   }

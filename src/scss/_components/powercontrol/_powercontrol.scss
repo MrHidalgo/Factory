@@ -4,7 +4,12 @@
   &__wrapper {
     z-index: 1;
     position: relative;
-    @include fluid(padding-top, 320px, 1920px, 15px, 105px);
+    @include respond(medium) {
+      @include fluid(padding-top, 320px, 1920px, 15px, 105px);
+    }
+    @include respond(max-small) {
+      padding-top: 75px;
+    }
   }
 
   &__row {
@@ -47,6 +52,7 @@
     &-right {
       width: 100%;
       max-width: calc(100% - 487px);
+      padding-left: 15px;
       @include respond(max-large) {
         max-width: calc(100% - 300px);
       }
@@ -54,7 +60,6 @@
         position: relative;
         top: 0;
         max-width: 100%;
-        padding-left: 15px;
         padding-right: 15px;
         text-align: center;
       }

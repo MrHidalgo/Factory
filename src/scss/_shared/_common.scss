@@ -36,13 +36,16 @@ section {
   }
 
   .pedalbox & {
+    @include respond(max-small) {
+      top: 100px;
+    }
     @include respond(max-extra-small) {
       top: 250px;
     }
   }
 
   .powercontrol & {
-    @include fluid(height, 320px, 1920px, 681px, 731px);
+    @include fluid(height, 320px, 1920px, 831px, 731px);
     background-size: cover;
 
     @include respond(max-wide-medium) {
@@ -55,12 +58,9 @@ section {
       top: -50px;
     }
     @include respond(max-large) {
-      top: -75px;
+      top: -115px;
     }
     @include respond(max-small) {
-      top: 25px;
-    }
-    @include respond(max-extra-small) {
       top: 5px;
     }
   }
