@@ -5,118 +5,121 @@
   position: relative;
 
   &__wrapper {
-    padding-top: 55px;
-    padding-bottom: 95px;
-    @include respond(max-small) {
-      padding-top: 0;
-    }
+    @include fluid(padding-top, 992px, 1920px, 25px, 55px);
+    @include fluid(padding-bottom, 992px, 1920px, 50px, 95px);
   }
 
   &__box {
     cursor: pointer;
     position: relative;
     width: 100%;
-    max-width: calc((100% / 3) - 16px);
-    @include fluid(min-height, 320px, 1920px, 201px, 286px);
-    margin-left: 16px;
-    margin-right: 16px;
+    max-width: 456px;
+    min-height: 304px;
+    padding: 50px 0 13px;
+    margin-left: 15px;
+    margin-right: 15px;
+    @include fluid(min-height, 992px, 1920px, 153px, 304px);
     @include respond(max-medium) {
       max-width: 456px;
-      margin: 0 auto 30px;
-    }
-    @include respond(max-small) {
-      margin: 0 auto 21px;
+      @include fluid(min-height, 992px, 1920px, 170px, 304px);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
     }
 
-    &:first-of-type {
-      margin-left: 0;
-      @include respond(max-medium) {
-        margin-left: auto;
-      }
-    }
-    &:last-of-type {
-      margin-right: 0;
-      @include respond(max-medium) {
-        margin-right: auto;
-      }
-    }
     &:hover {
-      .info__box-img {
-        img {
-          &:last-of-type {
-            opacity: 1;
-            @include transition(opacity);
+      .info__box {
+        &-title {
+          background-color: #0a1723;
+          @include transition(background-color);
+
+          p,
+          span {
+            color: $c-white;
+            @include transition(color);
           }
+        }
+        &-square {
+          background-color: #d6273c;
+          @include transition(background-color);
         }
       }
     }
 
     &-wrapper {
+      overflow: hidden;
       display: flex;
-      justify-content: space-between;
+      align-items: flex-start;
+      justify-content: center;
       @include respond(max-medium) {
-        flex-direction: column;
         flex-wrap: wrap;
       }
     }
 
     &-title {
-      z-index: 1;
+      z-index: 2;
       position: absolute;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
       top: 0;
-      left: 0;
+      left: 17px;
       width: 100%;
-      min-height: 73px;
-      padding-left: 24px;
-      @include respond(max-large) {
-        padding-left: 18px;
-      }
-      @include respond(max-small) {
-        align-items: center;
-        padding-left: 0;
-      }
+      max-width: calc(100% - (50px + 17px));
+      min-height: 82px;
+      background-color: #e9f5ff;
+      transform: skewX(-12.3deg);
+      @include transition(background-color);
 
       p,
       span {
         color: #0a1723;
         line-height: 1;
         font-weight: bold;
+        transform: skewX(12.3deg);
+        @include transition(color);
       }
 
       p {
-        @include fluid(font-size, 320px, 1920px, 30px, 43px);
+        //padding-left: 47px;
+        //font-size: 36px;
+        @include fluid(padding-left, 320px, 1920px, 20px, 47px);
+        @include fluid(font-size, 320px, 1920px, 26px, 36px);
       }
 
       span {
-        @include fluid(font-size, 320px, 1920px, 18px, 30px);
+        //padding-left: 57px;
+        //font-size: 24px;
+        @include fluid(padding-left, 320px, 1920px, 30px, 57px);
+        @include fluid(font-size, 320px, 1920px, 14px, 24px);
       }
     }
 
-    &-img {
-      z-index: 0;
+    &-image {
+      z-index: 1;
       position: relative;
 
       img {
         display: block;
         max-width: 100%;
         height: auto;
-        @include respond(max-extra-small) {
-          right: 0;
-          margin: 0 auto;
-        }
-
-        &:last-of-type {
-          opacity: 0;
-          z-index: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-          @include transition(opacity);
-        }
+        margin-left: auto;
+        margin-right: auto;
       }
+    }
+
+    &-square {
+      z-index: 0;
+      position: absolute;
+      bottom: 0;
+      right: 37px;
+      width: 100%;
+      max-width: calc(100% - (40px + 37px));
+      min-height: 82px;
+      background-color: #f0f5f9;
+      transform: skewX(-12.3deg);
+      @include transition(background-color);
     }
   }
 }
