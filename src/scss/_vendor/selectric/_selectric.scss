@@ -31,8 +31,13 @@ $selectric-font-size:       16px !default;                                      
     &:hover {
       .button {
         background-color: #d6273c;
-        //border-color: #ab182a;
+        border-color: #ab182a;
         @include transition(background-color, border-color);
+
+        &:before {
+          color: $c-white;
+          text-shadow: 0 1px 0 rgba(#ab182a, 1);
+        }
 
         .details & {
           @include respond(medium) {
@@ -76,7 +81,7 @@ $selectric-font-size:       16px !default;                                      
   &-hover {
     .button {
       background-color: #d6273c;
-      //border-color: #ab182a;
+      border-color: #ab182a;
 
       &:after {
         text-shadow: 0 1px 0 rgba(#ab182a, 1);
@@ -92,6 +97,7 @@ $selectric-font-size:       16px !default;                                      
     text-overflow: ellipsis;
     margin: 0;
     padding: 0 27px 0;
+    font-weight: 500;
     font-size: $selectric-font-size;
     line-height: $selectric-inner-height;
     color: $selectric-text-color;
@@ -155,7 +161,7 @@ $selectric-font-size:       16px !default;                                      
       font-style: normal;
       font-size: 19px;
       font-family: 'Neris', sans-serif;
-      @include transition(text-shadow, color);
+      @include transition(text-shadow, color, transform);
 
       .details & {
         color: #fff;
@@ -196,6 +202,13 @@ $selectric-font-size:       16px !default;                                      
     display: block;
     @include respond(large) {
       width: 280px !important;
+    }
+  }
+
+  .button {
+    &:before {
+      transform: rotate(-180deg) translateY(-5px);
+      @include transition(transform);
     }
   }
 }
@@ -315,6 +328,14 @@ $selectric-font-size:       16px !default;                                      
     cursor: pointer;
     padding: 5px 17px;
     //border-bottom: 1px solid #e4eaef;
+    @include transition(background-color, color);
+
+    &:nth-of-type(even) {
+      background-color: #f4f7f9;
+    }
+    &:nth-of-type(odd) {
+      background-color: #F8F8F8;
+    }
 
     &:after {
       content: '';
@@ -323,7 +344,8 @@ $selectric-font-size:       16px !default;                                      
       left: 17px;
       width: calc(100% - 34px);
       height: 1px;
-      background-color: #e4eaef;
+      background-color: #bbc8d3;
+      @include transition(background-color);
     }
 
     &:last-of-type {
@@ -335,18 +357,24 @@ $selectric-font-size:       16px !default;                                      
     }
 
     &.selected {
-      background: #e4eaef;
+      //background: #e4eaef;
       color: #4d5964;
     }
 
     &.highlighted {
-      background: #e4eaef;
+      //background: #e4eaef;
       color: #4d5964;
     }
 
     &:hover {
-      background: #e4eaef;
-      color: #4d5964;
+      background: #d6273c;
+      color: #fff;
+      @include transition(background-color, color);
+
+      &:after {
+        background: #d6273c;
+        @include transition(background-color);
+      }
     }
   }
 
